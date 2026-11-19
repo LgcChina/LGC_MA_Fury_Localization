@@ -1,6 +1,6 @@
 {
-  "name": "LgcChina.MaLocalizationProbe.Editor",
-  "rootNamespace": "LgcChina.MaLocalizationProbe",
+  "name": "LgcChina.MaFuryLocalization.Editor",
+  "rootNamespace": "LgcChina.MaFuryLocalization",
   "references": [],
   "includePlatforms": [
     "Editor"

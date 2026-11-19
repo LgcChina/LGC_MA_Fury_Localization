@@ -1,28 +1,29 @@
 {
-  "name": "com.lgcchina.ma-localization-probe",
-  "displayName": "LGC MA 简体中文扩展",
-  "version": "1.0.0",
+  "name": "com.lgcchina.ma-fury-localization",
+  "displayName": "LGC_MA_Fury_Localization",
+  "version": "2.0.0",
   "unity": "2022.3",
-  "description": "独立的 Modular Avatar 简体中文界面扩展，支持恢复原版显示与 JSON 词典重载；最低适配目标 MA 1.10.0。",
+  "description": "自动检测 Modular Avatar 与 VRCFury 的独立简体中文界面拓展，分别支持停用还原与重载词典；覆盖 MA 和 VRCFury 组件、动作、菜单与 SPS 面板。",
   "author": {
     "name": "LgcChina",
     "email": "13570527493@163.com",
     "url": "https://github.com/LgcChina"
   },
-  "vpmDependencies": {
-    "nadena.dev.modular-avatar": ">=1.10.0"
-  },
   "license": "MIT",
-  "url": "https://github.com/LgcChina/LGC-MA-Localization/releases/download/v1.0.0/com.lgcchina.ma-localization-probe-1.0.0.zip",
+  "vpmDependencies": {
+    "com.vrchat.base": "*"
+  },
+  "url": "https://github.com/LgcChina/LGC_MA_Fury_Localization/releases/download/v2.0.0/com.lgcchina.ma-fury-localization-2.0.0.zip",
   "repo": "https://lgcchina.github.io/LGC-VRC-Packages/index.json",
-  "documentationUrl": "https://github.com/LgcChina/LGC-MA-Localization#readme",
-  "changelogUrl": "https://github.com/LgcChina/LGC-MA-Localization/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/LgcChina/LGC-MA-Localization/blob/main/THIRD_PARTY_NOTICES.md",
+  "documentationUrl": "https://github.com/LgcChina/LGC_MA_Fury_Localization#readme",
+  "changelogUrl": "https://github.com/LgcChina/LGC_MA_Fury_Localization/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/LgcChina/LGC_MA_Fury_Localization/blob/main/THIRD_PARTY_NOTICES.md",
   "bugs": {
-    "url": "https://github.com/LgcChina/LGC-MA-Localization/issues"
+    "url": "https://github.com/LgcChina/LGC_MA_Fury_Localization/issues"
   },
   "keywords": [
     "modular-avatar",
+    "vrcfury",
     "localization",
     "chinese",
     "vpm",

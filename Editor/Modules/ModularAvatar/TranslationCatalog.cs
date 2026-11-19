@@ -1,4 +1,4 @@
-// LGC MA Localization Probe v1.0.0
+// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
 // Stable translation resources. Missing entries keep the original text.
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using UnityEditor;
 using PackageInfo = UnityEditor.PackageManager.PackageInfo;
 using UnityEngine;
 
-namespace LgcChina.MaLocalizationProbe
+namespace LgcChina.MaFuryLocalization.ModularAvatar
 {
     internal static class TranslationCatalog
     {
@@ -25,9 +25,9 @@ namespace LgcChina.MaLocalizationProbe
         internal static void Load(bool force = false)
         {
             if (loaded && !force) return;
-            var package = PackageInfo.FindForAssembly(typeof(Probe).Assembly);
-            var root = package != null ? package.resolvedPath : "Packages/" + Probe.PackageName;
-            var data = JsonUtility.FromJson<Catalog>(File.ReadAllText(Path.Combine(root, "Editor/Localization/zh-Hans.json")));
+            var package = PackageInfo.FindForAssembly(typeof(MaLocalization).Assembly);
+            var root = package != null ? package.resolvedPath : "Packages/" + MaLocalization.PackageName;
+            var data = JsonUtility.FromJson<Catalog>(File.ReadAllText(Path.Combine(root, "Editor/Localization/ma.zh-Hans.json")));
             if (data == null || data.entries == null)
                 throw new InvalidOperationException("中文词典无法读取，请检查 JSON 格式和 entries 字段。");
 

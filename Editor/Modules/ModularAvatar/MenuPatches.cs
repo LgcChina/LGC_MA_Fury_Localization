@@ -1,4 +1,4 @@
-// LGC MA Localization Probe v1.0.0
+// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
 // Optional menu and inspector-title display patches. Preserve all original commands and component identities.
 using System;
 using System.Collections.Generic;
@@ -8,11 +8,11 @@ using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-namespace LgcChina.MaLocalizationProbe
+namespace LgcChina.MaFuryLocalization.ModularAvatar
 {
-    internal static class MenuProbe
+    internal static class MenuPatches
     {
-        private const string HarmonyId = Probe.PackageName + ".menus";
+        private const string HarmonyId = MaLocalization.PackageName + ".ma.menus";
         private static readonly Harmony Harmony = new Harmony(HarmonyId);
         private static readonly HashSet<MethodBase> activeMethods = new HashSet<MethodBase>();
         private static Type itemType, scriptingItemType;
@@ -42,9 +42,9 @@ namespace LgcChina.MaLocalizationProbe
                     TryPatch(AccessTools.Method(source, "RebuildTree"), nameof(ComponentTreePostfix), false, "添加组件列表");
                     TryPatch(AccessTools.Method(source, "Search"), nameof(ComponentTreePostfix), false, "添加组件搜索");
                 }
-                else Probe.Note("添加组件显示接口不同，已跳过该部分。");
+                else MaLocalization.Note("添加组件显示接口不同，已跳过该部分。");
             }
-            else Probe.Note("未发现对应添加组件窗口，已跳过该部分。");
+            else MaLocalization.Note("未发现对应添加组件窗口，已跳过该部分。");
 
             scriptingItemType = assembly.GetType("UnityEditor.ScriptingMenuItem", false);
             scriptingPathProperty = scriptingItemType == null ? null : AccessTools.Property(scriptingItemType, "path");
@@ -54,7 +54,7 @@ namespace LgcChina.MaLocalizationProbe
             if (parameters != null && parameters.Length >= 3 && parameters[2].ParameterType == typeof(string) &&
                 parameters[0].ParameterType == scriptingItemType && scriptingPathProperty != null)
                 TryPatch(extract, nameof(ContextPrefix), true, "上下文菜单");
-            else Probe.Note("上下文菜单接口不同，已跳过该部分。");
+            else MaLocalization.Note("上下文菜单接口不同，已跳过该部分。");
 
             TryPatch(AccessTools.Method(typeof(ObjectNames), "GetInspectorTitle", new[] { typeof(UnityEngine.Object), typeof(bool) }),
                 nameof(InspectorTitlePostfix), false, "组件标题");
@@ -62,21 +62,21 @@ namespace LgcChina.MaLocalizationProbe
 
         private static void TryPatch(MethodBase method, string patch, bool prefix, string feature)
         {
-            if (method == null) { Probe.Note(feature + "接口不存在，已跳过。"); return; }
+            if (method == null) { MaLocalization.Note(feature + "接口不存在，已跳过。"); return; }
             if (activeMethods.Contains(method)) return;
             try
             {
-                var hook = new HarmonyMethod(typeof(MenuProbe), patch);
+                var hook = new HarmonyMethod(typeof(MenuPatches), patch);
                 Harmony.Patch(method, prefix: prefix ? hook : null, postfix: prefix ? null : hook);
                 activeMethods.Add(method);
             }
-            catch { Probe.Note(feature + "接口不兼容，已跳过。"); }
+            catch { MaLocalization.Note(feature + "接口不兼容，已跳过。"); }
         }
 
         private static void ComponentTreePostfix(AdvancedDropdownItem __result)
         {
             try { TranslateComponentTree(__result, false); }
-            catch { Probe.Note("部分添加组件条目未能翻译，保留原版显示。"); }
+            catch { MaLocalization.Note("部分添加组件条目未能翻译，保留原版显示。"); }
         }
 
         private static void TranslateComponentTree(AdvancedDropdownItem item, bool withinMa)

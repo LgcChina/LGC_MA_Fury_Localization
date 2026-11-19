@@ -5,3 +5,4 @@
 *.py text eol=lf
 *.yml text eol=lf
 *.meta text eol=lf
+*.asmdef text eol=lf

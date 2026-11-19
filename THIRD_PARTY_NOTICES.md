@@ -1,5 +1,8 @@
 # Third-party notices
 
+LGC_MA_Fury_Localization v2.0.0. VRCFury UI translations in this package are independently written from the displayed interface strings; no VRCFury implementation, images or icons are distributed. VRCFury itself remains a separate, optional package.
+
+
 Modular Avatar localization text and component display names are derived from the user-supplied MA 1.19.0 Chinese package. Original project notice follows. Images and icons are not included.
 
 Files under Editor/images are licensed for redistribution as part of an official

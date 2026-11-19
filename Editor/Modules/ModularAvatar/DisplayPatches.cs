@@ -1,4 +1,4 @@
-// LGC MA Localization Probe v1.0.0
+// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
 // Optional, scoped display-literal patches. Never translate serialized names, resource paths or generated assets.
 using System;
 using System.Collections.Generic;
@@ -9,11 +9,11 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace LgcChina.MaLocalizationProbe
+namespace LgcChina.MaFuryLocalization.ModularAvatar
 {
     internal static class DisplayPatches
     {
-        private const string HarmonyId = Probe.PackageName + ".display";
+        private const string HarmonyId = MaLocalization.PackageName + ".ma.display";
         private static readonly Harmony Harmony = new Harmony(HarmonyId);
         private static readonly HashSet<MethodBase> activeMethods = new HashSet<MethodBase>();
         private static readonly OpCode[] singleByte = new OpCode[256], doubleByte = new OpCode[256];
@@ -65,7 +65,7 @@ namespace LgcChina.MaLocalizationProbe
                             if ((!isMenuCore || method.IsConstructor) && !HasTargetLiteral(method)) continue;
                             Patch(method, nameof(LiteralTranspiler), true);
                         }
-                        catch { Probe.Note("部分旧版界面文字入口已跳过。"); }
+                        catch { MaLocalization.Note("部分旧版界面文字入口已跳过。"); }
                     }
                 }
                 var editorBase = assembly.GetType("nadena.dev.modular_avatar.core.editor.MAEditorBase", false);
@@ -108,7 +108,7 @@ namespace LgcChina.MaLocalizationProbe
                 Harmony.Patch(method, postfix: transpiler ? null : hook, transpiler: transpiler ? hook : null);
                 activeMethods.Add(method);
             }
-            catch { Probe.Note("部分旧版界面入口不兼容，已跳过并保留原文。"); }
+            catch { MaLocalization.Note("部分旧版界面入口不兼容，已跳过并保留原文。"); }
         }
 
         private static bool HasTargetLiteral(MethodBase method)
@@ -222,7 +222,7 @@ namespace LgcChina.MaLocalizationProbe
                 if (!seen) roots.Add(new WeakReference<VisualElement>(root));
                 TranslateUi(root);
             }
-            catch { Probe.Note("部分旧版界面标签已跳过。"); }
+            catch { MaLocalization.Note("部分旧版界面标签已跳过。"); }
         }
 
         private static void TranslateUi(VisualElement root)

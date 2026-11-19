@@ -1,4 +1,4 @@
-# LGC MA Localization package builder v1.0.0
+# LGC_MA_Fury_Localization package builder v2.0.0
 # Builds release artifacts only; does not run Unity or modify a project.
 import argparse
 import hashlib
@@ -16,13 +16,14 @@ manifest = json.loads((ROOT / 'package.json').read_text(encoding='utf-8-sig'))
 version = manifest['version']
 if args.tag != 'v' + version:
     raise SystemExit('Release tag must match package.json version.')
-probe = (ROOT / 'Editor/MaLocalizationProbe.cs').read_text(encoding='utf-8-sig')
+probe = (ROOT / 'Editor/LocalizationTool.cs').read_text(encoding='utf-8-sig')
 if f'Version = "{version}"' not in probe:
     raise SystemExit('Window version differs from package.json.')
-for path in (ROOT / 'Editor').glob('*.cs'):
+for path in (ROOT / 'Editor').rglob('*.cs'):
     if f'v{version}' not in path.read_text(encoding='utf-8-sig').splitlines()[0]:
         raise SystemExit('Script version differs: ' + path.name)
-json.loads((ROOT / 'Editor/Localization/zh-Hans.json').read_text(encoding='utf-8-sig'))
+for name in ('ma.zh-Hans.json', 'vrcfury.zh-Hans.json'):
+    json.loads((ROOT / 'Editor/Localization' / name).read_text(encoding='utf-8-sig'))
 asset_name = f"{manifest['name']}-{version}.zip"
 if not manifest['url'].endswith('/' + args.tag + '/' + asset_name):
     raise SystemExit('Package download URL differs from release tag or filename.')

@@ -1,0 +1,3682 @@
+{
+  "_description": "LGC_MA_Fury中文拓展包 1.2.0；entries 为精确界面原文，titles 为组件／动作标题，enumEntries 仅用于选项显示，patterns 仅使用带编号占位符的整句模板。",
+  "entries": [
+    {
+      "key": "Radius",
+      "value": "半径"
+    },
+    {
+      "key": "Height",
+      "value": "高度"
+    },
+    {
+      "key": "Transform",
+      "value": "变换"
+    },
+    {
+      "key": "Collider",
+      "value": "碰撞体"
+    },
+    {
+      "key": "Select",
+      "value": "选择"
+    },
+    {
+      "key": "If you are trying to override a finger collider, you should use a VRCFury Global Collider component instead! It will automatically select an appropriate available finger, and can be used within prefabs.",
+      "value": "如果要覆盖手指碰撞体，请使用 VRCFury 全局碰撞体组件！它会自动选择合适的可用手指，也可用于预制件。"
+    },
+    {
+      "key": "Advanced Collider",
+      "value": "高级碰撞体"
+    },
+    {
+      "key": "This feature will set the anchor override for every mesh on your avatar to your chest. This will prevent different meshes from being lit differently on your body.",
+      "value": "将角色所有网格的光照锚点覆盖设置为胸部，避免身体各部分的网格受到不同的光照。"
+    },
+    {
+      "key": "Anchor Override Fix",
+      "value": "光照锚点修复"
+    },
+    {
+      "key": "The following actions will be applied and baked into to the avatar during the upload process. This is useful if you want to enforce a specific upload state of your prop, even if the user has messed with it in the editor.",
+      "value": "上传时将以下动作应用并烘焙到角色中。即使用户在编辑器中改动了道具，也能确保它以指定状态上传。"
+    },
+    {
+      "key": "Note: 'Turn On' toggles automatically turn off their objects during upload, and thus do not need to be included here.",
+      "value": "注意：“开启”类开关会在上传时自动关闭对应对象，无需在此重复设置。"
+    },
+    {
+      "key": "Apply During Upload",
+      "value": "上传时应用"
+    },
+    {
+      "key": "This feature will attach a prop (with or without an armature) to the avatar. If 'Link From' is an armature matching the avatar's, the armatures will be merged and the extra bones will not count toward performance rank.",
+      "value": "将带骨架或不带骨架的道具连接到角色上。如果来源骨架与角色骨架匹配，会合并两者；合并掉的额外骨骼不会计入性能评级。"
+    },
+    {
+      "key": "Link From (Prop / Clothing)",
+      "value": "连接来源（道具／服装）"
+    },
+    {
+      "key": "For clothing, this should be the Hips bone in the clothing's Armature (or the 'main' bone if it doesn't have Hips).\nFor non-clothing objects (things that you just want to re-parent), this should be the object you want moved.",
+      "value": "服装请选择服装骨架中的 Hips 骨骼；没有 Hips 时，选择主骨骼。\n普通道具请选择需要更改父级的对象。"
+    },
+    {
+      "key": "Link To:",
+      "value": "连接目标："
+    },
+    {
+      "key": "Advanced Options",
+      "value": "高级选项"
+    },
+    {
+      "key": "Search / Matching",
+      "value": "查找与匹配"
+    },
+    {
+      "key": "Add Fallback Link To",
+      "value": "添加备用连接目标"
+    },
+    {
+      "key": "Adds another target to try if earlier targets aren't found. Bone targets already automatically fall back to similar bones if the exact bone isn't found.",
+      "value": "前面的目标未找到时，尝试下一个备用目标。骨骼目标在找不到精确匹配时，已经会自动尝试相近骨骼。"
+    },
+    {
+      "key": "Add Offset Path",
+      "value": "添加偏移路径"
+    },
+    {
+      "key": "Shows an Offset Path field for each target, letting you select a child relative to the chosen bone or object. Most setups don't need an offset.",
+      "value": "为各个目标显示偏移路径，以便选择相对于目标骨骼或对象的子级。多数设置无需偏移。"
+    },
+    {
+      "key": "Recursive",
+      "value": "递归匹配"
+    },
+    {
+      "key": "If enabled, child objects with matching object names on the avatar will also be linked",
+      "value": "同时连接角色上名称相同的子对象。"
+    },
+    {
+      "key": "Ignore name suffix/prefix",
+      "value": "忽略名称前缀／后缀"
+    },
+    {
+      "key": "If set, this substring will be ignored when matching object names against the avatar. This is useful for props where the artist added something like _PropName to the end of every bone. If empty, the suffix will be predicted based on the difference between the name of the given root bones.",
+      "value": "匹配角色对象名称时忽略指定字符串，适用于作者为所有骨骼添加了 _PropName 等后缀的道具。留空时，根据两个根骨骼的名称差异自动推断。"
+    },
+    {
+      "key": "Transform Alignment",
+      "value": "变换对齐"
+    },
+    {
+      "key": "Snap merged objects to the existing transform on the avatar",
+      "value": "将合并对象对齐到角色上目标对象的现有变换。"
+    },
+    {
+      "key": "Align Position",
+      "value": "对齐位置"
+    },
+    {
+      "key": "Align Rotation",
+      "value": "对齐旋转"
+    },
+    {
+      "key": "Align Scale",
+      "value": "对齐缩放"
+    },
+    {
+      "key": "Restrict multiplier to powers of 10",
+      "value": "将倍率限制为 10 的整数次幂"
+    },
+    {
+      "key": "Multiplier",
+      "value": "倍率"
+    },
+    {
+      "key": "Automatic Scale Multiplier",
+      "value": "自动缩放倍率"
+    },
+    {
+      "key": "When checked, the scale multiplier will be set to the Link From object's world scale divided by the Link To object's world scale. When combined with 'Restrict to powers of 10', this will automatically correct for clothes which have been incorrectly exported with the wrong scale units.",
+      "value": "根据连接来源与连接目标的世界缩放之比设置倍率。配合“限制为 10 的整数次幂”，可自动修正服装导出时的缩放单位错误。"
+    },
+    {
+      "key": "Super Advanced Options",
+      "value": "进阶高级选项"
+    },
+    {
+      "key": "Danger, changing may break things",
+      "value": "修改这些选项可能导致异常，请谨慎操作。"
+    },
+    {
+      "key": "Remove parent constraints from merged objects",
+      "value": "移除合并对象上的父级约束"
+    },
+    {
+      "key": "Force Merged Name",
+      "value": "强制合并后名称"
+    },
+    {
+      "key": "This box allows you to force the name of the object at the merged target location. This is useful if you want to forcefully merge a replacement MMD Body onto the base avatar. (Paired with Advanced Link Target Mode pointing to the avatar root). BEWARE: If you use this, offset animations and toggles for the merged object WILL NOT WORK.",
+      "value": "强制设置合并目标位置上的对象名称。例如，可配合指向角色根对象的高级连接目标来合并替换用的 MMD Body。注意：启用后，合并对象的位置偏移动画和开关将无法工作。"
+    },
+    {
+      "key": "Force world scale to 1,1,1",
+      "value": "强制世界缩放为 1,1,1"
+    },
+    {
+      "key": "After linking, forces the world scale of the root object to 1,1,1.",
+      "value": "连接后将根对象的世界缩放强制设为 1,1,1。"
+    },
+    {
+      "key": "These clothes are designed for a different version of your avatar's rig. You may have downloaded the wrong version of the clothes for your avatar version, or the clothes may not be designed for your avatar. Contact the clothing creator, and see if they have a proper version of the clothing for your rig.\n\nVRCFury will attempt to merge it anyways, but the affected areas may have slight clipping issues.\n",
+      "value": "这套服装适用于另一版本的角色骨架。你可能下载了错误版本，或该服装本来就不适用于此角色。请向服装作者确认是否有匹配版本。\n\nVRCFury 仍会尝试合并，但受影响部位可能会轻微穿模。\n"
+    },
+    {
+      "key": "It appears this object is clothing with an Armature and Hips bone. If you are trying to link the clothing to your avatar, the Link From box should be the Hips object from this clothing, not this main object!",
+      "value": "此对象看起来是带有 Armature 和 Hips 骨骼的服装。要将服装连接到角色，请在“连接来源”中选择服装的 Hips 对象，而非服装主对象！"
+    },
+    {
+      "key": "Avatar descriptor is missing",
+      "value": "未找到角色描述组件（Avatar Descriptor）"
+    },
+    {
+      "key": "No valid link target found",
+      "value": "未找到有效连接目标"
+    },
+    {
+      "key": "These bones do not have a match on the avatar and will be added as new children: \n",
+      "value": "以下骨骼在角色上没有匹配项，将作为新的子对象添加：\n"
+    },
+    {
+      "key": "Armature Link",
+      "value": "骨架联动"
+    },
+    {
+      "key": "This Avatar Scale feature is no longer available as scaling is now built into VRChat.",
+      "value": "此功能已停用：VRChat 已内置角色缩放功能。"
+    },
+    {
+      "key": "Avatar Scale",
+      "value": "角色缩放"
+    },
+    {
+      "key": "This feature will link the blendshapes in the specified skinned meshes to a skinned mesh on the avatar base. The default value and any menu items controlling the blendshape will be updated to control these linked objects as well.",
+      "value": "将指定蒙皮网格上的形态键与角色基础蒙皮网格上的形态键联动。形态键默认值以及控制这些形态键的菜单项，也会同步控制联动的对象。"
+    },
+    {
+      "key": "Name of skinned mesh object on avatar:",
+      "value": "角色上基础蒙皮网格对象的名称："
+    },
+    {
+      "key": "Skinned meshes to link:",
+      "value": "需要联动的蒙皮网格："
+    },
+    {
+      "key": "Include all blendshapes from base",
+      "value": "联动基础网格上的所有形态键"
+    },
+    {
+      "key": "Link blendshapes with exact names only",
+      "value": "仅联动名称完全相同的形态键"
+    },
+    {
+      "key": "Exclude blendshapes:",
+      "value": "排除的形态键："
+    },
+    {
+      "key": "Additional linked blendshapes:",
+      "value": "额外联动的形态键："
+    },
+    {
+      "key": "Linked blendshapes:",
+      "value": "联动的形态键："
+    },
+    {
+      "key": "Name on base",
+      "value": "基础网格上的名称"
+    },
+    {
+      "key": "Name on linked",
+      "value": "联动网格上的名称"
+    },
+    {
+      "key": "Copy blendshape to clipboard",
+      "value": "复制形态键名称到剪贴板"
+    },
+    {
+      "key": "Base skin could not be found",
+      "value": "未找到基础蒙皮网格"
+    },
+    {
+      "key": "Base Skin: ",
+      "value": "基础蒙皮网格："
+    },
+    {
+      "key": "Linked Skins: ",
+      "value": "联动的蒙皮网格："
+    },
+    {
+      "key": "No valid linked skins found",
+      "value": "未找到有效的联动蒙皮网格"
+    },
+    {
+      "key": "Linked Blendshapes:\n",
+      "value": "联动的形态键：\n"
+    },
+    {
+      "key": "No valid mappings found",
+      "value": "未找到有效映射"
+    },
+    {
+      "key": "BlendShape Link",
+      "value": "形态键联动 (BlendShape Link)"
+    },
+    {
+      "key": "This feature will automatically bake all non-animated blendshapes into the mesh, saving VRAM for free!",
+      "value": "自动将没有动画控制的形态键烘焙到网格中，节省显存。"
+    },
+    {
+      "key": "Blendshape Optimizer",
+      "value": "形态键优化"
+    },
+    {
+      "key": "This feature will add Blinking to your avatar. You can use this in place of blinking in the VRC Avatar Descriptor, or on a prop to add blinking to an additional object.",
+      "value": "为角色添加眨眼动画，可替代角色描述组件中的眨眼功能；也可用于道具，让其他对象眨眼。"
+    },
+    {
+      "key": "Blinking State",
+      "value": "眨眼状态"
+    },
+    {
+      "key": "Advanced",
+      "value": "高级"
+    },
+    {
+      "key": "Transition Time (in seconds, -1 will use VRCFury recommended value)",
+      "value": "过渡时间（秒；-1 使用 VRCFury 推荐值）"
+    },
+    {
+      "key": "Hold Time - Time eyelids will remain closed (in seconds, -1 will use VRCFury recommended value)",
+      "value": "闭眼停留时间（秒；-1 使用 VRCFury 推荐值）"
+    },
+    {
+      "key": "Blink Controller",
+      "value": "眨眼控制器"
+    },
+    {
+      "key": "This feature is deprecated. Please use Armature Link instead. It can do everything this feature can do and more.",
+      "value": "此功能已弃用。请改用“骨架联动”，它支持此功能的全部用途，并提供更多功能。"
+    },
+    {
+      "key": "Adds a parent constraint from the specified object to the specified bone. Useful for props which are packaged as VRCFury prefabs.",
+      "value": "在指定对象与角色骨骼之间添加父级约束，适用于封装为 VRCFury 预制件的道具。"
+    },
+    {
+      "key": "Object in prop",
+      "value": "道具中的对象"
+    },
+    {
+      "key": "Avatar Bone",
+      "value": "角色骨骼"
+    },
+    {
+      "key": "Bone Constraint",
+      "value": "骨骼约束"
+    },
+    {
+      "key": "This component is deprecated and now does nothing. Bounding Box Fix is now automatically enabled by default for all avatars using VRCFury.",
+      "value": "此组件已弃用，不再执行任何操作。使用 VRCFury 的角色现已默认自动修复包围盒。"
+    },
+    {
+      "key": "Bounding Box Fix",
+      "value": "包围盒修复"
+    },
+    {
+      "key": "This component forces a VRC Constraint on the current object to point to affect a bone on the base avatar.\n\nThis is basically only useful for GogoLoco.",
+      "value": "将当前对象上的 VRC 约束重定向到基础角色的骨骼。\n\n此功能主要供 GogoLoco 使用。"
+    },
+    {
+      "key": "Bone to target",
+      "value": "目标骨骼"
+    },
+    {
+      "key": "CS Retarget",
+      "value": "约束重定向"
+    },
+    {
+      "key": "This feature automatically tweaks your avatar eyes so that they can't go cross-eyed in VRChat. It does this by eliminating eye bone roll through fake eye bones and rotation constraints.",
+      "value": "自动调整角色眼睛以避免在 VRChat 中出现斗鸡眼。通过辅助眼骨骼和旋转约束消除眼骨骼的滚转。"
+    },
+    {
+      "key": "Cross Eye Fix",
+      "value": "斗鸡眼修复"
+    },
+    {
+      "key": "This entire object, and all children, will be deleted during upload. No other VRCFury components stored within will be processed.",
+      "value": "上传时删除此对象及其所有子对象。内部的其他 VRCFury 组件也不会被处理。"
+    },
+    {
+      "key": "Delete During Upload",
+      "value": "上传时删除"
+    },
+    {
+      "key": "This component displays VRCFury's useful debug info about the controllers on your avatar's base avatar descriptor. This component has no impact on the avatar, and changes nothing about the upload. Any detected warnings will be shown below.",
+      "value": "显示角色描述组件上动画控制器的 VRCFury 调试信息。此组件不会改变角色或上传结果；检测到的警告会显示在下方。"
+    },
+    {
+      "key": "Descriptor Debugger",
+      "value": "描述组件调试器"
+    },
+    {
+      "key": "This feature attempt to fix an avatar with a broken mix of Write Defaults.",
+      "value": "尝试修复角色中混用 Write Defaults 导致的问题。"
+    },
+    {
+      "key": "Fix Mode",
+      "value": "修复模式"
+    },
+    {
+      "key": "Auto - Will force all states to on or off, whichever requires the fewest changes to the existing avatar\nForce On - Forces all states to WD on\nForce Off - Forces all states to WD off\nDisabled - Don't try to fix anything and don't warn even if it looks broken",
+      "value": "自动：统一开启或关闭，以现有角色所需改动最少为准。\n强制开启：将所有状态的 Write Defaults 设为开启。\n强制关闭：将所有状态的 Write Defaults 设为关闭。\n禁用：不进行修复，也不显示相关警告。"
+    },
+    {
+      "key": "No avatar descriptor",
+      "value": "未找到角色描述组件"
+    },
+    {
+      "key": "Avatar base has broken mixed write defaults!",
+      "value": "基础角色存在异常的 Write Defaults 混用！"
+    },
+    {
+      "key": "Here are the states that don't match:",
+      "value": "以下状态的设置不一致："
+    },
+    {
+      "key": "Fix Write Defaults",
+      "value": "修复 Write Defaults"
+    },
+    {
+      "key": "This feature will merge the given controller / menu / parameters into the avatar during the upload process.",
+      "value": "上传时将指定的控制器、菜单和参数合并到角色中。"
+    },
+    {
+      "key": "Controller",
+      "value": "控制器"
+    },
+    {
+      "key": "Menu",
+      "value": "菜单"
+    },
+    {
+      "key": "Parameters",
+      "value": "参数"
+    },
+    {
+      "key": "Global Parameters",
+      "value": "全局参数"
+    },
+    {
+      "key": "VRCFury normally renames all merged parameters so that they will never conflict with parameters already existing on the avatar / other copies of this prefab.\n\nParameters in this list will have their name kept as is, allowing you to interact with parameters in the avatar itself or other instances of the prop. Note that VRChat global parameters (such as gestures) are included by default.\n\nIf you want to make all parameters global, you can use enter a *\n\nYou can also make a specific prefix global by adding a * to the end: MyGlobalParams/*\n\nIf you want to make all parameters global except for a few, you can mark specific parameters as not global by prefixing them with a !",
+      "value": "VRCFury 通常会重命名合并的参数，避免与角色现有参数或同一预制件的其他副本冲突。\n\n此列表中的参数将保留原名，可用于与角色本身或其他道具实例交互。VRChat 内置全局参数（例如手势）默认已包含。\n\n输入 * 可将全部参数设为全局参数。\n\n可在前缀后添加 *，例如 MyGlobalParams/*，将该前缀下的参数设为全局参数。\n\n如需排除少数参数，可在这些参数名前添加 !。"
+    },
+    {
+      "key": "Smooth Parameters",
+      "value": "平滑参数"
+    },
+    {
+      "key": "All parameters listed here that are found in FX controllers listed above will have their values smoothed. The duration represents how many seconds it should take to reach 90% of the target value.",
+      "value": "平滑处理上方 FX 控制器中此列表内的参数。时长表示达到目标值 90% 所需的秒数。"
+    },
+    {
+      "key": "Path Rewrite Rules",
+      "value": "路径重写规则"
+    },
+    {
+      "key": "This allows you to rewrite the path to objects used in the animation clips of this controller. Useful if the animations in the controller were originally written to be based from a specific avatar root, but you are now trying to use as a re-usable VRCFury prop.",
+      "value": "重写此控制器动画片段使用的对象路径。适用于最初基于某个角色根对象制作、现在需要作为通用 VRCFury 道具使用的动画。"
+    },
+    {
+      "key": "Inject Parameters",
+      "value": "注入参数"
+    },
+    {
+      "key": "Inject values from other VRCFury components into this controller (or global if it's also marked as a global param)",
+      "value": "将其他 VRCFury 组件提供的值注入此控制器；若同时标记为全局参数，也可注入全局参数。"
+    },
+    {
+      "key": "Force all synced parameters to be un-saved",
+      "value": "强制所有同步参数不保存"
+    },
+    {
+      "key": "Overwrite Locomotion",
+      "value": "覆盖移动控制器"
+    },
+    {
+      "key": "For Base, TPose, IKPose, and Sitting controllers, replace the avatar descriptor's existing controller of the same type instead of appending to it. Its layers will be placed above layers added by other Full Controllers in append mode. Uncheck to keep the existing controllers and append this controller's layers.",
+      "value": "对于 Base、TPose、IKPose 和 Sitting，替换角色描述组件中的同类型控制器，而非追加图层。替换后的图层位于其他以追加模式合并的完整控制器图层之上。取消勾选则保留现有控制器并追加图层。"
+    },
+    {
+      "key": "Root bindings always apply to avatar (Basically only for gogoloco)",
+      "value": "根路径绑定始终应用到角色（主要供 GogoLoco 使用）"
+    },
+    {
+      "key": "(Deprecated) Toggle using param",
+      "value": "（已弃用）使用参数切换"
+    },
+    {
+      "key": "(Deprecated) Root object override",
+      "value": "（已弃用）根对象覆盖"
+    },
+    {
+      "key": "(Deprecated) Make all unsynced params global",
+      "value": "（已弃用）将所有不同步参数设为全局参数"
+    },
+    {
+      "key": "(Deprecated) Don't fail if assets are missing",
+      "value": "（已弃用）资源缺失时不报错"
+    },
+    {
+      "key": "(Deprecated) Inject nearest SPS depth (use Inject Parameters instead)",
+      "value": "（已弃用）注入最近 SPS 深度（请改用“注入参数”）"
+    },
+    {
+      "key": "(Deprecated) Inject nearest SPS velocity (use Inject Parameters instead)",
+      "value": "（已弃用）注入最近 SPS 速度（请改用“注入参数”）"
+    },
+    {
+      "key": "Full Controller",
+      "value": "完整控制器"
+    },
+    {
+      "key": "Gestures",
+      "value": "手势"
+    },
+    {
+      "key": "This adds an editor gizmo to the current object. Informational only, no changes are made to the avatar.",
+      "value": "为当前对象添加编辑器辅助图示，仅供查看，不会改动角色。"
+    },
+    {
+      "key": "Rotation",
+      "value": "旋转"
+    },
+    {
+      "key": "Text",
+      "value": "文本"
+    },
+    {
+      "key": "Sphere Radius",
+      "value": "球体半径"
+    },
+    {
+      "key": "Arrow Length",
+      "value": "箭头长度"
+    },
+    {
+      "key": "Gizmo",
+      "value": "辅助图示"
+    },
+    {
+      "key": "This component forces a VRC head chop on the current object to point to the avatar's head bone. The head chop component MUST contain only one source, and that source will be overwritten with the avatar's head.\n\nThis is basically only useful for GogoLoco.",
+      "value": "将当前对象上的 VRC Head Chop 指向角色头骨骼。Head Chop 组件必须只有一个来源，该来源将被替换为角色头部。\n\n此功能主要供 GogoLoco 使用。"
+    },
+    {
+      "key": "HC Retarget",
+      "value": "头部裁剪重定向"
+    },
+    {
+      "key": "This feature will automatically convert all non-conflicting toggle layers into a single direct blend tree layer.",
+      "value": "将互不冲突的开关图层自动转换到同一个直接混合树图层中。"
+    },
+    {
+      "key": "Direct Tree Optimizer",
+      "value": "直接混合树优化"
+    },
+    {
+      "key": "This component will improve MMD compatibility for your avatar, by maintaining MMD blendshapes and avoiding usage of layers that MMD worlds are known to interfere with.",
+      "value": "保留 MMD 使用的形态键，并避免使用已知会受 MMD 世界干扰的图层，以改善角色的 MMD 兼容性。"
+    },
+    {
+      "key": "Advanced Settings",
+      "value": "高级设置"
+    },
+    {
+      "key": "When MMD is detected, disable layers with these names:",
+      "value": "检测到 MMD 时，禁用以下名称的图层："
+    },
+    {
+      "key": "When MMD is detected, set this global bool to true:",
+      "value": "检测到 MMD 时，将此全局布尔参数设为 true："
+    },
+    {
+      "key": "MMD Compatibility",
+      "value": "MMD 兼容"
+    },
+    {
+      "key": "This feature will move a menu item to another location. You can use slashes to make subfolders.",
+      "value": "将菜单项移动到另一位置。可用斜杠创建子文件夹。"
+    },
+    {
+      "key": "From Path",
+      "value": "原路径"
+    },
+    {
+      "key": "To Path",
+      "value": "目标路径"
+    },
+    {
+      "key": "New Thing",
+      "value": "新建项"
+    },
+    {
+      "key": "Move or Rename Menu Item",
+      "value": "移动或重命名菜单项"
+    },
+    {
+      "key": "This feature is deprecated and now does nothing. Use SPS instead! See vrcfury.com/sps",
+      "value": "此功能已弃用，不再执行任何操作。请改用 SPS，详见 vrcfury.com/sps。"
+    },
+    {
+      "key": "Haptic Component Auto-Adder",
+      "value": "触觉组件自动添加"
+    },
+    {
+      "key": "'Next' Text",
+      "value": "“下一页”文字"
+    },
+    {
+      "key": "'Next' Icon",
+      "value": "“下一页”图标"
+    },
+    {
+      "key": "Override Menu Settings",
+      "value": "覆盖菜单设置"
+    },
+    {
+      "key": "This feature will disable blinking in the avatar's descriptor (setting eyelid type to None). This is useful if you are using a VRCFury blink controller on a base avatar, and want to disable their default blinking without messing with the stock files.",
+      "value": "在角色描述组件中禁用眨眼，将眼睑类型设为 None。适用于用 VRCFury 眨眼控制器替代基础角色眨眼功能，同时保留原始文件。"
+    },
+    {
+      "key": "Remove Built-in Blinking",
+      "value": "移除内置眨眼"
+    },
+    {
+      "key": "This feature will remove all usages of hand gestures within the avatar's default animator controllers. This is useful if you are using VRCFury to modify a base avatar, and want to disable their default gestures without messing with the stock controllers.",
+      "value": "移除角色默认动画控制器中所有手势控制。适用于用 VRCFury 修改基础角色，并停用其默认手势，同时保留原始控制器文件。"
+    },
+    {
+      "key": "Remove Built-in Hand Gestures",
+      "value": "移除内置手势"
+    },
+    {
+      "key": "This feature will change the position of a menu item within its folder.",
+      "value": "调整菜单项在其所在文件夹内的顺序。"
+    },
+    {
+      "key": "New Position",
+      "value": "新位置"
+    },
+    {
+      "key": "This is the position that you want to move the menu item to.\n\nExamples:\n0 = 'First' (Top Right)\n1 = 'Second'\n4 = 'Fifth'\n999 = 'Last' (Top Left)\n-1 = 'Second-to-Last'\n-2 = 'Third-to-Last'\netc",
+      "value": "菜单项需要移动到的位置。\n\n示例：\n0 = 第一项（右上）\n1 = 第二项\n4 = 第五项\n999 = 最后一项（左上）\n-1 = 倒数第二项\n-2 = 倒数第三项\n依此类推。"
+    },
+    {
+      "key": "Reorder Menu Item",
+      "value": "调整菜单项顺序"
+    },
+    {
+      "key": "This feature will add a `Security` submenu in your avatar's menu. Until the correct pin number is entered:\n* All objects with a VRCFury Security Restricted component will be disabled.\n* All VRCFury Toggles marked with the `Security` flag will be forced Off.",
+      "value": "在角色菜单中添加 Security 子菜单。输入正确的 PIN 码前：\n* 带有 VRCFury“安全限制”组件的对象会被禁用。\n* 标记为“安全保护”的 VRCFury 开关会被强制关闭。"
+    },
+    {
+      "key": "Pin Number (min 4 digits, max 10 digits, can only use numbers 1-7)",
+      "value": "PIN 码（4 至 10 位，仅可使用数字 1–7）"
+    },
+    {
+      "key": "Security Pin Number",
+      "value": "安全 PIN 码"
+    },
+    {
+      "key": "This object will be forcefully disabled until a Security Pin is entered in your avatar's menu.Note: You MUST have a Security Pin Number component on your avatar root with a pin number set, or this will not do anything!",
+      "value": "在角色菜单中输入安全 PIN 码前，强制禁用此对象。注意：必须在角色根对象上添加“安全 PIN 码”组件并设置 PIN 码，否则此功能无效！"
+    },
+    {
+      "key": "Security Restricted",
+      "value": "安全限制"
+    },
+    {
+      "key": "This feature is designed to be used by Senky only. Implementation may change at any time. If you are not Senky, please use the 'Gesture' feature instead.",
+      "value": "此功能仅供 Senky 使用，实现可能随时变更。其他用户请使用“手势”功能。"
+    },
+    {
+      "key": "Eyes Closed",
+      "value": "闭眼"
+    },
+    {
+      "key": "Eyes Happy",
+      "value": "开心眼"
+    },
+    {
+      "key": "Eyes Sad",
+      "value": "伤心眼"
+    },
+    {
+      "key": "Eyes Angry",
+      "value": "生气眼"
+    },
+    {
+      "key": "Mouth Blep",
+      "value": "吐舌"
+    },
+    {
+      "key": "Mouth Suck",
+      "value": "吸嘴"
+    },
+    {
+      "key": "Mouth Sad",
+      "value": "伤心嘴"
+    },
+    {
+      "key": "Mouth Angry",
+      "value": "生气嘴"
+    },
+    {
+      "key": "Mouth Happy",
+      "value": "开心嘴"
+    },
+    {
+      "key": "Ears Back",
+      "value": "耳朵后压"
+    },
+    {
+      "key": "Senky Gesture Driver",
+      "value": "Senky 手势驱动"
+    },
+    {
+      "key": "This feature will override the menu icon for the given menu path. You can use slashes to look in subfolders.",
+      "value": "覆盖指定菜单路径的图标。可用斜杠访问子文件夹。"
+    },
+    {
+      "key": "Icon",
+      "value": "图标"
+    },
+    {
+      "key": "Override Menu Icon",
+      "value": "覆盖菜单图标"
+    },
+    {
+      "key": "This component will automatically make this GameObject a child of the head bone, and will use constraint tricks to make it visible in first person.\n\nWarning:\n* Do not combine this with armature link.\n* First person objects cannot be attached to non-first-person objects, such as nose or ear bones.\n* World position will be maintained when reparented.",
+      "value": "自动将此对象移动为头骨骼的子对象，并使用约束使其在第一人称中可见。\n\n注意：\n* 不要与骨架联动同时使用。\n* 第一人称对象不能连接到鼻骨、耳骨等非第一人称对象上。\n* 更改父级时保留世界位置。"
+    },
+    {
+      "key": "Show In First Person",
+      "value": "第一人称可见"
+    },
+    {
+      "key": "This feature is deprecated and now does nothing. The slot 4 bug has been fixed in unity 2022.",
+      "value": "此功能已弃用，不再执行任何操作。Unity 2022 已修复第 4 槽位问题。"
+    },
+    {
+      "key": "Slot 4 Fix",
+      "value": "第 4 槽位修复"
+    },
+    {
+      "key": "SPS Menu",
+      "value": "SPS 菜单"
+    },
+    {
+      "key": "Path Override",
+      "value": "路径覆盖"
+    },
+    {
+      "key": "Icon Override",
+      "value": "图标覆盖"
+    },
+    {
+      "key": "Save Active Sockets Between Worlds",
+      "value": "跨世界保存激活的接口"
+    },
+    {
+      "key": "Legacy Compatibility",
+      "value": "旧版兼容"
+    },
+    {
+      "key": "DPS/TPS/SPS1/SPS2 Plugs",
+      "value": "DPS/TPS/SPS1/SPS2 插入端"
+    },
+    {
+      "key": "Adds 2 lights per socket\nRequires Legacy Mode On",
+      "value": "每个接口增加 2 个灯光\n需要开启旧版模式"
+    },
+    {
+      "key": "DPS/TPS/SPS1/SPS2 Sockets",
+      "value": "DPS/TPS/SPS1/SPS2 接口"
+    },
+    {
+      "key": "Adds 2 contact senders per plug",
+      "value": "每个插入端增加 2 个接触发送器"
+    },
+    {
+      "key": "TPS Plug Animations (Not Recommended, Rare)",
+      "value": "TPS 插入端动画（不推荐，较少使用）"
+    },
+    {
+      "key": "Adds 1 contact sender per socket\nRequires Legacy Mode On",
+      "value": "每个接口增加 1 个接触发送器\n需要开启旧版模式"
+    },
+    {
+      "key": "DPS Socket Animations (Not Recommended, Rare)",
+      "value": "DPS 接口动画（不推荐，较少使用）"
+    },
+    {
+      "key": "Adds 1 light per plug\nRequires Legacy Mode On",
+      "value": "每个插入端增加 1 个灯光\n需要开启旧版模式"
+    },
+    {
+      "key": "Legacy Mode Menu",
+      "value": "旧版模式菜单"
+    },
+    {
+      "key": "Only one socket can be active at a time",
+      "value": "一次只能激活一个接口"
+    },
+    {
+      "key": "Default On",
+      "value": "默认开启"
+    },
+    {
+      "key": "Save Setting Between Worlds",
+      "value": "跨世界保存设置"
+    },
+    {
+      "key": "Include Auto Mode in Avatar",
+      "value": "在角色中包含自动模式"
+    },
+    {
+      "key": "Auto Mode",
+      "value": "自动模式"
+    },
+    {
+      "key": "Automatically activates socket that touches a plug.",
+      "value": "接触插入端时自动激活接口。"
+    },
+    {
+      "key": "SPS Options",
+      "value": "SPS 选项"
+    },
+    {
+      "key": "This feature will activate the given animation whenever the avatar is talking.",
+      "value": "角色说话时激活指定动画。"
+    },
+    {
+      "key": "When-Talking State",
+      "value": "说话时状态"
+    },
+    {
+      "key": "Down",
+      "value": "向下"
+    },
+    {
+      "key": "Up",
+      "value": "向上"
+    },
+    {
+      "key": "Splay",
+      "value": "展开"
+    },
+    {
+      "key": "Toes Puppet",
+      "value": "脚趾控制"
+    },
+    {
+      "key": "Menu Path",
+      "value": "菜单路径"
+    },
+    {
+      "key": "Options",
+      "value": "选项"
+    },
+    {
+      "key": "Select Menu Folder",
+      "value": "选择菜单文件夹"
+    },
+    {
+      "key": "New Toggle",
+      "value": "新建开关"
+    },
+    {
+      "key": "Saved Between Worlds",
+      "value": "跨世界保存"
+    },
+    {
+      "key": "Use a Slider (Radial)",
+      "value": "使用滑条（径向）"
+    },
+    {
+      "key": "Protect with Security",
+      "value": "启用安全保护"
+    },
+    {
+      "key": "Run Animation to Completion",
+      "value": "将动画播放至结束"
+    },
+    {
+      "key": "Hold Button",
+      "value": "按住按钮"
+    },
+    {
+      "key": "Hide when animator disabled",
+      "value": "动画器禁用时隐藏"
+    },
+    {
+      "key": "Show when animator disabled",
+      "value": "动画器禁用时显示"
+    },
+    {
+      "key": "Enable Exclusive Tags",
+      "value": "启用互斥标签"
+    },
+    {
+      "key": "This is Exclusive Off State",
+      "value": "设为互斥关闭状态"
+    },
+    {
+      "key": "Set Custom Menu Icon",
+      "value": "设置自定义菜单图标"
+    },
+    {
+      "key": "Drive a Global Parameter",
+      "value": "驱动全局参数"
+    },
+    {
+      "key": "Separate Local State",
+      "value": "区分本地状态"
+    },
+    {
+      "key": "Enable Transition State",
+      "value": "启用过渡状态"
+    },
+    {
+      "key": "Use a Global Parameter",
+      "value": "使用全局参数"
+    },
+    {
+      "key": "Exclusive Tags",
+      "value": "互斥标签"
+    },
+    {
+      "key": "Global Parameter",
+      "value": "全局参数"
+    },
+    {
+      "key": "Menu Icon",
+      "value": "菜单图标"
+    },
+    {
+      "key": "Drive Global Param",
+      "value": "驱动全局参数"
+    },
+    {
+      "key": "Warning, Drive Global Param is an advanced feature. The driven parameter should not be placed in a menu or controlled by any other driver or shared with any other toggle. It should only be used as an input to manually-created state transitions in your avatar. This should NEVER be used on vrcfury props, as any merged full controllers will have their parameters rewritten.",
+      "value": "“驱动全局参数”属于高级功能。被驱动参数不应放入菜单、由其他驱动器控制，或与其他开关共用。它只应用作手动创建的动画状态过渡的输入。切勿在 VRCFury 道具中使用，因为合并的完整控制器会重写参数名。"
+    },
+    {
+      "key": "Transition in:",
+      "value": "进入时播放："
+    },
+    {
+      "key": "Then blend for this much time:",
+      "value": "然后按此时长混合："
+    },
+    {
+      "key": "Then do this until turned off (Main Action):",
+      "value": "随后保持以下状态，直到关闭（主要动作）："
+    },
+    {
+      "key": "Transition Out is reverse of Transition In",
+      "value": "退出过渡反向播放进入过渡"
+    },
+    {
+      "key": "Then play this transition out:",
+      "value": "然后播放此退出过渡："
+    },
+    {
+      "key": "Extend object enabling and material settings into transitions",
+      "value": "将对象启用和材质设置延伸到过渡中"
+    },
+    {
+      "key": "In local:",
+      "value": "本地："
+    },
+    {
+      "key": "In remote:",
+      "value": "远端："
+    },
+    {
+      "key": "Default %",
+      "value": "默认百分比"
+    },
+    {
+      "key": "Passthrough at 0% (Unusual)",
+      "value": "0% 时不控制属性（特殊用法）"
+    },
+    {
+      "key": "When checked, the slider will be bypassed when set to 0%, meaning that it will not control any properties at all, allowing the properties to resume being controlled by some other toggle or animator layer. It is unusual to check this, but is required if you want this slider to interact with Exclusive Tags or transitions.",
+      "value": "勾选后，滑条设为 0% 时不控制任何属性，让其他开关或动画图层重新接管。通常无需勾选；滑条需要配合互斥标签或过渡使用时才需要。"
+    },
+    {
+      "key": "This toggle is a slider (radial)",
+      "value": "此开关使用滑条（径向）"
+    },
+    {
+      "key": "When slider is at 0%:",
+      "value": "滑条为 0% 时："
+    },
+    {
+      "key": "The avatar will be like it is in the editor. You can override this with an Apply During Upload component.",
+      "value": "角色保持编辑器中的状态。可用“上传时应用”组件覆盖该状态。"
+    },
+    {
+      "key": "When slider is at 100%:",
+      "value": "滑条为 100% 时："
+    },
+    {
+      "key": "When toggle is enabled:",
+      "value": "开关开启时："
+    },
+    {
+      "key": "When toggle is disabled:",
+      "value": "开关关闭时："
+    },
+    {
+      "key": "Behaviour will return to the default",
+      "value": "恢复为默认行为"
+    },
+    {
+      "key": "Saved",
+      "value": "保存状态"
+    },
+    {
+      "key": "Security",
+      "value": "安全保护"
+    },
+    {
+      "key": "Run to Completion",
+      "value": "播放至结束"
+    },
+    {
+      "key": "This is the Exclusive Off State",
+      "value": "这是互斥关闭状态"
+    },
+    {
+      "key": "You cannot use Turn Off for an object that another Toggle Turns On! Turn Off should only be used for objects which are not controlled by their own toggle.\n\n1. You do not need a dedicated 'Turn Off' toggle. Turning off the other toggle will turn off the object.\n\n2. If you want this toggle to turn off the other toggle when activated, use Exclusive Tags instead (in the options on the top right).",
+      "value": "不能对被其他开关“开启”的对象使用“关闭”动作！“关闭”仅应用于没有独立开关控制的对象。\n\n1. 无需专门创建“关闭”开关，关闭原有开关就会关闭对象。\n\n2. 若想在开启此开关时关闭另一个开关，请在右上角选项中使用“互斥标签”。"
+    },
+    {
+      "key": "Toggle",
+      "value": "开关"
+    },
+    {
+      "key": "TPS Integration",
+      "value": "TPS 集成"
+    },
+    {
+      "key": "TPS Scale Fix",
+      "value": "TPS 缩放修复"
+    },
+    {
+      "key": "This component is deprecated and now does nothing. The VRCFury Parameter Compressor is now applied automatically for all avatars using VRCFury (if you are over the limit).",
+      "value": "此组件已弃用，不再执行任何操作。使用 VRCFury 的角色超出参数上限时，现已自动应用参数压缩。"
+    },
+    {
+      "key": "Unlimited Parameters",
+      "value": "无限参数"
+    },
+    {
+      "key": "Parameter Compressor",
+      "value": "参数压缩"
+    },
+    {
+      "key": "This feature will allow you to use animations for your avatar's visemes.",
+      "value": "使用动画控制角色的口型。"
+    },
+    {
+      "key": "Instant Mode (Unusual)",
+      "value": "瞬时模式（特殊用法）"
+    },
+    {
+      "key": "Transitions between visemes instantly, with no blending. Used for billboard flipbook mouths.",
+      "value": "口型间立即切换，不进行混合，适用于使用翻页贴图的平面嘴部。"
+    },
+    {
+      "key": "Advanced Visemes",
+      "value": "高级口型"
+    },
+    {
+      "key": "Droppable (World Constraint)",
+      "value": "可丢落（世界约束）"
+    },
+    {
+      "key": "This feature is no longer supported.",
+      "value": "此功能已停止支持。"
+    },
+    {
+      "key": "Zawoo Integration",
+      "value": "Zawoo 集成"
+    },
+    {
+      "key": "Animation Clip",
+      "value": "动画片段"
+    },
+    {
+      "key": "VRCFury Recorder",
+      "value": "VRCFury 录制器"
+    },
+    {
+      "key": "New Animation",
+      "value": "新建动画"
+    },
+    {
+      "key": "Path to new animation",
+      "value": "新动画保存路径"
+    },
+    {
+      "key": "Record",
+      "value": "录制"
+    },
+    {
+      "key": "Blendshape",
+      "value": "形态键"
+    },
+    {
+      "key": "Search",
+      "value": "搜索"
+    },
+    {
+      "key": "Value (0-100)",
+      "value": "数值（0–100）"
+    },
+    {
+      "key": "BlendShape",
+      "value": "形态键"
+    },
+    {
+      "key": "Disable Blinking",
+      "value": "禁用眨眼"
+    },
+    {
+      "key": "Disable Visemes",
+      "value": "禁用口型"
+    },
+    {
+      "key": "Socket / Plug",
+      "value": "接口／插入端"
+    },
+    {
+      "key": "Warning: This action adds SEVERAL additional contacts per channel change. Use sparingly.",
+      "value": "警告：每次更改通道都会增加多个接触组件，请谨慎使用。"
+    },
+    {
+      "key": "Select an object with exactly one SPS socket or plug.",
+      "value": "请选择恰好包含一个 SPS 接口或插入端的对象。"
+    },
+    {
+      "key": "Change SPS Channels",
+      "value": "更改 SPS 通道"
+    },
+    {
+      "key": "Legacy Change SPS Tags",
+      "value": "旧版 SPS 标签更改"
+    },
+    {
+      "key": "While this action is active, ALL hand controls will be disabled. This may include face emotes, assets that use your hand pose to do certain things, and even the visible hand poses themselves.",
+      "value": "此动作生效时，所有手部控制都会被禁用，包括面部表情、依靠手势工作的道具，甚至可见的手部姿势。"
+    },
+    {
+      "key": "Disable Hand Controls",
+      "value": "禁用手部控制"
+    },
+    {
+      "key": "This will create a clip made up of one frame per child action. This is mostly useful for VRCFury Toggles with 'Use a Slider (Radial)' enabled, as you can put various presets in these slots and use the slider to select one of them.",
+      "value": "将每个子动作作为一帧，创建一个动画片段。主要用于启用径向滑条的 VRCFury 开关，可在各槽位放入不同预设，再用滑条选择。"
+    },
+    {
+      "key": "Flipbook Builder",
+      "value": "翻页动画构建"
+    },
+    {
+      "key": "Value",
+      "value": "数值"
+    },
+    {
+      "key": "Scale",
+      "value": "缩放"
+    },
+    {
+      "key": "Offset",
+      "value": "偏移"
+    },
+    {
+      "key": "Property",
+      "value": "属性"
+    },
+    {
+      "key": "Force type to Float",
+      "value": "强制类型为浮点数"
+    },
+    {
+      "key": "Force type to Color",
+      "value": "强制类型为颜色"
+    },
+    {
+      "key": "Force type to Vector",
+      "value": "强制类型为向量"
+    },
+    {
+      "key": "Force type to Texture Scale+Offset",
+      "value": "强制类型为纹理缩放与偏移"
+    },
+    {
+      "key": "Material Properties",
+      "value": "材质属性"
+    },
+    {
+      "key": "Mesh: ",
+      "value": "网格："
+    },
+    {
+      "key": "Material: ",
+      "value": "材质："
+    },
+    {
+      "key": "Animated",
+      "value": "动画控制"
+    },
+    {
+      "key": " (Scale+Offset)",
+      "value": "（缩放与偏移）"
+    },
+    {
+      "key": "Material Property",
+      "value": "材质属性"
+    },
+    {
+      "key": "Renderer",
+      "value": "蒙皮网格渲染器"
+    },
+    {
+      "key": "Select a renderer",
+      "value": "选择渲染器"
+    },
+    {
+      "key": "Slot",
+      "value": "槽位"
+    },
+    {
+      "key": "Material",
+      "value": "材质"
+    },
+    {
+      "key": "Material Swap",
+      "value": "替换材质"
+    },
+    {
+      "key": "Flip State (Deprecated)",
+      "value": "反转状态（已弃用）"
+    },
+    {
+      "key": "Object Toggle",
+      "value": "对象开关"
+    },
+    {
+      "key": "Frame Number",
+      "value": "帧编号"
+    },
+    {
+      "key": "Poiyomi Flipbook Frame",
+      "value": "Poiyomi 翻页动画帧"
+    },
+    {
+      "key": "Row (0-3)",
+      "value": "行（0–3）"
+    },
+    {
+      "key": "Column (0-3)",
+      "value": "列（0–3）"
+    },
+    {
+      "key": "Advanced UV Tile Options",
+      "value": "高级 UV 分块选项"
+    },
+    {
+      "key": "Use UV Tile Dissolve",
+      "value": "使用 UV 分块溶解"
+    },
+    {
+      "key": "Renamed Material",
+      "value": "重命名后的材质"
+    },
+    {
+      "key": "Material suffix when using poiyomi renamed properties",
+      "value": "使用 Poiyomi 重命名属性时的材质后缀"
+    },
+    {
+      "key": "Poiyomi UV Tile",
+      "value": "Poiyomi UV 分块"
+    },
+    {
+      "key": "Reset Physbone",
+      "value": "重置物理骨骼"
+    },
+    {
+      "key": "Object",
+      "value": "对象"
+    },
+    {
+      "key": "Slot Number",
+      "value": "槽位编号"
+    },
+    {
+      "key": "SCSS Shader Inventory",
+      "value": "SCSS 着色器物品栏"
+    },
+    {
+      "key": "Warning: This will cause the FX parameter to be 'animated', which means it cannot be used in a menu or otherwise controlled by VRChat.",
+      "value": "警告：这会使 FX 参数成为动画控制的参数，从而无法在菜单中使用，也无法再由 VRChat 控制。"
+    },
+    {
+      "key": "Set an FX Float",
+      "value": "设置 FX 浮点参数"
+    },
+    {
+      "key": "This will create an animation smoothly looping between two states. You can use this for a breathing cycle or any other type of smooth two-state loop.",
+      "value": "创建在两个状态之间平滑循环的动画，可用于呼吸或其他两状态循环效果。"
+    },
+    {
+      "key": "State A",
+      "value": "状态 A"
+    },
+    {
+      "key": "State B",
+      "value": "状态 B"
+    },
+    {
+      "key": "Loop time (seconds)",
+      "value": "循环时长（秒）"
+    },
+    {
+      "key": "Smooth Loop Builder (Breathing, etc)",
+      "value": "平滑循环（呼吸等）"
+    },
+    {
+      "key": "Enable SPS",
+      "value": "启用 SPS"
+    },
+    {
+      "key": "World Drop",
+      "value": "世界丢落"
+    },
+    {
+      "key": "Fully\n↓ Inserted",
+      "value": "完全\n← 插入"
+    },
+    {
+      "key": "Tip inside\n↓ 1 local-unit",
+      "value": "尖端进入\n← 1 个本地单位"
+    },
+    {
+      "key": "Tip\n↓ inside 1m",
+      "value": "尖端\n← 进入 1 米"
+    },
+    {
+      "key": "Tip at\n↓ Entrance",
+      "value": "尖端位于\n← 入口"
+    },
+    {
+      "key": "Tip 3 plug-lengths\naway ↓",
+      "value": "尖端距离\n3 倍插入端长度 →"
+    },
+    {
+      "key": "Tip 3 local-units\naway ↓",
+      "value": "尖端距离\n3 个本地单位 →"
+    },
+    {
+      "key": "Tip 3m\naway ↓",
+      "value": "尖端距离\n3 米 →"
+    },
+    {
+      "key": "Edit SPS Plug Entry Radius Range",
+      "value": "编辑 SPS 插入端入口半径范围"
+    },
+    {
+      "key": "Edit SPS Depth Range",
+      "value": "编辑 SPS 深度范围"
+    },
+    {
+      "key": "Usually you should use Local rather than Meters. Values in Meters stay fixed in world space and do not scale with the avatar.",
+      "value": "通常应使用“本地单位”，而非“米”。以米为单位的值固定在世界空间中，不随角色缩放。"
+    },
+    {
+      "key": "SPS Properties",
+      "value": "SPS 属性"
+    },
+    {
+      "key": "Add Action +",
+      "value": "添加动作 +"
+    },
+    {
+      "key": "This VRCFury component is not available in this type of project",
+      "value": "此 VRCFury 组件不适用于当前项目类型"
+    },
+    {
+      "key": "Failed to render editor (see unity console)",
+      "value": "编辑器界面绘制失败（请查看 Unity 控制台）"
+    },
+    {
+      "key": "This isn't a component?",
+      "value": "目标不是组件"
+    },
+    {
+      "key": "Unexpected type?",
+      "value": "遇到非预期的类型"
+    },
+    {
+      "key": "Legacy Multi-Component",
+      "value": "旧版多功能组件"
+    },
+    {
+      "key": "This VRCFury component is placed within an object that is tagged as EditorOnly or has a vrcfury 'Delete During Upload' component, and thus will not do anything!",
+      "value": "此 VRCFury 组件位于标记为 EditorOnly 的对象中，或位于带有“上传时删除”组件的对象内，因此不会生效！"
+    },
+    {
+      "key": "The VRCFury features in this prefab are overridden on this instance. Please revert them! If you apply, it may corrupt data in the changed features.",
+      "value": "此预制件实例中的 VRCFury 功能已被覆盖，请还原这些覆盖！应用覆盖可能损坏已更改功能的数据。"
+    },
+    {
+      "key": "Edit in Prefab",
+      "value": "在预制件中编辑"
+    },
+    {
+      "key": "List is null",
+      "value": "列表为空引用"
+    },
+    {
+      "key": "List is not an array",
+      "value": "目标属性不是数组"
+    },
+    {
+      "key": "Right click on the element you would like to remove",
+      "value": "请右键点击要移除的条目"
+    },
+    {
+      "key": "Ok",
+      "value": "确定"
+    },
+    {
+      "key": "🗙 Remove Item",
+      "value": "🗙 移除条目"
+    },
+    {
+      "key": "🡱 Move up",
+      "value": "🡱 上移"
+    },
+    {
+      "key": "🡳 Move down",
+      "value": "🡳 下移"
+    },
+    {
+      "key": "🡱🡱 Move to top",
+      "value": "🡱🡱 移到顶部"
+    },
+    {
+      "key": "🡳🡳 Move to bottom",
+      "value": "🡳🡳 移到底部"
+    },
+    {
+      "key": "This list is empty. Click + to add an entry.",
+      "value": "列表为空。点击 + 添加条目。"
+    },
+    {
+      "key": "Automatic (",
+      "value": "自动（"
+    },
+    {
+      "key": "Prop is null",
+      "value": "属性为空引用"
+    },
+    {
+      "key": "Debug Info",
+      "value": "调试信息"
+    },
+    {
+      "key": "Multiple SPS Plugs target the same renderer. This is probably a mistake. Maybe there was an extra created by accident?\n\n",
+      "value": "多个 SPS 插入端指向同一个渲染器，通常属于设置错误。请检查是否意外重复添加。\n\n"
+    },
+    {
+      "key": "VRCFury SPS Plug has 'Enable Deformation' checked, but no renderer was found.",
+      "value": "VRCFury SPS 插入端已勾选“启用形变”，但未找到渲染器。"
+    },
+    {
+      "key": "Depth",
+      "value": "深度"
+    },
+    {
+      "key": "Velocity",
+      "value": "速度"
+    },
+    {
+      "key": "Plug Length",
+      "value": "插入端长度"
+    },
+    {
+      "key": "Plug Radius",
+      "value": "插入端半径"
+    },
+    {
+      "key": "Plug Entry Radius",
+      "value": "插入端入口半径"
+    },
+    {
+      "key": "Interacting With Legacy",
+      "value": "正在与旧版交互"
+    },
+    {
+      "key": "Interacting With Others",
+      "value": "正在与其他玩家交互"
+    },
+    {
+      "key": "Socket Is Hole",
+      "value": "接口为孔型"
+    },
+    {
+      "key": "Meters",
+      "value": "米"
+    },
+    {
+      "key": "Local",
+      "value": "本地单位"
+    },
+    {
+      "key": "Plug Lengths",
+      "value": "插入端长度倍数"
+    },
+    {
+      "key": "Plug Is Legacy",
+      "value": "插入端为旧版"
+    },
+    {
+      "key": "Socket Is Legacy",
+      "value": "接口为旧版"
+    },
+    {
+      "key": "Plug is Other Player",
+      "value": "插入端属于其他玩家"
+    },
+    {
+      "key": "Socket is Other Player",
+      "value": "接口属于其他玩家"
+    },
+    {
+      "key": "Parameter",
+      "value": "参数"
+    },
+    {
+      "key": "Units",
+      "value": "单位"
+    },
+    {
+      "key": " (Self)",
+      "value": "（自身）"
+    },
+    {
+      "key": " (Others)",
+      "value": "（其他玩家）"
+    },
+    {
+      "key": "Final channel list:\n",
+      "value": "最终通道列表：\n"
+    },
+    {
+      "key": "none",
+      "value": "无"
+    },
+    {
+      "key": "Channels",
+      "value": "通道"
+    },
+    {
+      "key": "Filter which sockets this plug will target",
+      "value": "筛选此插入端可交互的接口"
+    },
+    {
+      "key": "Filter which plugs can target this socket",
+      "value": "筛选可与此接口交互的插入端"
+    },
+    {
+      "key": "Allow Self",
+      "value": "允许自身"
+    },
+    {
+      "key": "Allow Others",
+      "value": "允许其他玩家"
+    },
+    {
+      "key": "Include Public SPS Channel",
+      "value": "包含 SPS 公共通道"
+    },
+    {
+      "key": "Includes the public SPS channel for compatibility with most plugs and sockets.",
+      "value": "包含 SPS 公共通道，以兼容大多数插入端和接口。"
+    },
+    {
+      "key": "This plug does not include the public SPS channel, so it will not target most sockets!",
+      "value": "此插入端未包含 SPS 公共通道，因此无法与大多数接口交互！"
+    },
+    {
+      "key": "This socket does not have the public SPS channel, so most plugs will not target it.",
+      "value": "此接口未包含 SPS 公共通道，因此大多数插入端无法与其交互。"
+    },
+    {
+      "key": "Exclude sockets on own Hips",
+      "value": "排除自身 Hips 上的接口"
+    },
+    {
+      "key": "If this plug is on your hips, its public channel excludes sockets on your hips. Custom channels can still match them.",
+      "value": "如果此插入端位于 Hips 上，其公共通道会排除自身 Hips 上的接口。自定义通道仍可匹配这些接口。"
+    },
+    {
+      "key": "This avatar uses DexProtect. Plug may not scale properly when deforming. If affected, consider removing DexProtect.",
+      "value": "此角色使用了 DexProtect，形变时插入端可能无法正确缩放。如受影响，请考虑移除 DexProtect。"
+    },
+    {
+      "key": "This avatar uses D4rk Optimizer. Plug may break unexpectedly when deforming. If affected, consider removing D4rk Optimizer.",
+      "value": "此角色使用了 D4rk Optimizer，形变时插入端可能出现异常。如受影响，请考虑移除 D4rk Optimizer。"
+    },
+    {
+      "key": "WARNING: This renderer is rigged with bones, but you didn't put the SPS Plug inside a bone! When SPS is used with rigged meshes, you should put the SPS Plug inside the bone nearest the 'base'!",
+      "value": "警告：此渲染器已绑定骨骼，但 SPS 插入端没有放在骨骼内！对绑定骨骼的网格使用 SPS 时，应将插入端放在最接近其根部的骨骼内。"
+    },
+    {
+      "key": "This plug's renderer uses DPS or TPS materials. There is no reason to do this with SPS. Replace the material with a normal non-deforming shader.",
+      "value": "此插入端的渲染器使用了 DPS 或 TPS 材质。SPS 无需这些材质，请替换为普通的非形变着色器。"
+    },
+    {
+      "key": "Size and Masking",
+      "value": "尺寸与遮罩"
+    },
+    {
+      "key": "Automatically find mesh",
+      "value": "自动查找网格"
+    },
+    {
+      "key": "Detect length from mesh",
+      "value": "从网格检测长度"
+    },
+    {
+      "key": "Length",
+      "value": "长度"
+    },
+    {
+      "key": "Detect radius from mesh",
+      "value": "从网格检测半径"
+    },
+    {
+      "key": "Automatically mask using bone weights",
+      "value": "根据骨骼权重自动生成遮罩"
+    },
+    {
+      "key": "Optional additional texture mask (white = 'do not deform or use in length calculations')",
+      "value": "额外纹理遮罩（可选；白色表示不形变，也不参与长度计算）"
+    },
+    {
+      "key": "Attached renderers: ",
+      "value": "关联的渲染器："
+    },
+    {
+      "key": "Patching Material Slots:",
+      "value": "处理以下材质槽位："
+    },
+    {
+      "key": "Unset",
+      "value": "未设置"
+    },
+    {
+      "key": "Enable Deformation",
+      "value": "启用形变"
+    },
+    {
+      "key": "Deformation (Super Plug Shader)",
+      "value": "形变（Super Plug Shader）"
+    },
+    {
+      "key": "This plug will deform toward sockets\nCheck out vrcfury.com/sps for details",
+      "value": "此插入端会朝接口方向形变\n详情见 vrcfury.com/sps"
+    },
+    {
+      "key": "Auto-Rig (If mesh is static, add bones and a physbone to make it sway)",
+      "value": "自动绑定骨骼（静态网格会添加骨骼和物理骨骼，使其能够摆动）"
+    },
+    {
+      "key": "Post-Bake Actions",
+      "value": "烘焙后动作"
+    },
+    {
+      "key": "SPS Plug meshes should be posed 'straight' so that length and pose calculations can be performed. If you'd like it to appear in a different way by default in game, you can add actions here which will be applied to the avatar after the calculations are finished.",
+      "value": "SPS 插入端网格应保持伸直，以便计算长度和姿态。如需在游戏中默认呈现其他姿态，可在此添加动作，在计算完成后应用到角色。"
+    },
+    {
+      "key": "Animated Toggle",
+      "value": "动画控制开关"
+    },
+    {
+      "key": "You can ANIMATE this box on and off with an animation clip, in order to turn deformation off during certain situations.",
+      "value": "可用动画片段控制此选项，在特定情况下关闭形变。"
+    },
+    {
+      "key": "Animated blendshapes to keep while deforming",
+      "value": "形变时仍允许动画控制的形态键"
+    },
+    {
+      "key": "Usually, SPS penetrators revert blendshapes back to exactly the way they look in the editor while deforming toward a socket. You can specify up to 16 blendshapes in this list which can still be animated while deforming.",
+      "value": "SPS 插入端朝接口形变时，通常会将形态键恢复为编辑器中的外观。此列表最多可指定 16 个形态键，使其在形变时仍可被动画控制。"
+    },
+    {
+      "key": "Allow Hole Overrun",
+      "value": "允许略微超出孔口"
+    },
+    {
+      "key": "This allows the plug to extend very slightly past holes to improve collapse visuals. Beware that disabling this may cause plug to appear to 'fold in' near holes like a map, which may be strange.",
+      "value": "允许插入端略微超出孔口，以改善收缩效果。禁用后，插入端可能在孔口附近像折叠地图一样向内折叠，产生异常外观。"
+    },
+    {
+      "key": "Compatibility with DPS/TPS/SPS1/SPS2 sockets",
+      "value": "兼容 DPS/TPS/SPS1/SPS2 接口"
+    },
+    {
+      "key": "Legacy socket compatibility is disabled in SPS Options. This plug will not target legacy sockets. Enable 'DPS/TPS/SPS1/SPS2 Sockets' under Legacy Compatibility to use them.",
+      "value": "SPS 选项中已禁用旧版接口兼容，因此此插入端无法与旧版接口交互。需要时请在“旧版兼容”中启用“DPS/TPS/SPS1/SPS2 接口”。"
+    },
+    {
+      "key": "Enable Depth Animations",
+      "value": "启用深度动画"
+    },
+    {
+      "key": "Allows you to animate anything based on the proximity of a socket near this plug",
+      "value": "根据接口与此插入端的距离控制动画。"
+    },
+    {
+      "key": "Depth Animations",
+      "value": "深度动画"
+    },
+    {
+      "key": "ID sent to OGB",
+      "value": "发送给 OGB 的 ID"
+    },
+    {
+      "key": "Deprecated Options",
+      "value": "已弃用选项"
+    },
+    {
+      "key": "Position (Deprecated, move the object instead)",
+      "value": "位置（已弃用，请直接移动对象）"
+    },
+    {
+      "key": "Rotation (Deprecated, move the object instead)",
+      "value": "旋转（已弃用，请直接旋转对象）"
+    },
+    {
+      "key": "Length and radius are in world-space meters (Deprecated, specifying these in world units breaks if you resize the plug in the editor)",
+      "value": "长度和半径使用世界空间中的米（已弃用；在编辑器中缩放插入端会导致设置失效）"
+    },
+    {
+      "key": "When checked, manually entered length and radius ignore the plug object's scale at build time. When unchecked, they use local units and are multiplied by the object's scale. Automatically detected dimensions are unaffected.",
+      "value": "勾选后，手动输入的长度与半径会忽略构建时插入端对象的缩放。取消勾选则使用本地单位，并乘以对象缩放。自动检测的尺寸不受影响。"
+    },
+    {
+      "key": "Use legacy renderer search (Deprecated)",
+      "value": "使用旧版渲染器搜索（已弃用）"
+    },
+    {
+      "key": "Enable OGB Haptics",
+      "value": "启用 OGB 触觉反馈"
+    },
+    {
+      "key": "OGB Haptics",
+      "value": "OGB 触觉反馈"
+    },
+    {
+      "key": "Haptics have been disabled in the VRCFury unity settings",
+      "value": "VRCFury 的 Unity 设置中已禁用触觉反馈"
+    },
+    {
+      "key": "Your avatar still contains legacy DPS tip lights! Run Tools > VRCFury > SPS > Upgrade to SPS to finish upgrading this avatar to SPS.\n\n",
+      "value": "角色中仍有旧版 DPS 尖端灯光！请运行 Tools > VRCFury > SPS > Upgrade to SPS，完成此角色的 SPS 升级。\n\n"
+    },
+    {
+      "key": "This avatar still contains legacy DPS orifice lights! Run Tools > VRCFury > SPS > Upgrade to SPS to finish upgrading this avatar to SPS.\n\n",
+      "value": "角色中仍有旧版 DPS 接口灯光！请运行 Tools > VRCFury > SPS > Upgrade to SPS，完成此角色的 SPS 升级。\n\n"
+    },
+    {
+      "key": "This SPS component is used within a Constraint! AVOID using SPS within constraints if at all possible. ",
+      "value": "此 SPS 组件位于约束内部！请尽量避免在约束中使用 SPS。"
+    },
+    {
+      "key": "Sharing one socket in multiple locations will make your avatar LESS performant, not more! ",
+      "value": "在多个位置共用一个接口会降低角色性能，而非提高性能！"
+    },
+    {
+      "key": " Check out https://vrcfury.com/sps/constraints for details.",
+      "value": " 详情见 https://vrcfury.com/sps/constraints。"
+    },
+    {
+      "key": "You must enable 'Settings > Avatar > Avatar Interactions > Avatar Self Interact' in the VRChat settings for SPS to work properly.",
+      "value": "要正常使用 SPS，请在 VRChat 设置中启用 Settings > Avatar > Avatar Interactions > Avatar Self Interact（角色自身交互）。"
+    },
+    {
+      "key": "You do not have 'Settings > Avatar > Avatar Interactions > Avatar Allowed to Interact' set to 'Everyone' in the VRChat settings. This may prevent SPS from working properly with other players.",
+      "value": "VRChat 中的 Settings > Avatar > Avatar Interactions > Avatar Allowed to Interact 未设为 Everyone，这可能导致 SPS 无法与其他玩家正常交互。"
+    },
+    {
+      "key": "Your VRChat 'Pixel Light Count' setting is not set to HIGH. This may cause SPS to work improperly in some worlds. Please set 'Settings > Graphics > Advanced > Pixel Light Count' to 'High' in the VRChat settings.",
+      "value": "VRChat 的 Pixel Light Count 未设为 High，可能导致部分世界中的 SPS 异常。请在 Settings > Graphics > Advanced > Pixel Light Count 中设为 High。"
+    },
+    {
+      "key": "SPS Plug",
+      "value": "SPS 插入端"
+    },
+    {
+      "key": "SPS guided path stops should not contain their own sockets. Invalid stop: ",
+      "value": "SPS 引导路径的节点不应包含独立接口。无效节点："
+    },
+    {
+      "key": "SPS3 sender exceeds the 16 contact tag limit.",
+      "value": "SPS3 发送器超出 16 个接触标签的限制。"
+    },
+    {
+      "key": "Root",
+      "value": "根节点"
+    },
+    {
+      "key": "Remove",
+      "value": "移除"
+    },
+    {
+      "key": "Add Stop to Path",
+      "value": "向路径添加节点"
+    },
+    {
+      "key": "SPS3 plugs will deform toward this socket\nCheck out vrcfury.com/sps for details",
+      "value": "SPS3 插入端会朝此接口方向形变\n详情见 vrcfury.com/sps"
+    },
+    {
+      "key": "Auto",
+      "value": "自动"
+    },
+    {
+      "key": "Hole",
+      "value": "孔型"
+    },
+    {
+      "key": "Ring",
+      "value": "环型"
+    },
+    {
+      "key": "One-Way Ring (Uncommon)",
+      "value": "单向环型（少用）"
+    },
+    {
+      "key": "Mode",
+      "value": "模式"
+    },
+    {
+      "key": "'Auto' will set to Hole if attached to hips or head bone.\n'Rings' can be entered from either side using SPS, but TPS/DPS will only enter one side.\n'One-Way Rings' can only be entered from one side.",
+      "value": "“自动”在连接到 Hips 或头骨骼时使用孔型。\nSPS 可从环型的两侧进入，TPS/DPS 只能从一侧进入。\n单向环型只允许从一侧进入。"
+    },
+    {
+      "key": "Radius Offset",
+      "value": "半径偏移"
+    },
+    {
+      "key": "Offsets SPS targeting in the socket up direction by the resolver radius. Legacy lights are also moved upward slightly for TPS/DPS compatibility.",
+      "value": "按解析器半径沿接口的上方向偏移 SPS 目标位置。旧版灯光也会略微上移，以兼容 TPS/DPS。"
+    },
+    {
+      "key": "Guided Path",
+      "value": "引导路径"
+    },
+    {
+      "key": "If provided, the plug will be guided through these transforms after passing through the socket. If the socket is a hole, the collapse will occur at the last transform in the path.",
+      "value": "设置后，插入端经过接口时会沿这些变换节点移动。如果接口为孔型，将在路径最后一个节点处发生收缩。"
+    },
+    {
+      "key": "DPS/TPS/SPS1/SPS2 plugs will deform toward this socket\nwhen you have Legacy enabled in the SPS menu in-game",
+      "value": "在游戏中的 SPS 菜单启用旧版模式后，\nDPS/TPS/SPS1/SPS2 插入端会朝此接口形变。"
+    },
+    {
+      "key": "Legacy plug compatibility is disabled in SPS Options. These settings will have no effect. You can enable 'DPS/TPS/SPS1/SPS2 Plugs' in the SPS Options component if you want to remain compatible with them.",
+      "value": "SPS 选项中已禁用旧版插入端兼容，这些设置不会生效。如需兼容，请在 SPS 选项组件中启用“DPS/TPS/SPS1/SPS2 插入端”。"
+    },
+    {
+      "key": "You can disable legacy plug compatibility and remove its lights by adding an SPS Options component on the avatar root.",
+      "value": "在角色根对象添加 SPS 选项组件，即可关闭旧版插入端兼容并移除对应灯光。"
+    },
+    {
+      "key": "Override Legacy Type",
+      "value": "覆盖旧版类型"
+    },
+    {
+      "key": "Legacy Type",
+      "value": "旧版类型"
+    },
+    {
+      "key": "Override Legacy Offset",
+      "value": "覆盖旧版偏移"
+    },
+    {
+      "key": "Legacy Entry Offset",
+      "value": "旧版入口偏移"
+    },
+    {
+      "key": "Enable Menu Toggle",
+      "value": "启用菜单开关"
+    },
+    {
+      "key": "Menu Toggle",
+      "value": "菜单开关"
+    },
+    {
+      "key": "A menu item will be created for this socket",
+      "value": "为此接口创建菜单项"
+    },
+    {
+      "key": "Name in menu",
+      "value": "菜单中的名称"
+    },
+    {
+      "key": "Override the menu icon used for this socket's individual toggle. Looking to move or change the icon of the main SPS menu? Add a VRCFury 'SPS Options' component to the avatar root.",
+      "value": "覆盖此接口独立开关的菜单图标。如需移动 SPS 主菜单或更改其图标，请在角色根对象添加“SPS 选项”组件。"
+    },
+    {
+      "key": "Include in Auto selection?",
+      "value": "参与自动选择？"
+    },
+    {
+      "key": "If checked, this socket will be eligible to be automatically enabled during Auto Mode.",
+      "value": "勾选后，自动模式可以自动启用此接口。"
+    },
+    {
+      "key": "Additional Actions While Menu Item is Active",
+      "value": "菜单项激活时的额外动作"
+    },
+    {
+      "key": "These actions run while the menu item is active, even if the socket object is inactive.",
+      "value": "只要菜单项处于激活状态，就执行这些动作，即使接口对象本身未激活。"
+    },
+    {
+      "key": "Allows you to animate anything based on the proximity of a plug near this socket",
+      "value": "根据插入端与此接口的距离控制动画。"
+    },
+    {
+      "key": "Enable Plug Entry Radius Animations",
+      "value": "启用插入端入口半径动画"
+    },
+    {
+      "key": "Animate based on the plug's radius at the socket entrance",
+      "value": "根据接口入口处的插入端半径控制动画。"
+    },
+    {
+      "key": "Plug Entry Radius Animations",
+      "value": "插入端入口半径动画"
+    },
+    {
+      "key": "Plug Length (meters) (Deprecated, use Inject Parameters on Full Controller)",
+      "value": "插入端长度（米；已弃用，请使用完整控制器的“注入参数”）"
+    },
+    {
+      "key": "Plug Radius (meters) (Deprecated, use Inject Parameters on Full Controller)",
+      "value": "插入端半径（米；已弃用，请使用完整控制器的“注入参数”）"
+    },
+    {
+      "key": "Plug entry radius",
+      "value": "插入端入口半径"
+    },
+    {
+      "key": "Activation distance",
+      "value": "激活距离"
+    },
+    {
+      "key": "The animation is off at the minimum radius and fully on at the maximum radius.",
+      "value": "达到最小半径时动画完全关闭，达到最大半径时动画完全开启。"
+    },
+    {
+      "key": "Animation will begin at the far distance, and 'max' at the near distance. If you provide a static action or clip, the animation will be fully 'off' at the far distance, and fully 'on' at the near distance.",
+      "value": "从较远距离开始播放动画，在较近距离达到最大值。静态动作或动画片段会在较远距离完全关闭，在较近距离完全开启。"
+    },
+    {
+      "key": "Range Units",
+      "value": "范围单位"
+    },
+    {
+      "key": "Allow Hole",
+      "value": "允许孔型"
+    },
+    {
+      "key": "Allow Ring",
+      "value": "允许环型"
+    },
+    {
+      "key": "Smoothing Seconds",
+      "value": "平滑时间（秒）"
+    },
+    {
+      "key": "It will take approximately this many seconds to smoothly blend to the target value. Beware that this smoothing is based on framerate, so higher FPS will result in faster smoothing.",
+      "value": "平滑混合到目标值大致需要的秒数。此平滑依赖帧率，帧率越高，平滑越快。"
+    },
+    {
+      "key": "Reverse clip (Deprecated, DO NOT USE)",
+      "value": "反向播放片段（已弃用，请勿使用）"
+    },
+    {
+      "key": "Local plug radius for zero / full weight:",
+      "value": "零权重／满权重对应的本地插入端半径："
+    },
+    {
+      "key": "Weight by local plug radius",
+      "value": "按本地插入端半径调整权重"
+    },
+    {
+      "key": "Scales the animation weight using the plug's average radius in socket-local units. Full weight is reached at the configured radius.",
+      "value": "使用插入端在接口本地单位中的平均半径缩放动画权重。达到设定半径时使用完整权重。"
+    },
+    {
+      "key": "Transform SPS Path Stop",
+      "value": "变换 SPS 路径节点"
+    },
+    {
+      "key": "SPS Socket",
+      "value": "SPS 接口"
+    },
+    {
+      "key": " (Deformation Disabled)\nThis is an Android/iOS project!",
+      "value": "（形变已禁用）\n当前为 Android/iOS 项目！"
+    },
+    {
+      "key": " (Ring)\nSPS3 plug enters either direction",
+      "value": "（环型）\nSPS3 插入端可从任意方向进入"
+    },
+    {
+      "key": " (Deformation disabled)",
+      "value": "（形变已禁用）"
+    },
+    {
+      "key": "SPS Socket Override",
+      "value": "SPS 接口覆盖"
+    },
+    {
+      "key": "Move SPS Legacy Light Offset",
+      "value": "移动 SPS 旧版灯光偏移"
+    },
+    {
+      "key": "Face Tracking",
+      "value": "面部追踪"
+    },
+    {
+      "key": "Face Tracking Meshes",
+      "value": "面部追踪网格"
+    },
+    {
+      "key": "Viseme Dampening",
+      "value": "口型衰减"
+    },
+    {
+      "key": "Viseme Dampen",
+      "value": "口型衰减模式"
+    },
+    {
+      "key": "None: No dampening. Dampen Tracking: Active visemes dampen mouth-related tracking. Dampen Visemes: Tracking dampens visemes.",
+      "value": "无：不衰减。衰减追踪：口型激活时减弱嘴部追踪。衰减口型：追踪生效时减弱口型。"
+    },
+    {
+      "key": "Dampen Amount",
+      "value": "衰减强度"
+    },
+    {
+      "key": "Amount (0-1) for the selected dampening mode.",
+      "value": "所选衰减模式的强度（0–1）。"
+    },
+    {
+      "key": "Face Tracking Blendshape Sets",
+      "value": "面部追踪形态键集合"
+    },
+    {
+      "key": "Face Tracking Parameter Behaviours",
+      "value": "面部追踪参数行为"
+    },
+    {
+      "key": "Copy",
+      "value": "复制"
+    },
+    {
+      "key": "Paste Parameter Behaviors",
+      "value": "粘贴参数行为"
+    },
+    {
+      "key": "Paste Blendshapes Sets",
+      "value": "粘贴形态键集合"
+    },
+    {
+      "key": "Copy All",
+      "value": "复制全部"
+    },
+    {
+      "key": "Copy Selected",
+      "value": "复制所选"
+    },
+    {
+      "key": "Paste Face Tracking",
+      "value": "粘贴面部追踪"
+    },
+    {
+      "key": "OK",
+      "value": "确定"
+    },
+    {
+      "key": "Paste",
+      "value": "粘贴"
+    },
+    {
+      "key": "Selected Blendshapes Set",
+      "value": "选中的形态键集合"
+    },
+    {
+      "key": "Add a blendshape set",
+      "value": "添加形态键集合"
+    },
+    {
+      "key": "Remove the selected blendshape set",
+      "value": "移除选中的形态键集合"
+    },
+    {
+      "key": "Move Up",
+      "value": "上移"
+    },
+    {
+      "key": "Move Down",
+      "value": "下移"
+    },
+    {
+      "key": "No blendshape sets. Click + or Paste to add one.",
+      "value": "没有形态键集合。点击 + 或“粘贴”添加。"
+    },
+    {
+      "key": "unnamed",
+      "value": "未命名"
+    },
+    {
+      "key": "Add Blendshapes Set",
+      "value": "添加形态键集合"
+    },
+    {
+      "key": "Remove Blendshapes Set",
+      "value": "移除形态键集合"
+    },
+    {
+      "key": "Move Blendshapes Set",
+      "value": "移动形态键集合"
+    },
+    {
+      "key": "Object Reference",
+      "value": "对象引用"
+    },
+    {
+      "key": "Object Path",
+      "value": "对象路径"
+    },
+    {
+      "key": "Offset Path",
+      "value": "偏移路径"
+    },
+    {
+      "key": "Object paths are uncommon. Use an avatar-relative path only when referencing an object outside the prefab you're making. Otherwise, use an object reference.",
+      "value": "通常无需使用对象路径。仅当引用正在制作的预制件外部对象时，才使用相对于角色的路径；其他情况请使用对象引用。"
+    },
+    {
+      "key": "The selected object is an avatar bone. Use Avatar Bone mode so addon prefabs can work on different avatars.",
+      "value": "所选对象是角色骨骼。请使用“角色骨骼”模式，让附加预制件能适用于不同角色。"
+    },
+    {
+      "key": "Warning",
+      "value": "警告"
+    },
+    {
+      "key": "Yes, remove this component",
+      "value": "是，移除此组件"
+    },
+    {
+      "key": "Cancel",
+      "value": "取消"
+    },
+    {
+      "key": "Global Collider",
+      "value": "全局碰撞体"
+    },
+    {
+      "key": "Root Transform Override",
+      "value": "根变换覆盖"
+    },
+    {
+      "key": "Desktop Only",
+      "value": "仅桌面端"
+    },
+    {
+      "key": "Quest+Android+iOS Only",
+      "value": "仅 Quest／Android／iOS"
+    },
+    {
+      "key": "Failed to find game object",
+      "value": "未找到游戏对象"
+    },
+    {
+      "key": "VRCFury doesn't have code for this feature. Is your VRCFury up to date?",
+      "value": "VRCFury 未包含此功能的代码。请检查是否已更新 VRCFury。"
+    },
+    {
+      "key": "This component is not available in your project type, and will be ignored.",
+      "value": "此组件不适用于当前项目类型，将被忽略。"
+    },
+    {
+      "key": "Failed to find Editor method",
+      "value": "未找到编辑器方法"
+    },
+    {
+      "key": "Editor threw an exception, check the unity console",
+      "value": "编辑器发生异常，请查看 Unity 控制台"
+    },
+    {
+      "key": "VRCFury was requested to use a feature that it didn't have code for. Is your VRCFury up to date? If you are still receiving this after updating, you may need to re-import the prop package which caused this issue.",
+      "value": "VRCFury 被要求使用一个未包含实现代码的功能。请先更新 VRCFury；如果问题依旧，可能需要重新导入引发问题的道具包。"
+    },
+    {
+      "key": "Field on this object to inject into",
+      "value": "此对象上需要注入的字段"
+    },
+    {
+      "key": "Component source",
+      "value": "组件来源"
+    },
+    {
+      "key": "UdonDI Registered Components Only",
+      "value": "仅 UdonDI 注册的组件"
+    },
+    {
+      "key": "All Components of Type in Scene",
+      "value": "场景中所有同类型组件"
+    },
+    {
+      "key": "ID of registered component (may be empty)",
+      "value": "已注册组件的 ID（可留空）"
+    },
+    {
+      "key": "The udon component on this object will be stored, and can be used in UdonDI - Inject Field components on other objects.",
+      "value": "注册此对象上的 Udon 组件，供其他对象的 UdonDI 注入字段组件引用。"
+    },
+    {
+      "key": "Registered ID (Leave empty you only plan on having one!)",
+      "value": "注册 ID（仅计划使用一个时可留空）"
+    },
+    {
+      "key": "Yes",
+      "value": "是"
+    },
+    {
+      "key": "Off",
+      "value": "关闭"
+    },
+    {
+      "key": "On",
+      "value": "开启"
+    },
+    {
+      "key": "Customize transition time",
+      "value": "自定义过渡时间"
+    },
+    {
+      "key": "Add 'Gesture Lock' toggle to menu",
+      "value": "向菜单添加“手势锁定”开关"
+    },
+    {
+      "key": "Enable exclusive tag",
+      "value": "启用互斥标签"
+    },
+    {
+      "key": "Use gesture weight (fist only)",
+      "value": "使用手势权重（仅握拳）"
+    },
+    {
+      "key": "Custom transition time (seconds)",
+      "value": "自定义过渡时间（秒）"
+    },
+    {
+      "key": "Lock menu item path",
+      "value": "锁定开关的菜单路径"
+    },
+    {
+      "key": "Exclusive Tag",
+      "value": "互斥标签"
+    },
+    {
+      "key": "File",
+      "value": "文件"
+    },
+    {
+      "key": "Type",
+      "value": "类型"
+    },
+    {
+      "key": "Prefix",
+      "value": "前缀"
+    },
+    {
+      "key": "If animated path has this prefix:",
+      "value": "动画路径具有此前缀时："
+    },
+    {
+      "key": "Then:",
+      "value": "执行："
+    },
+    {
+      "key": "Rewrite the prefix to",
+      "value": "将前缀重写为"
+    },
+    {
+      "key": "Delete it",
+      "value": "删除此绑定"
+    },
+    {
+      "key": "No more parameters found",
+      "value": "未找到更多参数"
+    },
+    {
+      "key": "Duration (sec)",
+      "value": "时长（秒）"
+    },
+    {
+      "key": "Supported Range",
+      "value": "支持范围"
+    },
+    {
+      "key": "Zero To Infinity",
+      "value": "0 至正无穷"
+    },
+    {
+      "key": "0 to Infinity (No Jitter)",
+      "value": "0 至正无穷（无抖动）"
+    },
+    {
+      "key": "Neg One To One",
+      "value": "-1 至 1"
+    },
+    {
+      "key": "-1 to 1 (Insignificant Jitter)",
+      "value": "-1 至 1（极轻微抖动）"
+    },
+    {
+      "key": "Neg 10k To 10k",
+      "value": "-10,000 至 10,000"
+    },
+    {
+      "key": "-10,000 to 10,000 (Minor Jitter)",
+      "value": "-10,000 至 10,000（轻微抖动）"
+    },
+    {
+      "key": "Source Object",
+      "value": "来源对象"
+    },
+    {
+      "key": "This object doesn't contain any injectable parameters",
+      "value": "此对象没有可注入的参数"
+    },
+    {
+      "key": "Source Param",
+      "value": "来源参数"
+    },
+    {
+      "key": "Target Param",
+      "value": "目标参数"
+    },
+    {
+      "key": "Touch Sender",
+      "value": "触碰发送器"
+    },
+    {
+      "key": "SPS Touch Zone",
+      "value": "SPS 触碰区域"
+    },
+    {
+      "key": "This will add an extra SPS Touch Zone (for purposes unrelated to Plugs / Sockets), which will activate OGB haptics when touched. Haptic level will increase to 100% at the center of the sphere. This touch zone can be activated by Hands, Fingers, Feet, SPS Plugs, VRCFury Touch Senders, and Heads (other players only).",
+      "value": "添加额外的 SPS 触碰区域（用于插入端／接口以外的用途），触碰时激活 OGB 触觉反馈，球体中心处达到 100% 强度。手掌、手指、脚、SPS 插入端、VRCFury 触碰发送器，以及其他玩家的头部均可触发。"
+    },
+    {
+      "key": "This will add an extra contact which can be used to trigger SPS/VRCFury Haptics. Note: This is NOT NEEDED if this area contains a VRCFury Global Collider (which can already do the same). This is essentially the same as adding a VRChat contact sender with the 'Finger' tag.",
+      "value": "添加额外的接触组件，用于触发 SPS/VRCFury 触觉反馈。如果此处已有 VRCFury 全局碰撞体，则无需添加；两者已有相同的触发功能。这相当于添加带 Finger 标签的 VRChat 接触发送器。"
+    },
+    {
+      "key": "This will add a collider which can be used to interact with other player's physbones and trigger haptics.\n\nNote: This steals one of the colliders from your avatar's fingers. If you don't need to interact with physbones, you can use a VRCFury Touch Sender instead, which can only trigger haptics and does not steal a finger.",
+      "value": "添加可与其他玩家的物理骨骼交互并触发触觉反馈的碰撞体。\n\n注意：此功能会占用角色的一个手指碰撞体。如果只需触觉反馈、不需要物理骨骼交互，可改用 VRCFury 触碰发送器，避免占用手指。"
+    },
+    {
+      "key": "If you're adding an accessory to the avatar's face, use Blendshape Link instead. Do NOT add face tracking for the accessory in this section.",
+      "value": "给角色面部添加配饰时，请使用“形态键联动”，不要在此为配饰添加面部追踪。"
+    },
+    {
+      "key": "This is where the menu will be merged into the avatar's existing menu. If the box is empty, it will be merged into the root of the avatar's menu. If you put (for example) 'Clothes', then the menu file will be placed within a submenu called 'Clothes'.",
+      "value": "指定此菜单合并到角色现有菜单中的位置。留空时合并到菜单根目录；例如填写 Clothes，会将菜单放入名为 Clothes 的子菜单。"
+    },
+    {
+      "key": "This object is an avatar TEST COPY. Avatar preprocessors have already run on this object. Do not upload test copies, they are intended for temporary in-editor testing only. Attempting to upload this avatar may result in breakage, as all preprocessors will be run again. Any changes made to this copy will be lost.",
+      "value": "此对象是角色测试副本，已经运行过角色预处理器。请勿上传：测试副本仅用于编辑器内的临时检查，再次上传会重复运行预处理器，可能导致异常。对此副本的修改将丢失。"
+    },
+    {
+      "key": "The given target field on an udon behaviour on this object will be automatically set during the upload to matching components in the scene.",
+      "value": "上传时，将此对象 Udon 行为的指定目标字段自动设置为场景中匹配的组件。"
+    },
+    {
+      "key": "Plug",
+      "value": "插入端"
+    },
+    {
+      "key": "Socket",
+      "value": "接口"
+    },
+    {
+      "key": "From",
+      "value": "来源"
+    },
+    {
+      "key": "To",
+      "value": "目标"
+    },
+    {
+      "key": "Name",
+      "value": "名称"
+    },
+    {
+      "key": "Path",
+      "value": "路径"
+    },
+    {
+      "key": "Position",
+      "value": "位置"
+    },
+    {
+      "key": "Enable",
+      "value": "启用"
+    },
+    {
+      "key": "Enabled",
+      "value": "已启用"
+    },
+    {
+      "key": "Disabled",
+      "value": "已禁用"
+    },
+    {
+      "key": "None",
+      "value": "无"
+    },
+    {
+      "key": "Default",
+      "value": "默认"
+    },
+    {
+      "key": "All Renderers",
+      "value": "所有渲染器"
+    },
+    {
+      "key": "All Meshes",
+      "value": "所有网格"
+    },
+    {
+      "key": "Affect All Meshes",
+      "value": "影响所有网格"
+    },
+    {
+      "key": "Blend Shape",
+      "value": "形态键"
+    },
+    {
+      "key": "Base Obj",
+      "value": "基础网格对象"
+    },
+    {
+      "key": "Name On Base",
+      "value": "基础网格上的名称"
+    },
+    {
+      "key": "Name On Linked",
+      "value": "联动网格上的名称"
+    },
+    {
+      "key": "Add",
+      "value": "添加"
+    },
+    {
+      "key": "Delete",
+      "value": "删除"
+    },
+    {
+      "key": "Reset",
+      "value": "重置"
+    },
+    {
+      "key": "Close",
+      "value": "关闭"
+    },
+    {
+      "key": "Apply",
+      "value": "应用"
+    },
+    {
+      "key": "Copy to clipboard",
+      "value": "复制到剪贴板"
+    },
+    {
+      "key": "Select All",
+      "value": "全选"
+    },
+    {
+      "key": "Unselect All",
+      "value": "取消全选"
+    },
+    {
+      "key": "Update VRCFury",
+      "value": "更新 VRCFury"
+    },
+    {
+      "key": "Upgrade to SPS",
+      "value": "升级为 SPS"
+    },
+    {
+      "key": "Remove VRCFury",
+      "value": "移除 VRCFury"
+    },
+    {
+      "key": "Help",
+      "value": "帮助"
+    },
+    {
+      "key": "Documentation",
+      "value": "使用文档"
+    },
+    {
+      "key": "Debug",
+      "value": "调试"
+    },
+    {
+      "key": "Settings",
+      "value": "设置"
+    },
+    {
+      "key": "Utilities",
+      "value": "实用工具"
+    }
+  ],
+  "titles": [
+    {
+      "key": "Advanced Collider",
+      "value": "高级碰撞体 (Advanced Collider)"
+    },
+    {
+      "key": "Anchor Override Fix",
+      "value": "光照锚点修复 (Anchor Override Fix)"
+    },
+    {
+      "key": "Apply During Upload",
+      "value": "上传时应用 (Apply During Upload)"
+    },
+    {
+      "key": "Armature Link",
+      "value": "骨架联动 (Armature Link)"
+    },
+    {
+      "key": "Avatar Scale",
+      "value": "角色缩放 (Avatar Scale)"
+    },
+    {
+      "key": "BlendShape Link",
+      "value": "形态键联动 (BlendShape Link)"
+    },
+    {
+      "key": "Blendshape Optimizer",
+      "value": "形态键优化 (Blendshape Optimizer)"
+    },
+    {
+      "key": "Blink Controller",
+      "value": "眨眼控制器 (Blink Controller)"
+    },
+    {
+      "key": "Bone Constraint",
+      "value": "骨骼约束 (Bone Constraint)"
+    },
+    {
+      "key": "Bounding Box Fix",
+      "value": "包围盒修复 (Bounding Box Fix)"
+    },
+    {
+      "key": "CS Retarget",
+      "value": "约束重定向 (CS Retarget)"
+    },
+    {
+      "key": "Cross Eye Fix",
+      "value": "斗鸡眼修复 (Cross Eye Fix)"
+    },
+    {
+      "key": "Delete During Upload",
+      "value": "上传时删除 (Delete During Upload)"
+    },
+    {
+      "key": "Descriptor Debugger",
+      "value": "描述组件调试器 (Descriptor Debugger)"
+    },
+    {
+      "key": "Fix Write Defaults",
+      "value": "修复 Write Defaults (Fix Write Defaults)"
+    },
+    {
+      "key": "Full Controller",
+      "value": "完整控制器 (Full Controller)"
+    },
+    {
+      "key": "Gestures",
+      "value": "手势 (Gestures)"
+    },
+    {
+      "key": "Gizmo",
+      "value": "辅助图示 (Gizmo)"
+    },
+    {
+      "key": "HC Retarget",
+      "value": "头部裁剪重定向 (HC Retarget)"
+    },
+    {
+      "key": "Direct Tree Optimizer",
+      "value": "直接混合树优化 (Direct Tree Optimizer)"
+    },
+    {
+      "key": "MMD Compatibility",
+      "value": "MMD 兼容 (MMD Compatibility)"
+    },
+    {
+      "key": "Move or Rename Menu Item",
+      "value": "移动或重命名菜单项 (Move or Rename Menu Item)"
+    },
+    {
+      "key": "Haptic Component Auto-Adder",
+      "value": "触觉组件自动添加 (Haptic Component Auto-Adder)"
+    },
+    {
+      "key": "Override Menu Settings",
+      "value": "覆盖菜单设置 (Override Menu Settings)"
+    },
+    {
+      "key": "Remove Built-in Blinking",
+      "value": "移除内置眨眼 (Remove Built-in Blinking)"
+    },
+    {
+      "key": "Remove Built-in Hand Gestures",
+      "value": "移除内置手势 (Remove Built-in Hand Gestures)"
+    },
+    {
+      "key": "Reorder Menu Item",
+      "value": "调整菜单项顺序 (Reorder Menu Item)"
+    },
+    {
+      "key": "Security Pin Number",
+      "value": "安全 PIN 码 (Security Pin Number)"
+    },
+    {
+      "key": "Security Restricted",
+      "value": "安全限制 (Security Restricted)"
+    },
+    {
+      "key": "Senky Gesture Driver",
+      "value": "Senky 手势驱动 (Senky Gesture Driver)"
+    },
+    {
+      "key": "Override Menu Icon",
+      "value": "覆盖菜单图标 (Override Menu Icon)"
+    },
+    {
+      "key": "Show In First Person",
+      "value": "第一人称可见 (Show In First Person)"
+    },
+    {
+      "key": "Slot 4 Fix",
+      "value": "第 4 槽位修复 (Slot 4 Fix)"
+    },
+    {
+      "key": "SPS Options",
+      "value": "SPS 选项 (SPS Options)"
+    },
+    {
+      "key": "When-Talking State",
+      "value": "说话时状态 (When-Talking State)"
+    },
+    {
+      "key": "Toes Puppet",
+      "value": "脚趾控制 (Toes Puppet)"
+    },
+    {
+      "key": "Toggle",
+      "value": "开关 (Toggle)"
+    },
+    {
+      "key": "TPS Integration",
+      "value": "TPS 集成 (TPS Integration)"
+    },
+    {
+      "key": "TPS Scale Fix",
+      "value": "TPS 缩放修复 (TPS Scale Fix)"
+    },
+    {
+      "key": "Unlimited Parameters",
+      "value": "无限参数 (Unlimited Parameters)"
+    },
+    {
+      "key": "Parameter Compressor",
+      "value": "参数压缩 (Parameter Compressor)"
+    },
+    {
+      "key": "Advanced Visemes",
+      "value": "高级口型 (Advanced Visemes)"
+    },
+    {
+      "key": "Droppable (World Constraint)",
+      "value": "可丢落（世界约束） (Droppable (World Constraint))"
+    },
+    {
+      "key": "Zawoo Integration",
+      "value": "Zawoo 集成 (Zawoo Integration)"
+    },
+    {
+      "key": "Animation Clip",
+      "value": "动画片段 (Animation Clip)"
+    },
+    {
+      "key": "BlendShape",
+      "value": "形态键 (BlendShape)"
+    },
+    {
+      "key": "Disable Blinking",
+      "value": "禁用眨眼 (Disable Blinking)"
+    },
+    {
+      "key": "Disable Visemes",
+      "value": "禁用口型 (Disable Visemes)"
+    },
+    {
+      "key": "Change SPS Channels",
+      "value": "更改 SPS 通道 (Change SPS Channels)"
+    },
+    {
+      "key": "Legacy Change SPS Tags",
+      "value": "旧版 SPS 标签更改 (Legacy Change SPS Tags)"
+    },
+    {
+      "key": "Disable Hand Controls",
+      "value": "禁用手部控制 (Disable Hand Controls)"
+    },
+    {
+      "key": "Flipbook Builder",
+      "value": "翻页动画构建 (Flipbook Builder)"
+    },
+    {
+      "key": "Material Property",
+      "value": "材质属性 (Material Property)"
+    },
+    {
+      "key": "Material Swap",
+      "value": "替换材质 (Material Swap)"
+    },
+    {
+      "key": "Object Toggle",
+      "value": "对象开关 (Object Toggle)"
+    },
+    {
+      "key": "Poiyomi Flipbook Frame",
+      "value": "Poiyomi 翻页动画帧 (Poiyomi Flipbook Frame)"
+    },
+    {
+      "key": "Poiyomi UV Tile",
+      "value": "Poiyomi UV 分块 (Poiyomi UV Tile)"
+    },
+    {
+      "key": "Reset Physbone",
+      "value": "重置物理骨骼 (Reset Physbone)"
+    },
+    {
+      "key": "Scale",
+      "value": "缩放 (Scale)"
+    },
+    {
+      "key": "SCSS Shader Inventory",
+      "value": "SCSS 着色器物品栏 (SCSS Shader Inventory)"
+    },
+    {
+      "key": "Set an FX Float",
+      "value": "设置 FX 浮点参数 (Set an FX Float)"
+    },
+    {
+      "key": "Smooth Loop Builder (Breathing, etc)",
+      "value": "平滑循环（呼吸等） (Smooth Loop Builder (Breathing, etc))"
+    },
+    {
+      "key": "Enable SPS",
+      "value": "启用 SPS (Enable SPS)"
+    },
+    {
+      "key": "World Drop",
+      "value": "世界丢落 (World Drop)"
+    },
+    {
+      "key": "Global Collider",
+      "value": "全局碰撞体 (Global Collider)"
+    },
+    {
+      "key": "Touch Sender",
+      "value": "触碰发送器 (Touch Sender)"
+    },
+    {
+      "key": "SPS Plug",
+      "value": "SPS 插入端 (SPS Plug)"
+    },
+    {
+      "key": "SPS Socket",
+      "value": "SPS 接口 (SPS Socket)"
+    },
+    {
+      "key": "SPS Touch Zone",
+      "value": "SPS 触碰区域 (SPS Touch Zone)"
+    },
+    {
+      "key": "Legacy Multi-Component",
+      "value": "旧版多功能组件 (Legacy Multi-Component)"
+    }
+  ],
+  "enumEntries": [
+    {
+      "key": "Auto",
+      "value": "自动"
+    },
+    {
+      "key": "Force On",
+      "value": "强制开启"
+    },
+    {
+      "key": "Force Off",
+      "value": "强制关闭"
+    },
+    {
+      "key": "ForceOn",
+      "value": "强制开启"
+    },
+    {
+      "key": "ForceOff",
+      "value": "强制关闭"
+    },
+    {
+      "key": "Disabled",
+      "value": "禁用"
+    },
+    {
+      "key": "None",
+      "value": "无"
+    },
+    {
+      "key": "On",
+      "value": "开启"
+    },
+    {
+      "key": "Off",
+      "value": "关闭"
+    },
+    {
+      "key": "Either",
+      "value": "任意一只手"
+    },
+    {
+      "key": "EITHER",
+      "value": "任意一只手"
+    },
+    {
+      "key": "Left",
+      "value": "左手"
+    },
+    {
+      "key": "LEFT",
+      "value": "左手"
+    },
+    {
+      "key": "Right",
+      "value": "右手"
+    },
+    {
+      "key": "RIGHT",
+      "value": "右手"
+    },
+    {
+      "key": "Combo",
+      "value": "双手组合"
+    },
+    {
+      "key": "COMBO",
+      "value": "双手组合"
+    },
+    {
+      "key": "Neutral",
+      "value": "自然手势"
+    },
+    {
+      "key": "NEUTRAL",
+      "value": "自然手势"
+    },
+    {
+      "key": "Fist",
+      "value": "握拳"
+    },
+    {
+      "key": "FIST",
+      "value": "握拳"
+    },
+    {
+      "key": "Handopen",
+      "value": "张开手掌"
+    },
+    {
+      "key": "Hand Open",
+      "value": "张开手掌"
+    },
+    {
+      "key": "HANDOPEN",
+      "value": "张开手掌"
+    },
+    {
+      "key": "Fingerpoint",
+      "value": "食指指向"
+    },
+    {
+      "key": "Finger Point",
+      "value": "食指指向"
+    },
+    {
+      "key": "FINGERPOINT",
+      "value": "食指指向"
+    },
+    {
+      "key": "Victory",
+      "value": "胜利手势"
+    },
+    {
+      "key": "VICTORY",
+      "value": "胜利手势"
+    },
+    {
+      "key": "Rocknroll",
+      "value": "摇滚手势"
+    },
+    {
+      "key": "Rock N Roll",
+      "value": "摇滚手势"
+    },
+    {
+      "key": "ROCKNROLL",
+      "value": "摇滚手势"
+    },
+    {
+      "key": "Handgun",
+      "value": "手枪手势"
+    },
+    {
+      "key": "Hand Gun",
+      "value": "手枪手势"
+    },
+    {
+      "key": "HANDGUN",
+      "value": "手枪手势"
+    },
+    {
+      "key": "Thumbsup",
+      "value": "竖起拇指"
+    },
+    {
+      "key": "Thumbs Up",
+      "value": "竖起拇指"
+    },
+    {
+      "key": "THUMBSUP",
+      "value": "竖起拇指"
+    },
+    {
+      "key": "Turn On",
+      "value": "开启对象"
+    },
+    {
+      "key": "Turn Off",
+      "value": "关闭对象"
+    },
+    {
+      "key": "TurnOn",
+      "value": "开启对象"
+    },
+    {
+      "key": "TurnOff",
+      "value": "关闭对象"
+    },
+    {
+      "key": "Toggle",
+      "value": "切换状态"
+    },
+    {
+      "key": "Hole",
+      "value": "孔型"
+    },
+    {
+      "key": "Ring",
+      "value": "环型"
+    },
+    {
+      "key": "Ring One Way",
+      "value": "单向环型"
+    },
+    {
+      "key": "RingOneWay",
+      "value": "单向环型"
+    },
+    {
+      "key": "One-Way Ring (Uncommon)",
+      "value": "单向环型（少用）"
+    },
+    {
+      "key": "Meters",
+      "value": "米"
+    },
+    {
+      "key": "Plugs",
+      "value": "插入端长度倍数"
+    },
+    {
+      "key": "Local",
+      "value": "本地单位"
+    },
+    {
+      "key": "Zero To Infinity",
+      "value": "0 至正无穷"
+    },
+    {
+      "key": "Neg One To One",
+      "value": "-1 至 1"
+    },
+    {
+      "key": "Neg 10k To 10k",
+      "value": "-10,000 至 10,000"
+    },
+    {
+      "key": "Base",
+      "value": "基础层（Base）"
+    },
+    {
+      "key": "Additive",
+      "value": "叠加层（Additive）"
+    },
+    {
+      "key": "Gesture",
+      "value": "手势层（Gesture）"
+    },
+    {
+      "key": "Action",
+      "value": "动作层（Action）"
+    },
+    {
+      "key": "FX",
+      "value": "特效层（FX）"
+    },
+    {
+      "key": "Sitting",
+      "value": "坐姿（Sitting）"
+    },
+    {
+      "key": "TPose",
+      "value": "T 字姿势（TPose）"
+    },
+    {
+      "key": "T Pose",
+      "value": "T 字姿势（TPose）"
+    },
+    {
+      "key": "IKPose",
+      "value": "IK 姿势（IKPose）"
+    },
+    {
+      "key": "IK Pose",
+      "value": "IK 姿势（IKPose）"
+    },
+    {
+      "key": "Object Reference",
+      "value": "对象引用"
+    },
+    {
+      "key": "Object Path",
+      "value": "对象路径"
+    },
+    {
+      "key": "Avatar Bone",
+      "value": "角色骨骼"
+    },
+    {
+      "key": "Bone",
+      "value": "骨骼"
+    },
+    {
+      "key": "Dampen Tracking",
+      "value": "衰减追踪"
+    },
+    {
+      "key": "Dampen Visemes",
+      "value": "衰减口型"
+    },
+    {
+      "key": "Float",
+      "value": "浮点数"
+    },
+    {
+      "key": "Color",
+      "value": "颜色"
+    },
+    {
+      "key": "Vector",
+      "value": "向量"
+    },
+    {
+      "key": "Texture",
+      "value": "纹理"
+    },
+    {
+      "key": "Hips",
+      "value": "臀部 (Hips)"
+    },
+    {
+      "key": "Spine",
+      "value": "脊柱 (Spine)"
+    },
+    {
+      "key": "Chest",
+      "value": "胸部 (Chest)"
+    },
+    {
+      "key": "UpperChest",
+      "value": "上胸部 (UpperChest)"
+    },
+    {
+      "key": "Upper Chest",
+      "value": "上胸部 (UpperChest)"
+    },
+    {
+      "key": "Neck",
+      "value": "颈部 (Neck)"
+    },
+    {
+      "key": "Head",
+      "value": "头部 (Head)"
+    },
+    {
+      "key": "Jaw",
+      "value": "下颌 (Jaw)"
+    },
+    {
+      "key": "LeftEye",
+      "value": "左眼 (LeftEye)"
+    },
+    {
+      "key": "Left Eye",
+      "value": "左眼 (LeftEye)"
+    },
+    {
+      "key": "RightEye",
+      "value": "右眼 (RightEye)"
+    },
+    {
+      "key": "Right Eye",
+      "value": "右眼 (RightEye)"
+    },
+    {
+      "key": "LeftShoulder",
+      "value": "左肩 (LeftShoulder)"
+    },
+    {
+      "key": "Left Shoulder",
+      "value": "左肩 (LeftShoulder)"
+    },
+    {
+      "key": "RightShoulder",
+      "value": "右肩 (RightShoulder)"
+    },
+    {
+      "key": "Right Shoulder",
+      "value": "右肩 (RightShoulder)"
+    },
+    {
+      "key": "LeftUpperArm",
+      "value": "左上臂 (LeftUpperArm)"
+    },
+    {
+      "key": "Left Upper Arm",
+      "value": "左上臂 (LeftUpperArm)"
+    },
+    {
+      "key": "RightUpperArm",
+      "value": "右上臂 (RightUpperArm)"
+    },
+    {
+      "key": "Right Upper Arm",
+      "value": "右上臂 (RightUpperArm)"
+    },
+    {
+      "key": "LeftLowerArm",
+      "value": "左前臂 (LeftLowerArm)"
+    },
+    {
+      "key": "Left Lower Arm",
+      "value": "左前臂 (LeftLowerArm)"
+    },
+    {
+      "key": "RightLowerArm",
+      "value": "右前臂 (RightLowerArm)"
+    },
+    {
+      "key": "Right Lower Arm",
+      "value": "右前臂 (RightLowerArm)"
+    },
+    {
+      "key": "LeftHand",
+      "value": "左手 (LeftHand)"
+    },
+    {
+      "key": "Left Hand",
+      "value": "左手 (LeftHand)"
+    },
+    {
+      "key": "RightHand",
+      "value": "右手 (RightHand)"
+    },
+    {
+      "key": "Right Hand",
+      "value": "右手 (RightHand)"
+    },
+    {
+      "key": "LeftUpperLeg",
+      "value": "左大腿 (LeftUpperLeg)"
+    },
+    {
+      "key": "Left Upper Leg",
+      "value": "左大腿 (LeftUpperLeg)"
+    },
+    {
+      "key": "RightUpperLeg",
+      "value": "右大腿 (RightUpperLeg)"
+    },
+    {
+      "key": "Right Upper Leg",
+      "value": "右大腿 (RightUpperLeg)"
+    },
+    {
+      "key": "LeftLowerLeg",
+      "value": "左小腿 (LeftLowerLeg)"
+    },
+    {
+      "key": "Left Lower Leg",
+      "value": "左小腿 (LeftLowerLeg)"
+    },
+    {
+      "key": "RightLowerLeg",
+      "value": "右小腿 (RightLowerLeg)"
+    },
+    {
+      "key": "Right Lower Leg",
+      "value": "右小腿 (RightLowerLeg)"
+    },
+    {
+      "key": "LeftFoot",
+      "value": "左脚 (LeftFoot)"
+    },
+    {
+      "key": "Left Foot",
+      "value": "左脚 (LeftFoot)"
+    },
+    {
+      "key": "RightFoot",
+      "value": "右脚 (RightFoot)"
+    },
+    {
+      "key": "Right Foot",
+      "value": "右脚 (RightFoot)"
+    },
+    {
+      "key": "LeftToes",
+      "value": "左脚趾 (LeftToes)"
+    },
+    {
+      "key": "Left Toes",
+      "value": "左脚趾 (LeftToes)"
+    },
+    {
+      "key": "RightToes",
+      "value": "右脚趾 (RightToes)"
+    },
+    {
+      "key": "Right Toes",
+      "value": "右脚趾 (RightToes)"
+    },
+    {
+      "key": "LastBone",
+      "value": "未指定骨骼 (LastBone)"
+    },
+    {
+      "key": "Last Bone",
+      "value": "未指定骨骼 (LastBone)"
+    },
+    {
+      "key": "LeftThumbProximal",
+      "value": "左拇指近节 (LeftThumbProximal)"
+    },
+    {
+      "key": "Left Thumb Proximal",
+      "value": "左拇指近节 (LeftThumbProximal)"
+    },
+    {
+      "key": "LeftThumbIntermediate",
+      "value": "左拇指中节 (LeftThumbIntermediate)"
+    },
+    {
+      "key": "Left Thumb Intermediate",
+      "value": "左拇指中节 (LeftThumbIntermediate)"
+    },
+    {
+      "key": "LeftThumbDistal",
+      "value": "左拇指远节 (LeftThumbDistal)"
+    },
+    {
+      "key": "Left Thumb Distal",
+      "value": "左拇指远节 (LeftThumbDistal)"
+    },
+    {
+      "key": "LeftIndexProximal",
+      "value": "左食指近节 (LeftIndexProximal)"
+    },
+    {
+      "key": "Left Index Proximal",
+      "value": "左食指近节 (LeftIndexProximal)"
+    },
+    {
+      "key": "LeftIndexIntermediate",
+      "value": "左食指中节 (LeftIndexIntermediate)"
+    },
+    {
+      "key": "Left Index Intermediate",
+      "value": "左食指中节 (LeftIndexIntermediate)"
+    },
+    {
+      "key": "LeftIndexDistal",
+      "value": "左食指远节 (LeftIndexDistal)"
+    },
+    {
+      "key": "Left Index Distal",
+      "value": "左食指远节 (LeftIndexDistal)"
+    },
+    {
+      "key": "LeftMiddleProximal",
+      "value": "左中指近节 (LeftMiddleProximal)"
+    },
+    {
+      "key": "Left Middle Proximal",
+      "value": "左中指近节 (LeftMiddleProximal)"
+    },
+    {
+      "key": "LeftMiddleIntermediate",
+      "value": "左中指中节 (LeftMiddleIntermediate)"
+    },
+    {
+      "key": "Left Middle Intermediate",
+      "value": "左中指中节 (LeftMiddleIntermediate)"
+    },
+    {
+      "key": "LeftMiddleDistal",
+      "value": "左中指远节 (LeftMiddleDistal)"
+    },
+    {
+      "key": "Left Middle Distal",
+      "value": "左中指远节 (LeftMiddleDistal)"
+    },
+    {
+      "key": "LeftRingProximal",
+      "value": "左无名指近节 (LeftRingProximal)"
+    },
+    {
+      "key": "Left Ring Proximal",
+      "value": "左无名指近节 (LeftRingProximal)"
+    },
+    {
+      "key": "LeftRingIntermediate",
+      "value": "左无名指中节 (LeftRingIntermediate)"
+    },
+    {
+      "key": "Left Ring Intermediate",
+      "value": "左无名指中节 (LeftRingIntermediate)"
+    },
+    {
+      "key": "LeftRingDistal",
+      "value": "左无名指远节 (LeftRingDistal)"
+    },
+    {
+      "key": "Left Ring Distal",
+      "value": "左无名指远节 (LeftRingDistal)"
+    },
+    {
+      "key": "LeftLittleProximal",
+      "value": "左小指近节 (LeftLittleProximal)"
+    },
+    {
+      "key": "Left Little Proximal",
+      "value": "左小指近节 (LeftLittleProximal)"
+    },
+    {
+      "key": "LeftLittleIntermediate",
+      "value": "左小指中节 (LeftLittleIntermediate)"
+    },
+    {
+      "key": "Left Little Intermediate",
+      "value": "左小指中节 (LeftLittleIntermediate)"
+    },
+    {
+      "key": "LeftLittleDistal",
+      "value": "左小指远节 (LeftLittleDistal)"
+    },
+    {
+      "key": "Left Little Distal",
+      "value": "左小指远节 (LeftLittleDistal)"
+    },
+    {
+      "key": "RightThumbProximal",
+      "value": "右拇指近节 (RightThumbProximal)"
+    },
+    {
+      "key": "Right Thumb Proximal",
+      "value": "右拇指近节 (RightThumbProximal)"
+    },
+    {
+      "key": "RightThumbIntermediate",
+      "value": "右拇指中节 (RightThumbIntermediate)"
+    },
+    {
+      "key": "Right Thumb Intermediate",
+      "value": "右拇指中节 (RightThumbIntermediate)"
+    },
+    {
+      "key": "RightThumbDistal",
+      "value": "右拇指远节 (RightThumbDistal)"
+    },
+    {
+      "key": "Right Thumb Distal",
+      "value": "右拇指远节 (RightThumbDistal)"
+    },
+    {
+      "key": "RightIndexProximal",
+      "value": "右食指近节 (RightIndexProximal)"
+    },
+    {
+      "key": "Right Index Proximal",
+      "value": "右食指近节 (RightIndexProximal)"
+    },
+    {
+      "key": "RightIndexIntermediate",
+      "value": "右食指中节 (RightIndexIntermediate)"
+    },
+    {
+      "key": "Right Index Intermediate",
+      "value": "右食指中节 (RightIndexIntermediate)"
+    },
+    {
+      "key": "RightIndexDistal",
+      "value": "右食指远节 (RightIndexDistal)"
+    },
+    {
+      "key": "Right Index Distal",
+      "value": "右食指远节 (RightIndexDistal)"
+    },
+    {
+      "key": "RightMiddleProximal",
+      "value": "右中指近节 (RightMiddleProximal)"
+    },
+    {
+      "key": "Right Middle Proximal",
+      "value": "右中指近节 (RightMiddleProximal)"
+    },
+    {
+      "key": "RightMiddleIntermediate",
+      "value": "右中指中节 (RightMiddleIntermediate)"
+    },
+    {
+      "key": "Right Middle Intermediate",
+      "value": "右中指中节 (RightMiddleIntermediate)"
+    },
+    {
+      "key": "RightMiddleDistal",
+      "value": "右中指远节 (RightMiddleDistal)"
+    },
+    {
+      "key": "Right Middle Distal",
+      "value": "右中指远节 (RightMiddleDistal)"
+    },
+    {
+      "key": "RightRingProximal",
+      "value": "右无名指近节 (RightRingProximal)"
+    },
+    {
+      "key": "Right Ring Proximal",
+      "value": "右无名指近节 (RightRingProximal)"
+    },
+    {
+      "key": "RightRingIntermediate",
+      "value": "右无名指中节 (RightRingIntermediate)"
+    },
+    {
+      "key": "Right Ring Intermediate",
+      "value": "右无名指中节 (RightRingIntermediate)"
+    },
+    {
+      "key": "RightRingDistal",
+      "value": "右无名指远节 (RightRingDistal)"
+    },
+    {
+      "key": "Right Ring Distal",
+      "value": "右无名指远节 (RightRingDistal)"
+    },
+    {
+      "key": "RightLittleProximal",
+      "value": "右小指近节 (RightLittleProximal)"
+    },
+    {
+      "key": "Right Little Proximal",
+      "value": "右小指近节 (RightLittleProximal)"
+    },
+    {
+      "key": "RightLittleIntermediate",
+      "value": "右小指中节 (RightLittleIntermediate)"
+    },
+    {
+      "key": "Right Little Intermediate",
+      "value": "右小指中节 (RightLittleIntermediate)"
+    },
+    {
+      "key": "RightLittleDistal",
+      "value": "右小指远节 (RightLittleDistal)"
+    },
+    {
+      "key": "Right Little Distal",
+      "value": "右小指远节 (RightLittleDistal)"
+    }
+  ],
+  "patterns": [
+    {
+      "key": "Fallback #{index}",
+      "value": "备用目标 #{index}"
+    },
+    {
+      "key": "Merging to bone: {links.avatarMain.GetPath(avatarObject)}",
+      "value": "合并到骨骼：{links.avatarMain.GetPath(avatarObject)}"
+    },
+    {
+      "key": "Prop root bone scale: {propMainScale}",
+      "value": "道具根骨骼缩放：{propMainScale}"
+    },
+    {
+      "key": "Avatar root bone scale: {avatarMainScale}",
+      "value": "角色根骨骼缩放：{avatarMainScale}"
+    },
+    {
+      "key": "Scaling factor: {scalingFactor}",
+      "value": "缩放倍率：{scalingFactor}"
+    },
+    {
+      "key": "Auto mode = {mode}",
+      "value": "自动模式 = {mode}"
+    },
+    {
+      "key": "Disabled compliance mode = {mode}",
+      "value": "禁用合规模式 = {mode}"
+    },
+    {
+      "key": "Debug info: {analysis.debugInfo}",
+      "value": "调试信息：{analysis.debugInfo}"
+    },
+    {
+      "key": "Base Skin: {baseSkin}",
+      "value": "基础蒙皮网格：{baseSkin}"
+    },
+    {
+      "key": "Linked Skins: {linkedSkins}",
+      "value": "联动蒙皮网格：{linkedSkins}"
+    },
+    {
+      "key": "Selected object has no {options.componentType.Name}.",
+      "value": "所选对象不包含 {options.componentType.Name}。"
+    },
+    {
+      "key": "Automatic ({mode})",
+      "value": "自动（{mode}）"
+    },
+    {
+      "key": "Detected Length: {size.worldLength}m",
+      "value": "检测到的长度：{size.worldLength} 米"
+    },
+    {
+      "key": "Detected Radius: {size.worldRadius}m",
+      "value": "检测到的半径：{size.worldRadius} 米"
+    },
+    {
+      "key": "    #{slot} (currently {matName})",
+      "value": "    #{slot}（当前为 {matName}）"
+    },
+    {
+      "key": "Stop {slot+1}",
+      "value": "节点 {slot+1}"
+    },
+    {
+      "key": "Collapse plug between {FormatSlot(index-1)} and {FormatSlot(index)}",
+      "value": "在 {FormatSlot(index-1)} 与 {FormatSlot(index)} 之间收缩插入端"
+    },
+    {
+      "key": "SPS guided path stop {i + 1} is missing its transform.",
+      "value": "SPS 引导路径节点 {i + 1} 未设置变换。"
+    },
+    {
+      "key": "Cannot paste {values.Count} configurations here. The maximum is {max}; no configurations were pasted.",
+      "value": "无法在此粘贴 {values.Count} 项配置，上限为 {max} 项；未粘贴任何配置。"
+    },
+    {
+      "key": "This VRCFury component failed to load ({loadError}). Please update VRCFury.",
+      "value": "此 VRCFury 组件加载失败（{loadError}）。请更新 VRCFury。"
+    },
+    {
+      "key": "Error: {e.Message}",
+      "value": "错误：{e.Message}"
+    },
+    {
+      "key": "Last seen at {missingId}",
+      "value": "最后出现于 {missingId}"
+    },
+    {
+      "key": "{alias.OldTitle} has been renamed to {titleAttribute.Title}",
+      "value": "{alias.OldTitle} 已更名为 {titleAttribute.Title}"
+    },
+    {
+      "key": "Sender - Path Stop {pathIndex}",
+      "value": "发送器 - 路径节点 {pathIndex}"
+    },
+    {
+      "key": "SPS3 supports at most {HapticUtils.GroupCount} sockets per build.",
+      "value": "SPS3 每次构建最多支持 {HapticUtils.GroupCount} 个接口。"
+    }
+  ],
+  "choiceSets": [
+    {
+      "values": [
+        "Avatar Bone",
+        "Object Reference",
+        "Object Path"
+      ]
+    },
+    {
+      "values": [
+        "Object Reference",
+        "Object Path"
+      ]
+    },
+    {
+      "values": [
+        "Auto",
+        "Hole",
+        "Ring",
+        "One-Way Ring (Uncommon)"
+      ]
+    },
+    {
+      "values": [
+        "Hole",
+        "Ring"
+      ]
+    }
+  ],
+  "componentTitles": [
+    {
+      "key": "VF.Component.VRCFuryHapticPlug",
+      "value": "SPS Plug"
+    },
+    {
+      "key": "VF.Component.VRCFuryHapticSocket",
+      "value": "SPS Socket"
+    },
+    {
+      "key": "VF.Component.VRCFuryHapticTouchReceiver",
+      "value": "SPS Touch Zone"
+    },
+    {
+      "key": "VF.Component.VRCFuryHapticTouchSender",
+      "value": "Touch Sender"
+    },
+    {
+      "key": "VF.Component.VRCFuryGlobalCollider",
+      "value": "Global Collider"
+    }
+  ]
+}

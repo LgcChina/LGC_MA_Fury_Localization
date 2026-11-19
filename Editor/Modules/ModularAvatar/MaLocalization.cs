@@ -1,4 +1,4 @@
-// LGC MA Localization Probe v1.0.0
+// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
 // Independent editor localization, minimum MA 1.10.0. Missing version-specific interfaces are skipped.
 using System;
 using System.Collections.Generic;
@@ -7,20 +7,20 @@ using UnityEditor;
 using PackageInfo = UnityEditor.PackageManager.PackageInfo;
 using UnityEngine;
 
-namespace LgcChina.MaLocalizationProbe
+namespace LgcChina.MaFuryLocalization.ModularAvatar
 {
-    [InitializeOnLoad]
-    internal static class Probe
+    internal static class MaLocalization
     {
-        internal const string Version = "1.0.0";
-        internal const string PackageName = "com.lgcchina.ma-localization-probe";
-        private const string EnabledKey = PackageName + ".enabled";
+        internal const string Version = LocalizationTool.Version;
+        internal const string PackageName = LocalizationTool.PackageName;
+        private const string EnabledKey = PackageName + ".ma.enabled";
         private static object localizer;
         private static FieldInfo loaderField;
         private static MethodInfo loadMethod;
         private static Func<List<(string, Func<string, string>)>> originalLoader, wrappedLoader;
         private static bool labelsApplied, warned;
         private static readonly List<string> notes = new List<string>();
+        internal static bool IsInstalled { get; private set; }
         internal static bool IsApplied { get; private set; }
         internal static string MaVersion { get; private set; } = "尚未读取";
         internal static string Status { get; private set; } = "等待初始化";
@@ -38,23 +38,17 @@ namespace LgcChina.MaLocalizationProbe
             }
         }
 
-        static Probe()
-        {
-            EditorApplication.delayCall += Initialize;
-            AssemblyReloadEvents.beforeAssemblyReload += RestoreBeforeReload;
-            EditorApplication.quitting += RestoreBeforeReload;
-        }
-
         internal static void Initialize()
         {
+            SetOff();
             notes.Clear();
             try
             {
-                TranslationCatalog.Load();
                 var assembly = FindMaEditorAssembly();
+                IsInstalled = assembly != null;
                 if (assembly == null)
                 {
-                    SetOff(); Status = "未发现 MA 编辑器程序，已跳过"; return;
+                    MaVersion = "未安装"; Status = "未安装 Modular Avatar，已跳过"; return;
                 }
                 var package = PackageInfo.FindForAssembly(assembly);
                 MaVersion = package?.version ?? "未知";
@@ -67,12 +61,13 @@ namespace LgcChina.MaLocalizationProbe
                     SetOff(); Status = "已停用，重新打开界面后恢复原版显示"; return;
                 }
 
+                TranslationCatalog.Load();
                 labelsApplied = ApplyLabels(assembly);
                 if (!labelsApplied) Note("当前版本未提供可接入的翻译加载器，已保留原版词条。");
-                try { MenuProbe.SetApplied(true); }
+                try { MenuPatches.SetApplied(true); }
                 catch
                 {
-                    try { MenuProbe.SetApplied(false); } catch { }
+                    try { MenuPatches.SetApplied(false); } catch { }
                     Note("当前菜单接口无法接入，已跳过菜单部分。");
                 }
                 try { DisplayPatches.SetApplied(true); }
@@ -81,7 +76,7 @@ namespace LgcChina.MaLocalizationProbe
                     try { DisplayPatches.SetApplied(false); } catch { }
                     Note("当前额外界面接口无法接入，已跳过该部分。");
                 }
-                IsApplied = labelsApplied || MenuProbe.IsApplied || DisplayPatches.IsApplied;
+                IsApplied = labelsApplied || MenuPatches.IsApplied || DisplayPatches.IsApplied;
                 Status = IsApplied ? (notes.Count == 0 ? "中文已启用" : "中文已启用，部分旧版接口已跳过") : "当前版本暂无可接入界面，已保留原版显示";
                 UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
             }
@@ -198,10 +193,10 @@ namespace LgcChina.MaLocalizationProbe
             labelsApplied = false;
         }
 
-        private static void SetOff()
+        internal static void SetOff()
         {
             try { DisplayPatches.SetApplied(false); } catch { }
-            try { MenuProbe.SetApplied(false); } catch { }
+            try { MenuPatches.SetApplied(false); } catch { }
             RestoreLabels();
             IsApplied = false;
         }
@@ -215,35 +210,6 @@ namespace LgcChina.MaLocalizationProbe
             SessionState.SetBool(EnabledKey, !IsApplied);
             Initialize();
         }
-        private static void RestoreBeforeReload() { SetOff(); }
     }
 
-    internal sealed class ProbeWindow : EditorWindow
-    {
-        private Vector2 scroll;
-        [MenuItem("LGC/MA 汉化 v" + Probe.Version)]
-        private static void Open() => GetWindow<ProbeWindow>("MA 汉化 v" + Probe.Version);
-        private void OnEnable()
-        {
-            titleContent = new GUIContent("MA 汉化 v" + Probe.Version);
-            minSize = new Vector2(550, 360);
-        }
-        private void OnGUI()
-        {
-            EditorGUILayout.LabelField("MA 独立汉化 v" + Probe.Version, EditorStyles.boldLabel);
-            EditorGUILayout.HelpBox(Probe.Status, MessageType.Info);
-            EditorGUILayout.LabelField("当前 MA 版本", Probe.MaVersion);
-            EditorGUILayout.LabelField("最低支持范围", "MA 1.10.0，具体旧版效果待手动确认");
-            EditorGUILayout.LabelField("原语言设置", Probe.Language);
-            EditorGUILayout.Space();
-            EditorGUILayout.HelpBox("汉化覆盖原有字段、提示、添加组件名称、组件标题和上下文菜单。"
-                + "旧版没有的选项保持原样。切换状态后请重新打开菜单和相关窗口。", MessageType.None);
-            if (GUILayout.Button(Probe.IsApplied ? "停用并恢复原版显示" : "启用中文")) Probe.Toggle();
-            if (GUILayout.Button("重新加载词典并连接 MA")) Probe.ReloadTranslations();
-            EditorGUILayout.HelpBox("修改 zh-Hans.json 并保存后，点击上方按钮重新加载，再重开相关界面。", MessageType.None);
-            scroll = EditorGUILayout.BeginScrollView(scroll);
-            if (!string.IsNullOrEmpty(Probe.Details)) EditorGUILayout.HelpBox(Probe.Details, MessageType.Info);
-            EditorGUILayout.EndScrollView();
-        }
-    }
 }
