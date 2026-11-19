@@ -1,0 +1,13 @@
+{
+  "name": "LgcChina.MaLocalizationProbe.Editor",
+  "rootNamespace": "LgcChina.MaLocalizationProbe",
+  "references": [],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true,
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "0Harmony.dll"
+  ]
+}

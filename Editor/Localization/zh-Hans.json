@@ -1,0 +1,2698 @@
+{
+  "entries": [
+    {
+      "key": "boneproxy.foldout.advanced",
+      "value": "高级设置"
+    },
+    {
+      "key": "boneproxy.target",
+      "value": "目标"
+    },
+    {
+      "key": "menuinstall.help.hint_set_menu",
+      "value": "此预制件的菜单默认会安装到 Avatar 的顶部菜单中。如果不需要，可以选择其他菜单或取消勾选此组件。"
+    },
+    {
+      "key": "menuinstall.help.hint_bad_menu",
+      "value": "选择的菜单不属于此 Avatar。"
+    },
+    {
+      "key": "menuinstall.installto",
+      "value": "安装到"
+    },
+    {
+      "key": "menuinstall.installto.tooltip",
+      "value": "当前预制件包含的菜单将会安装到此菜单中"
+    },
+    {
+      "key": "menuinstall.selectmenu",
+      "value": "选择菜单"
+    },
+    {
+      "key": "menuinstall.showcontents",
+      "value": "显示菜单内容"
+    },
+    {
+      "key": "menuinstall.showcontents.notselected",
+      "value": "未选择菜单"
+    },
+    {
+      "key": "menuinstall.devoptions",
+      "value": "预制件开发者选项"
+    },
+    {
+      "key": "menuinstall.menu_icon_too_large",
+      "value": "菜单图标过大，图标应小于 256 像素。"
+    },
+    {
+      "key": "menuinstall.menu_icon_uncompressed",
+      "value": "菜单图标未设置压缩。"
+    },
+    {
+      "key": "menuinstall.srcmenu",
+      "value": "要安装的菜单"
+    },
+    {
+      "key": "params.syncmode.NotSynced",
+      "value": "仅 Animator 内部（不同步）"
+    },
+    {
+      "key": "params.syncmode.Int",
+      "value": "Int"
+    },
+    {
+      "key": "params.syncmode.Float",
+      "value": "Float"
+    },
+    {
+      "key": "params.syncmode.Bool",
+      "value": "Bool"
+    },
+    {
+      "key": "params.syncmode.PhysBonesPrefix",
+      "value": "PB 前缀"
+    },
+    {
+      "key": "params.autodetect_header",
+      "value": "   自动检测参数   "
+    },
+    {
+      "key": "params.internal",
+      "value": "内部"
+    },
+    {
+      "key": "params.pb_prefix",
+      "value": "PhysBones 前缀"
+    },
+    {
+      "key": "params.syncmode",
+      "value": "参数类型"
+    },
+    {
+      "key": "params.saved",
+      "value": "保存"
+    },
+    {
+      "key": "params.synced",
+      "value": "同步"
+    },
+    {
+      "key": "params.default",
+      "value": "默认值"
+    },
+    {
+      "key": "params.representation.Default",
+      "value": "默认 ({0})"
+    },
+    {
+      "key": "params.representation.Unsigned",
+      "value": "无符号"
+    },
+    {
+      "key": "params.representation.Signed",
+      "value": "有符号"
+    },
+    {
+      "key": "params.bitWidth",
+      "value": "{0} 位"
+    },
+    {
+      "key": "params.bitWidth.Default",
+      "value": "默认 ({0})"
+    },
+    {
+      "key": "params.fieldname",
+      "value": "字段名"
+    },
+    {
+      "key": "params.remapto",
+      "value": "字段名映射到"
+    },
+    {
+      "key": "params.remapto.tooltip",
+      "value": "输入新的名称以防止参数名称冲突"
+    },
+    {
+      "key": "params.devmode",
+      "value": "显示预制件开发者选项"
+    },
+    {
+      "key": "merge_parameter.ui.name",
+      "value": "参数名称"
+    },
+    {
+      "key": "merge_parameter.ui.prefix",
+      "value": "PhysBone 前缀名称"
+    },
+    {
+      "key": "merge_parameter.ui.remapTo",
+      "value": "将名称更改为"
+    },
+    {
+      "key": "merge_parameter.ui.remapTo.tooltip",
+      "value": "在这里输入一个新名称以重新命名此参数或前缀。这可以用来解决名称冲突或链接多种功能模块。"
+    },
+    {
+      "key": "merge_parameter.ui.remapTo.automatic",
+      "value": "（自动锁定）"
+    },
+    {
+      "key": "merge_parameter.ui.defaultValue",
+      "value": "默认值"
+    },
+    {
+      "key": "merge_parameter.ui.defaultValue.tooltip",
+      "value": "首次使用或重置 Avatar 时，参数将会被设置为此值"
+    },
+    {
+      "key": "merge_parameter.ui.saved",
+      "value": "保存"
+    },
+    {
+      "key": "merge_parameter.ui.saved.tooltip",
+      "value": "如果勾选，当你更换 Avatar 或房间时，参数的值将被保存。"
+    },
+    {
+      "key": "merge_parameter.ui.internalParameter",
+      "value": "自动重命名"
+    },
+    {
+      "key": "merge_parameter.ui.internalParameter.tooltip",
+      "value": "如果勾选，此参数将会自动重命名以防止其名称和其他参数冲突"
+    },
+    {
+      "key": "merge_parameter.ui.isPrefix",
+      "value": "是 PhysBone 前缀"
+    },
+    {
+      "key": "merge_parameter.ui.syncType",
+      "value": "参数类型"
+    },
+    {
+      "key": "merge_parameter.ui.synced",
+      "value": "同步"
+    },
+    {
+      "key": "merge_parameter.ui.synced.tooltip",
+      "value": "如果勾选，参数将会在网络上同步"
+    },
+    {
+      "key": "merge_parameter.ui.bitWidth.tooltip",
+      "value": "决定参数数值的宽度/精度"
+    },
+    {
+      "key": "merge_parameter.ui.representation.tooltip",
+      "value": "有符号参数可以表示负值"
+    },
+    {
+      "key": "merge_parameter.ui.useCustomLerpDuration",
+      "value": "插值时长"
+    },
+    {
+      "key": "merge_parameter.ui.unregistered_foldout",
+      "value": "未注册的参数"
+    },
+    {
+      "key": "merge_parameter.ui.add_button",
+      "value": "添加"
+    },
+    {
+      "key": "merge_parameter.ui.details",
+      "value": "参数设置"
+    },
+    {
+      "key": "merge_parameter.ui.overrideAnimatorDefaults",
+      "value": "覆盖 Animator 默认值"
+    },
+    {
+      "key": "merge_parameter.ui.importFromAsset",
+      "value": "从 Assets 导入"
+    },
+    {
+      "key": "merge_armature.merge_target",
+      "value": "合并目标"
+    },
+    {
+      "key": "merge_armature.merge_target.tooltip",
+      "value": "当前对象要合并到的骨架（或其子级）"
+    },
+    {
+      "key": "merge_armature.prefix",
+      "value": "骨骼前缀"
+    },
+    {
+      "key": "merge_armature.prefix.tooltip",
+      "value": "当前对象里，要合并的骨骼的前缀"
+    },
+    {
+      "key": "merge_armature.suffix",
+      "value": "骨骼后缀"
+    },
+    {
+      "key": "merge_armature.suffix.tooltip",
+      "value": "当前对象里，要合并的骨骼的后缀"
+    },
+    {
+      "key": "merge_armature.locked",
+      "value": "锁定位置"
+    },
+    {
+      "key": "merge_armature.locked.tooltip",
+      "value": "将当前对象的骨架与合并目标的骨架锁定（反之亦然），常用于创建动画。"
+    },
+    {
+      "key": "merge_armature.adjust_names",
+      "value": "根据合并目标调整骨骼名称"
+    },
+    {
+      "key": "merge_armature.adjust_names.tooltip",
+      "value": "根据合并目标调整骨骼名称，通常用于不适配当前 Avatar 的服装。"
+    },
+    {
+      "key": "merge_armature.mangle_names",
+      "value": "避免名称冲突"
+    },
+    {
+      "key": "merge_armature.mangle_names.tooltip",
+      "value": "通过重命名新添加的骨骼来避免与其他资源发生名称冲突。"
+    },
+    {
+      "key": "path_mode.Relative",
+      "value": "相对路径（基于当前对象）"
+    },
+    {
+      "key": "path_mode.Absolute",
+      "value": "绝对路径（基于 Avatar 的根对象）"
+    },
+    {
+      "key": "merge_animator.animator",
+      "value": "要合并的 Animator"
+    },
+    {
+      "key": "merge_animator.layer_type",
+      "value": "图层类型"
+    },
+    {
+      "key": "merge_animator.delete_attached_animator",
+      "value": "删除额外的 Animator"
+    },
+    {
+      "key": "merge_animator.delete_attached_animator.tooltip",
+      "value": "合并后删除当前对象上的 Animator 组件"
+    },
+    {
+      "key": "merge_animator.path_mode",
+      "value": "路径模式"
+    },
+    {
+      "key": "merge_animator.path_mode.tooltip",
+      "value": "在动画中路径的工作模式。\n使用相对路径可以让你在当前对象上录制动画。"
+    },
+    {
+      "key": "merge_animator.match_avatar_write_defaults",
+      "value": "匹配 Avatar 的 Write Defaults 设置"
+    },
+    {
+      "key": "merge_animator.match_avatar_write_defaults.tooltip",
+      "value": "使用与 Avatar 一样的 Write Defaults 设置。\n如果 Avatar 将 WD 混用，Animator 的 WD 设置将维持不变。"
+    },
+    {
+      "key": "merge_animator.relative_path_root",
+      "value": "相对路径根对象"
+    },
+    {
+      "key": "merge_animator.relative_path_root.tooltip",
+      "value": "解析相对路径时使用的根对象。\n如果未指定，则使用当前对象。"
+    },
+    {
+      "key": "merge_animator.layer_priority",
+      "value": "Animator 图层的合并优先级"
+    },
+    {
+      "key": "merge_animator.layer_priority.tooltip",
+      "value": "控制相关图层被合并后在 Animator 里的位置，\n由小到大。负值将合并于原有动画层之前，\n0 或正值将合并于之后。"
+    },
+    {
+      "key": "merge_animator.merge_mode",
+      "value": "合并模式"
+    },
+    {
+      "key": "merge_animator.merge_mode.Append",
+      "value": "追加到 Animator Controller"
+    },
+    {
+      "key": "merge_animator.merge_mode.Replace",
+      "value": "替换现有 Animator Controller"
+    },
+    {
+      "key": "merge_armature.lockmode",
+      "value": "位置同步模式"
+    },
+    {
+      "key": "merge_armature.lockmode.not_locked.title",
+      "value": "不同步"
+    },
+    {
+      "key": "merge_armature.lockmode.not_locked.body",
+      "value": "当前对象的骨骼不会和 Avatar 的骨骼位置同步。"
+    },
+    {
+      "key": "merge_armature.lockmode.base_to_merge.title",
+      "value": "Avatar  =====> 目标（单向）"
+    },
+    {
+      "key": "merge_armature.lockmode.base_to_merge.body",
+      "value": "Avatar 骨骼位置改变，当前对象的骨骼也会改变。\n但当当前对象的骨骼位置改变时，Avatar 骨骼不会改变。\n建议一般服装使用此模式，因为此模式允许调整服装的骨骼位置。"
+    },
+    {
+      "key": "merge_armature.lockmode.bidirectional.title",
+      "value": "Avatar <=====> 目标（双向）"
+    },
+    {
+      "key": "merge_armature.lockmode.bidirectional.body",
+      "value": "Avatar 骨骼和当前对象的骨骼的位置始终一致。\n此模式对创建基于 Avatar 骨骼的动画时非常有用。\n启用此模式要求 Avatar 骨骼和当前对象的骨骼位置完全一致。"
+    },
+    {
+      "key": "merge_armature.reset_pos",
+      "value": "将对象位置与 Avatar 进行对齐"
+    },
+    {
+      "key": "merge_armature.reset_pos.info",
+      "value": "此命令将强制服装骨骼与 Avatar 骨骼进行对齐，在穿戴不适配当前 Avatar 的服装时可能有帮助。"
+    },
+    {
+      "key": "merge_armature.reset_pos.convert_atpose",
+      "value": "转换 A-Pose/T-Pose 以匹配 Base Avatar"
+    },
+    {
+      "key": "merge_armature.reset_pos.adjust_rotation",
+      "value": "也对齐旋转"
+    },
+    {
+      "key": "merge_armature.reset_pos.adjust_scale",
+      "value": "也对齐缩放"
+    },
+    {
+      "key": "merge_armature.match_scale_adjusters",
+      "value": "将比例调整器与基础 Avatar 匹配"
+    },
+    {
+      "key": "merge_armature.match_scale_adjusters.tooltip",
+      "value": "当你使用比例调整器调整了基础 Avatar 的比例后，此功能会让服装同步匹配这些设置。"
+    },
+    {
+      "key": "merge_armature.reset_pos.execute",
+      "value": "执行！"
+    },
+    {
+      "key": "merge_armature.reset_pos.heuristic_scale",
+      "value": "根据 Avatar 调整服装的整体比例"
+    },
+    {
+      "key": "merge_armature.reset_pos.heuristic_scale.tooltip",
+      "value": "以臂展作为参考，调整服装的整体比例。\n推荐用于不适配当前 Avatar 的服装。"
+    },
+    {
+      "key": "outfit_root.armature_root",
+      "value": "骨架"
+    },
+    {
+      "key": "outfit_root.armature_root.tooltip",
+      "value": "此服装骨架的根骨骼"
+    },
+    {
+      "key": "merge_blend_tree.motion",
+      "value": "要合并的动画（或 BlendTree）"
+    },
+    {
+      "key": "merge_blend_tree.path_mode",
+      "value": "路径模式"
+    },
+    {
+      "key": "merge_blend_tree.path_mode.tooltip",
+      "value": "在动画中路径的工作模式。\n使用相对路径可以让你在当前对象上录制动画。"
+    },
+    {
+      "key": "merge_blend_tree.relative_path_root",
+      "value": "相对路径根对象"
+    },
+    {
+      "key": "merge_blend_tree.relative_path_root.tooltip",
+      "value": "解析相对路径时使用的根对象。\n如果未指定，则使用当前对象。"
+    },
+    {
+      "key": "merge_blend_tree.non_constant_curve",
+      "value": "Merge Motion 组件中存在特殊动画片段，其包含非恒定曲线。\n\n将其合并为单个图层后，可能会导致动画播放速度变得不可预测。你应该使用 Merge Animator 组件来合并随时间变化的动画。"
+    },
+    {
+      "key": "worldfixed.quest",
+      "value": "此组件未生效，因为它与 Android 环境不兼容。"
+    },
+    {
+      "key": "worldfixed.normal",
+      "value": "当前对象将会固定于世界，除非你使用约束将它绑定在 Avatar 内。"
+    },
+    {
+      "key": "fpvisible.normal",
+      "value": "当前对象将在第一人称视角中可见。"
+    },
+    {
+      "key": "fpvisible.NotUnderHead",
+      "value": "当这个组件不被放置在“Head”骨骼下方时不会生效。\n如果这个组件将通过 Bone Proxy 等方式放置在 “Head”骨骼下，那么这个警告也许是可以被忽略的。"
+    },
+    {
+      "key": "fpvisible.quest",
+      "value": "此组件未生效，因为它与 Android 环境不兼容。"
+    },
+    {
+      "key": "fpvisible.InPhysBoneChain",
+      "value": "当前对象由 PhysBones 控制，可能无法在第一人称视角中可见；请指定 Physics Bone 链的起点。"
+    },
+    {
+      "key": "blendshape.mesh",
+      "value": "网格"
+    },
+    {
+      "key": "blendshape.source",
+      "value": "源形态键"
+    },
+    {
+      "key": "blendshape.target",
+      "value": "目标形态键"
+    },
+    {
+      "key": "blendshape.remap",
+      "value": "重映射"
+    },
+    {
+      "key": "blendshape.remap.tooltip",
+      "value": "用于重映射形态键值的曲线（0-1）。线性变换（反转、缩放）是完全精确的；非线性曲线的精度则取决于源动画的关键帧密度。"
+    },
+    {
+      "key": "blendshape.add_selected",
+      "value": "添加 {0} 个所选择的项"
+    },
+    {
+      "key": "hint.not_in_avatar",
+      "value": "此组件需要放置于你的 Avatar 内才能工作。"
+    },
+    {
+      "key": "boneproxy.err.MovingTarget",
+      "value": "你不能指定将由其他 Modular Avatar 组件移动的对象"
+    },
+    {
+      "key": "boneproxy.err.NotInAvatar",
+      "value": "你必须指定一个在 Avatar 内的对象"
+    },
+    {
+      "key": "boneproxy.attachment",
+      "value": "附加模式"
+    },
+    {
+      "key": "boneproxy.attachment.AsChildAtRoot",
+      "value": "作为子级，放置于 Root"
+    },
+    {
+      "key": "boneproxy.attachment.AsChildKeepWorldPose",
+      "value": "作为子级，保持原有位置和旋转"
+    },
+    {
+      "key": "boneproxy.attachment.AsChildKeepPosition",
+      "value": "作为子级，保持原有位置"
+    },
+    {
+      "key": "boneproxy.attachment.AsChildKeepRotation",
+      "value": "作为子级，保持原有旋转"
+    },
+    {
+      "key": "boneproxy.match_scale",
+      "value": "匹配缩放比例"
+    },
+    {
+      "key": "move_to.target",
+      "value": "目标"
+    },
+    {
+      "key": "move_to.match_position",
+      "value": "匹配位置"
+    },
+    {
+      "key": "move_to.match_rotation",
+      "value": "匹配旋转"
+    },
+    {
+      "key": "move_to.match_scale",
+      "value": "匹配缩放"
+    },
+    {
+      "key": "mesh_settings.header_probe_anchor",
+      "value": "锚点覆盖设置"
+    },
+    {
+      "key": "mesh_settings.inherit_probe_anchor",
+      "value": "锚点覆盖模式"
+    },
+    {
+      "key": "mesh_settings.probe_anchor",
+      "value": "锚点覆盖"
+    },
+    {
+      "key": "mesh_settings.probe_anchor.tooltip",
+      "value": "设置用于当前对象和子对象内的渲染器的锚点覆盖"
+    },
+    {
+      "key": "mesh_settings.header_bounds",
+      "value": "网格边界覆盖设置"
+    },
+    {
+      "key": "mesh_settings.inherit_bounds",
+      "value": "网格边界覆盖模式"
+    },
+    {
+      "key": "mesh_settings.root_bone",
+      "value": "根骨骼"
+    },
+    {
+      "key": "mesh_settings.root_bone.tooltip",
+      "value": "网格的根骨骼（Root bone），\n这被用作计算网格边界的参考点。"
+    },
+    {
+      "key": "mesh_settings.bounds",
+      "value": "网格边界"
+    },
+    {
+      "key": "mesh_settings.bounds.tooltip",
+      "value": "网格的边界（Bounds），\n用于确定何时要略过屏幕外的网格渲染。"
+    },
+    {
+      "key": "mesh_settings.inherit_mode.Inherit",
+      "value": "继承"
+    },
+    {
+      "key": "mesh_settings.inherit_mode.Set",
+      "value": "指定"
+    },
+    {
+      "key": "mesh_settings.inherit_mode.DontSet",
+      "value": "不指定（保持原有的设置）"
+    },
+    {
+      "key": "mesh_settings.inherit_mode.SetOrInherit",
+      "value": "父级设置优先，否则遵从指定的设置"
+    },
+    {
+      "key": "pb_blocker.help",
+      "value": "当前对象不会受到附加在父对象的 PhysBones 影响。"
+    },
+    {
+      "key": "hint.bad_vrcsdk",
+      "value": "检测到不兼容的 VRCSDK 版本。\n\n请尝试升级 VRCSDK；如果这不起作用，请尝试更新到新版本的 Modular Avatar。"
+    },
+    {
+      "key": "error.stack_trace",
+      "value": "Stack trace（请在报告错误时提供此信息！）"
+    },
+    {
+      "key": "error.merge_armature.circular_dependency",
+      "value": "[MA-0001] 在 Merge armature 组件中存在循环引用"
+    },
+    {
+      "key": "error.merge_armature.circular_dependency:description",
+      "value": "你的 Merge Armature 组件正在将自身或其子级作为合并目标。"
+    },
+    {
+      "key": "error.merge_armature.circular_dependency:hint",
+      "value": "通常应在 Merge Armature 组件的“合并目标”字段上指定 Avatar 本身的 Armature。不要指定服装本身！"
+    },
+    {
+      "key": "error.merge_armature.physbone_on_humanoid_bone",
+      "value": "[MA-0002] 在 Humanoid 骨骼上存在 PhysBones 组件"
+    },
+    {
+      "key": "error.merge_armature.physbone_on_humanoid_bone:hint",
+      "value": "在要合并的骨架中，某些 Humanoid 骨骼受到 PhysBones 控制，其位置与合并目标中相应的 Humanoid 骨骼不同。你应该在要合并的骨架中，移除这些 Humanoid 骨骼上的 PhysBones。"
+    },
+    {
+      "key": "error.merge_blend_tree.missing_tree",
+      "value": "[MA-0009] 未指定 Blend Tree"
+    },
+    {
+      "key": "error.merge_blend_tree.missing_tree:hint",
+      "value": "Merge Blend Tree 需要知道要合并到哪个 Blend Tree。请尝试在「Blend Tree」中设置一个对象。"
+    },
+    {
+      "key": "error.internal_error",
+      "value": "[MA-9999] 发生内部错误：{0}\nwhen processing:"
+    },
+    {
+      "key": "error.merge_animator.param_type_mismatch",
+      "value": "[MA-0003] 参数类型不符"
+    },
+    {
+      "key": "error.merge_animator.param_type_mismatch:description",
+      "value": "参数 {0} 具有多种类型：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.too_many_synced_params",
+      "value": "[MA-0004] 同步参数超出限制"
+    },
+    {
+      "key": "error.rename_params.too_many_synced_params:description",
+      "value": "你在 Avatar 中使用了过多的同步参数。你已使用 {0} bits 的参数，但限制为 {1} bits"
+    },
+    {
+      "key": "error.rename_params.type_conflict",
+      "value": "[MA-0006] 参数类型冲突"
+    },
+    {
+      "key": "error.rename_params.type_conflict:description",
+      "value": "参数 {0} 指定了多种类型：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.default_value_conflict",
+      "value": "[MA-0007] 默认值冲突"
+    },
+    {
+      "key": "error.rename_params.default_value_conflict:description",
+      "value": "参数 {0} 指定了多个默认值：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.default_value_conflict:hint",
+      "value": "为了避免不可预知的行为，请将 MA Parameters 组件中所有重复的默认值置空，保留一个相关值即可。如果存在多个值，Modular Avatar 将选择第一个默认值。"
+    },
+    {
+      "key": "error.replace_object.null_target",
+      "value": "[MA-0008] 未指定要替换的对象"
+    },
+    {
+      "key": "error.replace_object.null_target:hint",
+      "value": "Replace object 组件需要知道要替换掉哪个对象。尝试指定一个对象再试试。"
+    },
+    {
+      "key": "error.replace_object.replacing_replacement",
+      "value": "[MA-0009] 不能在多个 Replace Object 组件中指定相同的目标对象"
+    },
+    {
+      "key": "error.replace_object.parent_of_target",
+      "value": "[MA-0010] 目标对象不能是此对象的父级"
+    },
+    {
+      "key": "error.singleton",
+      "value": "[MA-0011] 一个 Avatar 中只允许存在一个 {0} 组件"
+    },
+    {
+      "key": "error.merge_animator.multiple_replacements",
+      "value": "[MA-0012] 多个 Merge Animator 正在尝试替换相同的图层"
+    },
+    {
+      "key": "error.merge_animator.multiple_replacements:hint",
+      "value": "由于 Merge Animator 的“替换”模式会将整个 Animator Controller 替换为另一个 Animator Controller，因此无法确定你要保留哪一个。请尝试只保留一个使用“替换”模式的 Merge Animator，或将它们设置为“追加”模式。"
+    },
+    {
+      "key": "error.merge_animator.layer_no_state_machine",
+      "value": "[MA-0013] 此 Merge Animator 组件内指定的动画控制器内部已损坏"
+    },
+    {
+      "key": "error.merge_animator.layer_no_state_machine:description",
+      "value": "图层 {0} 的状态机缺失。此图层将被忽略。"
+    },
+    {
+      "key": "error.merge_animator.layer_no_state_machine:hint",
+      "value": "这表示动画控制器文件本身有问题。这对于手工创建的动画来说不太正常。如果你使用其他工具创建了这个控制器，请联系该工具的创建者以获取进一步信息。"
+    },
+    {
+      "key": "error.vertex_filter_by_mask.non_readable_texture",
+      "value": "无法读取遮罩纹理。"
+    },
+    {
+      "key": "error.vertex_filter_by_mask.non_readable_texture:hint",
+      "value": "请打开遮罩纹理的 Inspector，勾选 高级 > 读写，然后点击 应用 按钮。"
+    },
+    {
+      "key": "error.syncparamsequence.cost_exceeded",
+      "value": "[MA-0014] 在平台间同步参数后，超出了最大参数限制"
+    },
+    {
+      "key": "error.syncparamsequence.cost_exceeded:description",
+      "value": "在对上次 {0} 构建的附加参数进行同步后，总参数成本现为 {1} bits，超过了 {2} bits 的限制。"
+    },
+    {
+      "key": "error.syncparamsequence.cost_exceeded:hint",
+      "value": "请确保需要上传至次要平台的 Avatar 不包含主平台 Avatar 中沒有的参数"
+    },
+    {
+      "key": "error.syncparamsequence.unregistered_parameter",
+      "value": "[MA-0015] 次要平台含有未注册参数"
+    },
+    {
+      "key": "error.syncparamsequence.unregistered_parameter:description",
+      "value": "参数 {0} 未在主平台 {1} 的最后一次构建中注册。"
+    },
+    {
+      "key": "error.syncparamsequence.unregistered_parameter:hint",
+      "value": "主平台必须注册所有会在任何 Avatar 变体中使用的参数。请将参数 {0} 新增至此主平台的构建配置中，或从 {1} 变体中移除此参数。"
+    },
+    {
+      "key": "error.syncparamsequence.type_mismatch",
+      "value": "[MA-0016] 跨平台参数类型不一致"
+    },
+    {
+      "key": "error.syncparamsequence.type_mismatch:description",
+      "value": "参数 {0} 具有多种类型：在 {2} 上为 {1}，但在主平台 {4} 上为 {3}"
+    },
+    {
+      "key": "error.syncparamsequence.type_mismatch:hint",
+      "value": "请确保参数类型在所有平台上均一致，你可以尝试在 {4} 上重新构建，以确保参数更改能够生效。"
+    },
+    {
+      "key": "validation.syncparamsequence.primary_platform_changed",
+      "value": "[MA-0027] Sync Parameter Sequence 的主平台已更改"
+    },
+    {
+      "key": "validation.syncparamsequence.primary_platform_changed:description",
+      "value": "主平台被设置为 {0}，但已记录的主平台构建使用的是 {1}。"
+    },
+    {
+      "key": "validation.syncparamsequence.primary_platform_changed:hint",
+      "value": "请检查同一 Avatar 各变体上的 Sync Parameter Sequence 组件是否都使用了相同的主平台设置。"
+    },
+    {
+      "key": "validation.syncparamsequence.no_primary_record",
+      "value": "[MA-0026] 找不到主平台的参数记录"
+    },
+    {
+      "key": "validation.syncparamsequence.no_primary_record:description",
+      "value": "此 Avatar 没有保存过主平台构建的记录，但当前构建目标是 {0}，而配置的主平台是 {1}。"
+    },
+    {
+      "key": "validation.syncparamsequence.no_primary_record:hint",
+      "value": "请先构建主平台变体。"
+    },
+    {
+      "key": "error.object_cycle",
+      "value": "[MA-0017] 检测到对象循环"
+    },
+    {
+      "key": "error.object_cycle:description",
+      "value": "检测到 Bone Proxy 与／或 Merge Armature 组件之间存在循环引用"
+    },
+    {
+      "key": "error.object_cycle:hint",
+      "value": "若要解决循环问题，请移除其中一个组件或修改其目标引用。"
+    },
+    {
+      "key": "error.merge_blend_tree.non_constant_curve",
+      "value": "[MA-0018] Merge Motion 中包含非恒定曲线"
+    },
+    {
+      "key": "error.merge_blend_tree.non_constant_curve:description",
+      "value": "Merge Motion 组件中存在随时间动态变化的动画片段。将其合并为单个图层后，可能会导致动画播放速度变得不可预测。"
+    },
+    {
+      "key": "error.merge_blend_tree.non_constant_curve:hint",
+      "value": "为避免此问题，你可以将动画片段设为不随时间变化的恒定状态，或者将其移至独立图层，之后改用“Merge Animator”组件来进行合并。"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_active",
+      "value": "[MA-0019] 有多个 Floor Adjuster 组件在此 Avatar 上处于激活状态"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_active:hint",
+      "value": "只有一个 Floor Adjuster 组件可以在给定的 Avatar 上激活。请移除多余的 Floor Adjuster 组件。"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_active:description",
+      "value": "所有的 Floor Adjuster 组件已被忽略。"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_inactive",
+      "value": "[MA-0020] 在此 Avatar 上找到多个 Floor Adjuster 组件"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_inactive:description",
+      "value": "仅当前处于激活状态的 Floor Adjuster 组件被应用。"
+    },
+    {
+      "key": "error.floor_adjuster.multiple_inactive:hint",
+      "value": "只有一个 Floor Adjuster 组件可以在给定的 Avatar 上激活。请移除多余的 Floor Adjuster 组件。"
+    },
+    {
+      "key": "error.floor_adjuster.no_animator",
+      "value": "[MA-0021] 在此 Avatar 上找不到动画控制器"
+    },
+    {
+      "key": "error.floor_adjuster.no_animator:description",
+      "value": "此 Avatar 与 Floor adjuster 组件不兼容。"
+    },
+    {
+      "key": "error.floor_adjuster.no_hips",
+      "value": "[MA-0022] 在此 Avatar 上找不到 Hips 骨骼"
+    },
+    {
+      "key": "error.floor_adjuster.no_hips:description",
+      "value": "此 Avatar 与 Floor adjuster 组件不兼容。"
+    },
+    {
+      "key": "error.floor_adjuster.no_eye",
+      "value": "[MA-0023] 无法确定此 Avatar 的视角球位置"
+    },
+    {
+      "key": "error.floor_adjuster.no_eye:description",
+      "value": "尚未为这个 Avatar 设置视角球，或者该构建平台与 Floor Adjuster 组件不兼容。"
+    },
+    {
+      "key": "validation.blendshape_sync.no_local_renderer",
+      "value": "[MA-1000] 在此部件上找不到 Renderer"
+    },
+    {
+      "key": "validation.blendshape_sync.no_local_renderer:hint",
+      "value": "形态键同步 作用于所在对象上的 Skinned Mesh Renderer。你是否将它附加到了正确的对象上？"
+    },
+    {
+      "key": "validation.blendshape_sync.no_local_mesh",
+      "value": "[MA-1001] 在此部件的 Renderer 上找不到网格（Mesh）"
+    },
+    {
+      "key": "validation.blendshape_sync.no_local_mesh:hint",
+      "value": "当前对象上的 Skinned Mesh Renderer 配置可能有问题。请尝试从原预制件或 FBX 重新设置对象。"
+    },
+    {
+      "key": "validation.blendshape_sync.no_bindings",
+      "value": "[MA-1002] 在此部件上找不到形态键"
+    },
+    {
+      "key": "validation.blendshape_sync.no_bindings:hint",
+      "value": "形态键同步 必须知道要同步哪些形态键。点击“+”新增。"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_local_shape",
+      "value": "[MA-1003] 找不到目标形态键：“{0}”"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_local_shape:description",
+      "value": "找不到目标形态键：{0}"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_local_shape:hint",
+      "value": "找不到「接收」数值的形态键。请更换被标为红色的形态键。"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_shape",
+      "value": "[MA-1004] 找不到源形态键：“{0}”"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_shape:description",
+      "value": "找不到源形态键：{0}"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_shape:hint",
+      "value": "找不到向当前部件“发送”数值的形态键。请更换被标红的形态键。"
+    },
+    {
+      "key": "validation.blendshape_sync.no_target",
+      "value": "[MA-1005] 未指定目标对象（网格）"
+    },
+    {
+      "key": "validation.blendshape_sync.no_target:hint",
+      "value": "形态键同步 必须知道要从哪个对象同步形态键。请尝试在“网格”中指定一个对象。"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_renderer",
+      "value": "[MA-1006] 在目标对象上找不到 Renderer"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_renderer:hint",
+      "value": "形态键同步 会从目标对象上的 Skinned Mesh Renderer 接收形态键的值。你有没有将它附加到正确的对象上呢？"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_mesh",
+      "value": "[MA-1007] 在目标对象的 Renderer 上找不到网格（Mesh）"
+    },
+    {
+      "key": "validation.blendshape_sync.missing_target_mesh:hint",
+      "value": "目标对象上的 Skinned Mesh Renderer 配置可能有问题。请尝试从原预制件或 FBX 重新设置对象。"
+    },
+    {
+      "key": "validation.bone_proxy.no_target",
+      "value": "[MA-1100] 未指定目标对象，或目标对象未找到"
+    },
+    {
+      "key": "validation.bone_proxy.no_target:hint",
+      "value": "Bone Proxy 必须知道要将当前对象绑定到哪个对象。请在“目标”中指定。"
+    },
+    {
+      "key": "validation.menu_installer.no_menu",
+      "value": "[MA-1200] 未指定要安装的菜单"
+    },
+    {
+      "key": "validation.menu_installer.no_menu:hint",
+      "value": "Menu Installer 必须知道要安装哪个菜单。请在“预制件开发者选项”里的“要安装的菜单”指定，或是新增一个“MA Menu Item”组件。"
+    },
+    {
+      "key": "validation.merge_animator.no_animator",
+      "value": "[MA-1300] 未指定要合并的 Animator"
+    },
+    {
+      "key": "validation.merge_animator.no_animator:hint",
+      "value": "Merge Animator 必须知道要合并哪个 Animator。请在“要合并的 Animator”中指定一个。"
+    },
+    {
+      "key": "validation.merge_armature.no_target",
+      "value": "[MA-1400] 未指定合并目标"
+    },
+    {
+      "key": "validation.merge_armature.no_target:hint",
+      "value": "Merge Armature 必须知道相应骨骼要合并到哪个骨架里。请在“合并目标”中指定一个。"
+    },
+    {
+      "key": "validation.merge_armature.target_is_child",
+      "value": "[MA-1500] 合并目标不能是此对象的子级"
+    },
+    {
+      "key": "validation.merge_armature.target_is_child:hint",
+      "value": "Merge Armature 不能合并骨架到其自身。请将“合并目标”设置为其他对象。"
+    },
+    {
+      "key": "validation.platform_filter.mixed_include_exclude",
+      "value": "[MA-0013] 单个 GameObject 不能在平台过滤组件中同时被包含与排除。"
+    },
+    {
+      "key": "validation.platform_filter.mixed_include_exclude:description",
+      "value": "由于你正在使用“包含模式”，请尝试只指定你想要包含的平台。"
+    },
+    {
+      "key": "validation.legacy_vrcfury_error",
+      "value": "[MA-1600] 你的 VRCFury 版本过旧，无法兼容响应性组件"
+    },
+    {
+      "key": "validation.legacy_vrcfury_error:hint",
+      "value": "使用响应式组件需要 VRCFury 1.1373.0 或更高版本。请将 VRCFury 更新到最新版。"
+    },
+    {
+      "key": "submenu_source.Children",
+      "value": "子对象"
+    },
+    {
+      "key": "submenu_source.MenuAsset",
+      "value": "菜单资源文件 (Expressions Menu)"
+    },
+    {
+      "key": "menuitem.showcontents",
+      "value": "显示菜单内容"
+    },
+    {
+      "key": "menuitem.prop.name",
+      "value": "名称"
+    },
+    {
+      "key": "menuitem.prop.icon",
+      "value": "图标"
+    },
+    {
+      "key": "menuitem.prop.icon.tooltip",
+      "value": "（可选）在菜单中显示的图标"
+    },
+    {
+      "key": "menuitem.prop.type",
+      "value": "类型"
+    },
+    {
+      "key": "menuitem.prop.type.tooltip",
+      "value": "此菜单项的类型"
+    },
+    {
+      "key": "menuitem.prop.value",
+      "value": "参数值"
+    },
+    {
+      "key": "menuitem.prop.value.tooltip",
+      "value": "设置菜单项触发时的参数值"
+    },
+    {
+      "key": "menuitem.prop.automatic_value",
+      "value": "自动"
+    },
+    {
+      "key": "menuitem.prop.automatic_value.tooltip",
+      "value": "自动将此控制项设置为唯一值"
+    },
+    {
+      "key": "menuitem.prop.parameter",
+      "value": "参数"
+    },
+    {
+      "key": "menuitem.prop.label",
+      "value": "标签"
+    },
+    {
+      "key": "menuitem.prop.submenu_asset",
+      "value": "子菜单资源"
+    },
+    {
+      "key": "menuitem.prop.submenu_asset.tooltip",
+      "value": "用作子菜单的资源文件 (Expressions Menu)"
+    },
+    {
+      "key": "menuitem.prop.submenu_source",
+      "value": "子菜单来源"
+    },
+    {
+      "key": "menuitem.prop.submenu_source.tooltip",
+      "value": "寻找子菜单内菜单项的方式"
+    },
+    {
+      "key": "menuitem.prop.source_override",
+      "value": "源部件覆盖"
+    },
+    {
+      "key": "menuitem.prop.source_override.tooltip",
+      "value": "如果指定，这个对象将被用作子菜单内容的来源。\n否则，将使用此菜单项的子级菜单作为来源。"
+    },
+    {
+      "key": "menuitem.prop.is_default",
+      "value": "默认启用"
+    },
+    {
+      "key": "menuitem.prop.is_default.tooltip",
+      "value": "如果勾选，初次使用或重置 Avatar 时会启用此菜单项"
+    },
+    {
+      "key": "menuitem.default_override_warning",
+      "value": "此菜单项会把参数 {0} 的默认值从 {1} 覆盖为 {2}。\n如果不希望这样，请把“默认启用”设置为与参数一致，或手动把此菜单项的值设为 0。"
+    },
+    {
+      "key": "menuitem.prop.is_saved",
+      "value": "保存"
+    },
+    {
+      "key": "menuitem.prop.is_saved.tooltip",
+      "value": "如果勾选，当你更换 Avatar 或房间时，此菜单项的值将被保存。"
+    },
+    {
+      "key": "menuitem.prop.is_synced",
+      "value": "同步"
+    },
+    {
+      "key": "menuitem.prop.is_synced.tooltip",
+      "value": "如果勾选，此菜单项的值将和网络上的其他玩家同步。"
+    },
+    {
+      "key": "menuitem.param.rotation",
+      "value": "参数: 旋转 (Rotation)"
+    },
+    {
+      "key": "menuitem.param.rotation.tooltip",
+      "value": "基于此菜单项的旋转设置的参数。"
+    },
+    {
+      "key": "menuitem.param.horizontal",
+      "value": "参数: 水平 (Horizontal)"
+    },
+    {
+      "key": "menuitem.param.horizontal.tooltip",
+      "value": "基于摇杆的水平位置设置的参数。"
+    },
+    {
+      "key": "menuitem.param.vertical",
+      "value": "参数: 垂直 (Vertical)"
+    },
+    {
+      "key": "menuitem.param.vertical.tooltip",
+      "value": "基于摇杆的垂直位置设置的参数。"
+    },
+    {
+      "key": "menuitem.label.control_labels_and_params",
+      "value": "设置名称和参数"
+    },
+    {
+      "key": "menuitem.label.control_labels",
+      "value": "设置名称"
+    },
+    {
+      "key": "menuitem.misc.multiple",
+      "value": "（多重设置）"
+    },
+    {
+      "key": "menuitem.misc.no_icon",
+      "value": "（无图标）"
+    },
+    {
+      "key": "menuitem.misc.extract",
+      "value": "提取为部件"
+    },
+    {
+      "key": "menuitem.label.parameters",
+      "value": "参数"
+    },
+    {
+      "key": "action.toggle_object.header.object",
+      "value": "要显示 / 隐藏的对象"
+    },
+    {
+      "key": "action.toggle_object.header.show",
+      "value": "显示"
+    },
+    {
+      "key": "menu_tree.title",
+      "value": "选择菜单"
+    },
+    {
+      "key": "menuitem.param.controlled_by_action",
+      "value": "<由动作控制>"
+    },
+    {
+      "key": "control_group.foldout.actions",
+      "value": "动作"
+    },
+    {
+      "key": "control_group.foldout.menu_items",
+      "value": "相关菜单项"
+    },
+    {
+      "key": "control_group.is_saved",
+      "value": "保存"
+    },
+    {
+      "key": "control_group.is_saved.tooltip",
+      "value": "如果勾选，当你更换 Avatar 或世界时，此菜单项的值将被保存。"
+    },
+    {
+      "key": "control_group.is_synced",
+      "value": "同步"
+    },
+    {
+      "key": "control_group.is_synced.tooltip",
+      "value": "如果勾选，此菜单项的值将和网络上的其他玩家同步。"
+    },
+    {
+      "key": "control_group.default_value",
+      "value": "初始设置"
+    },
+    {
+      "key": "control_group.default_value.unset",
+      "value": "（未选择）"
+    },
+    {
+      "key": "animation_gen.duplicate_binding",
+      "value": "来自不同部件组的部件尝试动画化相同的参数。参数：{0}"
+    },
+    {
+      "key": "animation_gen.multiple_defaults",
+      "value": "在同一个部件组中找到多个默认的菜单项。"
+    },
+    {
+      "key": "menuitem.misc.add_item",
+      "value": "添加菜单项"
+    },
+    {
+      "key": "replace_object.target_object",
+      "value": "要替换的对象"
+    },
+    {
+      "key": "setup_outfit.err.header.notarget",
+      "value": "Setup Outfit 失败"
+    },
+    {
+      "key": "setup_outfit.err.header",
+      "value": "对 {0} 进行 Setup Outfit 操作失败"
+    },
+    {
+      "key": "setup_outfit.err.unknown",
+      "value": "未知错误"
+    },
+    {
+      "key": "setup_outfit.err.no_selection",
+      "value": "没有选择对象。"
+    },
+    {
+      "key": "setup_outfit.err.run_on_avatar_itself",
+      "value": "Setup outfit 组件必须在服装对象上运行，而不是在 Avatar 本身。\n\n你是要制作“混合 Avatar”吗？如果是，请从“内层 Avatar”中移除 Avatar descriptor 组件，然后对其执行 Setup outfit。"
+    },
+    {
+      "key": "setup_outfit.err.multiple_avatar_descriptors",
+      "value": "在 {0} 和其父级中有多个 Avatar descriptor。\n\n你是要制作“混合 Avatar”吗？如果是，请从“内层 Avatar”中移除 Avatar descriptor 组件，然后对其执行 Setup outfit。"
+    },
+    {
+      "key": "setup_outfit.err.no_avatar_descriptor",
+      "value": "在 {0} 的父级中找不到 VRC Avatar Descriptor。请确认你的服装是否被正确放置在 Avatar 里。"
+    },
+    {
+      "key": "setup_outfit.err.no_animator",
+      "value": "你的 Avatar 没有 Animator 组件。"
+    },
+    {
+      "key": "setup_outfit.err.no_hips",
+      "value": "你的 Avatar 没有 Hips 骨骼。Setup Outfit 操作只能用于人形 (humanoid) 的 Avatar。"
+    },
+    {
+      "key": "setup_outfit.err.no_outfit_hips",
+      "value": "无法识别服装的 Hips 骨骼，已尝试搜索包含以下名称的对象："
+    },
+    {
+      "key": "move_independently.group-header",
+      "value": "要一起移动的对象"
+    },
+    {
+      "key": "scale_adjuster.scale",
+      "value": "调整比例"
+    },
+    {
+      "key": "scale_adjuster.adjust_children",
+      "value": "调整子级的位置"
+    },
+    {
+      "key": "world_fixed_object.err.unsupported_platform",
+      "value": "此平台不支持 World Fixed Object 组件。"
+    },
+    {
+      "key": "world_fixed_object.err.unsupported_platform:description",
+      "value": "此组件未生效。因为在 Android 环境下不支持 World Fixed Object。"
+    },
+    {
+      "key": "ma_info.param_usage_ui.header",
+      "value": "Expressions 参数使用情况"
+    },
+    {
+      "key": "ma_info.param_usage_ui.other_objects",
+      "value": "此 Avatar 中的其他东西"
+    },
+    {
+      "key": "ma_info.param_usage_ui.free_space",
+      "value": "未使用的参数 ({0} bits)"
+    },
+    {
+      "key": "ma_info.param_usage_ui.exceeded_space",
+      "value": "超出限制的额外参数（{0} bits）"
+    },
+    {
+      "key": "ma_info.param_usage_ui.bits_template",
+      "value": "{0}（{1} bits）"
+    },
+    {
+      "key": "ma_info.param_usage_ui.no_data",
+      "value": "【无信息】"
+    },
+    {
+      "key": "reactive_object.inverse",
+      "value": "反转条件"
+    },
+    {
+      "key": "reactive_object.config_heading",
+      "value": "配置"
+    },
+    {
+      "key": "reactive_object.reactive_move.to_move",
+      "value": "要移动的对象"
+    },
+    {
+      "key": "reactive_object.reactive_move.where_to",
+      "value": "目标"
+    },
+    {
+      "key": "reactive_object.reactive_move.fix_to_world",
+      "value": "固定到世界"
+    },
+    {
+      "key": "reactive_object.reactive_move.transition_time",
+      "value": "过渡时间"
+    },
+    {
+      "key": "reactive_object.reactive_move.sets_position",
+      "value": "设置位置"
+    },
+    {
+      "key": "reactive_object.reactive_move.sets_rotation",
+      "value": "设置旋转"
+    },
+    {
+      "key": "reactive_object.reactive_move.sets_scale",
+      "value": "设置缩放"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.object",
+      "value": "目标 Renderer"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.hint_add_vertex_filter",
+      "value": "你需要在此对象上新增一个 Vertex Filter 组件，以指定要删除的网格区域。"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.add_vertex_filter",
+      "value": "添加顶点筛选器……"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.multi-mode",
+      "value": "当有多个顶点筛选器时"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.multi-mode.VertexIntersection",
+      "value": "顶点需被所有筛选器选中"
+    },
+    {
+      "key": "reactive_object.mesh_cutter.multi-mode.VertexUnion",
+      "value": "顶点需被任意筛选器选中"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.flip",
+      "value": "翻转"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.edit",
+      "value": "编辑"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.axis",
+      "value": "坐标轴"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.axis.tooltip",
+      "value": "根据定义的方向决定要删除的顶点"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.center",
+      "value": "中心"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-axis.center.tooltip",
+      "value": "轴线中心点；位于该轴线一侧的顶点将被删除"
+    },
+    {
+      "key": "reactive_object.delete-mesh.selection-mode",
+      "value": "选择模式"
+    },
+    {
+      "key": "reactive_object.delete-mesh.selection-mode.AnyVertex",
+      "value": "任意顶点"
+    },
+    {
+      "key": "reactive_object.delete-mesh.selection-mode.AllVertices",
+      "value": "所有顶点"
+    },
+    {
+      "key": "reactive_object.delete-mesh.selection-mode.Centroid",
+      "value": "质心"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.material-index",
+      "value": "材质槽"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.mask-texture",
+      "value": "蒙版纹理"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.create-mask-texture",
+      "value": "创建"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.edit-mask-texture",
+      "value": "编辑"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.delete-mode",
+      "value": "删除模式"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.hint-install-mask-editor",
+      "value": "你可以安装 nekobako 的 Mask Texture Editor 组件以便轻松地编辑遮罩贴图。"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-mask.install-button",
+      "value": "安装"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.shapes",
+      "value": "形态键"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-bone.bone",
+      "value": "目标骨骼"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-bone.bone.tooltip",
+      "value": "用于筛选顶点的骨骼；所有受此骨骼权重影响的顶点都将被选择。"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-bone.threshold",
+      "value": "权重阈值"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-bone.threshold.tooltip",
+      "value": "顶点被纳入选择时所需的最小骨骼权重值（0.0–1.0）"
+    },
+    {
+      "key": "reactive_object.delete-mesh.uv-channel",
+      "value": "UV 通道"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-uvtile.invert",
+      "value": "反转"
+    },
+    {
+      "key": "reactive_object.material-setter.set-to",
+      "value": "将材质设置为："
+    },
+    {
+      "key": "reactive_object.material-swap.root",
+      "value": "根对象"
+    },
+    {
+      "key": "reactive_object.material-swap.quick_swap_mode",
+      "value": "快速切换模式"
+    },
+    {
+      "key": "reactive_object.material-swap.quick_swap_mode.tooltip",
+      "value": "控制 Material Swap 里“< >”箭头的工作方式。\n\n启用后，箭头会根据文件夹结构在不同材质球间进行切换。"
+    },
+    {
+      "key": "reactive_object.material-swap.quick_swap_mode.None",
+      "value": "无"
+    },
+    {
+      "key": "reactive_object.material-swap.quick_swap_mode.SameDirectory",
+      "value": "同一文件夹"
+    },
+    {
+      "key": "reactive_object.material-swap.quick_swap_mode.SiblingDirectory",
+      "value": "相邻文件夹"
+    },
+    {
+      "key": "reactive_object.shape_changer.threshold",
+      "value": "偏移阈值"
+    },
+    {
+      "key": "reactive_object.shape_changer.threshold.tooltip",
+      "value": "设置当顶点被判定为形态键的一部分时，所需的最小位移距离"
+    },
+    {
+      "key": "menuitem.misc.add_toggle",
+      "value": "新增开关"
+    },
+    {
+      "key": "ro_sim.open_debugger_button",
+      "value": "打开响应式组件调试工具"
+    },
+    {
+      "key": "ro_sim.window.title",
+      "value": "MA 响应式组件调试工具"
+    },
+    {
+      "key": "ro_sim.header.inspecting",
+      "value": "需检查部件"
+    },
+    {
+      "key": "ro_sim.header.clear_overrides",
+      "value": "清除所有覆盖"
+    },
+    {
+      "key": "ro_sim.header.object_state",
+      "value": "对象状态"
+    },
+    {
+      "key": "ro_sim.state.active",
+      "value": "启用"
+    },
+    {
+      "key": "ro_sim.state.inactive",
+      "value": "停用"
+    },
+    {
+      "key": "ro_sim.header.override_gameobject_state",
+      "value": "覆写对象状态"
+    },
+    {
+      "key": "ro_sim.header.override_menuitem_state",
+      "value": "覆写菜单项状态"
+    },
+    {
+      "key": "ro_sim.affected_by.title",
+      "value": "受到以下影响："
+    },
+    {
+      "key": "ro_sim.effect_group.component",
+      "value": "接收组件"
+    },
+    {
+      "key": "ro_sim.effect_group.controls_obj_state",
+      "value": "控制对象状态为："
+    },
+    {
+      "key": "ro_sim.effect_group.target_component",
+      "value": "目标组件"
+    },
+    {
+      "key": "ro_sim.effect_group.target_component.tooltip",
+      "value": "受到 Reactive Component 影响的组件"
+    },
+    {
+      "key": "ro_sim.effect_group.property",
+      "value": "属性"
+    },
+    {
+      "key": "ro_sim.effect_group.property.tooltip",
+      "value": "受到 Reactive Component 影响的目标组件属性"
+    },
+    {
+      "key": "ro_sim.effect.shape_key",
+      "value": "形态键 {0}"
+    },
+    {
+      "key": "ro_sim.effect.material_slot",
+      "value": "材质槽 {0}"
+    },
+    {
+      "key": "ro_sim.effect.reactive_move.destination",
+      "value": "目标位置：{0}"
+    },
+    {
+      "key": "ro_sim.effect.reactive_move.fixed_to_world",
+      "value": "固定到世界"
+    },
+    {
+      "key": "ro_sim.effect_group.value",
+      "value": "值"
+    },
+    {
+      "key": "ro_sim.effect_group.value.tooltip",
+      "value": "Reactive Component 启用时，属性将被设为此值"
+    },
+    {
+      "key": "ro_sim.effect_group.material",
+      "value": "材质"
+    },
+    {
+      "key": "ro_sim.effect_group.material.tooltip",
+      "value": "Reactive Component 启用时，将被设在目标组件上的材质"
+    },
+    {
+      "key": "ro_sim.effect_group.rule_inverted",
+      "value": "规则的条件已反转"
+    },
+    {
+      "key": "ro_sim.effect_group.rule_inverted.tooltip",
+      "value": "这条规则将在未达成其任一条件时应用。"
+    },
+    {
+      "key": "ro_sim.effect_group.conditions",
+      "value": "条件"
+    },
+    {
+      "key": "menuitem.label.long_name.tooltip",
+      "value": "使用可能包含富文本和间隔线的长名称。"
+    },
+    {
+      "key": "menuitem.label.gameobject_name.tooltip",
+      "value": "使用对象的名称。"
+    },
+    {
+      "key": "remove-vertex-color.mode",
+      "value": "模式"
+    },
+    {
+      "key": "remove-vertex-color.mode.Remove",
+      "value": "删除顶点颜色"
+    },
+    {
+      "key": "remove-vertex-color.mode.DontRemove",
+      "value": "保留顶点颜色"
+    },
+    {
+      "key": "general.vrcsdk-required",
+      "value": "此组件需要 VRCSDK 才能工作。"
+    },
+    {
+      "key": "sync-param-sequence.platform",
+      "value": "主平台"
+    },
+    {
+      "key": "sync-param-sequence.platform.tooltip",
+      "value": "此平台构建时，Modular Avatar将记录所有参数，供其他平台使用"
+    },
+    {
+      "key": "sync-param-sequence.parameters",
+      "value": "共用参数的 Asset"
+    },
+    {
+      "key": "sync-param-sequence.parameters.tooltip",
+      "value": "用于存储共用参数的 Assets。请勿使用已经在 Avatar descriptor 中设置的相同参数 。"
+    },
+    {
+      "key": "sync-param-sequence.create-asset",
+      "value": "新增"
+    },
+    {
+      "key": "sync-param-sequence.create-asset.tooltip",
+      "value": "创建一个新的 Expression Parameters"
+    },
+    {
+      "key": "platform.vrchat.settings.mmd_world_support",
+      "value": "MMD 世界支持"
+    },
+    {
+      "key": "platform_filter.platform",
+      "value": "平台"
+    },
+    {
+      "key": "platform_filter.exclude",
+      "value": "排除此平台"
+    },
+    {
+      "key": "platform_filter.include",
+      "value": "包含此平台"
+    },
+    {
+      "key": "rename_collision_tags.label",
+      "value": "标签"
+    },
+    {
+      "key": "rename_collision_tags.rename_to",
+      "value": "将名称更改为"
+    },
+    {
+      "key": "rename_collision_tags.auto_rename",
+      "value": "自动重命名"
+    },
+    {
+      "key": "error.mmd.multiple_mmd_mode_behaviors",
+      "value": "[MA-0021] 在图层 {0} 中发现多个 MA MMD Layer Control 组件"
+    },
+    {
+      "key": "error.mmd.multiple_mmd_mode_behaviors:hint",
+      "value": "每个图层只能附加一个 MA MMD Layer Control 组件。"
+    },
+    {
+      "key": "error.mmd.mmd_mode_in_child_state",
+      "value": "[MA-0022] 在图层 {0} 的子状态机 {1} 上发现 MA MMD Layer Control 组件"
+    },
+    {
+      "key": "error.mmd.mmd_mode_in_child_state:hint",
+      "value": "MA MMD Layer Control 应当直接附加在图层上，而不是附加在单独的状态机中。"
+    },
+    {
+      "key": "error.mmd.mmd_mode_in_child_state_machine",
+      "value": "[MA-0023] 在层 {0} 的子状态机 {1} 上发现MA MMD Layer Control 组件"
+    },
+    {
+      "key": "error.mmd.mmd_mode_in_child_state_machine:hint",
+      "value": "MA MMD Layer Control 应当直接附加在图层上，而不是附加在单独的状态机中。"
+    },
+    {
+      "key": "warning.mmd.wd_off",
+      "value": "检测到 MMD Layer Control 组件，但部分图层仍有状态为 Write Defaults OFF 的状态机"
+    },
+    {
+      "key": "warning.mmd.wd_off:description",
+      "value": "图层 {0} 中包含状态为 Write Defaults OFF 的状态机，这可能会导致 “MMD 兼容”功能无法正常工作。"
+    },
+    {
+      "key": "warning.mmd.wd_off:hint",
+      "value": "图层中若有状态机将 Write Defaults 设置为 OFF，可能会导致 MMD 世界的兼容性问题。如有需要，请考虑将这些图层內部所有状态机的 Write Defaults 设置为 ON；或者，你也可以在不需要时，在 MA VRChat Settings 组件中停用 MMD 支持。"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.shape_name",
+      "value": "形态键名称"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.shape_name.tooltip",
+      "value": "用于筛选顶点的形态键名称"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.browse",
+      "value": "选择"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.threshold",
+      "value": "阈值"
+    },
+    {
+      "key": "reactive_object.delete-mesh-by-shape.threshold.tooltip",
+      "value": "位移超过此距离的顶点将在形态键启用时被过滤"
+    },
+    {
+      "key": "global_collider.manual_remap",
+      "value": "手动重映射"
+    },
+    {
+      "key": "global_collider.manual_remap.tooltip",
+      "value": "启用此选项以手动指定此组件要修改的 VRC Avatar Descriptor Collider。"
+    },
+    {
+      "key": "hint.global_collider_manual_vrc",
+      "value": "若未手动指定，MA Global Collider 将会自动选择一个可用的碰撞体。"
+    },
+    {
+      "key": "global_collider.low_priority",
+      "value": "低优先级碰撞器"
+    },
+    {
+      "key": "global_collider.low_priority.tooltip",
+      "value": "如果启用，此 Global Collider 可能会被其他 Global Collider 覆盖。"
+    },
+    {
+      "key": "hint.global_collider.low_priority",
+      "value": "低优先级的碰撞体可能会被使用“自动重映射”或“手动重映射”的 Global Collider 覆盖。"
+    },
+    {
+      "key": "global_collider.hijack_collider",
+      "value": "要重映射的碰撞器"
+    },
+    {
+      "key": "global_collider.hijack_collider.tooltip",
+      "value": "指定要修改的 VRC Avatar Descriptor 中的碰撞体。"
+    },
+    {
+      "key": "global_collider.hijack_none",
+      "value": "若未指定碰撞体，此组件将被跳过。"
+    },
+    {
+      "key": "global_collider.bone.HandLeft",
+      "value": "左手"
+    },
+    {
+      "key": "global_collider.bone.HandRight",
+      "value": "右手"
+    },
+    {
+      "key": "global_collider.bone.FingerIndexLeft",
+      "value": "左手食指"
+    },
+    {
+      "key": "global_collider.bone.FingerIndexRight",
+      "value": "右手食指"
+    },
+    {
+      "key": "global_collider.bone.FingerMiddleLeft",
+      "value": "左手中指"
+    },
+    {
+      "key": "global_collider.bone.FingerMiddleRight",
+      "value": "右手中指"
+    },
+    {
+      "key": "global_collider.bone.FingerRingLeft",
+      "value": "左手无名指"
+    },
+    {
+      "key": "global_collider.bone.FingerRingRight",
+      "value": "右手无名指"
+    },
+    {
+      "key": "global_collider.bone.FingerLittleLeft",
+      "value": "左手小指"
+    },
+    {
+      "key": "global_collider.bone.FingerLittleRight",
+      "value": "右手小指"
+    },
+    {
+      "key": "global_collider.bone.Head",
+      "value": "头部"
+    },
+    {
+      "key": "global_collider.bone.Torso",
+      "value": "躯干"
+    },
+    {
+      "key": "global_collider.bone.FootLeft",
+      "value": "左脚"
+    },
+    {
+      "key": "global_collider.bone.FootRight",
+      "value": "右脚"
+    },
+    {
+      "key": "global_collider.contact_only_vrc",
+      "value": "在 VRC 中，此碰撞体仅作为 Contact Sender 使用。"
+    },
+    {
+      "key": "global_collider.root_transform",
+      "value": "根变换"
+    },
+    {
+      "key": "global_collider.copy_original_shape",
+      "value": "复制原碰撞体的形状"
+    },
+    {
+      "key": "global_collider.copy_original_shape.tooltip",
+      "value": "此组件的形状将会从原始组件的设置中复制。"
+    },
+    {
+      "key": "global_collider.header_shape",
+      "value": "形状"
+    },
+    {
+      "key": "global_collider.radius",
+      "value": "半径"
+    },
+    {
+      "key": "global_collider.height",
+      "value": "高度"
+    },
+    {
+      "key": "global_collider.position",
+      "value": "位置"
+    },
+    {
+      "key": "global_collider.rotation",
+      "value": "旋转"
+    },
+    {
+      "key": "global_collider.visualize_gizmo",
+      "value": "可视化Gizmo"
+    },
+    {
+      "key": "global_collider.visualize_gizmo.tooltip",
+      "value": "在场景视图中显示碰撞体的线框。"
+    },
+    {
+      "key": "validation.global_collider.manual_collider_none",
+      "value": "Global Collider 组件已启用“手动重映射”选项，但未指派任何碰撞体。"
+    },
+    {
+      "key": "error.global_collider.invalid_manual_collider_vrc",
+      "value": "[MA-0024] 此组件上手动指定的 Global Collider（{1}）在 VRC 中不可用。"
+    },
+    {
+      "key": "validation.global_collider.using_index_fingers_vrc",
+      "value": "食指（Index Finger）的碰撞体已自动重映射。"
+    },
+    {
+      "key": "validation.global_collider.using_index_fingers_vrc:description",
+      "value": "对于 VRC，建议将 Global Collider 控制在 6 个以内来维持食指（Index Finger）功能的正常运作。你当前已有{0}个 Global Collider。"
+    },
+    {
+      "key": "validation.global_collider.using_index_fingers_vrc:hint",
+      "value": "请减少 MA Global Collider 组件的数量。"
+    },
+    {
+      "key": "validation.global_collider.no_global_colliders_available_vrc",
+      "value": "使用了过多的 Global Collider。"
+    },
+    {
+      "key": "validation.global_collider.no_global_colliders_available_vrc:description",
+      "value": "对于 VRC，你最多可以使用 8 个 Global Collider。你当前已经使用了{0}个 Global Collider。"
+    },
+    {
+      "key": "validation.global_collider.no_global_colliders_available_vrc:hint",
+      "value": "请减少 MA Global Collider 组件的数量。"
+    },
+    {
+      "key": "validation.global_collider.manual_collider_overwrite",
+      "value": "多个 Global Collider 组件被手动设定为使用同一个碰撞体。"
+    },
+    {
+      "key": "validation.global_collider.manual_collider_overwrite:description",
+      "value": "最后一个同类组件将会覆盖先前的组件。"
+    },
+    {
+      "key": "error.parameter_assigner.value_out_of_range",
+      "value": "[MA-0025] 参数“{0}”的自动取值过多"
+    },
+    {
+      "key": "error.parameter_assigner.value_out_of_range:description",
+      "value": "参数“{0}”中自动取值的菜单项数量超出了 VRChat Int 参数的取值范围（0-255）。"
+    },
+    {
+      "key": "error.parameter_assigner.value_out_of_range:hint",
+      "value": "请减少使用该参数的自动取值菜单项，或为其指定有效范围内的明确数值。"
+    },
+    {
+      "key": "version_mismatch.window_title",
+      "value": "需要更新 Modular Avatar"
+    },
+    {
+      "key": "version_mismatch.headline",
+      "value": "你的 Modular Avatar 版本太旧了"
+    },
+    {
+      "key": "version_mismatch.warning",
+      "value": "继续操作可能会损坏你的数据。"
+    },
+    {
+      "key": "version_mismatch.instructions",
+      "value": "请将 Modular Avatar 更新到以下版本："
+    },
+    {
+      "key": "version_mismatch.required",
+      "value": "所需版本："
+    },
+    {
+      "key": "version_mismatch.installed",
+      "value": "已安装："
+    },
+    {
+      "key": "version_mismatch.affected_assets",
+      "value": "以下资产需要此版本："
+    },
+    {
+      "key": "version_mismatch.upgrade_help",
+      "value": "我该怎样升级？"
+    },
+    {
+      "key": "version_mismatch.refresh_asset_database",
+      "value": "刷新资源数据库"
+    },
+    {
+      "key": "version_mismatch.close_unity",
+      "value": "关闭 Unity"
+    },
+    {
+      "key": "version_mismatch.ignore",
+      "value": "忽略"
+    },
+    {
+      "key": "version_mismatch.at_your_own_risk",
+      "value": "（风险自负）"
+    },
+    {
+      "key": "version_mismatch.export_warning",
+      "value": "你正在从预览版 Modular Avatar 导出资源包，在当前稳定版上可能表现异常。请务必在最新稳定版上测试你的资源。"
+    },
+    {
+      "key": "version_reset.window_title",
+      "value": "重置版本信息"
+    },
+    {
+      "key": "version_reset.confirmation",
+      "value": "你确定要重置这些资产的最低要求版本吗？"
+    },
+    {
+      "key": "version_reset.current_version",
+      "value": "当前版本："
+    },
+    {
+      "key": "version_reset.highest_required_version",
+      "value": "最高所需版本："
+    },
+    {
+      "key": "version_reset.none",
+      "value": "无"
+    },
+    {
+      "key": "version_reset.warning",
+      "value": "强制降级已有资源可能会损坏你保存的数据。重置后请检查其表现是否正常。"
+    },
+    {
+      "key": "version_reset.set_current",
+      "value": "将所需版本设为当前版本"
+    },
+    {
+      "key": "version_reset.clear_required_version",
+      "value": "清除所需版本数据"
+    },
+    {
+      "key": "version_reset.cancel",
+      "value": "取消"
+    },
+    {
+      "key": "error.rename_params.bit_width_conflict",
+      "value": "[MA-0028] 位宽冲突"
+    },
+    {
+      "key": "error.rename_params.bit_width_conflict:description",
+      "value": "参数 {0} 指定了多个位宽：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.bit_width_conflict:hint",
+      "value": "为避免不可预期的行为，请只在一个 MA Parameters 组件里填写位宽，其余留空。若存在多个值，Modular Avatar 会按层级顺序取第一个位宽。"
+    },
+    {
+      "key": "error.rename_params.representation_conflict",
+      "value": "[MA-0029] 表示方式冲突"
+    },
+    {
+      "key": "error.rename_params.representation_conflict:description",
+      "value": "参数 {0} 指定了多个表示方式：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.representation_conflict:hint",
+      "value": "为避免不可预期的行为，请只在一个 MA Parameters 组件里填写表示方式，其余留空。若存在多个值，Modular Avatar 会按层级顺序取第一个表示方式。"
+    },
+    {
+      "key": "error.rename_params.lerp_duration_conflict",
+      "value": "[MA-0030] 插值时长冲突"
+    },
+    {
+      "key": "error.rename_params.lerp_duration_conflict:description",
+      "value": "参数 {0} 指定了多个插值时长：{1} != {2}"
+    },
+    {
+      "key": "error.rename_params.lerp_duration_conflict:hint",
+      "value": "为避免不可预期的行为，请只在一个 MA Parameters 组件里填写插值时长，其余留空。若存在多个值，Modular Avatar 会按层级顺序取第一个插值时长。"
+    },
+    {
+      "key": "error.rename_collision_tags.ambiguous_parameter",
+      "value": "[MA-0031] 碰撞标签参数名不明确"
+    },
+    {
+      "key": "error.rename_collision_tags.ambiguous_parameter:description",
+      "value": "参数 {0} 中含有两处或更多 `_CollisionTag_`。"
+    },
+    {
+      "key": "error.rename_collision_tags.ambiguous_parameter:hint",
+      "value": "请从前缀或标签中移除字面量 `_CollisionTag_`。"
+    },
+    {
+      "key": "validation.legacy_vrcfury_warning",
+      "value": "[MA-1600] VRCFury 版本过旧，因此无法支持 Mesh Cutter 与 Shape Changer 的删除模式"
+    },
+    {
+      "key": "validation.legacy_vrcfury_warning:hint",
+      "value": "请将 VRCFury 更新至最新版本。使用 Mesh Cutter 或 Shape Changer 的删除模式时，需使用 VRCFury 1.1250.0 及以上版本。"
+    },
+    {
+      "key": "general.override_unavailable",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "key": "boneproxy.bone_reference",
+      "value": "骨骼引用"
+    },
+    {
+      "key": "boneproxy.sub_path",
+      "value": "子路径"
+    },
+    {
+      "key": "menu_preview.enabled",
+      "value": "启用"
+    },
+    {
+      "key": "ro_sim.active_state",
+      "value": "活动状态"
+    },
+    {
+      "key": "ro_sim.lock",
+      "value": "锁定"
+    },
+    {
+      "key": "menuinstall.extract_to_objects",
+      "value": "将菜单提取为对象"
+    },
+    {
+      "key": "menuinstall.provided_by",
+      "value": "菜单内容由 {0} 组件提供"
+    },
+    {
+      "key": "ma_asset_bundle.unpack",
+      "value": "解包"
+    },
+    {
+      "key": "setup_outfit.window_title",
+      "value": "设置服装"
+    },
+    {
+      "key": "fit_preview.window_title",
+      "value": "适配预览"
+    },
+    {
+      "key": "fit_preview.target_avatar",
+      "value": "目标 Avatar"
+    },
+    {
+      "key": "fit_preview.help.behavior",
+      "value": "预览效果可能与最终构建不完全一致。调整后请在播放模式下确认。"
+    },
+    {
+      "key": "blendshape_select.window_title",
+      "value": "选择形态键"
+    },
+    {
+      "key": "ma_info.window_title",
+      "value": "信息"
+    },
+    {
+      "key": "mmd_mode.disable_in_mmd_mode",
+      "value": "在 MMD 模式下禁用"
+    },
+    {
+      "key": "control_type.Button",
+      "value": "按钮 (Button)"
+    },
+    {
+      "key": "control_type.Toggle",
+      "value": "开关 (Toggle)"
+    },
+    {
+      "key": "control_type.SubMenu",
+      "value": "子菜单 (Sub Menu)"
+    },
+    {
+      "key": "control_type.TwoAxisPuppet",
+      "value": "双轴摇杆 (Two Axis Puppet)"
+    },
+    {
+      "key": "control_type.FourAxisPuppet",
+      "value": "四轴摇杆 (Four Axis Puppet)"
+    },
+    {
+      "key": "control_type.RadialPuppet",
+      "value": "百分比按钮 (Radial Puppet)"
+    }
+  ],
+  "components": [
+    {
+      "path": "Modular Avatar/MA Reactive Move",
+      "text": "反应式移动 (MA Reactive Move)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarReactiveMove"
+    },
+    {
+      "path": "Modular Avatar/MA Material Swap",
+      "text": "材质交换 (MA Material Swap)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMaterialSwap"
+    },
+    {
+      "path": "Modular Avatar/MA Object Toggle",
+      "text": "对象开关 (MA Object Toggle)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarObjectToggle"
+    },
+    {
+      "path": "Modular Avatar/MA Mesh Cutter",
+      "text": "网格切割 (MA Mesh Cutter)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMeshCutter"
+    },
+    {
+      "path": "Modular Avatar/MA Shape Changer",
+      "text": "形态切换 (MA Shape Changer)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarShapeChanger"
+    },
+    {
+      "path": "Modular Avatar/Vertex Filters/MA Vertex Filter - By Blendshape",
+      "text": "顶点过滤器 - 按形态键 (Vertex Filter - By Blendshape)",
+      "typeName": "nadena.dev.modular_avatar.core.vertex_filters.VertexFilterByShapeComponent"
+    },
+    {
+      "path": "Modular Avatar/Vertex Filters/MA Vertex Filter - By Axis",
+      "text": "顶点过滤器 - 按坐标轴 (Vertex Filter - By Axis)",
+      "typeName": "nadena.dev.modular_avatar.core.vertex_filters.VertexFilterByAxisComponent"
+    },
+    {
+      "path": "Modular Avatar/Vertex Filters/MA Vertex Filter - By Mask",
+      "text": "顶点过滤器 - 按蒙版 (Vertex Filter - By Mask)",
+      "typeName": "nadena.dev.modular_avatar.core.vertex_filters.VertexFilterByMaskComponent"
+    },
+    {
+      "path": "Modular Avatar/Vertex Filters/MA Vertex Filter - By Bone",
+      "text": "顶点过滤器 - 按骨骼 (Vertex Filter - By Bone)",
+      "typeName": "nadena.dev.modular_avatar.core.vertex_filters.VertexFilterByBoneComponent"
+    },
+    {
+      "path": "Modular Avatar/Vertex Filters/MA Vertex Filter - By UV Tile",
+      "text": "顶点过滤器 - 按 UV 瓦片 (Vertex Filter - By UV Tile)",
+      "typeName": "nadena.dev.modular_avatar.core.vertex_filters.VertexFilterByUVTileComponent"
+    },
+    {
+      "path": "Modular Avatar/MA Material Setter",
+      "text": "材质设置器 (MA Material Setter)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMaterialSetter"
+    },
+    {
+      "path": "Modular Avatar/MA Menu Item",
+      "text": "菜单项 (MA Menu Item)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMenuItem"
+    },
+    {
+      "path": "Modular Avatar/MA World Fixed Object",
+      "text": "世界固定对象 (MA World Fixed Object)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarWorldFixedObject"
+    },
+    {
+      "path": "Modular Avatar/MA Visible Head Accessory",
+      "text": "头部可见配件 (MA Visible Head Accessory)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarVisibleHeadAccessory"
+    },
+    {
+      "path": "Modular Avatar/MA Global Collider",
+      "text": "全局碰撞体 (MA Global Collider)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarGlobalCollider"
+    },
+    {
+      "path": "Modular Avatar/MA Outfit Root",
+      "text": "服装根 (MA Outfit Root)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarOutfitRoot"
+    },
+    {
+      "path": "Modular Avatar/MA PhysBone Blocker",
+      "text": "PhysBone 屏蔽 (MA PhysBone Blocker)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarPBBlocker"
+    },
+    {
+      "path": "Modular Avatar/MA Menu Group",
+      "text": "菜单组 (MA Menu Group)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMenuGroup"
+    },
+    {
+      "path": "Modular Avatar/MA Menu Installer",
+      "text": "菜单安装器 (MA Menu Installer)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMenuInstaller"
+    },
+    {
+      "path": "Modular Avatar/MA Replace Object",
+      "text": "替换对象 (MA Replace Object)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarReplaceObject"
+    },
+    {
+      "path": "Modular Avatar/MA Move To",
+      "text": "移动到 (MA Move To)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMoveTo"
+    },
+    {
+      "path": "Modular Avatar/MA Menu Install Target",
+      "text": "菜单安装目标 (MA Menu Install Target)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMenuInstallTarget"
+    },
+    {
+      "path": "Modular Avatar/MA Parameters",
+      "text": "参数 (MA Parameters)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarParameters"
+    },
+    {
+      "path": "Modular Avatar/MA MMD Layer Control",
+      "text": "MMD 层控制 (MA MMD Layer Control)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMMDLayerControl"
+    },
+    {
+      "path": "Modular Avatar/MA Scale Adjuster",
+      "text": "比例调整器 (MA Scale Adjuster)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarScaleAdjuster"
+    },
+    {
+      "path": "Modular Avatar/MA Convert Constraints",
+      "text": "约束转换 (MA Convert Constraints)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarConvertConstraints"
+    },
+    {
+      "path": "Modular Avatar/MA World Scale Object",
+      "text": "世界缩放对象 (MA World Scale Object)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarWorldScaleObject"
+    },
+    {
+      "path": "Modular Avatar/MA Merge Armature",
+      "text": "合并骨架 (MA Merge Armature)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMergeArmature"
+    },
+    {
+      "path": "Modular Avatar/MA Rename VRChat Collision Tags",
+      "text": "重命名 VRChat 碰撞标签 (MA Rename VRChat Collision Tags)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarRenameVRChatCollisionTags"
+    },
+    {
+      "path": "Modular Avatar/MA Mesh Settings",
+      "text": "网格设置 (MA Mesh Settings)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMeshSettings"
+    },
+    {
+      "path": "Modular Avatar/MA VRChat Settings",
+      "text": "VRChat 设置 (MA VRChat Settings)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarVRChatSettings"
+    },
+    {
+      "path": "Modular Avatar/MA Blendshape Sync",
+      "text": "形态键数值同步 (MA Blendshape Sync)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarBlendshapeSync"
+    },
+    {
+      "path": "Modular Avatar/MA Floor Adjuster",
+      "text": "落地调整 (MA Floor Adjuster)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarFloorAdjuster"
+    },
+    {
+      "path": "Modular Avatar/MA Bone Proxy",
+      "text": "骨骼代理 (MA Bone Proxy)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarBoneProxy"
+    },
+    {
+      "path": "Modular Avatar/MA Sync Parameter Sequence",
+      "text": "同步参数序列 (MA Sync Parameter Sequence)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarSyncParameterSequence"
+    },
+    {
+      "path": "Modular Avatar/MA Merge Animator",
+      "text": "合并动画控制器 (MA Merge Animator)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMergeAnimator"
+    },
+    {
+      "path": "Modular Avatar/MA Remove Vertex Color",
+      "text": "移除顶点色 (MA Remove Vertex Color)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarRemoveVertexColor"
+    },
+    {
+      "path": "Modular Avatar/MA Platform Filter",
+      "text": "平台过滤 (MA Platform Filter)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarPlatformFilter"
+    },
+    {
+      "path": "Modular Avatar/MA Move Independently",
+      "text": "独立移动 (MA Move Independently)",
+      "typeName": "nadena.dev.modular_avatar.core.MAMoveIndependently"
+    },
+    {
+      "path": "Modular Avatar/MA Merge Motion (Blend Tree)",
+      "text": "合并动作（混合树） (MA Merge Motion)",
+      "typeName": "nadena.dev.modular_avatar.core.ModularAvatarMergeBlendTree"
+    }
+  ],
+  "menus": [
+    {
+      "key": "GameObject/Modular Avatar/Setup Outfit",
+      "value": "设置服装 (Setup Outfit)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Create Toggle",
+      "value": "创建开关 (Create Toggle)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Create Toggle for Selection",
+      "value": "为所选对象创建开关 (Create Toggle for Selection)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Manual Bake Avatar",
+      "value": "手动烘焙 Avatar (Manual Bake Avatar)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Show Modular Avatar Information",
+      "value": "显示 MA 信息 (Show Modular Avatar Information)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Show Reaction Debugger",
+      "value": "显示响应式组件调试工具 (Show Reaction Debugger)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Dump RC Blend Tree",
+      "value": "导出 RC 混合树 (Dump RC Blend Tree)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Show Fit Preview",
+      "value": "显示适配预览 (Show Fit Preview)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Extract Menu",
+      "value": "提取菜单 (Extract Menu)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Sync Bones in Edit Mode",
+      "value": "编辑模式下同步骨骼 (Sync Bones in Edit Mode)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Show Modular Avatar Information",
+      "value": "显示 MA 信息 (Show Modular Avatar Information)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Manual Bake Avatar",
+      "value": "手动烘焙 Avatar (Manual Bake Avatar)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Reload Localizations",
+      "value": "重新加载本地化 (Reload Localizations)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Debug/Log Sync Parameter Sequence",
+      "value": "记录参数序列同步日志 (Log Sync Parameter Sequence)"
+    },
+    {
+      "key": "GameObject/Modular Avatar/Reset version information",
+      "value": "重置版本信息 (Reset version information)"
+    },
+    {
+      "key": "Assets/Modular Avatar/Reset version information",
+      "value": "重置版本信息 (Reset version information)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Debug/Show Version Mismatch Warning",
+      "value": "显示版本不匹配警告 (Show Version Mismatch Warning)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Debug/Show Version Mismatch Warning (Non-Modal)",
+      "value": "显示非模态版本警告 (Show Version Mismatch Warning)"
+    },
+    {
+      "key": "Assets/Create/BlendTree",
+      "value": "混合树 (BlendTree)"
+    },
+    {
+      "key": "Tools/Modular Avatar/Manual bake avatar",
+      "value": "手动烘焙 Avatar (Manual bake avatar)"
+    }
+  ],
+  "literals": [
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.BoneProxyEditor",
+      "source": "Bone reference",
+      "value": "骨骼引用"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.BoneProxyEditor",
+      "source": "Sub path",
+      "value": "子路径"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MenuPreviewGUI",
+      "source": "Enabled",
+      "value": "启用"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MenuInstallerEditor",
+      "source": "Extract menu to objects",
+      "value": "将菜单提取为对象"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MAAssetBundleEditor",
+      "source": "Unpack",
+      "value": "解包"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.BlendshapeSelectWindow",
+      "source": "Select blendshapes",
+      "value": "选择形态键"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ParamsUsageWindow",
+      "source": "MA Information",
+      "value": "信息"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ESOErrorWindow",
+      "source": "Setup Outfit",
+      "value": "设置服装"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.Simulator.ROSimulator",
+      "source": "Lock",
+      "value": "锁定"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.Simulator.ROSimulator",
+      "source": "Active State",
+      "value": "活动状态"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.editor.fit_preview.FitPreviewWindow",
+      "source": "MA Fit Preview",
+      "value": "适配预览"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MenuInstallerEditor",
+      "source": "Menu contents provided by ",
+      "value": "菜单内容由 "
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MenuInstallerEditor",
+      "source": " component",
+      "value": " 组件提供"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.rc.RCBlendTreeDebugger",
+      "source": "Refresh",
+      "value": "刷新"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.rc.RCBlendTreeDebugger",
+      "source": "Search",
+      "value": "搜索"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MeshCutter.VFByUVTileEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.VFByUVTileEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ShapeChangerEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MaterialSwap.MatSwapEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MatSwapEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.OutfitRootEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ObjectSwitcherEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MoveToEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MaterialSetterEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.RenameCollisionTagsEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.AvatarParametersEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ReactiveMoveEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MoveIndependentlyEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ShapeChanger.ShapeChangerEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ShapeChanger.DragAndDropManipulator",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.QuickSwapModeDrawer",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MaterialSwapEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.Deregister",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.DragAndDropManipulator",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ShapeChanger.ObjectSwitcherEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ShapeChanger.MaterialSetterEditor",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ToggleElement",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.BoneInfo",
+      "source": "Unable to show override changes",
+      "value": "无法显示覆盖项的变更"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MenuObjectHeader",
+      "source": "Enabled",
+      "value": "启用"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.ScopeSentinel",
+      "source": "Enabled",
+      "value": "启用"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.VisitorContext",
+      "source": "Enabled",
+      "value": "启用"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MAAssetBundleExtractor",
+      "source": "Unpack",
+      "value": "解包"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.AssetInfo",
+      "source": "Unpack",
+      "value": "解包"
+    },
+    {
+      "typePrefix": "nadena.dev.modular_avatar.core.editor.MMDModeEditor",
+      "source": "mmd_mode.disable_in_mmd_mode",
+      "value": "在 MMD 模式下禁用"
+    }
+  ],
+  "uiLiterals": [
+    {
+      "key": "Target Avatar",
+      "value": "目标 Avatar"
+    },
+    {
+      "key": "Behavior may not precisely match final build. Check in play mode after adjusting things!",
+      "value": "预览效果可能与最终构建不完全一致。调整后请在播放模式下确认。"
+    },
+    {
+      "key": "Disable in MMD mode",
+      "value": "在 MMD 模式下禁用"
+    }
+  ],
+  "controls": [
+    {
+      "key": "Button",
+      "value": "按钮 (Button)"
+    },
+    {
+      "key": "Toggle",
+      "value": "开关 (Toggle)"
+    },
+    {
+      "key": "Sub Menu",
+      "value": "子菜单 (Sub Menu)"
+    },
+    {
+      "key": "Two Axis Puppet",
+      "value": "双轴摇杆 (Two Axis Puppet)"
+    },
+    {
+      "key": "Four Axis Puppet",
+      "value": "四轴摇杆 (Four Axis Puppet)"
+    },
+    {
+      "key": "Radial Puppet",
+      "value": "百分比摇杆 (Radial Puppet)"
+    }
+  ]
+}
