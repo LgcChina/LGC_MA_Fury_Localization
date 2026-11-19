@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
+// LGC_MAFury_中文拓展 v2.0.0 — Modular Avatar adapter
 // Stable translation resources. Missing entries keep the original text.
 using System;
 using System.Collections.Generic;

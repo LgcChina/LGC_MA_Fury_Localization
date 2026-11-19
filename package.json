@@ -1,6 +1,6 @@
 {
   "name": "com.lgcchina.ma-fury-localization",
-  "displayName": "LGC_MA_Fury_Localization",
+  "displayName": "LGC_MAFury_中文拓展",
   "version": "2.0.0",
   "unity": "2022.3",
   "description": "自动检测 Modular Avatar 与 VRCFury 的独立简体中文界面拓展，分别支持停用还原与重载词典；覆盖 MA 和 VRCFury 组件、动作、菜单与 SPS 面板。",

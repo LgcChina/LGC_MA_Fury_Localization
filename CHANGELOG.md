@@ -4,7 +4,8 @@
 
 ### 更新内容
 
-- 正式合并发布 MA 与 VRCFury 汉化，包展示名称、窗口和 GitHub 仓库统一为 `LGC_MA_Fury_Localization`。
+- 撤回首次 2.0.0 发行包，修正中文展示名称后以相同版本号重新发布；同步包列表、Unity 菜单、窗口、发行标题与文档。
+- 正式合并发布 MA 与 VRCFury 汉化，包展示名称、Unity 菜单和窗口统一为 `LGC_MAFury_中文拓展`，GitHub 仓库名称为 `LGC_MA_Fury_Localization`。
 - 自动检测 MA / VRCFury，两个模块分别启用、停用还原及重新加载各自 JSON 词典；未安装的插件独立跳过。
 - 保留 MA 字段、说明、组件标题和菜单汉化，最低适配目标 1.10.0；缺少词条或可选接口时跳过。
 - 扩展 VRCFury 组件、动作、菜单、SPS 及选项显示；组件标题保留英文便于搜索，BlendShape 统一为“形态键”。
@@ -14,9 +15,9 @@
 
 ### 安装方式
 
-- VCC / ALCOM 添加或刷新 `https://lgcchina.github.io/LGC-VRC-Packages/index.json`，安装 `LGC_MA_Fury_Localization` 2.0.0。
+- VCC / ALCOM 添加或刷新 `https://lgcchina.github.io/LGC-VRC-Packages/index.json`，安装 `LGC_MAFury_中文拓展` 2.0.0。
 - 包 ID 为 `com.lgcchina.ma-fury-localization`；也可将 Release ZIP 内容解压到项目 `Packages/com.lgcchina.ma-fury-localization`，ZIP 根目录包含 package.json。
-- Unity 顶部入口：`LGC > LGC_MA_Fury_Localization v2.0.0`。
+- Unity 顶部入口：`LGC > LGC_MAFury_中文拓展 v2.0.0`。
 - 移除旧 1.0.0 Release 及对应标签，不再提供旧独立包；合集仅收录新的统一包，发行元数据不包含旧包迁移声明。
 
 ### 容易踩的坑

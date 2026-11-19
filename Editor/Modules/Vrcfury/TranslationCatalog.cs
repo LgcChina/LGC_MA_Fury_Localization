@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0 — VRCFury adapter
+// LGC_MAFury_中文拓展 v2.0.0 — VRCFury adapter
 // Atomic dictionary reload; exact text, display titles, enum captions and anchored templates.
 using System;
 using System.Collections.Generic;

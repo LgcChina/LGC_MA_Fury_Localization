@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0
+// LGC_MAFury_中文拓展 v2.0.0
 // Shared window and lifecycle. Each optional plugin owns its translations, state and Harmony patches.
 using System;
 using UnityEditor;
@@ -31,7 +31,7 @@ namespace LgcChina.MaFuryLocalization
             try { action(); }
             catch (Exception e)
             {
-                Debug.LogWarning($"[LGC_MA_Fury_Localization v{Version}] {name} 汉化已跳过：{(e.InnerException ?? e).Message}");
+                Debug.LogWarning($"[LGC_MAFury_中文拓展 v{Version}] {name} 汉化已跳过：{(e.InnerException ?? e).Message}");
             }
         }
 
@@ -46,18 +46,18 @@ namespace LgcChina.MaFuryLocalization
     {
         private Vector2 scroll;
 
-        [MenuItem("LGC/LGC_MA_Fury_Localization v" + LocalizationTool.Version)]
-        private static void Open() => GetWindow<LocalizationWindow>("LGC_MA_Fury_Localization v" + LocalizationTool.Version);
+        [MenuItem("LGC/LGC_MAFury_中文拓展 v" + LocalizationTool.Version)]
+        private static void Open() => GetWindow<LocalizationWindow>("LGC_MAFury_中文拓展 v" + LocalizationTool.Version);
 
         private void OnEnable()
         {
-            titleContent = new GUIContent("LGC_MA_Fury_Localization v" + LocalizationTool.Version);
+            titleContent = new GUIContent("LGC_MAFury_中文拓展 v" + LocalizationTool.Version);
             minSize = new Vector2(580, 460);
         }
 
         private void OnGUI()
         {
-            EditorGUILayout.LabelField("LGC_MA_Fury_Localization v" + LocalizationTool.Version, EditorStyles.boldLabel);
+            EditorGUILayout.LabelField("LGC_MAFury_中文拓展 v" + LocalizationTool.Version, EditorStyles.boldLabel);
             EditorGUILayout.HelpBox("自动检测已安装的 MA 和 VRCFury，分别启用对应汉化。未安装的插件会跳过。"
                 + "保存词典后点击对应的重载按钮，再重新选中对象或重开相关界面。", MessageType.None);
             if (GUILayout.Button("重新检测已安装插件")) LocalizationTool.InitializeAll();

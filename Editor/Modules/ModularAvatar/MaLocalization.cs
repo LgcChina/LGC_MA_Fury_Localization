@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0 — Modular Avatar adapter
+// LGC_MAFury_中文拓展 v2.0.0 — Modular Avatar adapter
 // Independent editor localization, minimum MA 1.10.0. Missing version-specific interfaces are skipped.
 using System;
 using System.Collections.Generic;

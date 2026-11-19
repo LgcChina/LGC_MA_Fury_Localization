@@ -1,4 +1,4 @@
-# LGC_MA_Fury_Localization package builder v2.0.0
+# LGC_MAFury_中文拓展 package builder v2.0.0
 # Builds release artifacts only; does not run Unity or modify a project.
 import argparse
 import hashlib

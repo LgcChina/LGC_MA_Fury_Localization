@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0 — VRCFury adapter
+// LGC_MAFury_中文拓展 v2.0.0 — VRCFury adapter
 // Optional display hooks for features, actions and SPS. Serialized values and original package files are untouched.
 using System;
 using System.Collections.Generic;

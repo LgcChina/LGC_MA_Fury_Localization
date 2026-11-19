@@ -1,4 +1,4 @@
-# LGC_MA_Fury_Localization v2.0.0
+# LGC_MAFury_中文拓展 v2.0.0
 
 一个包管理 Modular Avatar 与 VRCFury 的简体中文界面。自动检测已安装插件，分别启用翻译；未安装的插件跳过，不自动安装 MA 或 VRCFury。可以分别停用还原与重新加载词典，原版插件文件保持原样。
 
@@ -8,14 +8,14 @@
 - VPM 合集：https://github.com/LgcChina/LGC-VRC-Packages
 - VPM 订阅：https://lgcchina.github.io/LGC-VRC-Packages/index.json
 - 包 ID：`com.lgcchina.ma-fury-localization`
-- 窗口入口：**Unity 顶部 LGC > LGC_MA_Fury_Localization v2.0.0**
+- 窗口入口：**Unity 顶部 LGC > LGC_MAFury_中文拓展 v2.0.0**
 
 ## 安装
 
 推荐通过 VCC / ALCOM 安装：
 
 1. 在 VCC / ALCOM 添加上方 VPM 订阅地址。
-2. 在 Unity 2022.3 的 VRChat 项目中安装 **LGC_MA_Fury_Localization**。
+2. 在 Unity 2022.3 的 VRChat 项目中安装 **LGC_MAFury_中文拓展**。
 3. 等待 Unity 导入、编译，重新选中对象并重开菜单或 Inspector。
 4. 从顶部 LGC 菜单打开管理窗口，查看每个插件的检测结果与汉化状态。
 
@@ -76,7 +76,7 @@ MA 中同一概念可能有多个显示来源，例如 `control_type.RadialPuppe
 
 ## 包标识与更新
 
-正式包展示名称及仓库均为 `LGC_MA_Fury_Localization`，包 ID 为 `com.lgcchina.ma-fury-localization`。旧的 1.0.0 发行版停止提供，合集只收录本统一包的正式发行版。
+正式包展示名称为 `LGC_MAFury_中文拓展`，GitHub 仓库为 `LGC_MA_Fury_Localization`，包 ID 为 `com.lgcchina.ma-fury-localization`。旧的 1.0.0 发行版停止提供，合集只收录本统一包的正式发行版。
 包 ID、程序集名称、两份词典路径及资源 GUID 采用固定名称；后续升级前请备份包内自定义译文。
 
 ## 还原与卸载
@@ -99,6 +99,8 @@ MA 中同一概念可能有多个显示来源，例如 `control_type.RadialPuppe
 ## 发布维护与许可
 
 版本 **2.0.0** 同步记录在包元数据、窗口、菜单、脚本注释、README 与 CHANGELOG。包 ID、程序集名和两份词典路径使用固定命名，后续版本号只用于工具版本和记录。
+本次 2.0.0 已撤回首次发行并以中文展示名称重新发布；已安装此前同号发行包时需重新安装本次发行包。
+
 发行包只包含工具脚本、词典、元数据和文档。更新版本、译文和修改日志后，推送 `v版本号` 标签；GitHub Actions 使用 `scripts/package.py` 生成 VPM ZIP、清单和校验值并创建 Release。随后在合集运行 **Build Repo Listing** 刷新在线索引。
 
 本工具以 MIT 许可发布。MA 词典和组件命名整理自使用者提供的 MA 1.19.0 汉化补丁；VRCFury 中文依据原界面文字编写。来源说明见 `THIRD_PARTY_NOTICES.md`，不包含原版图片、图标或 Harmony DLL。

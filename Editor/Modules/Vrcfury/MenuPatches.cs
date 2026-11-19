@@ -1,4 +1,4 @@
-// LGC_MA_Fury_Localization v2.0.0 — VRCFury adapter
+// LGC_MAFury_中文拓展 v2.0.0 — VRCFury adapter
 // Translate menu captions only. Component paths, callbacks, selection data and menu priorities stay original.
 using System;
 using System.Collections.Generic;
