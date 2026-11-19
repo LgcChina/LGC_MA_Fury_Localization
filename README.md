@@ -2,7 +2,9 @@
 
 一个包管理 Modular Avatar 与 VRCFury 的简体中文界面。自动检测已安装插件，分别启用翻译；未安装的插件跳过，不自动安装 MA 或 VRCFury。可以分别停用还原与重新加载词典，原版插件文件保持原样。
 
-- 作者：[LgcChina](https://github.com/LgcChina)
+
+- 作者：[LgcChina](https://github.com/LgcChina)+CODEX编写，创意来源<img width="304" height="146" alt="image" src="https://github.com/user-attachments/assets/1cb383af-043e-42ac-af6e-36760c4576ae" />
+
 - 仓库：https://github.com/LgcChina/LGC_MA_Fury_Localization
 - 当前状态：2.0.0 正式版，MA 与 VRCFury 合并发布；沙盒汉化效果已由使用者手动确认。
 - VPM 合集：https://github.com/LgcChina/LGC-VRC-Packages
