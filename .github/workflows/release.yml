@@ -1,4 +1,4 @@
-# LGC_MAFury_中文拓展 release workflow v2.0.0
+# LGC_VRCMAFury_中文拓展 release workflow v2.3.6
 name: Publish VPM Release
 
 on:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Existing release tag, for example v2.0.0'
+        description: 'Existing release tag, for example v2.3.6'
         required: true
         type: string
 
@@ -38,5 +38,5 @@ jobs:
           gh release create "$RELEASE_TAG"
           dist/*.zip dist/package.json dist/SHA256SUMS.txt
           --verify-tag
-          --title "LGC_MAFury_中文拓展 ${RELEASE_TAG#v}"
+          --title "LGC_VRCMAFury_中文拓展 ${RELEASE_TAG#v}"
           --notes-file RELEASE_NOTES.md

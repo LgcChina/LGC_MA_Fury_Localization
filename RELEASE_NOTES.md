@@ -1,24 +1,21 @@
-# LGC_MAFury_中文拓展 2.0.0
+# LGC_VRCMAFury_中文拓展 2.3.6
 
-本次撤回首次 2.0.0 发行包，统一中文展示名称后以相同版本号重新发布。
+本次正式发布 VRChat SDK 汉化，并将工具展示名称更新为 **LGC_VRCMAFury_中文拓展**。沿用原包 ID `com.lgcchina.ma-fury-localization`、仓库和 VPM 订阅，已安装 2.0.0 的用户可以直接更新。
 
-MA 与 VRCFury 汉化正式合并发布。自动检测项目中已安装的插件，分别提供中文界面、停用还原和词典重载；使用者已在专用沙盒确认汉化生效。
+## 更新内容
 
-- MA：保留字段、说明、组件标题和菜单汉化，最低适配目标 1.10.0；缺少词条或可选接口时跳过。
-- VRCFury：扩展组件、动作、菜单、SPS 和选项显示；BlendShape 统一为“形态键”，组件标题保留英文便于搜索。
-- 两份 JSON 词典独立维护，保留现有自定义译文；动态规则无效时只跳过该条，并在工具窗口显示原因。
-- 原版 MA / VRCFury / NDMF 文件及项目运行资源名称保持原样。
+- SDK：登录页面、上传页面、设置页、常用组件、人物描述器的可播放层 / 眼球运动 / 面部追踪，以及“人物蓝图ID”；内容管理只翻译“世界 / 人物”两个按钮。
+- 上传页：补齐源码中有条件触发的骨架、动画、表情参数、性能、贴图、蓝图归属、权限、大小限制、审核与失败提示，以及保存 / 放弃修改、缩略图确认、平台切换和多平台进度。
+- 面捕：补充目标 / 输入 / 形态键映射和自定义表达式校验；动态消息保留对象名、表达式、参数值和原 SDK 校验记录。
+- MA / VRCFury：保留已适配汉化，加入 VRCFury 1.1485.0 补译与 SDK 所带 Harmony 的签名兼容修正；形态键术语统一。
+- 独立控制与词典重载继续保留；未安装的插件、缺少的词条或可选接口自动跳过。原 MA / VRCFury / NDMF / SDK 文件保持原样。
 
 ## 安装与升级
 
-在 VCC / ALCOM 添加或刷新订阅：https://lgcchina.github.io/LGC-VRC-Packages/index.json ，安装 **LGC_MAFury_中文拓展 2.0.0**。
+VCC / ALCOM 刷新原订阅 https://lgcchina.github.io/LGC-VRC-Packages/index.json ，更新已有包至 **2.3.6**。无需更换订阅或卸载旧包。也可将本次 Release ZIP 内容解压至 `Packages/com.lgcchina.ma-fury-localization`。
 
-包 ID：`com.lgcchina.ma-fury-localization`。也可将本 Release ZIP 内容解压至 `Packages/com.lgcchina.ma-fury-localization`。旧 1.0.0 发行版停止提供，合集仅收录新的统一包；安装或升级前请备份自定义词典。
+Unity 完成导入后，从 **LGC > LGC_VRCMAFury_中文拓展 v2.3.6** 进入，必要时重开 SDK 窗口或重新选中组件。包管理器更新会替换包内文件，自定义 JSON 译文请提前另存。
 
-Unity 顶部入口：**LGC > LGC_MAFury_中文拓展 v2.0.0**。需要 Unity 2022.3、VRChat SDK Base 提供的 Harmony，以及需要汉化的原插件；本包不会自动安装 MA 或 VRCFury。
+包 ID、程序集名、命名空间、状态配置键、已有 GUID 和运行资源名保持稳定；改名只影响展示文字。需要 Unity 2022.3 / VRChat SDK Base；MA 最低适配目标 1.10.0，SDK 词条依据 3.10.6，VRCFury 补译依据 1.1485.0。
 
-## 注意事项
-
-已安装此前同号发行包时需重新安装本次发行包。升级前另存包内自定义译文。修改 JSON 后点击对应模块的重新加载按钮，并重开组件检查器或菜单。MA 1.10.0 为适配目标，VRCFury 扩展依据 1.1460.0；未经实际检查的界面或版本可能保留英文。
-
-本版由使用者手动检查效果；未运行 Unity 自动测试、未添加测试脚本。发行阶段执行包结构、版本和校验值检查。仓库更名为 `LgcChina/LGC_MA_Fury_Localization`，订阅地址继续使用原合集地址。
+此前汉化效果由使用者在沙盒中手动检查。发行阶段执行文件结构、词典、版本、GUID、ZIP 和在线索引核对，未启动 Unity、编译或运行测试，也未创建测试脚本。未覆盖的接口、服务端 / 第三方动态消息及图片文字可能仍为英文。

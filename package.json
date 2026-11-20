@@ -1,9 +1,9 @@
 {
   "name": "com.lgcchina.ma-fury-localization",
-  "displayName": "LGC_MAFury_中文拓展",
-  "version": "2.0.0",
+  "displayName": "LGC_VRCMAFury_中文拓展",
+  "version": "2.3.6",
   "unity": "2022.3",
-  "description": "自动检测 Modular Avatar 与 VRCFury 的独立简体中文界面拓展，分别支持停用还原与重载词典；覆盖 MA 和 VRCFury 组件、动作、菜单与 SPS 面板。",
+  "description": "自动检测 VRChat SDK、Modular Avatar 与 VRCFury 的独立简体中文界面拓展，支持停用还原与重载词典；覆盖常用 SDK 组件、人物描述器、登录、上传与设置界面，以及 MA / VRCFury。",
   "author": {
     "name": "LgcChina",
     "email": "13570527493@163.com",
@@ -13,7 +13,7 @@
   "vpmDependencies": {
     "com.vrchat.base": "*"
   },
-  "url": "https://github.com/LgcChina/LGC_MA_Fury_Localization/releases/download/v2.0.0/com.lgcchina.ma-fury-localization-2.0.0.zip",
+  "url": "https://github.com/LgcChina/LGC_MA_Fury_Localization/releases/download/v2.3.6/com.lgcchina.ma-fury-localization-2.3.6.zip",
   "repo": "https://lgcchina.github.io/LGC-VRC-Packages/index.json",
   "documentationUrl": "https://github.com/LgcChina/LGC_MA_Fury_Localization#readme",
   "changelogUrl": "https://github.com/LgcChina/LGC_MA_Fury_Localization/blob/main/CHANGELOG.md",

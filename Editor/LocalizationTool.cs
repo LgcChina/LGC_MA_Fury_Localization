@@ -1,4 +1,4 @@
-// LGC_MAFury_中文拓展 v2.0.0
+﻿// LGC_VRCMAFury_中文拓展 v2.3.6
 // Shared window and lifecycle. Each optional plugin owns its translations, state and Harmony patches.
 using System;
 using UnityEditor;
@@ -9,7 +9,7 @@ namespace LgcChina.MaFuryLocalization
     [InitializeOnLoad]
     internal static class LocalizationTool
     {
-        internal const string Version = "2.0.0";
+        internal const string Version = "2.3.6";
         internal const string PackageName = "com.lgcchina.ma-fury-localization";
 
         static LocalizationTool()
@@ -23,6 +23,7 @@ namespace LgcChina.MaFuryLocalization
         {
             RunModule(ModularAvatar.MaLocalization.Initialize, "MA");
             RunModule(Vrcfury.VrcfuryLocalization.Initialize, "VRCFury");
+            RunModule(VrcSdk.VrcSdkLocalization.Initialize, "VRChat SDK");
             UnityEditorInternal.InternalEditorUtility.RepaintAllViews();
         }
 
@@ -31,7 +32,7 @@ namespace LgcChina.MaFuryLocalization
             try { action(); }
             catch (Exception e)
             {
-                Debug.LogWarning($"[LGC_MAFury_中文拓展 v{Version}] {name} 汉化已跳过：{(e.InnerException ?? e).Message}");
+                Debug.LogWarning($"[LGC_VRCMAFury_中文拓展 v{Version}] {name} 汉化已跳过：{(e.InnerException ?? e).Message}");
             }
         }
 
@@ -39,6 +40,7 @@ namespace LgcChina.MaFuryLocalization
         {
             try { ModularAvatar.MaLocalization.SetOff(); } catch { }
             try { Vrcfury.VrcfuryLocalization.SetOff(); } catch { }
+            try { VrcSdk.VrcSdkLocalization.SetOff(); } catch { }
         }
     }
 
@@ -46,19 +48,19 @@ namespace LgcChina.MaFuryLocalization
     {
         private Vector2 scroll;
 
-        [MenuItem("LGC/LGC_MAFury_中文拓展 v" + LocalizationTool.Version)]
-        private static void Open() => GetWindow<LocalizationWindow>("LGC_MAFury_中文拓展 v" + LocalizationTool.Version);
+        [MenuItem("LGC/LGC_VRCMAFury_中文拓展 v" + LocalizationTool.Version)]
+        private static void Open() => GetWindow<LocalizationWindow>("LGC_VRCMAFury_中文拓展 v" + LocalizationTool.Version);
 
         private void OnEnable()
         {
-            titleContent = new GUIContent("LGC_MAFury_中文拓展 v" + LocalizationTool.Version);
+            titleContent = new GUIContent("LGC_VRCMAFury_中文拓展 v" + LocalizationTool.Version);
             minSize = new Vector2(580, 460);
         }
 
         private void OnGUI()
         {
-            EditorGUILayout.LabelField("LGC_MAFury_中文拓展 v" + LocalizationTool.Version, EditorStyles.boldLabel);
-            EditorGUILayout.HelpBox("自动检测已安装的 MA 和 VRCFury，分别启用对应汉化。未安装的插件会跳过。"
+            EditorGUILayout.LabelField("LGC_VRCMAFury_中文拓展 v" + LocalizationTool.Version, EditorStyles.boldLabel);
+            EditorGUILayout.HelpBox("自动检测已安装的 MA、VRCFury 与 SDK 试点组件，分别启用对应汉化。未安装的插件会跳过。"
                 + "保存词典后点击对应的重载按钮，再重新选中对象或重开相关界面。", MessageType.None);
             if (GUILayout.Button("重新检测已安装插件")) LocalizationTool.InitializeAll();
             scroll = EditorGUILayout.BeginScrollView(scroll);
@@ -78,6 +80,15 @@ namespace LgcChina.MaFuryLocalization
                 "VRCFury", "vrcfury.zh-Hans.json");
             EditorGUILayout.HelpBox("VRCFury 已扩展至组件、动作、菜单及 SPS 面板。组件与动作名称保留英文便于搜索。"
                 + "新建或展开界面后可稍等片刻；未匹配的词条保持原文。", MessageType.None);
+
+            EditorGUILayout.Space();
+            DrawModule("VRChat SDK · 组件、登录、上传与设置", VrcSdk.VrcSdkLocalization.SdkVersion,
+                VrcSdk.VrcSdkLocalization.Status, VrcSdk.VrcSdkLocalization.Details,
+                VrcSdk.VrcSdkLocalization.IsInstalled, VrcSdk.VrcSdkLocalization.IsApplied,
+                VrcSdk.VrcSdkLocalization.Toggle, VrcSdk.VrcSdkLocalization.Reload,
+                "SDK", "vrcsdk.zh-Hans.json");
+            EditorGUILayout.HelpBox("SDK 已包含常用组件、可播放层、眼球运动 / 面捕提示、登录页面、上传页面及设置页正文。"
+                + "SDK 窗口可关闭后重开；组件可重新选中，未匹配文字保持原文。", MessageType.None);
 
             EditorGUILayout.EndScrollView();
         }

@@ -1,0 +1,4265 @@
+{
+  "_description": "LGC_VRCMAFury_中文拓展 2.3.6；SDK 登录/上传/设置及常用组件；补齐上传校验、性能分支、多平台进度、缩略图确认与面捕校验。panelEntries / panelTemplates 用于上传显示，panelFragments 仅处理模板明确标记的 SDK 说明片段。",
+  "entries": [
+    {
+      "key": "VRC Head Chop",
+      "value": "头部隐藏 (VRC Head Chop)"
+    },
+    {
+      "key": "Target Bones",
+      "value": "目标骨骼"
+    },
+    {
+      "key": "Global Scale Factor",
+      "value": "全局缩放系数"
+    },
+    {
+      "key": "Transform",
+      "value": "骨骼变换"
+    },
+    {
+      "key": "Scale Factor",
+      "value": "缩放系数"
+    },
+    {
+      "key": "Apply Condition",
+      "value": "生效条件"
+    },
+    {
+      "key": "Always Apply",
+      "value": "始终生效"
+    },
+    {
+      "key": "VR Only",
+      "value": "仅 VR 模式"
+    },
+    {
+      "key": "Non VR Only",
+      "value": "仅非 VR 模式"
+    },
+    {
+      "key": "Size",
+      "value": "数量"
+    },
+    {
+      "key": "Lists the bones that will be scaled away for the local player.",
+      "value": "指定在本地玩家视角中通过缩小来隐藏的骨骼。"
+    },
+    {
+      "key": "A global scale applied to all bones targeted by this component, ranging from 0 (all bones fully scaled away) to 1 (all bones use their individual scale factors).",
+      "value": "对本组件的所有目标骨骼应用全局缩放。范围为 0（所有目标骨骼完全缩小隐藏）至 1（各骨骼使用各自的缩放系数）。"
+    },
+    {
+      "key": "The bone transform to apply scaling to.",
+      "value": "需要应用缩放的骨骼变换。"
+    },
+    {
+      "key": "The scale factor to apply to this specific bone, ranging from 0 (bone fully scaled away) to 1 (bone uses its usual scale).",
+      "value": "此骨骼的缩放系数。范围为 0（完全缩小隐藏）至 1（使用正常大小）。"
+    },
+    {
+      "key": "A condition controlling whether this bone will be scaled away.",
+      "value": "控制此骨骼在什么条件下应用缩小隐藏。"
+    },
+    {
+      "key": "Shape",
+      "value": "形状"
+    },
+    {
+      "key": "Bones As Spheres",
+      "value": "将骨骼视为球体"
+    },
+    {
+      "key": "Execution Group",
+      "value": "执行组"
+    },
+    {
+      "key": "Version Info",
+      "value": "版本信息"
+    },
+    {
+      "key": "Open Documentation",
+      "value": "打开文档"
+    },
+    {
+      "key": "Continue",
+      "value": "继续"
+    },
+    {
+      "key": "Transforms",
+      "value": "变换"
+    },
+    {
+      "key": "Forces",
+      "value": "力"
+    },
+    {
+      "key": "Limits",
+      "value": "限制"
+    },
+    {
+      "key": "Collision",
+      "value": "碰撞"
+    },
+    {
+      "key": "Stretch & Squish",
+      "value": "拉伸与挤压"
+    },
+    {
+      "key": "Grab & Pose",
+      "value": "抓取与姿态"
+    },
+    {
+      "key": "Options",
+      "value": "选项"
+    },
+    {
+      "key": "Gizmos",
+      "value": "辅助图标"
+    },
+    {
+      "key": "Content Types",
+      "value": "内容类型"
+    },
+    {
+      "key": "Allow Self",
+      "value": "允许自身"
+    },
+    {
+      "key": "Allow Others",
+      "value": "允许其他对象"
+    },
+    {
+      "key": "Body Parts",
+      "value": "身体部位"
+    },
+    {
+      "key": "Object Traits",
+      "value": "对象特征"
+    },
+    {
+      "key": "Filtering",
+      "value": "过滤"
+    },
+    {
+      "key": "Collision Tags",
+      "value": "碰撞标签"
+    },
+    {
+      "key": "Custom",
+      "value": "自定义"
+    },
+    {
+      "key": "Write to Materials",
+      "value": "写入材质"
+    },
+    {
+      "key": "Target Renderers (up to {4})",
+      "value": "目标渲染器（最多 {4} 个）"
+    },
+    {
+      "key": "Write Matching Tag Bitflags",
+      "value": "写入匹配标签位标志"
+    },
+    {
+      "key": "Shader Parameter Override",
+      "value": "着色器参数覆盖"
+    },
+    {
+      "key": "Copy to Clipboard",
+      "value": "复制到剪贴板"
+    },
+    {
+      "key": "Is Active",
+      "value": "启用"
+    },
+    {
+      "key": "Advanced Settings",
+      "value": "高级设置"
+    },
+    {
+      "key": "Target Transform",
+      "value": "目标变换"
+    },
+    {
+      "key": "Smoothing Factor",
+      "value": "平滑系数"
+    },
+    {
+      "key": "Solve In Local Space",
+      "value": "在本地空间中求解"
+    },
+    {
+      "key": "Freeze To World",
+      "value": "冻结到世界空间"
+    },
+    {
+      "key": "Rebake Offsets When Unfrozen",
+      "value": "解除冻结时重新烘焙偏移"
+    },
+    {
+      "key": "Constraint Settings",
+      "value": "约束设置"
+    },
+    {
+      "key": "Source Transform",
+      "value": "源变换"
+    },
+    {
+      "key": "Position Offset",
+      "value": "位置偏移"
+    },
+    {
+      "key": "Rotation Offset",
+      "value": "旋转偏移"
+    },
+    {
+      "key": "Use Up Object",
+      "value": "使用上方向对象"
+    },
+    {
+      "key": "World Up Object",
+      "value": "世界上方向对象"
+    },
+    {
+      "key": "World Up Type",
+      "value": "世界上方向类型"
+    },
+    {
+      "key": "World Up Vector",
+      "value": "世界上方向向量"
+    },
+    {
+      "key": "Roll",
+      "value": "滚转"
+    },
+    {
+      "key": "Position At Rest",
+      "value": "静止位置"
+    },
+    {
+      "key": "Rotation At Rest",
+      "value": "静止旋转"
+    },
+    {
+      "key": "Scale At Rest",
+      "value": "静止缩放"
+    },
+    {
+      "key": "Scale Offset",
+      "value": "缩放偏移"
+    },
+    {
+      "key": "Freeze Position Axes",
+      "value": "冻结位置轴"
+    },
+    {
+      "key": "Freeze Rotation Axes",
+      "value": "冻结旋转轴"
+    },
+    {
+      "key": "Freeze Scale Axes",
+      "value": "冻结缩放轴"
+    },
+    {
+      "key": "Activate VRC Constraint",
+      "value": "激活 VRC 约束"
+    },
+    {
+      "key": "Zero VRC Constraint",
+      "value": "归零 VRC 约束"
+    },
+    {
+      "key": "Select this avatar in the SDK control panel",
+      "value": "在 SDK 控制面板中选择此 Avatar"
+    },
+    {
+      "key": "Unity Version: ",
+      "value": "Unity 版本："
+    },
+    {
+      "key": "Rig Type: ",
+      "value": "骨骼类型："
+    },
+    {
+      "key": "Humanoid",
+      "value": "人形"
+    },
+    {
+      "key": "Non-humanoid",
+      "value": "非人形"
+    },
+    {
+      "key": "Playable Layers",
+      "value": "可播放层"
+    },
+    {
+      "key": "Reset to Default",
+      "value": "重置为默认值"
+    },
+    {
+      "key": "Customize",
+      "value": "自定义"
+    },
+    {
+      "key": "Lower Body",
+      "value": "下半身"
+    },
+    {
+      "key": "Eye Look",
+      "value": "眼睛注视"
+    },
+    {
+      "key": "Eye Movements",
+      "value": "眼球运动"
+    },
+    {
+      "key": "Left Eye Bone",
+      "value": "左眼骨骼"
+    },
+    {
+      "key": "Right Eye Bone",
+      "value": "右眼骨骼"
+    },
+    {
+      "key": "Rotation States",
+      "value": "旋转状态"
+    },
+    {
+      "key": "Eye Gaze Mode",
+      "value": "注视模式"
+    },
+    {
+      "key": "LipSync",
+      "value": "口型同步"
+    },
+    {
+      "key": "Mode",
+      "value": "模式"
+    },
+    {
+      "key": "Auto Detect!",
+      "value": "自动检测！"
+    },
+    {
+      "key": "Face Mesh",
+      "value": "面部网格"
+    },
+    {
+      "key": "Jaw Flap Blend Shape",
+      "value": "下颌开合形态键"
+    },
+    {
+      "key": "Jaw Bone",
+      "value": "下颌骨骼"
+    },
+    {
+      "key": "View",
+      "value": "视角"
+    },
+    {
+      "key": "Edit",
+      "value": "编辑"
+    },
+    {
+      "key": "Colliders",
+      "value": "碰撞体"
+    },
+    {
+      "key": "Expressions",
+      "value": "表情"
+    },
+    {
+      "key": "Menu",
+      "value": "菜单"
+    },
+    {
+      "key": "Parameters",
+      "value": "参数"
+    },
+    {
+      "key": "Face Tracking",
+      "value": "面部追踪"
+    },
+    {
+      "key": "Use All Tracking Keys",
+      "value": "使用全部追踪键"
+    },
+    {
+      "key": "Add Mesh",
+      "value": "添加网格"
+    },
+    {
+      "key": "Viseme Dampen",
+      "value": "口型阻尼"
+    },
+    {
+      "key": "Dampen Amount",
+      "value": "阻尼量"
+    },
+    {
+      "key": "Blendshapes Sets",
+      "value": "形态键集合"
+    },
+    {
+      "key": "Copy All",
+      "value": "全部复制"
+    },
+    {
+      "key": "Copy Selected",
+      "value": "复制所选"
+    },
+    {
+      "key": "Paste",
+      "value": "粘贴"
+    },
+    {
+      "key": "Move Up",
+      "value": "上移"
+    },
+    {
+      "key": "Move Down",
+      "value": "下移"
+    },
+    {
+      "key": "Parameter Behaviors",
+      "value": "参数行为"
+    },
+    {
+      "key": "Delete All",
+      "value": "全部删除"
+    },
+    {
+      "key": "Delete All Parameter Behaviors",
+      "value": "删除全部参数行为"
+    },
+    {
+      "key": "OK",
+      "value": "确定"
+    },
+    {
+      "key": "Cancel",
+      "value": "取消"
+    },
+    {
+      "key": "Return",
+      "value": "返回"
+    },
+    {
+      "key": "Preview",
+      "value": "预览"
+    },
+    {
+      "key": "Global collision is not supported on Plane colliders.",
+      "value": "平面碰撞体不支持全局碰撞。"
+    },
+    {
+      "key": "This PhysBone has no parent. It is strongly recommended that you make the PhysBone a child of another game object to avoid unusual behavior.",
+      "value": "此 PhysBone 没有父对象。强烈建议将 PhysBone 设为其他游戏对象的子对象，以避免异常行为。"
+    },
+    {
+      "key": "The root transform of this PhysBone has no parent. It is strongly recommended that you make the PhysBone's root transform a child of another game object to avoid unusual behavior.",
+      "value": "此 PhysBone 的根变换没有父对象。强烈建议将其设为其他游戏对象的子对象，以避免异常行为。"
+    },
+    {
+      "key": "There are too many collision tags attached to this contact. Only the first 16 tags will be used.",
+      "value": "此接触组件附加的碰撞标签过多，只会使用前 16 个标签。"
+    },
+    {
+      "key": "You must have at least one collision tag, otherwise this contact won't do anything.",
+      "value": "至少需要一个碰撞标签，否则此接触组件不会产生作用。"
+    },
+    {
+      "key": "Free edit",
+      "value": "自由编辑"
+    },
+    {
+      "key": "Aim Vector",
+      "value": "瞄准向量"
+    },
+    {
+      "key": "Up Vector",
+      "value": "上方向向量"
+    },
+    {
+      "key": "Element {index}",
+      "value": "元素 {index}"
+    },
+    {
+      "key": "Version",
+      "value": "版本"
+    },
+    {
+      "key": "Integration Type",
+      "value": "积分方式"
+    },
+    {
+      "key": "Root Transform",
+      "value": "根变换"
+    },
+    {
+      "key": "Ignore Transforms",
+      "value": "忽略的变换"
+    },
+    {
+      "key": "Ignore Other Phys Bones",
+      "value": "忽略其他 PhysBone"
+    },
+    {
+      "key": "Ignore Other PhysBones",
+      "value": "忽略其他 PhysBone"
+    },
+    {
+      "key": "Endpoint Position",
+      "value": "末端位置"
+    },
+    {
+      "key": "Multi Child Type",
+      "value": "多子节点处理方式"
+    },
+    {
+      "key": "Pull",
+      "value": "回拉力"
+    },
+    {
+      "key": "Spring",
+      "value": "弹性"
+    },
+    {
+      "key": "Momentum",
+      "value": "惯性"
+    },
+    {
+      "key": "Stiffness",
+      "value": "刚度"
+    },
+    {
+      "key": "Gravity",
+      "value": "重力"
+    },
+    {
+      "key": "Gravity Falloff",
+      "value": "重力衰减"
+    },
+    {
+      "key": "Immobile Type",
+      "value": "运动抑制方式"
+    },
+    {
+      "key": "Immobile",
+      "value": "运动抑制"
+    },
+    {
+      "key": "Allow Collision",
+      "value": "允许碰撞"
+    },
+    {
+      "key": "Collision Filter",
+      "value": "碰撞过滤"
+    },
+    {
+      "key": "Radius",
+      "value": "半径"
+    },
+    {
+      "key": "Height",
+      "value": "高度"
+    },
+    {
+      "key": "Position",
+      "value": "位置"
+    },
+    {
+      "key": "Rotation",
+      "value": "旋转"
+    },
+    {
+      "key": "Limit Type",
+      "value": "限制方式"
+    },
+    {
+      "key": "Max Angle",
+      "value": "最大角度"
+    },
+    {
+      "key": "Max Angle X",
+      "value": "X 轴最大角度"
+    },
+    {
+      "key": "Max Angle Z",
+      "value": "Z 轴最大角度"
+    },
+    {
+      "key": "Max Pitch",
+      "value": "最大俯仰角"
+    },
+    {
+      "key": "Max Yaw",
+      "value": "最大偏航角"
+    },
+    {
+      "key": "Pitch",
+      "value": "俯仰"
+    },
+    {
+      "key": "Yaw",
+      "value": "偏航"
+    },
+    {
+      "key": "Limit Rotation",
+      "value": "限制旋转"
+    },
+    {
+      "key": "Allow Grabbing",
+      "value": "允许抓取"
+    },
+    {
+      "key": "Grab Filter",
+      "value": "抓取过滤"
+    },
+    {
+      "key": "Allow Posing",
+      "value": "允许摆姿态"
+    },
+    {
+      "key": "Pose Filter",
+      "value": "姿态过滤"
+    },
+    {
+      "key": "Grab Movement",
+      "value": "抓取移动"
+    },
+    {
+      "key": "Snap To Hand",
+      "value": "吸附到手"
+    },
+    {
+      "key": "Snap to Hand",
+      "value": "吸附到手"
+    },
+    {
+      "key": "Max Stretch",
+      "value": "最大拉伸"
+    },
+    {
+      "key": "Max Squish",
+      "value": "最大挤压"
+    },
+    {
+      "key": "Stretch Motion",
+      "value": "运动拉伸"
+    },
+    {
+      "key": "Is Animated",
+      "value": "允许动画驱动"
+    },
+    {
+      "key": "Reset When Disabled",
+      "value": "停用时重置"
+    },
+    {
+      "key": "Show Gizmos",
+      "value": "显示辅助图标"
+    },
+    {
+      "key": "Bone Opacity",
+      "value": "骨骼不透明度"
+    },
+    {
+      "key": "Limit Opacity",
+      "value": "限制不透明度"
+    },
+    {
+      "key": "Shape Type",
+      "value": "形状类型"
+    },
+    {
+      "key": "Inside Bounds",
+      "value": "内部碰撞"
+    },
+    {
+      "key": "Global Collision",
+      "value": "全局碰撞"
+    },
+    {
+      "key": "Global Collision Allow Self",
+      "value": "全局碰撞允许自身"
+    },
+    {
+      "key": "Global Collision Allow Others",
+      "value": "全局碰撞允许其他对象"
+    },
+    {
+      "key": "Global Collision Flags",
+      "value": "全局碰撞标志"
+    },
+    {
+      "key": "Local Only",
+      "value": "仅本地"
+    },
+    {
+      "key": "Receiver",
+      "value": "接收器"
+    },
+    {
+      "key": "Receiver Type",
+      "value": "接收类型"
+    },
+    {
+      "key": "Parameter",
+      "value": "参数"
+    },
+    {
+      "key": "Min Velocity",
+      "value": "最小速度"
+    },
+    {
+      "key": "Use Face Proximity",
+      "value": "使用表面接近度"
+    },
+    {
+      "key": "Advanced Parameters",
+      "value": "高级参数"
+    },
+    {
+      "key": "Shader Target Renderers",
+      "value": "着色器目标渲染器"
+    },
+    {
+      "key": "Target Renderers (up to 4)",
+      "value": "目标渲染器（最多 4 个）"
+    },
+    {
+      "key": "Choose a parameter name to use this feature.",
+      "value": "请设置参数名称以使用此功能。"
+    },
+    {
+      "key": "Choose a contact parameter or shader parameter override to use this feature.",
+      "value": "请设置接触参数或着色器参数覆盖以使用此功能。"
+    },
+    {
+      "key": "Sources",
+      "value": "源对象"
+    },
+    {
+      "key": "Weight",
+      "value": "权重"
+    },
+    {
+      "key": "Global Weight",
+      "value": "全局权重"
+    },
+    {
+      "key": "Lock",
+      "value": "锁定"
+    },
+    {
+      "key": "Activate",
+      "value": "激活"
+    },
+    {
+      "key": "Zero",
+      "value": "归零"
+    },
+    {
+      "key": "Offset",
+      "value": "偏移"
+    },
+    {
+      "key": "Affects Position X",
+      "value": "影响 X 轴位置"
+    },
+    {
+      "key": "Affects Position Y",
+      "value": "影响 Y 轴位置"
+    },
+    {
+      "key": "Affects Position Z",
+      "value": "影响 Z 轴位置"
+    },
+    {
+      "key": "Affects Rotation X",
+      "value": "影响 X 轴旋转"
+    },
+    {
+      "key": "Affects Rotation Y",
+      "value": "影响 Y 轴旋转"
+    },
+    {
+      "key": "Affects Rotation Z",
+      "value": "影响 Z 轴旋转"
+    },
+    {
+      "key": "Affects Scale X",
+      "value": "影响 X 轴缩放"
+    },
+    {
+      "key": "Affects Scale Y",
+      "value": "影响 Y 轴缩放"
+    },
+    {
+      "key": "Affects Scale Z",
+      "value": "影响 Z 轴缩放"
+    },
+    {
+      "key": "View Position",
+      "value": "视角位置"
+    },
+    {
+      "key": "Lip Sync",
+      "value": "口型同步"
+    },
+    {
+      "key": "Viseme Skinned Mesh",
+      "value": "口型蒙皮网格"
+    },
+    {
+      "key": "Viseme Blend Shapes",
+      "value": "口型形态键"
+    },
+    {
+      "key": "Eyelid Type",
+      "value": "眼睑类型"
+    },
+    {
+      "key": "Eyelids",
+      "value": "眼睑"
+    },
+    {
+      "key": "Eyelids Skinned Mesh",
+      "value": "眼睑蒙皮网格"
+    },
+    {
+      "key": "Eyelid Skinned Mesh",
+      "value": "眼睑蒙皮网格"
+    },
+    {
+      "key": "Looking Straight",
+      "value": "平视"
+    },
+    {
+      "key": "Looking Up",
+      "value": "向上看"
+    },
+    {
+      "key": "Looking Down",
+      "value": "向下看"
+    },
+    {
+      "key": "Looking Left",
+      "value": "向左看"
+    },
+    {
+      "key": "Looking Right",
+      "value": "向右看"
+    },
+    {
+      "key": "Blink",
+      "value": "眨眼"
+    },
+    {
+      "key": "Blinking",
+      "value": "眨眼"
+    },
+    {
+      "key": "Excitement",
+      "value": "兴奋程度"
+    },
+    {
+      "key": "Confidence",
+      "value": "注视信心"
+    },
+    {
+      "key": "Eye Movement",
+      "value": "眼球运动"
+    },
+    {
+      "key": "Blendshape States",
+      "value": "形态键状态"
+    },
+    {
+      "key": "Base",
+      "value": "基础（Base）"
+    },
+    {
+      "key": "Additive",
+      "value": "叠加（Additive）"
+    },
+    {
+      "key": "Gesture",
+      "value": "手势（Gesture）"
+    },
+    {
+      "key": "Action",
+      "value": "动作（Action）"
+    },
+    {
+      "key": "FX",
+      "value": "特效（FX）"
+    },
+    {
+      "key": "Sitting",
+      "value": "坐姿（Sitting）"
+    },
+    {
+      "key": "TPose",
+      "value": "T 字姿势（TPose）"
+    },
+    {
+      "key": "IKPose",
+      "value": "IK 姿势（IKPose）"
+    },
+    {
+      "key": "Use Auto-Footsteps",
+      "value": "使用自动脚步"
+    },
+    {
+      "key": "Use Auto Footsteps",
+      "value": "使用自动脚步"
+    },
+    {
+      "key": "Auto Locomotion",
+      "value": "自动移动"
+    },
+    {
+      "key": "Scale IPD",
+      "value": "缩放瞳距"
+    },
+    {
+      "key": "Default",
+      "value": "默认"
+    },
+    {
+      "key": "Enable",
+      "value": "启用"
+    },
+    {
+      "key": "Disable",
+      "value": "停用"
+    },
+    {
+      "key": "Warning: This will delete all parameter behaviors on this Avatar. Are you sure you want to continue?",
+      "value": "警告：这将删除此 Avatar 的全部参数行为。确定继续？"
+    },
+    {
+      "key": "This will erase any face tracking settings. Are you sure?",
+      "value": "这将清除全部面部追踪设置。确定继续？"
+    },
+    {
+      "key": "No parameter behaviors defined.",
+      "value": "尚未定义参数行为。"
+    },
+    {
+      "key": "Determines how forces are applied.  Certain kinds of motion may require using a specific integration type.",
+      "value": "决定力的计算方式。某些运动可能需要使用特定的积分方式。"
+    },
+    {
+      "key": "The transform where this component begins.  If left blank, we assume we start at this game object.",
+      "value": "组件开始生效的变换。留空时使用此游戏对象的变换。"
+    },
+    {
+      "key": "List of ignored transforms that shouldn't be affected by this component.  Ignored transforms automatically include any of that transform's children.",
+      "value": "不受此组件影响的变换列表；被忽略变换的所有子对象也会一并忽略。"
+    },
+    {
+      "key": "When enabled, automatically ignore transforms targeted by another physbone component. These are determined at initialization and regardless if the components are enabled or disabled.",
+      "value": "自动忽略其他 PhysBone 组件控制的变换。此项在初始化时确定，与组件是否启用无关。"
+    },
+    {
+      "key": "Vector used to create additional bones at each endpoint of the chain. Only used if the value is non-zero.",
+      "value": "在骨骼链的每个末端创建附加骨骼所用的向量，仅在非零时生效。"
+    },
+    {
+      "key": "Determines how transforms with multiple children are handled. By default those transforms are ignored.",
+      "value": "决定如何处理具有多个子对象的变换，默认忽略这些变换。"
+    },
+    {
+      "key": "Amount of force used to return bones to their rest position.",
+      "value": "将骨骼拉回静止位置的力。"
+    },
+    {
+      "key": "Amount bones will wobble when trying to reach their rest position.",
+      "value": "骨骼回到静止位置时的摆动程度。"
+    },
+    {
+      "key": "Amount bones will try and stay at their current orientation.",
+      "value": "骨骼维持当前朝向的程度。"
+    },
+    {
+      "key": "Amount of gravity applied to bones.  Positive value pulls bones down, negative pulls upwards.",
+      "value": "施加到骨骼的重力。正值向下，负值向上。"
+    },
+    {
+      "key": "Reduces gravity while bones are at their rest orientation.  Gravity will increase as bones rotate away from their rest orientation, reaching full gravity at 90 degress from rest.",
+      "value": "骨骼处于静止朝向时减弱重力，偏离静止朝向后重力逐渐增强，偏离 90 度时达到完整重力。"
+    },
+    {
+      "key": "Determines how immobile is calculated.\n\nAll Motion - Reduces any motion as calculated from the root transform's parent.World - Reduces positional movement from locomotion, any movement due to animations or IK still affect bones normally.\n\n",
+      "value": "决定运动抑制的计算方式。全部运动：抑制根变换父级产生的运动；世界空间：抑制移动引起的位置变化，动画和 IK 仍正常影响骨骼。"
+    },
+    {
+      "key": "Reduces the effect movement has on bones. The greater the value the less motion affects the chain as determined by the Immobile Type.",
+      "value": "减弱移动对骨骼的影响，数值越大，按所选方式抑制的运动越多。"
+    },
+    {
+      "key": "Whether to allow collision with colliders other than the ones specified on this component. This includes each player's hands as defined by their avatar as well as any global colliders in the world.",
+      "value": "允许与本组件列表之外的碰撞体碰撞，包括其他玩家的手部及世界中的全局碰撞体。"
+    },
+    {
+      "key": "Collision radius around each bone.  Used for both collision and grabbing.",
+      "value": "每段骨骼周围的碰撞半径，同时用于碰撞与抓取。"
+    },
+    {
+      "key": "List of colliders that specifically collide with these bones. These will always collide regardless of what Allow Collision is set to.",
+      "value": "始终与这些骨骼碰撞的碰撞体列表，不受“允许碰撞”设置影响。"
+    },
+    {
+      "key": "Type of angular limit applied to each bone.",
+      "value": "应用到每段骨骼的角度限制方式。"
+    },
+    {
+      "key": "Maximum angle each bone can rotate from its rest position.",
+      "value": "骨骼相对静止朝向可以旋转的最大角度。"
+    },
+    {
+      "key": "Rotates the angular limits on each axis.",
+      "value": "旋转各轴的角度限制范围。"
+    },
+    {
+      "key": "Allows players to grab the bones.",
+      "value": "允许玩家抓取骨骼。"
+    },
+    {
+      "key": "Allows players to pose the bones after grabbing.",
+      "value": "允许玩家抓取后固定骨骼姿态。"
+    },
+    {
+      "key": "When a bone is grabbed it will snap to the hand grabbing it.",
+      "value": "抓取骨骼时将其吸附到抓取的手上。"
+    },
+    {
+      "key": "Controls how grabbed bones move.\nA value of zero results in bones using pull & spring to reach the grabbed position.\nA value of one results in bones immediately moving to the grabbed position.",
+      "value": "抓取时骨骼的移动方式：0 使用回拉力与弹性到达目标位置；1 立即移到目标位置。"
+    },
+    {
+      "key": "Maximum amount the bones can stretch.  This value is a multiple of the original bone length.",
+      "value": "骨骼最多可以拉伸的程度，以原始骨长的倍数计算。"
+    },
+    {
+      "key": "Maximum amount the bones can shrink.  This value is a multiple of the original bone length.",
+      "value": "骨骼最多可以压缩的程度，以原始骨长的倍数计算。"
+    },
+    {
+      "key": "The amount motion will affect the stretch/squish of the bones.  A value of zero means bones will only stretch/squish as a result of grabbing or collisions.",
+      "value": "运动对骨骼拉伸和挤压的影响程度。0 表示仅在抓取或碰撞时拉伸和挤压。"
+    },
+    {
+      "key": "Allows bone transforms to be animated.  Each frame bone rest position will be updated according to what was animated.",
+      "value": "允许动画驱动骨骼变换，每帧按动画结果更新骨骼静止位置。"
+    },
+    {
+      "key": "When this component becomes disabled, the bones will automatially reset to their default rest position.",
+      "value": "停用组件时自动将骨骼恢复到默认静止位置。"
+    },
+    {
+      "key": "Keyname used to provide multiple parameters to the avatar controller.",
+      "value": "用于向 Avatar 动画控制器提供多个参数的名称前缀。"
+    },
+    {
+      "key": "The transform this constraint will be applied to. Leave this blank to apply the constraint to the transform this component is attached to. This reference can only be changed in edit-mode.",
+      "value": "应用此约束的变换。留空时使用组件所在对象的变换，此引用只能在编辑模式修改。"
+    },
+    {
+      "key": "If greater than zero, the constraint will smoothly move to its target instead of snapping instantly. Values between zero and one are recommended.\n\nThe higher the value, the longer it takes to move to the target.",
+      "value": "大于零时，约束将平滑移动到目标而非立即跳转。建议使用 0 到 1 之间的值；值越大，到达目标所需时间越长。"
+    },
+    {
+      "key": "When set, solve this constraint in local space. Leave this unset to solve in world space.",
+      "value": "启用后在本地空间求解约束，否则在世界空间求解。"
+    },
+    {
+      "key": "When set, this constraint will ignore its sources and become locked to the world. Unset it to solve the constraint normally again.",
+      "value": "启用后，约束会忽略源对象并固定在世界空间；关闭后恢复正常求解。"
+    },
+    {
+      "key": "When set, offsets will be recalculated as the constraint is unfrozen. Unset this to maintain the original offsets.",
+      "value": "解除冻结时重新计算偏移。关闭后保留原有偏移。"
+    },
+    {
+      "key": "When set, evaluate with the current offsets. When not set, update the offsets based on the current transform. This has no effect in play-mode.",
+      "value": "启用时使用当前偏移求解；关闭时根据当前变换更新偏移。此项在运行模式中无效。"
+    },
+    {
+      "key": "Transform where this contact is placed.  If empty, we use this game object's transform.",
+      "value": "放置接触组件的变换。留空时使用此游戏对象的变换。"
+    },
+    {
+      "key": "Type of collision shape used by this contact.",
+      "value": "此接触组件使用的碰撞形状。"
+    },
+    {
+      "key": "Size of the collider extending from its origin.",
+      "value": "碰撞体从原点向外延伸的半径。"
+    },
+    {
+      "key": "Height of the capsule along the Y axis, including the half-spheres at each end.",
+      "value": "胶囊体沿 Y 轴的总高度，包含两端的半球。"
+    },
+    {
+      "key": "Size of the box collider along each axis.",
+      "value": "盒体碰撞体在各轴上的尺寸。"
+    },
+    {
+      "key": "Position offset from the root transform.",
+      "value": "相对根变换的位置偏移。"
+    },
+    {
+      "key": "Rotation offset from the root transform.",
+      "value": "相对根变换的旋转偏移。"
+    },
+    {
+      "key": "Limit this contact to only work on the local client.",
+      "value": "使此接触组件仅在本地客户端生效。"
+    },
+    {
+      "key": "Limit this contact to only detect other contact components from the chosen sources of content.",
+      "value": "仅检测来自所选内容来源的接触组件。"
+    },
+    {
+      "key": "Allow this contact to be affected by yourself.",
+      "value": "允许自身触发此接触组件。"
+    },
+    {
+      "key": "Allow this contact to be affected by other people.",
+      "value": "允许其他玩家触发此接触组件。"
+    },
+    {
+      "key": "How the receiver reacts to incoming collisions and sets the parameter value.",
+      "value": "接收器如何响应接触并设置参数值。"
+    },
+    {
+      "key": "The parameter updated on the animation controller.  This parameter DOES NOT need to be defined on the avatar descriptor.",
+      "value": "要更新的动画控制器参数，无需在 Avatar 描述器的表情参数中定义。"
+    },
+    {
+      "key": "Minimum velocity needed from an incoming collider to affect this trigger.",
+      "value": "触发接收器所需的最小接触速度。"
+    },
+    {
+      "key": "Generate additional advanced parameters for this contact receiver.\n\nKeeping advanced parameters you don't need disabled will improve your avatar's performance!",
+      "value": "为此接触接收器生成额外的高级参数。\n\n关闭不需要的高级参数可改善 Avatar 性能。"
+    },
+    {
+      "key": "Changing VRCPhysBone versions may change the way your component works.  Some values may act differently and will need to be manually changed.\n\nPlease read our online documentation for information on version differences.",
+      "value": "更改 VRCPhysBone 版本可能改变组件行为，部分数值的作用可能不同，需要手动调整。\n\n请查阅在线文档了解版本差异。"
+    },
+    {
+      "key": "Only enable IsAnimated if you are animating the bone transforms affected by this component. Leaving this disabled is better for performance.",
+      "value": "仅在需要用动画驱动此组件影响的骨骼变换时启用“允许动画驱动”；关闭可改善性能。"
+    },
+    {
+      "key": "The parameter will be set to 1 while a contact sender is inside the receiver.  Otherwise the value defaults to 0.",
+      "value": "接触发送器位于接收器内部时，参数设为 1，否则为 0。"
+    },
+    {
+      "key": "Upon first contact if the two contacts' combined velocities are greater then the minVelocity then the parameter will be set to 1 for a single frame.  Otherwise the value defaults to 0.",
+      "value": "首次接触时，若两者的合成速度大于最小速度，则将参数设为 1 并保持一帧，否则为 0。"
+    },
+    {
+      "key": "It's not necessary to use a synced parameter as defined by the VRCExpressionParameters object.  This parameter is already updated on both the local and remote machine.  If you choose to use a synced parameter we recommend using the Local Only option.",
+      "value": "此参数会在本地与远端分别更新，无需在 VRCExpressionParameters 中设为同步参数。若使用同步参数，建议启用“仅本地”。"
+    },
+    {
+      "key": "\"Execute VRChat Constraints in Edit Mode\" is disabled in the SDK Control Panel. Constraints will only run during Play mode.",
+      "value": "SDK 控制面板未启用“在编辑模式执行 VRChat 约束”，约束只会在运行模式中生效。"
+    },
+    {
+      "key": " Base",
+      "value": " 基础（Base）"
+    },
+    {
+      "key": " Additive",
+      "value": " 叠加（Additive）"
+    },
+    {
+      "key": " Gesture",
+      "value": " 手势（Gesture）"
+    },
+    {
+      "key": " Action",
+      "value": " 动作（Action）"
+    },
+    {
+      "key": " FX",
+      "value": " 特效（FX）"
+    },
+    {
+      "key": " Sitting",
+      "value": " 坐姿（Sitting）"
+    },
+    {
+      "key": " TPose",
+      "value": " T 字姿势（TPose）"
+    },
+    {
+      "key": " IKPose",
+      "value": " IK 姿势（IKPose）"
+    },
+    {
+      "key": "Special",
+      "value": "特殊（Special）"
+    },
+    {
+      "key": "Default Locomotion",
+      "value": "默认移动（Default Locomotion）"
+    },
+    {
+      "key": "Default Idle",
+      "value": "默认待机（Default Idle）"
+    },
+    {
+      "key": "Default Gesture",
+      "value": "默认手势（Default Gesture）"
+    },
+    {
+      "key": "Default Action",
+      "value": "默认动作（Default Action）"
+    },
+    {
+      "key": "Default Non-Transform",
+      "value": "默认非变换动画（Default Non-Transform）"
+    },
+    {
+      "key": "Default BlendShapes",
+      "value": "默认形态键（Default BlendShapes）"
+    },
+    {
+      "key": "Default Sitting",
+      "value": "默认坐姿（Default Sitting）"
+    },
+    {
+      "key": "Default TPose",
+      "value": "默认 T 字姿势（Default TPose）"
+    },
+    {
+      "key": "Default IKPose",
+      "value": "默认 IK 姿势（Default IKPose）"
+    },
+    {
+      "key": "Use Auto-Footsteps for 3 and 4 point tracking",
+      "value": "在三点和四点追踪时使用自动脚步"
+    },
+    {
+      "key": "Force Locomotion animations for 6 point tracking",
+      "value": "在六点追踪时强制使用移动动画"
+    },
+    {
+      "key": "Bounds",
+      "value": "边界"
+    },
+    {
+      "key": "Preview Rotation",
+      "value": "预览旋转"
+    },
+    {
+      "key": "Unity Version",
+      "value": "Unity 版本"
+    },
+    {
+      "key": "Blueprint ID",
+      "value": "蓝图 ID"
+    },
+    {
+      "key": "Blueprint ID (Optional)",
+      "value": "蓝图 ID（可选）"
+    },
+    {
+      "key": "Attach (Optional)",
+      "value": "关联（可选）"
+    },
+    {
+      "key": "Detach (Optional)",
+      "value": "解除关联（可选）"
+    },
+    {
+      "key": "General",
+      "value": "常规"
+    },
+    {
+      "key": "Calm",
+      "value": "平静"
+    },
+    {
+      "key": "Excited",
+      "value": "兴奋"
+    },
+    {
+      "key": "Shy",
+      "value": "害羞"
+    },
+    {
+      "key": "Confident",
+      "value": "自信"
+    },
+    {
+      "key": "With eye tracking, gaze follows your eyes. Without tracking, gaze is simulated.",
+      "value": "启用眼球追踪时，视线跟随你的眼睛；没有追踪时，使用模拟视线。"
+    },
+    {
+      "key": "Eye gaze is output to eye bones only. Face tracking eye blendshapes are not driven.",
+      "value": "仅通过眼球骨骼表现注视方向，不驱动面部追踪的眼部形态键。"
+    },
+    {
+      "key": "Eyelids are set to Face Tracking, but Eye Gaze Mode is Bone Rotation. Consider setting Eye Gaze Mode to 'Both' so eye direction affects both eyeball bones and eyelid blendshapes simultaneously.",
+      "value": "眼睑已设为面部追踪，但注视模式为骨骼旋转。建议将注视模式设为“两者”，使注视方向同时影响眼球骨骼和眼睑形态键。"
+    },
+    {
+      "key": "Eye gaze is output to face tracking blendshapes only. Eye bones stay neutral.",
+      "value": "仅通过面部追踪形态键表现注视方向，眼球骨骼保持中立姿势。"
+    },
+    {
+      "key": "Eye gaze is output to both eye bones and face tracking blendshapes simultaneously.",
+      "value": "同时通过眼球骨骼和面部追踪形态键表现注视方向。"
+    },
+    {
+      "key": "Face Tracking Mesh",
+      "value": "面部追踪网格"
+    },
+    {
+      "key": "Face Tracking Meshes",
+      "value": "面部追踪网格"
+    },
+    {
+      "key": "If the avatar is only using this face tracking section for advanced viseme support or advanced automatic eyelook support, leave this unchecked. Checking this signals that this avatar supports actual hardware face tracking (via webcam, OSC, etc), and unlocks all the associated tracking keys.",
+      "value": "如果人物仅使用此区域来支持高级口型或高级自动注视，请勿勾选。勾选表示人物支持通过摄像头、OSC 等方式输入的真实硬件面部追踪，并解锁全部相关追踪键。"
+    },
+    {
+      "key": "Eye look, blink, Voice, and Viseme_* inputs work without 'Use All Tracking Keys'. Visemes require LipSync Mode 'Viseme BlendShape Face Tracking'. Enable 'Use All Tracking Keys' to use hardware face tracking inputs.",
+      "value": "即使未启用“使用全部追踪键”，注视、眨眼、Voice 和 Viseme_* 输入也可使用。口型输入需要将口型同步模式设为“口型形态键面部追踪”。若要使用硬件面部追踪输入，请启用“使用全部追踪键”。"
+    },
+    {
+      "key": "Define behaviors that combine tracking inputs and apply them to animator parameters, blendshape sets, or individual blendshapes. Forwarding to animator parameters does not require a face tracking mesh.",
+      "value": "定义将追踪输入组合后应用于动画控制器参数、形态键集合或单个形态键的行为。仅转发至动画控制器参数时，无须设置面部追踪网格。"
+    },
+    {
+      "key": "Viseme Dampen uses hardware face tracking data. Enable 'Use All Tracking Keys' (at the top of the Face Tracking section) to configure it.",
+      "value": "口型抑制使用硬件面部追踪数据。请先启用面部追踪区域顶部的“使用全部追踪键”以进行配置。"
+    },
+    {
+      "key": "Viseme Dampen requires LipSync Mode 'Viseme BlendShape Face Tracking'. Saved dampening settings have no effect in other lip-sync modes.",
+      "value": "口型抑制需要将口型同步模式设为“口型形态键面部追踪”。保存的抑制设置在其他口型同步模式下不生效。"
+    },
+    {
+      "key": "Applies to every configured face tracking mesh containing this exact name, including blendshapes added later by build-time tools.",
+      "value": "应用于所有已配置且含有这一确切形态键名称的面部追踪网格，包括构建工具后续添加的形态键。"
+    },
+    {
+      "key": "Maximum of 32 inputs per behavior reached.",
+      "value": "每个行为最多支持 32 个输入，已达到上限。"
+    },
+    {
+      "key": "Both",
+      "value": "两者"
+    },
+    {
+      "key": "Bone Rotation",
+      "value": "骨骼旋转"
+    },
+    {
+      "key": "Eyes",
+      "value": "眼球"
+    },
+    {
+      "key": "Eyelids will be controlled with the Face Tracking blendshapes.",
+      "value": "眼睑将由面部追踪形态键控制。"
+    },
+    {
+      "key": "Looking Up/Down eyelid states are disabled because Eye Gaze Mode uses Face Tracking.",
+      "value": "注视模式使用面部追踪，因此眼睑的向上／向下看状态已停用。"
+    },
+    {
+      "key": "Signals that this avatar supports actual hardware face tracking (via webcam, OSC, etc) and unlocks all the associated tracking keys in blendshape sets and parameter behaviors. Leave unchecked if only using advanced viseme support or advanced automatic eyelook support - eye look, blink, and viseme mapping work without it.",
+      "value": "表示此人物支持通过摄像头、OSC 等输入的真实硬件面部追踪，并解锁形态键集合和参数行为中的全部相关追踪键。仅使用高级口型或高级自动注视时请勿勾选；注视、眨眼和口型映射无须此选项也可使用。"
+    },
+    {
+      "key": "None: No dampening. Dampen Tracking: Active visemes dampen mouth-related tracking. Dampen Visemes: Tracking dampens visemes.",
+      "value": "无：不抑制。抑制追踪：生效的口型抑制嘴部追踪。抑制口型：追踪输入抑制口型。"
+    },
+    {
+      "key": "Amount (0-1) for the selected dampening mode.",
+      "value": "所选抑制模式的强度（0–1）。"
+    },
+    {
+      "key": "Maximum of 16 face tracking meshes reached.",
+      "value": "面部追踪网格已达到 16 个的上限。"
+    },
+    {
+      "key": "Copy",
+      "value": "复制"
+    },
+    {
+      "key": "Uses 1 - value",
+      "value": "使用 1 减去输入值"
+    },
+    {
+      "key": "Select Blendshape",
+      "value": "选择形态键"
+    },
+    {
+      "key": "Bendshapes Set (Optional)",
+      "value": "形态键集合（可选）"
+    },
+    {
+      "key": "Expression",
+      "value": "表达式"
+    },
+    {
+      "key": "Copy Behavior",
+      "value": "复制行为"
+    },
+    {
+      "key": "Invert",
+      "value": "反转"
+    },
+    {
+      "key": "Input Tracking Keys",
+      "value": "输入追踪键"
+    }
+  ],
+  "accountEntries": [
+    {
+      "key": "Authentication",
+      "value": "登录页面"
+    },
+    {
+      "key": "Account",
+      "value": "账号"
+    },
+    {
+      "key": "Signing in as ",
+      "value": "正在登录："
+    },
+    {
+      "key": "Logout",
+      "value": "退出登录"
+    },
+    {
+      "key": "Use API",
+      "value": "API 环境"
+    },
+    {
+      "key": "Username/Email",
+      "value": "用户名 / 邮箱"
+    },
+    {
+      "key": "Password",
+      "value": "密码"
+    },
+    {
+      "key": "Sign In",
+      "value": "登录"
+    },
+    {
+      "key": "Sign up",
+      "value": "注册账号"
+    },
+    {
+      "key": "Logged in as:",
+      "value": "当前账号："
+    },
+    {
+      "key": "World Creator Status: ",
+      "value": "世界发布权限："
+    },
+    {
+      "key": "Avatar Creator Status: ",
+      "value": "角色发布权限："
+    },
+    {
+      "key": "Allowed to publish worlds",
+      "value": "允许发布世界"
+    },
+    {
+      "key": "Not yet allowed to publish worlds",
+      "value": "暂未获得世界发布权限"
+    },
+    {
+      "key": "Allowed to publish avatars",
+      "value": "允许发布角色"
+    },
+    {
+      "key": "Not yet allowed to publish avatars",
+      "value": "暂未获得角色发布权限"
+    },
+    {
+      "key": "More Info...",
+      "value": "了解详情…"
+    },
+    {
+      "key": "Could not fetch remote config.",
+      "value": "无法获取远程配置。"
+    },
+    {
+      "key": "Learn More",
+      "value": "了解更多"
+    },
+    {
+      "key": "Unity Version",
+      "value": "Unity 版本"
+    },
+    {
+      "key": "Wrong Unity version. Please use ",
+      "value": "Unity 版本不符，请使用 "
+    },
+    {
+      "key": "Enter a numeric code from your authenticator app.",
+      "value": "请输入身份验证器应用中的数字验证码。"
+    },
+    {
+      "key": "Code:",
+      "value": "验证码："
+    },
+    {
+      "key": "Check your email for a numeric code.",
+      "value": "请查看邮箱，获取数字验证码。"
+    },
+    {
+      "key": "Checking code...",
+      "value": "正在验证…"
+    },
+    {
+      "key": "Oops, that code didn't work.\nTry again!",
+      "value": "验证码无效。\n请重试！"
+    },
+    {
+      "key": "Enter Code",
+      "value": "输入验证码"
+    },
+    {
+      "key": "Verify",
+      "value": "验证"
+    },
+    {
+      "key": "Cancel",
+      "value": "取消"
+    },
+    {
+      "key": "Help",
+      "value": "验证帮助"
+    },
+    {
+      "key": "Error logging in",
+      "value": "登录失败"
+    },
+    {
+      "key": "Please enter a valid username and password.",
+      "value": "请输入有效的用户名和密码。"
+    },
+    {
+      "key": "OK",
+      "value": "确定"
+    },
+    {
+      "key": "Please log in.",
+      "value": "请登录。"
+    },
+    {
+      "key": "Error in authenticating: ",
+      "value": "身份验证错误："
+    },
+    {
+      "key": "Logging in.",
+      "value": "正在登录。"
+    },
+    {
+      "key": "Connected to ",
+      "value": "已连接到 "
+    },
+    {
+      "key": "Unity Application is running, please stop it before accessing the Control Panel.",
+      "value": "Unity 应用正在运行，请停止运行后再访问控制面板。"
+    },
+    {
+      "key": "Developer FAQ",
+      "value": "开发者常见问题"
+    },
+    {
+      "key": "VRChat Discord",
+      "value": "VRChat Discord"
+    },
+    {
+      "key": "VRChat SDK",
+      "value": "VRChat SDK"
+    },
+    {
+      "key": "Builder",
+      "value": "上传页面"
+    },
+    {
+      "key": "Content Manager",
+      "value": "内容管理"
+    },
+    {
+      "key": "Settings",
+      "value": "设置"
+    },
+    {
+      "key": "Unity Application is running ...\nStop it to access the Control Panel",
+      "value": "Unity 应用正在运行……\n请停止运行以访问控制面板"
+    },
+    {
+      "key": "Developer",
+      "value": "开发者"
+    },
+    {
+      "key": "Show Extra Options on account page",
+      "value": "在账号页面显示更多选项"
+    },
+    {
+      "key": "Show Help Boxes on SDK components",
+      "value": "显示 SDK 组件的帮助说明"
+    },
+    {
+      "key": "API Logging Enabled",
+      "value": "启用 API 日志"
+    },
+    {
+      "key": "Dry Run Builds",
+      "value": "模拟构建"
+    },
+    {
+      "key": "This will skip actual builds and uploads and instead pass as if they succeeded",
+      "value": "跳过实际构建和上传，并按成功处理。"
+    },
+    {
+      "key": "Override Kaiser mipmapping with Detail-Preserving Image Downscaling (BETA)",
+      "value": "使用保留细节的图像缩小算法替代 Kaiser 多级渐远纹理生成（测试版）"
+    },
+    {
+      "key": "Use a state of the art algorithm (DPID) for mipmap generation when Kaiser is selected. This can improve the quality of mipmaps.",
+      "value": "选择 Kaiser 时，改用保留细节的图像缩小算法（DPID）生成多级渐远纹理，以改善其质量。"
+    },
+    {
+      "key": "Use conservative settings for DPID mipmapping",
+      "value": "使用保守的 DPID 多级渐远纹理设置"
+    },
+    {
+      "key": "Use conservative settings for DPID mipmapping. This can avoid issues with over-emphasis of details.",
+      "value": "使用保守的 DPID 多级渐远纹理设置，避免过度强调细节。"
+    },
+    {
+      "key": "Execute VRChat Constraints in Edit Mode",
+      "value": "在编辑模式下运行 VRChat 约束"
+    },
+    {
+      "key": "Allow VRChat Constraints to run while Unity is in Edit mode.",
+      "value": "允许 VRChat 约束在 Unity 编辑模式下运行。"
+    },
+    {
+      "key": "Show Local IP Address",
+      "value": "显示本机 IP 地址"
+    },
+    {
+      "key": "Avatar Options",
+      "value": "角色选项"
+    },
+    {
+      "key": "Show All Avatar Performance Details",
+      "value": "显示全部角色性能详情"
+    },
+    {
+      "key": "Logging",
+      "value": "日志"
+    },
+    {
+      "key": "All Logging Enabled",
+      "value": "启用所有日志"
+    },
+    {
+      "key": "VRChat Client",
+      "value": "VRChat 客户端"
+    },
+    {
+      "key": "Installed Client Path: ",
+      "value": "已安装的客户端路径："
+    },
+    {
+      "key": "Edit",
+      "value": "编辑"
+    },
+    {
+      "key": "Revert to Default",
+      "value": "恢复默认值"
+    },
+    {
+      "key": "Choose VRC Client Exe",
+      "value": "选择 VRChat 客户端可执行文件"
+    },
+    {
+      "key": "Worlds",
+      "value": "世界"
+    },
+    {
+      "key": "Avatars",
+      "value": "人物"
+    }
+  ],
+  "componentEnums": [
+    {
+      "key": "AlwaysApply",
+      "value": "始终应用"
+    },
+    {
+      "key": "VrOnly",
+      "value": "仅 VR"
+    },
+    {
+      "key": "NonVrOnly",
+      "value": "仅非 VR"
+    },
+    {
+      "key": "On",
+      "value": "开启"
+    },
+    {
+      "key": "Off",
+      "value": "关闭"
+    },
+    {
+      "key": "None",
+      "value": "无"
+    },
+    {
+      "key": "Head",
+      "value": "头部"
+    },
+    {
+      "key": "Torso",
+      "value": "躯干"
+    },
+    {
+      "key": "Hand",
+      "value": "手部"
+    },
+    {
+      "key": "Foot",
+      "value": "脚部"
+    },
+    {
+      "key": "Finger",
+      "value": "手指"
+    },
+    {
+      "key": "Hot",
+      "value": "高温"
+    },
+    {
+      "key": "Cold",
+      "value": "低温"
+    },
+    {
+      "key": "Fire",
+      "value": "火焰"
+    },
+    {
+      "key": "Freezer",
+      "value": "冰冻"
+    },
+    {
+      "key": "Wet",
+      "value": "潮湿"
+    },
+    {
+      "key": "Water",
+      "value": "水"
+    },
+    {
+      "key": "Wind",
+      "value": "风"
+    },
+    {
+      "key": "Weapon",
+      "value": "武器"
+    },
+    {
+      "key": "Shield",
+      "value": "盾牌"
+    },
+    {
+      "key": "Damage",
+      "value": "伤害"
+    },
+    {
+      "key": "Blunt",
+      "value": "钝击"
+    },
+    {
+      "key": "Sharp",
+      "value": "锐击"
+    },
+    {
+      "key": "Ammunition",
+      "value": "弹药"
+    },
+    {
+      "key": "Projectile",
+      "value": "投射物"
+    },
+    {
+      "key": "Consumable",
+      "value": "消耗品"
+    },
+    {
+      "key": "Food",
+      "value": "食物"
+    },
+    {
+      "key": "Drink",
+      "value": "饮料"
+    },
+    {
+      "key": "Brush",
+      "value": "刷子"
+    },
+    {
+      "key": "Dye",
+      "value": "染料"
+    },
+    {
+      "key": "Simplified",
+      "value": "简化"
+    },
+    {
+      "key": "Advanced",
+      "value": "高级"
+    },
+    {
+      "key": "Ignore",
+      "value": "忽略"
+    },
+    {
+      "key": "First",
+      "value": "首个"
+    },
+    {
+      "key": "Average",
+      "value": "平均"
+    },
+    {
+      "key": "All Motion",
+      "value": "全部运动"
+    },
+    {
+      "key": "World (Experimental)",
+      "value": "世界空间（实验性）"
+    },
+    {
+      "key": "World",
+      "value": "世界"
+    },
+    {
+      "key": "Angle",
+      "value": "角度"
+    },
+    {
+      "key": "Hinge",
+      "value": "铰链"
+    },
+    {
+      "key": "Polar",
+      "value": "极坐标"
+    },
+    {
+      "key": "True",
+      "value": "允许"
+    },
+    {
+      "key": "False",
+      "value": "禁止"
+    },
+    {
+      "key": "Other",
+      "value": "自定义"
+    },
+    {
+      "key": "Custom",
+      "value": "自定义"
+    },
+    {
+      "key": "Sphere",
+      "value": "球体"
+    },
+    {
+      "key": "Capsule",
+      "value": "胶囊体"
+    },
+    {
+      "key": "Box",
+      "value": "盒体"
+    },
+    {
+      "key": "Plane",
+      "value": "平面"
+    },
+    {
+      "key": "Constant",
+      "value": "持续"
+    },
+    {
+      "key": "On Enter",
+      "value": "进入时"
+    },
+    {
+      "key": "Proximity",
+      "value": "接近度"
+    },
+    {
+      "key": "Everything",
+      "value": "全部"
+    },
+    {
+      "key": "Nothing",
+      "value": "无"
+    },
+    {
+      "key": "Avatars",
+      "value": "Avatar"
+    },
+    {
+      "key": "Avatar",
+      "value": "Avatar"
+    },
+    {
+      "key": "Self",
+      "value": "自身"
+    },
+    {
+      "key": "Others",
+      "value": "其他对象"
+    },
+    {
+      "key": "Items",
+      "value": "物品"
+    },
+    {
+      "key": "Item",
+      "value": "物品"
+    },
+    {
+      "key": "Auto",
+      "value": "自动"
+    },
+    {
+      "key": "Object Up",
+      "value": "对象上方向"
+    },
+    {
+      "key": "Object Rotation Up",
+      "value": "对象旋转上方向"
+    },
+    {
+      "key": "Vector",
+      "value": "向量"
+    },
+    {
+      "key": "Scene Up",
+      "value": "场景上方向"
+    },
+    {
+      "key": "Sender Type",
+      "value": "发送器类型"
+    },
+    {
+      "key": "Sender Local Position",
+      "value": "发送器本地位置"
+    },
+    {
+      "key": "Sender Lossy Scale",
+      "value": "发送器世界缩放"
+    },
+    {
+      "key": "Sender Velocity",
+      "value": "发送器速度"
+    },
+    {
+      "key": "Point Separation",
+      "value": "接触点间距"
+    },
+    {
+      "key": "Proximity Speed",
+      "value": "接近速度"
+    },
+    {
+      "key": "All",
+      "value": "全部"
+    },
+    {
+      "key": "Disabled",
+      "value": "停用"
+    },
+    {
+      "key": "Jaw Flap Bone",
+      "value": "下颌骨骼开合"
+    },
+    {
+      "key": "Jaw Flap Blend Shape",
+      "value": "下颌形态键开合"
+    },
+    {
+      "key": "Viseme Blend Shape",
+      "value": "口型形态键"
+    },
+    {
+      "key": "Viseme BlendShape",
+      "value": "口型形态键"
+    },
+    {
+      "key": "Viseme Blend Shape Face Tracking",
+      "value": "面部追踪口型形态键"
+    },
+    {
+      "key": "Bone Rotation",
+      "value": "骨骼旋转"
+    },
+    {
+      "key": "Blendshapes",
+      "value": "形态键"
+    },
+    {
+      "key": "Blend Shapes",
+      "value": "形态键"
+    },
+    {
+      "key": "Both",
+      "value": "两者"
+    },
+    {
+      "key": "Face Tracking",
+      "value": "面部追踪"
+    }
+  ],
+  "componentTitles": [
+    {
+      "key": "VRC.SDK3.Dynamics.PhysBone.Components.VRCPhysBone",
+      "value": "PhysBone（物理骨骼）"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.PhysBone.Components.VRCPhysBoneCollider",
+      "value": "PhysBone 碰撞体"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Contact.Components.VRCContactSender",
+      "value": "接触发送器"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Contact.Components.VRCContactReceiver",
+      "value": "接触接收器"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCAimConstraint",
+      "value": "瞄准约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCLookAtConstraint",
+      "value": "注视约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCParentConstraint",
+      "value": "父级约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCPositionConstraint",
+      "value": "位置约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCRotationConstraint",
+      "value": "旋转约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCScaleConstraint",
+      "value": "缩放约束"
+    },
+    {
+      "key": "VRC.SDK3.Dynamics.Constraint.Components.VRCWorldUpConstraint",
+      "value": "世界上方向约束"
+    },
+    {
+      "key": "VRC.SDK3.Avatars.Components.VRCAvatarDescriptor",
+      "value": "人物描述器（VRC Avatar Descriptor）"
+    },
+    {
+      "key": "VRC.SDKBase.VRCPreviewOverride",
+      "value": "VRC 预览覆盖"
+    },
+    {
+      "key": "VRC.Core.PipelineManager",
+      "value": "人物蓝图ID"
+    }
+  ],
+  "dialogs": [
+    {
+      "key": "VRChat SDK",
+      "value": "VRChat SDK"
+    },
+    {
+      "key": "Error logging in",
+      "value": "登录错误"
+    }
+  ],
+  "componentMenus": [
+    {
+      "key": "Avatars",
+      "value": "角色 (Avatars)"
+    },
+    {
+      "key": "Constraints",
+      "value": "约束 (Constraints)"
+    },
+    {
+      "key": "Contacts",
+      "value": "接触 (Contacts)"
+    },
+    {
+      "key": "PhysBones",
+      "value": "物理骨骼 (PhysBones)"
+    },
+    {
+      "key": "Legacy",
+      "value": "旧版 (Legacy)"
+    },
+    {
+      "key": "Pipeline Manager",
+      "value": "人物蓝图ID"
+    },
+    {
+      "key": "VRC Preview Override",
+      "value": "VRC 预览覆盖"
+    },
+    {
+      "key": "VRC Phys Bone",
+      "value": "物理骨骼 (VRC Phys Bone)"
+    },
+    {
+      "key": "VRC PhysBone",
+      "value": "物理骨骼 (VRC PhysBone)"
+    },
+    {
+      "key": "VRC Phys Bone Collider",
+      "value": "物理骨骼碰撞体 (VRC Phys Bone Collider)"
+    },
+    {
+      "key": "VRC PhysBone Collider",
+      "value": "物理骨骼碰撞体 (VRC PhysBone Collider)"
+    },
+    {
+      "key": "VRCPhysBone",
+      "value": "物理骨骼 (VRCPhysBone)"
+    },
+    {
+      "key": "VRCPhysBoneCollider",
+      "value": "物理骨骼碰撞体 (VRCPhysBoneCollider)"
+    },
+    {
+      "key": "VRC Contact Sender",
+      "value": "接触发送器 (VRC Contact Sender)"
+    },
+    {
+      "key": "VRC Contact Receiver",
+      "value": "接触接收器 (VRC Contact Receiver)"
+    },
+    {
+      "key": "VRC Avatar Descriptor",
+      "value": "人物描述器（VRC Avatar Descriptor）"
+    },
+    {
+      "key": "VRC Head Chop",
+      "value": "头部隐藏 (VRC Head Chop)"
+    },
+    {
+      "key": "VRC Aim Constraint",
+      "value": "瞄准约束 (VRC Aim Constraint)"
+    },
+    {
+      "key": "VRC Look At Constraint",
+      "value": "注视约束 (VRC Look At Constraint)"
+    },
+    {
+      "key": "VRC Parent Constraint",
+      "value": "父级约束 (VRC Parent Constraint)"
+    },
+    {
+      "key": "VRC Position Constraint",
+      "value": "位置约束 (VRC Position Constraint)"
+    },
+    {
+      "key": "VRC Rotation Constraint",
+      "value": "旋转约束 (VRC Rotation Constraint)"
+    },
+    {
+      "key": "VRC Scale Constraint",
+      "value": "缩放约束 (VRC Scale Constraint)"
+    }
+  ],
+  "panelEntries": [
+    {
+      "key": "Prepare Your Content",
+      "value": "准备人物内容"
+    },
+    {
+      "key": "Review Any Alerts",
+      "value": "检查问题与提示"
+    },
+    {
+      "key": "Selected Avatar",
+      "value": "所选人物"
+    },
+    {
+      "key": "Name",
+      "value": "名称"
+    },
+    {
+      "key": "Name*",
+      "value": "名称*"
+    },
+    {
+      "key": "Visibility",
+      "value": "可见性"
+    },
+    {
+      "key": "Private",
+      "value": "私有"
+    },
+    {
+      "key": "Public",
+      "value": "公开"
+    },
+    {
+      "key": "Primary Style",
+      "value": "主要风格"
+    },
+    {
+      "key": "Secondary Style",
+      "value": "次要风格"
+    },
+    {
+      "key": "Not Specified",
+      "value": "未指定"
+    },
+    {
+      "key": "Content Warnings",
+      "value": "内容警告"
+    },
+    {
+      "key": "Tags",
+      "value": "标签"
+    },
+    {
+      "key": "Description",
+      "value": "描述"
+    },
+    {
+      "key": "Enter your avatar's public name...",
+      "value": "输入人物的公开名称……"
+    },
+    {
+      "key": "Enter your avatar's public description...",
+      "value": "输入人物的公开描述……"
+    },
+    {
+      "key": "No Image",
+      "value": "无图片"
+    },
+    {
+      "key": "Select",
+      "value": "选择"
+    },
+    {
+      "key": "Select Image",
+      "value": "选择图片"
+    },
+    {
+      "key": "Select New Thumbnail",
+      "value": "选择新缩略图"
+    },
+    {
+      "key": "Capture In",
+      "value": "场景拍摄"
+    },
+    {
+      "key": "Capture In Scene",
+      "value": "在场景中拍摄"
+    },
+    {
+      "key": "Capture From Scene",
+      "value": "从场景拍摄"
+    },
+    {
+      "key": "Capture",
+      "value": "拍摄"
+    },
+    {
+      "key": "Auto Fix",
+      "value": "自动修复"
+    },
+    {
+      "key": "Build",
+      "value": "构建与上传"
+    },
+    {
+      "key": "Build Type",
+      "value": "构建方式"
+    },
+    {
+      "key": "Platform(s)",
+      "value": "目标平台"
+    },
+    {
+      "key": "Build & Publish Your Avatar Online",
+      "value": "构建并上传人物"
+    },
+    {
+      "key": "Build && Publish Your Avatar Online",
+      "value": "构建并上传人物"
+    },
+    {
+      "key": "Build & Test Your Avatar",
+      "value": "构建并测试人物"
+    },
+    {
+      "key": "Build && Test Your Avatar",
+      "value": "构建并测试人物"
+    },
+    {
+      "key": "Build & Publish",
+      "value": "构建并上传"
+    },
+    {
+      "key": "Multi-Platform Build & Publish",
+      "value": "多平台构建并上传"
+    },
+    {
+      "key": "Build & Test",
+      "value": "构建并测试"
+    },
+    {
+      "key": "Please set a name and thumbnail before uploading",
+      "value": "上传前请设置名称和缩略图"
+    },
+    {
+      "key": "You must fix the issues listed above before you can Upload a Build",
+      "value": "请先修复上方列出的问题，再构建上传"
+    },
+    {
+      "key": "Building & testing on this platform is not supported",
+      "value": "此平台不支持构建与测试"
+    },
+    {
+      "key": "You need to select at least one platform",
+      "value": "请至少选择一个平台"
+    },
+    {
+      "key": "Last Updated",
+      "value": "最后更新"
+    },
+    {
+      "key": "Version",
+      "value": "版本"
+    },
+    {
+      "key": "Supported Platforms",
+      "value": "支持的平台"
+    },
+    {
+      "key": "Thumbnail",
+      "value": "缩略图"
+    },
+    {
+      "key": "Loading...",
+      "value": "正在加载……"
+    },
+    {
+      "key": "Refreshing data...",
+      "value": "正在刷新数据……"
+    },
+    {
+      "key": "Options",
+      "value": "选项"
+    },
+    {
+      "key": "Per-Platform Overrides Active",
+      "value": "已启用按平台覆盖"
+    },
+    {
+      "key": "Configure Per-Platform Overrides",
+      "value": "配置按平台覆盖"
+    },
+    {
+      "key": "Add per-platform override",
+      "value": "添加平台覆盖"
+    },
+    {
+      "key": "This allows you to override the uploaded avatar object for specific platforms.",
+      "value": "为特定平台指定不同的人物对象用于上传。"
+    },
+    {
+      "key": "Save Changes",
+      "value": "保存更改"
+    },
+    {
+      "key": "Discard",
+      "value": "放弃更改"
+    },
+    {
+      "key": "Saved",
+      "value": "已保存"
+    },
+    {
+      "key": "Cancel",
+      "value": "取消"
+    },
+    {
+      "key": "Cancel Upload",
+      "value": "取消上传"
+    },
+    {
+      "key": "Open",
+      "value": "打开"
+    },
+    {
+      "key": "Create",
+      "value": "创建"
+    },
+    {
+      "key": "Send",
+      "value": "发送"
+    },
+    {
+      "key": "OK",
+      "value": "确定"
+    },
+    {
+      "key": "Close",
+      "value": "关闭"
+    },
+    {
+      "key": "Success",
+      "value": "成功"
+    },
+    {
+      "key": "Descriptor Error",
+      "value": "人物描述器错误"
+    },
+    {
+      "key": "Manage Your Tags",
+      "value": "管理标签"
+    },
+    {
+      "key": "Enter a new tag...",
+      "value": "输入新标签……"
+    },
+    {
+      "key": "Add Tag",
+      "value": "添加标签"
+    },
+    {
+      "key": "Sexually Suggestive",
+      "value": "性暗示"
+    },
+    {
+      "key": "Adult Language and Themes",
+      "value": "成人用语与主题"
+    },
+    {
+      "key": "Graphic Violence",
+      "value": "直观暴力"
+    },
+    {
+      "key": "Excessive Gore",
+      "value": "过度血腥"
+    },
+    {
+      "key": "Extreme Horror",
+      "value": "极度恐怖"
+    },
+    {
+      "key": "See it on the VRChat Website",
+      "value": "在 VRChat 网站查看"
+    },
+    {
+      "key": "Show Advanced Options",
+      "value": "显示高级选项"
+    },
+    {
+      "key": "Show options intended for advanced creators",
+      "value": "显示面向高级创作者的选项"
+    },
+    {
+      "key": "Run Performance Streaming",
+      "value": "运行性能数据流"
+    },
+    {
+      "key": "Building Android Content",
+      "value": "正在构建 Android 内容"
+    },
+    {
+      "key": "Building iOS Content",
+      "value": "正在构建 iOS 内容"
+    },
+    {
+      "key": "Getting Started",
+      "value": "入门指南"
+    },
+    {
+      "key": "Learn More",
+      "value": "了解更多"
+    },
+    {
+      "key": "Check Console for more details",
+      "value": "查看控制台以了解详情"
+    },
+    {
+      "key": "We recommend taking a look at the console for more details",
+      "value": "建议查看控制台以了解更多详情"
+    },
+    {
+      "key": "Your avatar failed to build or upload because of the following reason",
+      "value": "人物构建或上传失败，原因如下"
+    },
+    {
+      "key": "Your avatar was built successfully!",
+      "value": "人物构建成功！"
+    },
+    {
+      "key": "Your avatar was uploaded to VRChat!",
+      "value": "人物已上传至 VRChat！"
+    },
+    {
+      "key": "You can find it in the \"SDK Test Avatars\" section of your avatars list",
+      "value": "你可以在人物列表的“SDK Test Avatars”区域找到它"
+    },
+    {
+      "key": "You can pick a new image to be used as a thumbnail",
+      "value": "你可以选择一张新图片作为缩略图"
+    },
+    {
+      "key": "You can also capture the new thumbnail directly from the scene",
+      "value": "也可以直接从场景拍摄新缩略图"
+    },
+    {
+      "key": "Move your scene view to capture the desired thumbnail",
+      "value": "调整场景视图，拍摄所需的缩略图"
+    },
+    {
+      "key": "Background Color",
+      "value": "背景颜色"
+    },
+    {
+      "key": "Fill Background",
+      "value": "填充背景"
+    },
+    {
+      "key": "Camera",
+      "value": "摄像机"
+    },
+    {
+      "key": "Custom Camera",
+      "value": "自定义摄像机"
+    },
+    {
+      "key": "Default",
+      "value": "默认"
+    },
+    {
+      "key": "Use Custom Camera",
+      "value": "使用自定义摄像机"
+    },
+    {
+      "key": "Use PostProcessing",
+      "value": "使用后处理"
+    },
+    {
+      "key": "Applies scene post processing to the thumbnail",
+      "value": "将场景后处理应用于缩略图"
+    },
+    {
+      "key": "Uses flat color as a background instead of the skybox",
+      "value": "使用纯色替代天空盒作为背景"
+    },
+    {
+      "key": "Utilizes a custom camera instead of a VRChat-created camera instead",
+      "value": "使用自定义摄像机替代 VRChat 创建的摄像机"
+    },
+    {
+      "key": "Rotation",
+      "value": "旋转"
+    },
+    {
+      "key": "This avatar is marked for sale & will be reviewed before being available for purchase.",
+      "value": "此人物已标记为出售，审核通过后才可购买。"
+    },
+    {
+      "key": "Add notes to streamline the review process",
+      "value": "添加备注以帮助审核"
+    },
+    {
+      "key": "This avatar is linked to a product",
+      "value": "此人物已关联商品"
+    },
+    {
+      "key": "Since this avatar has been marked for sale, it will be <b>reviewed</b> by our moderators before becoming available for purchase inside VRChat.",
+      "value": "此人物已标记为出售，需要通过审核人员的<b>审核</b>后，才可在 VRChat 内购买。"
+    },
+    {
+      "key": "Building – Please Wait ...",
+      "value": "正在构建，请稍候……"
+    },
+    {
+      "key": "Build Failed",
+      "value": "构建失败"
+    },
+    {
+      "key": "Upload Failed",
+      "value": "上传失败"
+    },
+    {
+      "key": "Build Success",
+      "value": "构建成功"
+    },
+    {
+      "key": "Upload Success",
+      "value": "上传成功"
+    },
+    {
+      "key": "Building Avatar",
+      "value": "正在构建人物"
+    },
+    {
+      "key": "Uploading Avatar",
+      "value": "正在上传人物"
+    },
+    {
+      "key": "Uploading...",
+      "value": "正在上传……"
+    },
+    {
+      "key": "Building...",
+      "value": "正在构建……"
+    },
+    {
+      "key": "Publishing...",
+      "value": "正在发布……"
+    },
+    {
+      "key": "Failed to set fallback",
+      "value": "设置备用人物失败"
+    },
+    {
+      "key": "Set this avatar as fallback",
+      "value": "将此人物设为备用人物"
+    },
+    {
+      "key": "This avatar cannot be used as a fallback. Check Validations below for more info",
+      "value": "此人物无法作为备用人物使用，详情请查看下方检查提示"
+    },
+    {
+      "key": "This avatar can be used as a fallback. Check Validations below for more info.",
+      "value": "此人物可以作为备用人物使用，详情请查看下方检查提示。"
+    },
+    {
+      "key": "This avatar can be used as a fallback. Switch to the Android platform to select it.",
+      "value": "此人物可以作为备用人物使用，请切换至 Android 平台进行选择。"
+    },
+    {
+      "key": "Something went wrong when setting your avatar as a fallback",
+      "value": "设置此人物为备用人物时出错"
+    },
+    {
+      "key": "This avatar uses Visemes but the Face Mesh is not specified.",
+      "value": "此人物使用口型，但未指定面部网格。"
+    },
+    {
+      "key": "This avatar does not contain an Animator, you need to add an Animator component for the avatar to work",
+      "value": "此人物没有 Animator 组件，需要添加 Animator 才能正常工作"
+    },
+    {
+      "key": "This avatar does not contain an Animator, and will not animate in VRChat.",
+      "value": "此人物没有 Animator 组件，在 VRChat 中不会播放动画。"
+    },
+    {
+      "key": "This avatar is not imported as a humanoid rig and will not play VRChat's provided animation set.",
+      "value": "此人物未以人形骨架导入，无法播放 VRChat 提供的动画。"
+    },
+    {
+      "key": "Your avatar is disabled in the scene hierarchy!",
+      "value": "人物在场景层级中处于停用状态！"
+    },
+    {
+      "key": "Your avatar is humanoid, but its feet aren't specified!",
+      "value": "人物使用人形骨架，但未指定脚部骨骼！"
+    },
+    {
+      "key": "Your avatar is humanoid, but its upper arms aren't specified!",
+      "value": "人物使用人形骨架，但未指定上臂骨骼！"
+    },
+    {
+      "key": "Avatar feet are beneath the avatar's origin (the floor). That's probably not what you want.",
+      "value": "人物脚部位于人物原点（地面）下方，请检查位置是否正确。"
+    },
+    {
+      "key": "This avatar is too short. The minimum is 20cm shoulder height.",
+      "value": "人物过矮，肩部高度至少需要 20 厘米。"
+    },
+    {
+      "key": "This avatar is shorter than average.",
+      "value": "人物身高低于通常范围。"
+    },
+    {
+      "key": "This avatar is too tall. The maximum is 5m shoulder height.",
+      "value": "人物过高，肩部高度最多为 5 米。"
+    },
+    {
+      "key": "This avatar is taller than average.",
+      "value": "人物身高高于通常范围。"
+    },
+    {
+      "key": "There are multiple pipeline manager components on this avatar. There should only be one at the avatar's root. Click Auto Fix to remove all pipeline managers except for the first one found on the avatar root.",
+      "value": "此人物存在多个“人物蓝图ID”组件。人物根对象上应只保留一个。点击“自动修复”会保留根对象上找到的第一个组件，并移除其余同类组件。"
+    },
+    {
+      "key": "This avatar has no pipeline manager component. Click Auto Fix to add one.",
+      "value": "此人物没有“人物蓝图ID”组件，点击“自动修复”可添加。"
+    },
+    {
+      "key": "LowerArm is not first child of UpperArm or Hand is not first child of LowerArm: you may have problems with Forearm rotations.",
+      "value": "前臂不是上臂的第一个子对象，或手部不是前臂的第一个子对象：前臂旋转可能出现问题。"
+    },
+    {
+      "key": "This avatar does not have a humanoid rig, so it can not be used as a custom fallback.",
+      "value": "此人物未使用人形骨架，无法作为自定义备用人物。"
+    },
+    {
+      "key": "This avatar does not have an overall rating of Good or better, so it can not be used as a custom fallback. See the link below for details on Avatar Optimization.",
+      "value": "此人物的综合性能评级未达到 Good 或更好，无法作为自定义备用人物。人物优化详情请查看下方链接。"
+    },
+    {
+      "key": "This avatar can be used as a custom fallback. This avatar must be uploaded for every supported platform to be valid for fallback selection.",
+      "value": "此人物可以作为自定义备用人物。需为所有支持的平台上传后，才可被选择为备用人物。"
+    },
+    {
+      "key": "This avatar uses additional animators, they will be disabled when used as a fallback.",
+      "value": "此人物使用了额外的 Animator，作为备用人物使用时会停用它们。"
+    },
+    {
+      "key": "This avatar will be blocked by default due to performance. Your fallback will be shown instead.",
+      "value": "由于性能问题，此人物默认会被屏蔽，改为显示你的备用人物。"
+    },
+    {
+      "key": "Other users may choose to block this avatar due to performance. Your fallback will be shown instead.",
+      "value": "其他用户可能因性能问题屏蔽此人物，届时会显示你的备用人物。"
+    },
+    {
+      "key": "Your avatar contains one or more VRCHeadChop components. Be sure to read the documentation and make sure you know what you're doing!",
+      "value": "此人物包含 VRCHeadChop 组件，请阅读相关文档并确认配置正确！"
+    },
+    {
+      "key": "VRCHeadChop Component",
+      "value": "VRCHeadChop 组件"
+    },
+    {
+      "key": "Viseme Dampen requires LipSync Mode 'Viseme BlendShape Face Tracking'. The saved dampening settings will have no effect until this mode is selected.",
+      "value": "口型抑制需要“口型形态键面部追踪”同步模式，选择该模式之前，保存的抑制设置不会生效。"
+    },
+    {
+      "key": "Face Tracking is enabled with blendshape mappings configured, but no valid Face Tracking Meshes are assigned - the mappings will have no effect.",
+      "value": "已启用面部追踪并配置形态键映射，但未指定有效的面部追踪网格，映射不会生效。"
+    },
+    {
+      "key": "This avatar contains skinned meshes that were imported with Blendshape Normals set to 'Calculate' but aren't using 'Legacy Blendshape Normals'. This will significantly increase the size of the uploaded avatar. This must be fixed in the mesh import settings before uploading.",
+      "value": "人物包含将形态键法线设为“Calculate”但未使用“Legacy Blendshape Normals”的蒙皮网格，会显著增加上传体积。上传前请修正网格导入设置。"
+    },
+    {
+      "key": "This avatar contains meshes that were imported with Read/Write disabled. This must be fixed in the mesh import settings before uploading.",
+      "value": "人物包含未启用 Read/Write 的网格，上传前请修正网格导入设置。"
+    },
+    {
+      "key": "Avatar Built",
+      "value": "人物构建完成"
+    },
+    {
+      "key": "Avatar Optimization Tips",
+      "value": "人物优化建议"
+    },
+    {
+      "key": "Avatar Rig Requirements",
+      "value": "人物骨架要求"
+    },
+    {
+      "key": "Unity Console might have more information",
+      "value": "Unity 控制台可能有更多信息"
+    },
+    {
+      "key": "Show Console",
+      "value": "显示控制台"
+    },
+    {
+      "key": "None",
+      "value": "无"
+    },
+    {
+      "key": "Edit",
+      "value": "编辑"
+    },
+    {
+      "key": "Remove",
+      "value": "移除"
+    },
+    {
+      "key": "Select All",
+      "value": "全选"
+    },
+    {
+      "key": "Deselect All",
+      "value": "取消全选"
+    },
+    {
+      "key": "Failed to find avatar for Multi Platform Build",
+      "value": "未找到用于多平台构建的人物"
+    },
+    {
+      "key": "Multiple pipelines are present. V3 pipeline will take priority",
+      "value": "检测到多个构建管线，将优先使用 V3 管线"
+    },
+    {
+      "key": "A VRCSceneDescriptor or VRCAvatarDescriptor\nis required to build VRChat SDK Content",
+      "value": "构建 VRChat SDK 内容需要 VRCSceneDescriptor 或 VRCAvatarDescriptor"
+    },
+    {
+      "key": "See Avatar Rig Requirements for more information.",
+      "value": "更多信息请参阅人物骨架要求。"
+    },
+    {
+      "key": "Failed to locate Rebind method for animator. Humanoid avatar root hierarchy cannot be verified!",
+      "value": "未找到 Animator 的 Rebind 方法，无法验证人形骨架的根对象层级！"
+    },
+    {
+      "key": "Failed to invoke Rebind method for animator. Humanoid avatar root hierarchy cannot be verified!",
+      "value": "调用 Animator 的 Rebind 方法失败，无法验证人形骨架的根对象层级！"
+    },
+    {
+      "key": "This avatar's armature is not a direct child of its root. Click Auto-Fix to re-parent the armature and its siblings to be direct children of the avatar root.",
+      "value": "人物骨架不是人物根对象的直接子对象。点击“自动修复”可将骨架及其同级对象重新设为人物根对象的直接子对象。"
+    },
+    {
+      "key": "Gesture Layer needs valid mask on first animator layer",
+      "value": "手势层的第一个 Animator 图层需要有效的遮罩"
+    },
+    {
+      "key": "Your avatar contains mixed base and special playable layers. Misplaced playable layers won't do anything. Click Auto-Fix to move them to the correct layer lists.",
+      "value": "人物的基础层与特殊可播放层混放。放错位置的层不会生效，点击“自动修复”可将它们移至正确的层列表。"
+    },
+    {
+      "key": "Your avatar contains multiple playable layers of the same type. Only the last layer of each type will be used. Click Auto-Fix to remove the duplicates.",
+      "value": "人物存在多个相同类型的可播放层，每种类型仅使用最后一个。点击“自动修复”可移除重复项。"
+    },
+    {
+      "key": "Images used for Actions & Moods are too large.",
+      "value": "动作与情绪使用的图片过大。"
+    },
+    {
+      "key": "VRCExpressionsMenu object reference is missing.",
+      "value": "缺少 VRCExpressionsMenu 对象引用。"
+    },
+    {
+      "key": "VRCExpressionParameters object reference is missing.",
+      "value": "缺少 VRCExpressionParameters 对象引用。"
+    },
+    {
+      "key": "VRCExpressionParameters has too many parameters defined.",
+      "value": "VRCExpressionParameters 定义的参数过多。"
+    },
+    {
+      "key": "This avatar uses depreciated DynamicBone components. Please use PhysBones instead. Click Auto Fix to automatically convert DynamicBones to PhysBones.",
+      "value": "人物使用了已弃用的 DynamicBone 组件。请改用 PhysBone，点击“自动修复”可自动转换。"
+    },
+    {
+      "key": "This avatar uses Unity constraints. Consider using VRChat constraints instead. Click Auto Fix to attempt to replace all constraints and rebind avatar animations automatically.",
+      "value": "人物使用了 Unity 约束，建议改用 VRChat 约束。点击“自动修复”会尝试替换所有约束并自动重新绑定人物动画。"
+    },
+    {
+      "key": "Unity constraints are not allowed on this platform. Consider using VRChat constraints instead. Click Auto Fix to attempt to replace all constraints and rebind avatar animations automatically.",
+      "value": "此平台不允许使用 Unity 约束，建议改用 VRChat 约束。点击“自动修复”会尝试替换所有约束并自动重新绑定人物动画。"
+    },
+    {
+      "key": "Audio sources found on Avatar, they will be adjusted to safe limits, if necessary.",
+      "value": "人物上检测到音频源，必要时会将其调整至安全限制内。"
+    },
+    {
+      "key": "Found an audio clip with load type `Decompress On Load` which doesn't have `Load In Background` enabled.\nPlease enable `Load In Background` on the audio clip.",
+      "value": "检测到加载类型为 Decompress On Load、但未启用 Load In Background 的音频片段。\n请为该音频片段启用 Load In Background。"
+    },
+    {
+      "key": "Found one or several audio clips used in state behaviours with load type `Decompress On Load` which doesn't have `Load In Background` enabled. Please enable `Load In Background` on these audio clips.",
+      "value": "状态行为使用的一个或多个音频片段设为 Decompress On Load，但未启用 Load In Background。请为这些音频片段启用 Load In Background。"
+    },
+    {
+      "key": "Stations found on Avatar, they will be adjusted to safe limits, if necessary.",
+      "value": "人物上检测到座位组件，必要时会将其调整至安全限制内。"
+    },
+    {
+      "key": "This avatar has one or more Substance materials, which is not supported and may break in-game. Please bake your Substances to regular materials.",
+      "value": "人物包含不受支持的 Substance 材质，可能导致游戏内显示异常。请将 Substance 烘焙为普通材质。"
+    },
+    {
+      "key": "This avatar contains one or more particle systems configured to destroy themselves when they stop. This is not allowed. Please use a different stop action.",
+      "value": "人物的一个或多个粒子系统被设为停止时销毁自身，此设置不被允许。请改用其他停止行为。"
+    },
+    {
+      "key": "This avatar contains a particle system on the avatar root configured to disable itself when it stops. This is not allowed. Please use a different stop action.",
+      "value": "人物根对象上的粒子系统被设为停止时停用自身，此设置不被允许。请改用其他停止行为。"
+    },
+    {
+      "key": "This avatar contains one or more trail renderers configured to auto-destruct when the trail ends. This is not allowed. Please disable auto-destruction.",
+      "value": "人物的一个或多个拖尾渲染器被设为拖尾结束时自动销毁，此设置不被允许。请关闭自动销毁。"
+    },
+    {
+      "key": "This avatar contains one or more particle systems configured to apply collision forces to Pickups and/or Items. This is not allowed. Please either disable collision against these layers, or set the collider force to zero.",
+      "value": "人物的一个或多个粒子系统被设为向 Pickups 或 Items 施加碰撞力，此设置不被允许。请关闭与这些图层的碰撞，或将碰撞力设为零。"
+    },
+    {
+      "key": "Particle Collision",
+      "value": "粒子碰撞"
+    },
+    {
+      "key": "How would you like to resolve collision problems for the affected particle systems?",
+      "value": "要如何解决这些粒子系统的碰撞问题？"
+    },
+    {
+      "key": "Disable collision against protected layers",
+      "value": "关闭与受保护图层的碰撞"
+    },
+    {
+      "key": "Set collider force to zero",
+      "value": "将碰撞力设为零"
+    },
+    {
+      "key": "This avatar contains one or more particle systems configured to emit dynamic lights. These lights will be included in the overall Light count for this avatar, which may impact its performance rank. Click Auto Fix to clear lights from these particle systems.",
+      "value": "人物的一个或多个粒子系统会产生动态灯光。这些灯光会计入人物总灯光数，可能影响性能评级。点击“自动修复”可清除这些粒子系统的灯光。"
+    },
+    {
+      "key": "This avatar uses a mixture of Write Defaults in its animator states. To avoid animation issues, VRChat recommends using the same Write Defaults setting across all animator states.",
+      "value": "人物的 Animator 状态混用了不同的 Write Defaults 设置。为避免动画问题，VRChat 建议所有状态使用相同的 Write Defaults 设置。"
+    },
+    {
+      "key": "Write Defaults Guidelines",
+      "value": "Write Defaults 使用指南"
+    },
+    {
+      "key": "This avatar contains one or more animator states with Write Defaults disabled where the animation clip is either missing or empty. To avoid animation issues, assign animation clips containing at least one property.",
+      "value": "人物的一个或多个状态已关闭 Write Defaults，但动画片段缺失或为空。为避免动画问题，请指定至少包含一个属性的动画片段。"
+    },
+    {
+      "key": "This avatar contains VRCPhysBone or VRCPhysBoneCollider components which have cyclic dependencies.  As a result some components will run out of order.  Remove or move these components to change their dependencies.  See console for more information.",
+      "value": "人物的 VRCPhysBone 或 VRCPhysBoneCollider 组件存在循环依赖，部分组件会乱序执行。请移除或移动相关组件以调整依赖关系，详情见控制台。"
+    },
+    {
+      "key": "Unknown performance display level.",
+      "value": "未知的性能显示等级。"
+    },
+    {
+      "key": "You must accept the terms below to upload content to VRChat",
+      "value": "上传内容至 VRChat 前，你必须同意下方条款"
+    },
+    {
+      "key": "A VRCAvatarDescriptor is required to build a VRChat Avatar",
+      "value": "构建 VRChat 人物需要 VRCAvatarDescriptor（人物描述器）"
+    },
+    {
+      "key": "Add a VRCAvatarDescriptor",
+      "value": "添加 VRCAvatarDescriptor（人物描述器）"
+    },
+    {
+      "key": "Adds a VRCAvatarDescriptor to the selected GameObject",
+      "value": "为所选游戏对象添加 VRCAvatarDescriptor（人物描述器）"
+    },
+    {
+      "key": "This avatar is currently set as your fallback",
+      "value": "此人物当前已设为你的备用人物"
+    },
+    {
+      "key": "No PipelineManager found on the avatar, make sure you added an Avatar Descriptor",
+      "value": "人物上未找到“人物蓝图ID”组件，请确认已添加人物描述器"
+    },
+    {
+      "key": "Name cannot be empty",
+      "value": "名称不能为空"
+    },
+    {
+      "key": "Saving Avatar Changes...",
+      "value": "正在保存人物更改……"
+    },
+    {
+      "key": "Updating avatar",
+      "value": "正在更新人物"
+    },
+    {
+      "key": "Updated avatar",
+      "value": "人物已更新"
+    },
+    {
+      "key": "Upload Succeeded!",
+      "value": "上传成功！"
+    },
+    {
+      "key": "We’ll notify you via email as soon as your avatar has been reviewed.",
+      "value": "人物审核完成后，我们会通过电子邮件通知你。"
+    },
+    {
+      "key": "Build Target Switcher",
+      "value": "切换构建目标"
+    },
+    {
+      "key": "Confirm",
+      "value": "确认"
+    },
+    {
+      "key": "Timed out waiting for user to log in",
+      "value": "等待用户登录超时"
+    },
+    {
+      "key": "Multi-Platform Upload Finished",
+      "value": "多平台上传完成"
+    },
+    {
+      "key": "Build was blocked by the SDK callback",
+      "value": "构建被 SDK 回调阻止"
+    },
+    {
+      "key": "Open the SDK panel to build and upload avatars",
+      "value": "请打开 SDK 面板以构建和上传人物"
+    },
+    {
+      "key": "This avatar does not have a PipelineManager",
+      "value": "此人物没有“人物蓝图ID”组件"
+    },
+    {
+      "key": "Unexpected Error Occurred",
+      "value": "发生意外错误"
+    },
+    {
+      "key": "Failed to find the built avatar bundle, the build likely failed",
+      "value": "未找到已构建的人物资源包，构建可能失败"
+    },
+    {
+      "key": "Target avatar does not have a PipelineManager, make sure a PipelineManager component is present before uploading",
+      "value": "目标人物没有“人物蓝图ID”组件，请在上传前添加该组件"
+    },
+    {
+      "key": "Avatar info does not contain an ID. Make sure to acquire an ID from the API before uploading",
+      "value": "人物信息不含 ID，请在上传前通过 API 获取 ID"
+    },
+    {
+      "key": "Avatar's current ID belongs to a different user, assign a different ID",
+      "value": "人物当前的 ID 属于其他用户，请指定其他 ID"
+    },
+    {
+      "key": "Thumbnail image is required for avatar creation",
+      "value": "创建人物时必须提供缩略图"
+    },
+    {
+      "key": "Target avatar does not have a blueprint id assigned. Make sure an id is created and assigned before uploading",
+      "value": "目标人物尚未分配蓝图 ID，请在上传前创建并分配 ID"
+    },
+    {
+      "key": "Target avatar's assigned ID doesn't match the API id. Make sure the PipelineManager component has the correct ID assigned before uploading",
+      "value": "目标人物的蓝图 ID 与 API 中的 ID 不一致，请在上传前确认“人物蓝图ID”组件填写正确"
+    },
+    {
+      "key": "Request cancelled",
+      "value": "请求已取消"
+    },
+    {
+      "key": "Request Cancelled",
+      "value": "请求已取消"
+    },
+    {
+      "key": "Current User does not have permissions to build and upload avatars",
+      "value": "当前用户没有构建和上传人物的权限"
+    },
+    {
+      "key": "Failed to build avatar!",
+      "value": "人物构建失败！"
+    },
+    {
+      "key": "Avatar Upload",
+      "value": "人物上传"
+    },
+    {
+      "key": "Uploading Avatar to VRChat",
+      "value": "正在将人物上传至 VRChat"
+    },
+    {
+      "key": "Failed to upload avatar!",
+      "value": "人物上传失败！"
+    },
+    {
+      "key": "Failed to update avatar info!",
+      "value": "人物信息更新失败！"
+    },
+    {
+      "key": "Update Failed",
+      "value": "更新失败"
+    },
+    {
+      "key": "Content Guidelines Check",
+      "value": "内容规范检查"
+    },
+    {
+      "key": "Build Succeeded!",
+      "value": "构建成功！"
+    },
+    {
+      "key": "Failed to reserve an avatar ID",
+      "value": "预留人物 ID 失败"
+    },
+    {
+      "key": "Avatar ID is empty, while blueprint ID is not, this is not supported, please make sure that avatar.ID is populated",
+      "value": "人物 ID 为空，但蓝图 ID 不为空。此状态不受支持，请确保 avatar.ID 已正确填写"
+    },
+    {
+      "key": "Avatar upload canceled",
+      "value": "人物上传已取消"
+    },
+    {
+      "key": "Custom cancellation token passed, you should cancel via its token source instead",
+      "value": "传入了自定义取消令牌，请通过该令牌的源对象取消操作"
+    },
+    {
+      "key": "Avatar validation failed",
+      "value": "人物校验失败"
+    },
+    {
+      "key": "This avatar has mipmapped textures without 'Streaming Mip Maps' enabled.",
+      "value": "人物的部分贴图使用多级渐远纹理，但未启用 Streaming Mip Maps。"
+    },
+    {
+      "key": "Humanoid avatar must have head, hands and feet bones mapped.",
+      "value": "人形人物必须映射头部、手部和脚部骨骼。"
+    },
+    {
+      "key": "Spine hierarchy incorrect. Make sure that the parent of both Shoulders and the Neck is the Chest (or UpperChest if set).",
+      "value": "脊柱层级不正确。请确保两侧肩部和颈部的父级为 Chest，或在已设置 UpperChest 时使用 UpperChest。"
+    },
+    {
+      "key": "LowerLeg is not first child of UpperLeg or Foot is not first child of LowerLeg: you may have problems with Shin rotations.",
+      "value": "小腿不是大腿的第一个子对象，或脚部不是小腿的第一个子对象：胫骨旋转可能出现问题。"
+    },
+    {
+      "key": "This avatar has a split hierarchy (Hips bone is not the ancestor of all humanoid bones). IK may not work correctly.",
+      "value": "人物骨架层级分裂，Hips 骨骼不是所有人形骨骼的祖先，IK 可能无法正常工作。"
+    },
+    {
+      "key": "Could not check for legacy blend shape normals because 'legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes' was not found.",
+      "value": "未找到 legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes，无法检查旧版形态键法线设置。"
+    },
+    {
+      "key": "SDK V3 pipeline is not enabled.",
+      "value": "SDK V3 构建管线未启用。"
+    },
+    {
+      "key": "Before you can upload avatars or worlds, you will need to spend some time in VRChat.",
+      "value": "上传人物或世界之前，你需要先在 VRChat 中游玩一段时间。"
+    },
+    {
+      "key": "Before you can upload avatars, you will need to spend some time in VRChat.",
+      "value": "上传人物之前，你需要先在 VRChat 中游玩一段时间。"
+    },
+    {
+      "key": "Before you can upload worlds, you will need to spend some time in VRChat.",
+      "value": "上传世界之前，你需要先在 VRChat 中游玩一段时间。"
+    },
+    {
+      "key": "You must address the above issues before you can build or test this content!",
+      "value": "必须先解决上方问题，才能构建或测试此内容！"
+    },
+    {
+      "key": "Open Link",
+      "value": "打开链接"
+    },
+    {
+      "key": "Cannot get builder, SDK window is not open",
+      "value": "无法获取构建器，SDK 窗口未打开"
+    },
+    {
+      "key": "Could not find valid sdk builders",
+      "value": "未找到有效的 SDK 构建器"
+    },
+    {
+      "key": "This scene contains components from the VRChat SDK version 2 and version 3. Version two elements will have to be replaced with their version 3 counterparts to build with SDK3 and UDON.",
+      "value": "场景同时包含 VRChat SDK 2 和 SDK 3 组件。要使用 SDK3 和 UDON 构建，必须将 SDK2 元素替换为对应的 SDK3 元素。"
+    },
+    {
+      "key": "Default texture format on Android should be set to the newer ASTC format to reduce VRAM usage (this could take a while). Texture settings can be overridden on an individual basis.",
+      "value": "Android 的默认贴图格式应设为较新的 ASTC，以减少显存占用，此过程可能耗时较长。你仍可单独覆盖各贴图的设置。"
+    },
+    {
+      "key": "iOS is not supported as a build target.",
+      "value": "不支持将 iOS 作为构建目标。"
+    },
+    {
+      "key": "Automatic lightmap generation is enabled, which may stall the Unity build process. Before building and uploading, consider turning off 'Auto Generate' at the bottom of the Lighting Window.",
+      "value": "自动生成光照贴图已启用，可能导致 Unity 构建停滞。构建和上传前，建议关闭 Lighting 窗口底部的 Auto Generate。"
+    },
+    {
+      "key": "A VRCSceneDescriptor is required to build a World",
+      "value": "构建世界需要 VRCSceneDescriptor（世界描述器）"
+    },
+    {
+      "key": "A VRCAvatarDescriptor is required to build an Avatar",
+      "value": "构建人物需要 VRCAvatarDescriptor（人物描述器）"
+    },
+    {
+      "key": "The SDK did not load properly. Try selecting VRChat SDK -> Reload SDK in the Unity menu bar.",
+      "value": "SDK 未正确加载，请尝试在 Unity 菜单栏选择 VRChat SDK → Reload SDK。"
+    },
+    {
+      "key": "Unsupported Target Platform",
+      "value": "不受支持的目标平台"
+    },
+    {
+      "key": "Developer FAQ",
+      "value": "开发者常见问题"
+    },
+    {
+      "key": "VRChat Discord",
+      "value": "VRChat Discord"
+    },
+    {
+      "key": "This detection was wrong",
+      "value": "这是误判"
+    },
+    {
+      "key": "View Content Guidelines",
+      "value": "查看内容规范"
+    },
+    {
+      "key": "Okay",
+      "value": "好的"
+    },
+    {
+      "key": "Thank you for letting us know! We will look into what happened.",
+      "value": "感谢反馈！我们会调查发生的情况。"
+    },
+    {
+      "key": "Bio",
+      "value": "个人简介"
+    },
+    {
+      "key": "Status",
+      "value": "状态"
+    },
+    {
+      "key": "Pronouns",
+      "value": "称谓"
+    },
+    {
+      "key": "Image",
+      "value": "图片"
+    },
+    {
+      "key": "Failed to contest moderation",
+      "value": "提交审核异议失败"
+    },
+    {
+      "key": "Error",
+      "value": "错误"
+    },
+    {
+      "key": "None Selected",
+      "value": "未选择平台"
+    },
+    {
+      "key": "All Platforms",
+      "value": "全部平台"
+    },
+    {
+      "key": "Image Size\n(1200 x 900)",
+      "value": "图片尺寸\n（1200 × 900）"
+    },
+    {
+      "key": "Content should accurately represent what a user will experience. Names, tags, descriptions, images, acknowledgements and previews (including thumbnails) should not be misleading. If your content looks different in VRChat than in the images you've used to showcase it, users may have a negative experience.",
+      "value": "内容应准确反映用户实际体验。名称、标签、描述、图片、致谢和预览（包括缩略图）均不应误导用户。如果内容在 VRChat 内的实际效果与你展示的图片不同，可能会给用户带来不良体验。"
+    },
+    {
+      "key": "Thumbnail Accuracy Warning",
+      "value": "缩略图准确性提醒"
+    },
+    {
+      "key": "Continue",
+      "value": "继续"
+    },
+    {
+      "key": "Back",
+      "value": "返回"
+    },
+    {
+      "key": "Don't show again for this project",
+      "value": "此项目不再显示"
+    },
+    {
+      "key": "thumbnail-capture-cancel-btn",
+      "value": "选择缩略图"
+    },
+    {
+      "key": "Multi Platform Build",
+      "value": "多平台构建"
+    },
+    {
+      "key": "Canceled",
+      "value": "已取消"
+    },
+    {
+      "key": "Finished",
+      "value": "已完成"
+    },
+    {
+      "key": "No valid next target found for MultiPlatformBuild, you should install the required modules for Android and iOS",
+      "value": "未找到有效的下一个多平台构建目标，请安装所需的 Android 和 iOS 平台模块"
+    },
+    {
+      "key": "Failed to switch platform",
+      "value": "切换平台失败"
+    },
+    {
+      "key": "A VRCAvatarDescriptor is required to build a VRChat Avatar.\nSelect a GameObject to add a VRCAvatarDescriptor to it.",
+      "value": "构建 VRChat 人物需要人物描述器。\n请选择一个游戏对象以添加 VRCAvatarDescriptor。"
+    },
+    {
+      "key": "This avatar uses textures with 'Box' mipmap filtering, which blurs distant textures. Switch to 'Kaiser' for improved sharpness.",
+      "value": "人物使用了 Box 多级渐远纹理过滤，远处贴图会模糊。建议切换至 Kaiser 以改善清晰度。"
+    },
+    {
+      "key": "This avatar uses textures with 'Box' mipmap filtering, which blurs distant textures. Switch to 'Kaiser' for improved sharpness (this will be overriden with the newer 'DPID' algorithm, this can be disabled in the settings).",
+      "value": "人物使用了 Box 多级渐远纹理过滤，远处贴图会模糊。建议切换至 Kaiser 以改善清晰度；当前会改用较新的 DPID 算法，可在设置中关闭。"
+    },
+    {
+      "key": "It will be blocked by default on VRChat for Quest, and will not show unless a user chooses to show your avatar.",
+      "value": "在 Quest 版 VRChat 中默认被屏蔽，只有用户主动选择显示时才会出现。"
+    },
+    {
+      "key": "It may be blocked by users depending on their Performance settings.",
+      "value": "可能因其他用户的性能设置而被屏蔽。"
+    },
+    {
+      "key": "All VRCContact components will be removed at runtime.",
+      "value": "所有 VRCContact 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCContact components for optimal performance, or mark contact receivers as local only where possible.",
+      "value": "减少 VRCContact 组件，或尽可能将接收器设为仅本地，可改善性能。"
+    },
+    {
+      "key": "All constraint components will be removed at runtime.",
+      "value": "所有约束组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of constraint components for optimal performance.",
+      "value": "减少约束组件可改善性能。"
+    },
+    {
+      "key": "All VRCConstraint components will be removed at runtime.",
+      "value": "所有 VRCConstraint 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reorganize your constraints to reduce dependencies for optimal performance.",
+      "value": "重新组织约束、减少依赖可改善性能。"
+    },
+    {
+      "key": "Consider using shader features like decals or tiling. Check your shader's documentation for more information. ",
+      "value": "可考虑使用着色器的贴花或平铺功能，详情请查看着色器文档。"
+    },
+    {
+      "key": "You can also check your model's UV layouts to better utilize texture space. These techniques may help you reduce texture memory usage.",
+      "value": "也可检查模型的 UV 布局以更充分地利用贴图空间。这些方法有助于减少贴图显存占用。"
+    },
+    {
+      "key": "All PhysBone components will be removed at runtime.",
+      "value": "所有 PhysBone 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCPhysBone components for better performance.",
+      "value": "减少 VRCPhysBone 组件可改善性能。"
+    },
+    {
+      "key": "Reduce the number of affected transforms by adding exclusions or removing components.",
+      "value": "通过添加排除项或移除组件，减少受影响的变换数量。"
+    },
+    {
+      "key": "All PhysBone colliders will be removed at runtime.",
+      "value": "所有 PhysBone 碰撞体都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCPhysBoneColliders for better performance.",
+      "value": "减少 VRCPhysBoneCollider 组件可改善性能。"
+    },
+    {
+      "key": "Select thumbnail",
+      "value": "选择缩略图"
+    },
+    {
+      "key": "0/5 Selected",
+      "value": "已选择 0/5 项"
+    }
+  ],
+  "panelTemplates": [
+    {
+      "key": "Overall Performance Estimate: {0} - This avatar may not perform well on many systems. See additional warnings for suggestions on how to improve performance. Click 'Avatar Optimization Tips' below for more information.",
+      "value": "综合性能评估：{0:panel}。此人物在许多设备上可能表现不佳。请参考其他警告中的优化建议，或点击下方“人物优化建议”了解详情。"
+    },
+    {
+      "key": "Overall Performance Estimate: {0} - This avatar does not meet minimum performance requirements for VRChat. It will be blocked by default on VRChat for Quest, and will not show unless a user chooses to show your avatar. See additional warnings for suggestions on how to improve performance. Click 'Avatar Optimization Tips' below for more information.",
+      "value": "综合性能评估：{0:panel}。此人物未达到 VRChat 的最低性能要求，在 Quest 版 VRChat 中默认被屏蔽，只有用户主动选择显示时才会出现。请参考其他警告中的优化建议，或点击下方“人物优化建议”了解详情。"
+    },
+    {
+      "key": "Overall Performance Estimate: {0} - This avatar does not meet minimum performance requirements for VRChat. It may be blocked by users depending on their Performance settings. See additional warnings for suggestions on how to improve performance. Click 'Avatar Optimization Tips' below for more information.",
+      "value": "综合性能评估：{0:panel}。此人物未达到 VRChat 的最低性能要求，可能因其他用户的性能设置而被屏蔽。请参考其他警告中的优化建议，或点击下方“人物优化建议”了解详情。"
+    },
+    {
+      "key": "Overall Performance Estimate: {0}",
+      "value": "综合性能评估：{0:panel}"
+    },
+    {
+      "key": "Triangles: {0}",
+      "value": "三角面：{0}"
+    },
+    {
+      "key": "Triangles: {0} (Recommended: {1})",
+      "value": "三角面：{0}（建议：{1}）"
+    },
+    {
+      "key": "Bounding box (AABB) size: {0} (Recommended: {1})",
+      "value": "包围盒（AABB）大小：{0}（建议：{1}）"
+    },
+    {
+      "key": "Bounding box (AABB) size: {0}",
+      "value": "包围盒（AABB）大小：{0}"
+    },
+    {
+      "key": "Review Any Alerts ({0})",
+      "value": "检查问题与提示（{0}）"
+    },
+    {
+      "key": "{0}/{1} Selected",
+      "value": "已选择 {0}/{1}"
+    },
+    {
+      "key": "{0} Tag(s)",
+      "value": "{0} 个标签"
+    },
+    {
+      "key": "The following component types are found on the Avatar and will be removed by the client: {0}",
+      "value": "人物上存在以下组件类型，客户端会将其移除：{0}"
+    },
+    {
+      "key": "Overall Performance Estimate: {0} - {1}",
+      "value": "综合性能评估：{0:panel} — {1}"
+    },
+    {
+      "key": "Overall Performance: {0}",
+      "value": "综合性能：{0:panel}"
+    },
+    {
+      "key": "Your avatar contains too many VRCHeadChop components. The maximum allowed count is {0}, but this avatar contains a total of {1}. Please remove {2} of them.",
+      "value": "人物的 VRCHeadChop 组件数量过多，最多允许 {0} 个，目前共有 {1} 个，请移除其中 {2} 个。"
+    },
+    {
+      "key": "Check if the Platform Support for {0} is installed in the Unity Hub",
+      "value": "请检查 Unity Hub 中是否安装了 {0} 平台支持模块"
+    },
+    {
+      "key": "Switching to {0}",
+      "value": "正在切换至 {0}"
+    },
+    {
+      "key": "Building for {0}",
+      "value": "正在为 {0} 构建"
+    },
+    {
+      "key": "Uploading for {0}",
+      "value": "正在上传 {0} 版本"
+    },
+    {
+      "key": "Face Tracking: {0} blendshape mapping(s) reference blendshape names that don't exist on their target mesh and will have no effect:",
+      "value": "面部追踪：{0} 个形态键映射引用了目标网格中不存在的形态键，映射不会生效："
+    },
+    {
+      "key": "\n- ... and {0} more",
+      "value": "\n- ……另有 {0} 项"
+    },
+    {
+      "key": "This avatar contains a total of {0} global PhysBone colliders, but the maximum number allowed per avatar is {1}. Reduce the global collider count by switching Global Collision to False.",
+      "value": "人物共有 {0} 个全局 PhysBone 碰撞体，每个人物最多允许 {1} 个。将部分组件的 Global Collision 设为 False 可减少全局碰撞体数量。"
+    },
+    {
+      "key": "This avatar contains VRCPhysBone or VRCPhysBoneCollider components which exceed the maximum dependency depth of {0}.  Remove or move these components to change their dependencies.  See console for more information.",
+      "value": "人物的 VRCPhysBone 或 VRCPhysBoneCollider 组件超过了最大依赖深度 {0}。请移除或移动相关组件以调整依赖关系，详情见控制台。"
+    },
+    {
+      "key": "Unknown SDK Build Action {0}",
+      "value": "未知的 SDK 构建操作：{0}"
+    },
+    {
+      "key": "Failed to send AVM notes: {0}",
+      "value": "发送商品人物审核备注失败：{0}"
+    },
+    {
+      "key": "Are you sure you want to switch your build target to {0}? This could take a while.",
+      "value": "确定将构建目标切换为 {0} 吗？这可能需要一些时间。"
+    },
+    {
+      "key": "Failed to switch to {0} target platform",
+      "value": "切换至 {0} 目标平台失败"
+    },
+    {
+      "key": "Unable to identify selected build action {0}",
+      "value": "无法识别所选构建操作：{0}"
+    },
+    {
+      "key": "Avatar testing is not supported on platform '{0}'",
+      "value": "平台“{0}”不支持人物测试"
+    },
+    {
+      "key": "Avatar download size is too large for the target platform. {0} > {1}",
+      "value": "人物下载体积超过目标平台的限制：{0} > {1}"
+    },
+    {
+      "key": "Avatar uncompressed size is too large for the target platform. {0} > {1}",
+      "value": "人物解压后体积超过目标平台的限制：{0} > {1}"
+    },
+    {
+      "key": "Failed to load avatar data: {0}",
+      "value": "加载人物数据失败：{0}"
+    },
+    {
+      "key": "{0} bundle failed to build",
+      "value": "{0} 资源包构建失败"
+    },
+    {
+      "key": "{0} bundle failed to upload",
+      "value": "{0} 资源包上传失败"
+    },
+    {
+      "key": "This avatar has textures bigger than {0}. Please reduce them to save memory for users.",
+      "value": "人物包含尺寸大于 {0} 的贴图，请缩小尺寸以减少用户的显存占用。"
+    },
+    {
+      "key": "The angle between pelvis and thigh bones should be close to 180 degrees (this avatar's angle is {0}). Your avatar may not work well with full-body IK and Tracking.",
+      "value": "骨盆与大腿骨骼的夹角应接近 180 度，此人物为 {0} 度。人物可能无法良好支持全身 IK 和追踪。"
+    },
+    {
+      "key": "Please update your {0} to remove or revise wording that does not meet our content guidelines.",
+      "value": "请修改你的{0:fields}，删除或调整不符合内容规范的措辞。"
+    },
+    {
+      "key": "A word or phrase in your {0} does not align with our content guidelines and must be adjusted. Please check out our content guidelines below.\nWas this detection wrong? Let us know!",
+      "value": "你的{0:fields}中有词语或短语不符合内容规范，需要调整。请查看下方内容规范。\n如果你认为这是误判，请告诉我们！"
+    },
+    {
+      "key": "Manage Your Tags ({0})",
+      "value": "管理标签（{0}）"
+    },
+    {
+      "key": "Publishing for {0}",
+      "value": "正在为 {0} 发布"
+    },
+    {
+      "key": "Built & Uploaded for {0}",
+      "value": "已为 {0} 构建并上传"
+    },
+    {
+      "key": "{0} bundle already uploaded, upload skipped",
+      "value": "{0} 资源包已上传，跳过本次上传"
+    },
+    {
+      "key": "VRCExpressionsMenu uses a parameter that is not defined.\nParameter: {0}",
+      "value": "表情菜单使用了未定义的参数。\n参数：{0}"
+    },
+    {
+      "key": "VRCExpressionsMenu uses an invalid parameter for a control.\nControl: {0}",
+      "value": "表情菜单控件使用了无效的参数。\n控件：{0}"
+    },
+    {
+      "key": "Avatar uses unsupported shader '{0}'. You can only use the shaders provided in 'VRChat/Mobile' for Quest avatars.",
+      "value": "人物使用了不受支持的着色器“{0}”。Quest 人物只能使用 VRChat/Mobile 中提供的着色器。"
+    },
+    {
+      "key": "You are not using the recommended Unity version for the VRChat SDK. Content built with this version may not work correctly. Please use Unity {0}",
+      "value": "你使用的 Unity 版本不是 VRChat SDK 推荐版本，构建的内容可能无法正常工作。请使用 Unity {0}"
+    },
+    {
+      "key": "Spine hierarchy missing elements, please map: {0}",
+      "value": "脊柱层级缺少元素，请映射：{0:bones}"
+    },
+    {
+      "key": "Triangles: {0} - Please try to reduce your avatar triangle count to less than {1} (Recommended: {2})",
+      "value": "三角面：{0}。请尽量将三角面数降至 {1} 以下（建议：{2}）"
+    },
+    {
+      "key": "This avatar's bounding box (AABB) is too large on at least one axis. Current size: {0}, Maximum size: {1}",
+      "value": "人物的包围盒（AABB）至少有一个轴超过大小限制。当前：{0}，最大：{1}"
+    },
+    {
+      "key": "Skinned Mesh Renderers: {0}",
+      "value": "蒙皮网格渲染器：{0}"
+    },
+    {
+      "key": "Skinned Mesh Renderers: {0} (Recommended: {1}) - Combine multiple skinned meshes for optimal performance.",
+      "value": "蒙皮网格渲染器：{0}（建议：{1}）。合并多个蒙皮网格可改善性能。"
+    },
+    {
+      "key": "Skinned Mesh Renderers: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many skinned meshes. Combine multiple skinned meshes for optimal performance.",
+      "value": "蒙皮网格渲染器：{0}（最大：{1}，建议：{2}）。蒙皮网格过多，合并网格可改善性能。"
+    },
+    {
+      "key": "Mesh Renderers: {0}",
+      "value": "网格渲染器：{0}"
+    },
+    {
+      "key": "Mesh Renderers: {0} (Recommended: {1}) - Combine multiple meshes for optimal performance.",
+      "value": "网格渲染器：{0}（建议：{1}）。合并多个网格可改善性能。"
+    },
+    {
+      "key": "Mesh Renderers: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many meshes. Combine multiple meshes for optimal performance.",
+      "value": "网格渲染器：{0}（最大：{1}，建议：{2}）。网格过多，合并网格可改善性能。"
+    },
+    {
+      "key": "Material Slots: {0}",
+      "value": "材质槽：{0}"
+    },
+    {
+      "key": "Material Slots: {0} (Recommended: {1}) - Combine materials and atlas textures for optimal performance.",
+      "value": "材质槽：{0}（建议：{1}）。合并材质与制作贴图图集可改善性能。"
+    },
+    {
+      "key": "Material Slots: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many materials. Combine materials and atlas textures for optimal performance.",
+      "value": "材质槽：{0}（最大：{1}，建议：{2}）。材质过多，合并材质与制作贴图图集可改善性能。"
+    },
+    {
+      "key": "Animator Count: {0}",
+      "value": "Animator 数量：{0}"
+    },
+    {
+      "key": "Animator Count: {0} (Recommended: {1}) - Avoid using extra Animators for optimal performance.",
+      "value": "Animator 数量：{0}（建议：{1}）。减少额外的 Animator 可改善性能。"
+    },
+    {
+      "key": "Animator Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many Animators. Avoid using extra Animators for optimal performance.",
+      "value": "Animator 数量：{0}（最大：{1}，建议：{2}）。Animator 过多，请减少额外的 Animator。"
+    },
+    {
+      "key": "Bones: {0}",
+      "value": "骨骼：{0}"
+    },
+    {
+      "key": "Bones: {0} (Recommended: {1}) - Reduce number of bones for optimal performance.",
+      "value": "骨骼：{0}（建议：{1}）。减少骨骼数量可改善性能。"
+    },
+    {
+      "key": "Bones: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many bones. Reduce number of bones for optimal performance.",
+      "value": "骨骼：{0}（最大：{1}，建议：{2}）。骨骼过多，请减少骨骼数量。"
+    },
+    {
+      "key": "Lights: {0}",
+      "value": "灯光：{0}"
+    },
+    {
+      "key": "Lights: {0} (Recommended: {1}) - Avoid use of dynamic lights for optimal performance.",
+      "value": "灯光：{0}（建议：{1}）。尽量避免动态灯光以改善性能。"
+    },
+    {
+      "key": "Lights: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many dynamic lights. Avoid use of dynamic lights for optimal performance.",
+      "value": "灯光：{0}（最大：{1}，建议：{2}）。动态灯光过多，请减少使用。"
+    },
+    {
+      "key": "Particle Systems: {0}",
+      "value": "粒子系统：{0}"
+    },
+    {
+      "key": "Particle Systems: {0} (Recommended: {1}) - Reduce number of particle systems for better performance.",
+      "value": "粒子系统：{0}（建议：{1}）。减少粒子系统可改善性能。"
+    },
+    {
+      "key": "Particle Systems: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many particle systems. Reduce number of particle systems for better performance.",
+      "value": "粒子系统：{0}（最大：{1}，建议：{2}）。粒子系统过多，请减少使用。"
+    },
+    {
+      "key": "Total Combined Max Particle Count: {0}",
+      "value": "粒子最大数量总和：{0}"
+    },
+    {
+      "key": "Total Combined Max Particle Count: {0} (Recommended: {1}) - Reduce 'Max Particles' across all particle systems for better performance.",
+      "value": "粒子最大数量总和：{0}（建议：{1}）。降低各粒子系统的 Max Particles 可改善性能。"
+    },
+    {
+      "key": "Total Combined Max Particle Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar uses too many particles. Reduce 'Max Particles' across all particle systems for better performance.",
+      "value": "粒子最大数量总和：{0}（最大：{1}，建议：{2}）。粒子过多，请降低各系统的 Max Particles。"
+    },
+    {
+      "key": "Mesh Particle Total Max Poly Count: {0}",
+      "value": "网格粒子的最大三角面总数：{0}"
+    },
+    {
+      "key": "Mesh Particle Total Max Poly Count: {0} (Recommended: {1}) - Reduce number of triangles in particle meshes, and reduce 'Max Particles' for better performance.",
+      "value": "网格粒子的最大三角面总数：{0}（建议：{1}）。减少粒子网格的三角面与 Max Particles 可改善性能。"
+    },
+    {
+      "key": "Mesh Particle Total Max Poly Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar uses too many mesh particle triangles. Reduce number of triangles in particle meshes, and reduce 'Max Particles' for better performance.",
+      "value": "网格粒子的最大三角面总数：{0}（最大：{1}，建议：{2}）。网格粒子三角面过多，请减少三角面和 Max Particles。"
+    },
+    {
+      "key": "Particle Trails Enabled: {0}",
+      "value": "启用粒子拖尾：{0:panel}"
+    },
+    {
+      "key": "Particle Trails Enabled: {0} (Recommended: {1}) - Avoid particle trails for better performance.",
+      "value": "启用粒子拖尾：{0:panel}（建议：{1:panel}）。避免使用粒子拖尾可改善性能。"
+    },
+    {
+      "key": "Contact Component Count: {0} - Avatar exceeds the maximum limit ({1}) of this component type. Reduce the number of VRCContact components on this avatar.",
+      "value": "接触组件：{0}。超过此类组件上限 {1}，请减少 VRCContact 组件数量。"
+    },
+    {
+      "key": "Non-Local Contact Component Count: {0}",
+      "value": "非本地接触组件：{0}"
+    },
+    {
+      "key": "Non-Local Contact Component Count: {0} (Recommended: {1}) - Reduce the number of VRCContact components for optimal performance, or mark contact receivers as local only where possible.",
+      "value": "非本地接触组件：{0}（建议：{1}）。减少 VRCContact 组件，或尽可能将接收器设为仅本地，可改善性能。"
+    },
+    {
+      "key": "Non-Local Contact Component Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many non-local VRCContact components. {3}",
+      "value": "非本地接触组件：{0}（最大：{1}，建议：{2}）。非本地接触组件过多。{3:panel}"
+    },
+    {
+      "key": "Constraint Component Count: {0} - Avatar exceeds the maximum limit ({1}) of this component type.  Reduce the number of constraint components on this avatar.",
+      "value": "约束组件：{0}。超过此类组件上限 {1}，请减少人物的约束组件数量。"
+    },
+    {
+      "key": "Constraint Component Count: {0}",
+      "value": "约束组件：{0}"
+    },
+    {
+      "key": "Constraint Component Count: {0} (Recommended: {1}) - Reduce the number of constraint components for optimal performance.",
+      "value": "约束组件：{0}（建议：{1}）。减少约束组件可改善性能。"
+    },
+    {
+      "key": "Constraint Component Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many constraint components. {3}",
+      "value": "约束组件：{0}（最大：{1}，建议：{2}）。约束组件过多。{3:panel}"
+    },
+    {
+      "key": "Constraint Depth: {0}",
+      "value": "约束深度：{0}"
+    },
+    {
+      "key": "Constraint Depth: {0} (Recommended: {1}) - Reorganize your constraints to reduce dependencies for optimal performance.",
+      "value": "约束深度：{0}（建议：{1}）。重新组织约束、减少依赖可改善性能。"
+    },
+    {
+      "key": "Constraint Depth: {0} (Maximum: {1}, Recommended: {2}) - This avatar's constraints are nested too deeply. {3}",
+      "value": "约束深度：{0}（最大：{1}，建议：{2}）。约束嵌套过深。{3:panel}"
+    },
+    {
+      "key": "Face Tracking Forwarded Parameters: {0}",
+      "value": "面部追踪转发参数：{0}"
+    },
+    {
+      "key": "Face Tracking Forwarded Parameters: {0} (Recommended: {1}) - Reduce the number of forwarded parameters for better performance.",
+      "value": "面部追踪转发参数：{0}（建议：{1}）。减少转发参数可改善性能。"
+    },
+    {
+      "key": "Face Tracking Forwarded Parameters: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many forwarded parameters.",
+      "value": "面部追踪转发参数：{0}（最大：{1}，建议：{2}）。转发参数过多。"
+    },
+    {
+      "key": "Face Tracking Operations: {0} (Estimated, Recommended: {1}) - Counts mesh/key mappings and parameter behavior inputs and operators. Numeric constants do not count. Reduce mappings or simplify behaviors to improve performance.",
+      "value": "面部追踪运算：{0}（估算，建议：{1}）。统计网格／追踪键映射、参数行为输入及运算符，不计数字常量。减少映射或简化行为可改善性能。"
+    },
+    {
+      "key": "VRCRaycast Components: {0} - Avatar exceeds the maximum limit ({1}) of this component type.  Reduce the number of VRCRaycast components on this avatar.",
+      "value": "VRCRaycast 组件：{0}。超过此类组件上限 {1}，请减少 VRCRaycast 组件数量。"
+    },
+    {
+      "key": "Raycasts: {0}",
+      "value": "射线检测：{0}"
+    },
+    {
+      "key": "Raycasts: {0} (Recommended: {1}) - Reduce the number of VRCRaycast components for optimal performance.",
+      "value": "射线检测：{0}（建议：{1}）。减少 VRCRaycast 组件可改善性能。"
+    },
+    {
+      "key": "Raycasts: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many raycast components. Reduce number of VRCRaycast components for better performance.",
+      "value": "射线检测：{0}（最大：{1}，建议：{2}）。射线检测组件过多，请减少使用。"
+    },
+    {
+      "key": "Cloth Component Count: {0}",
+      "value": "布料组件：{0}"
+    },
+    {
+      "key": "Cloth Component Count: {0} (Recommended: {1}) - Avoid use of cloth for optimal performance.",
+      "value": "布料组件：{0}（建议：{1}）。尽量避免布料组件以改善性能。"
+    },
+    {
+      "key": "Cloth Component Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many Cloth components. Avoid use of cloth for optimal performance.",
+      "value": "布料组件：{0}（最大：{1}，建议：{2}）。布料组件过多，请减少使用。"
+    },
+    {
+      "key": "Cloth Total Vertex Count: {0}",
+      "value": "布料顶点总数：{0}"
+    },
+    {
+      "key": "Cloth Total Vertex Count: {0} (Recommended: {1}) - Reduce number of vertices in cloth meshes for improved performance.",
+      "value": "布料顶点总数：{0}（建议：{1}）。减少布料网格顶点可改善性能。"
+    },
+    {
+      "key": "Cloth Total Vertex Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many vertices in cloth meshes. Reduce number of vertices in cloth meshes for improved performance.",
+      "value": "布料顶点总数：{0}（最大：{1}，建议：{2}）。布料顶点过多，请减少顶点数量。"
+    },
+    {
+      "key": "Physics Collider Count: {0}",
+      "value": "物理碰撞体：{0}"
+    },
+    {
+      "key": "Physics Collider Count: {0} (Recommended: {1}) - Avoid use of colliders for optimal performance.",
+      "value": "物理碰撞体：{0}（建议：{1}）。尽量避免物理碰撞体以改善性能。"
+    },
+    {
+      "key": "Physics Collider Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many colliders. Avoid use of colliders for optimal performance.",
+      "value": "物理碰撞体：{0}（最大：{1}，建议：{2}）。物理碰撞体过多，请减少使用。"
+    },
+    {
+      "key": "Physics Rigidbody Count: {0}",
+      "value": "物理刚体：{0}"
+    },
+    {
+      "key": "Physics Rigidbody Count: {0} (Recommended: {1}) - Avoid use of rigidbodies for optimal performance.",
+      "value": "物理刚体：{0}（建议：{1}）。尽量避免刚体以改善性能。"
+    },
+    {
+      "key": "Physics Rigidbody Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many rigidbodies. Avoid use of rigidbodies for optimal performance.",
+      "value": "物理刚体：{0}（最大：{1}，建议：{2}）。物理刚体过多，请减少使用。"
+    },
+    {
+      "key": "Audio Sources: {0}",
+      "value": "音频源：{0}"
+    },
+    {
+      "key": "Audio Sources: {0} (Recommended: {1}) - Reduce number of audio sources for better performance.",
+      "value": "音频源：{0}（建议：{1}）。减少音频源可改善性能。"
+    },
+    {
+      "key": "Audio Sources: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many audio sources. Reduce number of audio sources for better performance.",
+      "value": "音频源：{0}（最大：{1}，建议：{2}）。音频源过多，请减少使用。"
+    },
+    {
+      "key": "Texture Memory Usage: {0} MB",
+      "value": "贴图显存占用：{0} MB"
+    },
+    {
+      "key": "Texture Memory Usage: {0} MB (Recommended: {1} MB) - Lower the resolution of your textures in the texture import settings.",
+      "value": "贴图显存占用：{0} MB（建议：{1} MB）。请在贴图导入设置中降低分辨率。"
+    },
+    {
+      "key": "Triangles: {0} - This avatar has too many triangles. It will be blocked by default on VRChat for Quest, and will not show unless a user chooses to show your avatar. It should have less than {1}. VRChat recommends having less than {2}.",
+      "value": "三角面：{0}。此人物的三角面过多。在 Quest 版 VRChat 中默认被屏蔽，只有用户主动选择显示时才会出现。三角面数应低于 {1}，VRChat 建议低于 {2}。"
+    },
+    {
+      "key": "Triangles: {0} - This avatar has too many triangles. It may be blocked by users depending on their Performance settings. It should have less than {1}. VRChat recommends having less than {2}.",
+      "value": "三角面：{0}。此人物的三角面过多。可能因其他用户的性能设置而被屏蔽。三角面数应低于 {1}，VRChat 建议低于 {2}。"
+    },
+    {
+      "key": "Texture Memory Usage: {0} MB (Maximum: {1} MB, Recommended: {2} MB) - This avatar's total texture resolution is too high. Lower the resolution of your largest textures in the texture import settings. Consider using shader features like decals or tiling. Check your shader's documentation for more information. You can also check your model's UV layouts to better utilize texture space. These techniques may help you reduce texture memory usage.",
+      "value": "贴图显存占用：{0} MB（最大：{1} MB，建议：{2} MB）。贴图总分辨率过高，请在导入设置中降低最大贴图的分辨率。可考虑着色器的贴花、平铺功能，或调整模型 UV 布局以更充分地利用贴图空间，详情请参考着色器文档。"
+    },
+    {
+      "key": "Texture Memory Usage: {0} MB (Maximum: {1} MB, Recommended: {2} MB) - This avatar's total texture resolution is too high. Lower the resolution of your largest textures in the texture import settings. ",
+      "value": "贴图显存占用：{0} MB（最大：{1} MB，建议：{2} MB）。贴图总分辨率过高，请在导入设置中降低最大贴图的分辨率。"
+    },
+    {
+      "key": "Particle Collision Enabled: {0}",
+      "value": "启用粒子碰撞：{0:panel}"
+    },
+    {
+      "key": "Particle Collision Enabled: {0} (Recommended: {1}) - Avoid particle collision for better performance.",
+      "value": "启用粒子碰撞：{0:panel}（建议：{1:panel}）— 避免粒子碰撞可改善性能。"
+    },
+    {
+      "key": "Trail Renderers: {0}",
+      "value": "拖尾渲染器：{0}"
+    },
+    {
+      "key": "Trail Renderers: {0} (Recommended: {1}) - Reduce number of TrailRenderers for better performance.",
+      "value": "拖尾渲染器：{0}（建议：{1}）— 减少拖尾渲染器可改善性能。"
+    },
+    {
+      "key": "Trail Renderers: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many TrailRenderers. Reduce number of TrailRenderers for better performance.",
+      "value": "拖尾渲染器：{0}（上限：{1}，建议：{2}）— 人物包含过多拖尾渲染器，减少数量可改善性能。"
+    },
+    {
+      "key": "Line Renderers: {0}",
+      "value": "线条渲染器：{0}"
+    },
+    {
+      "key": "Line Renderers: {0} (Recommended: {1}) - Reduce number of LineRenderers for better performance.",
+      "value": "线条渲染器：{0}（建议：{1}）— 减少线条渲染器可改善性能。"
+    },
+    {
+      "key": "Line Renderers: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many LineRenderers. Reduce number of LineRenderers for better performance.",
+      "value": "线条渲染器：{0}（上限：{1}，建议：{2}）— 人物包含过多线条渲染器，减少数量可改善性能。"
+    },
+    {
+      "key": "Phys Bone Components: {0} - Avatar exceeds the maximum limit ({1}) of this component type.  Reduce the number of VRCPhysBone components on this avatar.",
+      "value": "PhysBone 组件：{0} — 已超过此类组件的数量上限（{1}），请减少人物上的 VRCPhysBone 组件。"
+    },
+    {
+      "key": "Phys Bone Components: {0}",
+      "value": "PhysBone 组件：{0}"
+    },
+    {
+      "key": "Phys Bone Components: {0} (Recommended: {1}) - Reduce the number of VRCPhysBone components for better performance.",
+      "value": "PhysBone 组件：{0}（建议：{1}）— 减少 VRCPhysBone 组件可改善性能。"
+    },
+    {
+      "key": "Phys Bone Components: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many VRCPhysBone components. {3}",
+      "value": "PhysBone 组件：{0}（上限：{1}，建议：{2}）— 人物包含过多 VRCPhysBone 组件。{3:panel}"
+    },
+    {
+      "key": "Phys Bone Transform Count: {0}",
+      "value": "PhysBone 变换数量：{0}"
+    },
+    {
+      "key": "Phys Bone Transform Count: {0} (Recommended: {1}) - This avatar has many VRCPhysBone transforms and may perform poorly.Reduce number of transforms in hierarchy under VRCPhysBone components.",
+      "value": "PhysBone 变换数量：{0}（建议：{1}）— VRCPhysBone 影响的变换过多，可能降低性能。请减少其层级下的变换数量。"
+    },
+    {
+      "key": "Phys Bone Transform Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many VRCPhysBone transforms and will perform poorly. {3}",
+      "value": "PhysBone 变换数量：{0}（上限：{1}，建议：{2}）— VRCPhysBone 影响的变换过多，会降低性能。{3:panel}"
+    },
+    {
+      "key": "Phys Bone Colliders: {0} - Avatar exceeds the maximum limit ({1}) of this component type.  Reduce the number of VRCPhysBoneCollider components on this avatar.",
+      "value": "PhysBone 碰撞体：{0} — 已超过此类组件的数量上限（{1}），请减少人物上的 VRCPhysBoneCollider 组件。"
+    },
+    {
+      "key": "Phys Bone Collider Count: {0}",
+      "value": "PhysBone 碰撞体数量：{0}"
+    },
+    {
+      "key": "Phys Bone Collider Count: {0} (Recommended: {1}) - Reduce the number of VRCPhysBoneColliders for better performance.",
+      "value": "PhysBone 碰撞体数量：{0}（建议：{1}）— 减少 VRCPhysBoneCollider 组件可改善性能。"
+    },
+    {
+      "key": "Phys Bone Collider Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many VRCPhysBoneColliders. {3}",
+      "value": "PhysBone 碰撞体数量：{0}（上限：{1}，建议：{2}）— 人物包含过多 VRCPhysBoneCollider 组件。{3:panel}"
+    },
+    {
+      "key": "Phys Bone Collision Check Count: {0}",
+      "value": "PhysBone 碰撞检测次数：{0}"
+    },
+    {
+      "key": "Phys Bone Collision Check Count: {0} (Recommended: {1}) - Reduce the number of VRCPhysBoneColliders for better performance.",
+      "value": "PhysBone 碰撞检测次数：{0}（建议：{1}）— 减少 VRCPhysBoneCollider 组件可改善性能。"
+    },
+    {
+      "key": "Phys Bone Collision Check Count: {0} (Maximum: {1}, Recommended: {2}) - This avatar has too many VRCPhysBoneColliders. {3}",
+      "value": "PhysBone 碰撞检测次数：{0}（上限：{1}，建议：{2}）— 人物包含过多 VRCPhysBoneCollider 组件。{3:panel}"
+    },
+    {
+      "key": "Face Tracking: {0} blendshape mapping(s) reference blendshape names that don't exist on their target mesh and will have no effect:{1}",
+      "value": "面部追踪：{0} 个形态键映射引用了目标网格中不存在的形态键，映射不会生效：{1:face}"
+    },
+    {
+      "key": "Face Tracking parameter behavior #{0}: {1}",
+      "value": "面部追踪参数行为 #{0}：{1:panel}"
+    },
+    {
+      "key": "Face Tracking parameter behavior #{0} uses Custom combine mode but its expression is empty - the behavior will have no effect.",
+      "value": "面部追踪参数行为 #{0} 使用自定义组合模式，但表达式为空，此行为不会生效。"
+    },
+    {
+      "key": "Face Tracking parameter behavior #{0} has a custom expression that will be rejected (\"{1}\"):{2}",
+      "value": "面部追踪参数行为 #{0} 的自定义表达式将被拒绝（“{1}”）：{2:details}"
+    },
+    {
+      "key": "The custom expressions across this avatar's parameter behaviors total roughly {0} instructions, which may exceed the per-avatar budget of {1} - some behaviors may be skipped. This estimate is conservative and can over-report.",
+      "value": "人物参数行为中的自定义表达式合计约 {0} 条指令，可能超过每个人物 {1} 条的预算，部分行为可能被跳过。此估算较为保守，可能高估开销。"
+    },
+    {
+      "key": "Two meshes with the same path cannot both be used for Face Tracking. One will be ignored. Rename one of the meshes so their paths are different.\n{0}",
+      "value": "路径相同的两个网格不能同时用于面部追踪，其中一个会被忽略。请重命名其中一个网格，使路径不同。\n{0}"
+    }
+  ],
+  "panelFragments": [
+    {
+      "key": "It will be blocked by default on VRChat for Quest, and will not show unless a user chooses to show your avatar.",
+      "value": "在 Quest 版 VRChat 中默认被屏蔽，只有用户主动选择显示时才会出现。"
+    },
+    {
+      "key": "It may be blocked by users depending on their Performance settings.",
+      "value": "可能因其他用户的性能设置而被屏蔽。"
+    },
+    {
+      "key": "All VRCContact components will be removed at runtime.",
+      "value": "所有 VRCContact 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCContact components for optimal performance, or mark contact receivers as local only where possible.",
+      "value": "减少 VRCContact 组件，或尽可能将接收器设为仅本地，可改善性能。"
+    },
+    {
+      "key": "All constraint components will be removed at runtime.",
+      "value": "所有约束组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of constraint components for optimal performance.",
+      "value": "减少约束组件可改善性能。"
+    },
+    {
+      "key": "All VRCConstraint components will be removed at runtime.",
+      "value": "所有 VRCConstraint 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reorganize your constraints to reduce dependencies for optimal performance.",
+      "value": "重新组织约束、减少依赖可改善性能。"
+    },
+    {
+      "key": "Consider using shader features like decals or tiling. Check your shader's documentation for more information. ",
+      "value": "可考虑使用着色器的贴花或平铺功能，详情请查看着色器文档。"
+    },
+    {
+      "key": "You can also check your model's UV layouts to better utilize texture space. These techniques may help you reduce texture memory usage.",
+      "value": "也可检查模型的 UV 布局以更充分地利用贴图空间。这些方法有助于减少贴图显存占用。"
+    },
+    {
+      "key": "All PhysBone components will be removed at runtime.",
+      "value": "所有 PhysBone 组件都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCPhysBone components for better performance.",
+      "value": "减少 VRCPhysBone 组件可改善性能。"
+    },
+    {
+      "key": "Reduce the number of affected transforms by adding exclusions or removing components.",
+      "value": "通过添加排除项或移除组件，减少受影响的变换数量。"
+    },
+    {
+      "key": "All PhysBone colliders will be removed at runtime.",
+      "value": "所有 PhysBone 碰撞体都会在运行时移除。"
+    },
+    {
+      "key": "Reduce the number of VRCPhysBoneColliders for better performance.",
+      "value": "减少 VRCPhysBoneCollider 组件可改善性能。"
+    },
+    {
+      "key": "True",
+      "value": "是"
+    },
+    {
+      "key": "False",
+      "value": "否"
+    },
+    {
+      "key": "Name",
+      "value": "名称"
+    },
+    {
+      "key": "Description",
+      "value": "描述"
+    },
+    {
+      "key": "Bio",
+      "value": "个人简介"
+    },
+    {
+      "key": "Status",
+      "value": "状态"
+    },
+    {
+      "key": "Pronouns",
+      "value": "人称代词"
+    },
+    {
+      "key": "Image",
+      "value": "图片"
+    },
+    {
+      "key": "content",
+      "value": "内容"
+    },
+    {
+      "key": "Neck",
+      "value": "颈部"
+    },
+    {
+      "key": "Shoulders",
+      "value": "肩部"
+    },
+    {
+      "key": "Pelvis",
+      "value": "骨盆"
+    },
+    {
+      "key": "Spine",
+      "value": "脊柱"
+    },
+    {
+      "key": "Chest",
+      "value": "胸部"
+    },
+    {
+      "key": "Expression exceeds the runtime limit of {0} characters and will be ignored.",
+      "value": "表达式超过运行时的 {0} 字符上限，将被忽略。"
+    },
+    {
+      "key": "Add at least one input tracking key - this behavior has no effect without inputs.",
+      "value": "请至少添加一个输入追踪键；没有输入时此行为不会生效。"
+    },
+    {
+      "key": "Only the first {0} inputs are processed. Remove extra inputs to match runtime behavior.",
+      "value": "仅处理前 {0} 个输入，请移除多余输入以符合运行时行为。"
+    },
+    {
+      "key": "Blend set '{0}' does not exist in the blendshapes set list - this behavior will be ignored.",
+      "value": "形态键集合列表中不存在“{0}”，此行为将被忽略。"
+    },
+    {
+      "key": "Select a blendshape for this behavior's target - it has no effect without one.",
+      "value": "请为此行为的目标选择形态键；没有目标时此行为不会生效。"
+    },
+    {
+      "key": "Blendshape '{0}' was not found on any current face tracking mesh. It will still apply at runtime if the blendshape is added (e.g. by an external build-time tool).",
+      "value": "当前面部追踪网格中未找到形态键“{0}”。如果之后添加了该形态键（例如由外部构建工具添加），它仍可在运行时生效。"
+    },
+    {
+      "key": "'{0}' requires 'Use All Tracking Keys' (at the top of the Face Tracking section) to be enabled",
+      "value": "“{0}”需要启用面部追踪区域顶部的“使用全部追踪键”"
+    },
+    {
+      "key": "unknown tracking key '{0}' (names are case-sensitive - did you mean '{1}'?)",
+      "value": "未知追踪键“{0}”（名称区分大小写，是否应为“{1}”？）"
+    },
+    {
+      "key": "unknown tracking key '{0}' (names are case-sensitive - did you mean '{1}'?, which also requires 'Use All Tracking Keys')",
+      "value": "未知追踪键“{0}”（名称区分大小写，是否应为“{1}”？还需启用“使用全部追踪键”）"
+    },
+    {
+      "key": "unknown tracking key '{0}'",
+      "value": "未知追踪键“{0}”"
+    },
+    {
+      "key": "{0} at position {1}",
+      "value": "{0:panel}，位于第 {1} 个字符"
+    },
+    {
+      "key": "the expression is {0} characters long (max {1})",
+      "value": "表达式长 {0} 个字符（上限 {1}）"
+    },
+    {
+      "key": "the expression has more than {0} tokens",
+      "value": "表达式超过 {0} 个标记"
+    },
+    {
+      "key": "missing operator before the number at position {0}",
+      "value": "第 {0} 个字符处的数字前缺少运算符"
+    },
+    {
+      "key": "the number '{0}' at position {1} is too long",
+      "value": "第 {1} 个字符处的数字“{0}”过长"
+    },
+    {
+      "key": "the number '{0}' at position {1} is outside the supported range",
+      "value": "第 {1} 个字符处的数字“{0}”超出支持范围"
+    },
+    {
+      "key": "missing operator before '{0}' at position {1}",
+      "value": "第 {1} 个字符处的“{0}”前缺少运算符"
+    },
+    {
+      "key": "the expression nests more than {0} levels deep",
+      "value": "表达式嵌套超过 {0} 层"
+    },
+    {
+      "key": "unknown function '{0}' at position {1} (supported: abs, min, max, clamp)",
+      "value": "第 {1} 个字符处存在未知函数“{0}”（支持 abs、min、max、clamp）"
+    },
+    {
+      "key": "missing operand or argument before ')' at position {0}",
+      "value": "第 {0} 个字符处的右括号前缺少操作数或参数"
+    },
+    {
+      "key": "')' at position {0} has no matching '('",
+      "value": "第 {0} 个字符处的右括号没有匹配的左括号"
+    },
+    {
+      "key": "{0}() takes {1} argument{2} but got {3}",
+      "value": "{0}() 需要 {1} 个参数，实际传入 {3} 个"
+    },
+    {
+      "key": "missing operand or argument before ',' at position {0}",
+      "value": "第 {0} 个字符处的逗号前缺少操作数或参数"
+    },
+    {
+      "key": "the comma at position {0} is only valid between function arguments",
+      "value": "第 {0} 个字符处的逗号只能用于分隔函数参数"
+    },
+    {
+      "key": "unexpected '{0}' at position {1} - an operand is expected there",
+      "value": "第 {1} 个字符处出现非预期的“{0}”，此处需要操作数"
+    },
+    {
+      "key": "unexpected character '{0}' at position {1}",
+      "value": "第 {1} 个字符处出现非预期字符“{0}”"
+    },
+    {
+      "key": "the expression ends without a final operand",
+      "value": "表达式末尾缺少操作数"
+    },
+    {
+      "key": "the expression ends with {0} unclosed '('",
+      "value": "表达式结束时仍有 {0} 个左括号未闭合"
+    },
+    {
+      "key": "the expression is too complex (about {0} instructions, max {1})",
+      "value": "表达式过于复杂（约 {0} 条指令，上限 {1}）"
+    },
+    {
+      "key": "the expression needs an evaluation stack depth of about {0} (max {1})",
+      "value": "表达式所需的求值栈深度约为 {0}（上限 {1}）"
+    },
+    {
+      "key": "Excellent",
+      "value": "优秀"
+    },
+    {
+      "key": "Good",
+      "value": "良好"
+    },
+    {
+      "key": "Medium",
+      "value": "一般"
+    },
+    {
+      "key": "Poor",
+      "value": "较差"
+    },
+    {
+      "key": "Very Poor",
+      "value": "很差"
+    },
+    {
+      "key": "VeryPoor",
+      "value": "很差"
+    },
+    {
+      "key": "Unknown",
+      "value": "未知"
+    }
+  ]
+}

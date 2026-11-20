@@ -1,108 +1,71 @@
-# LGC_MAFury_中文拓展 v2.0.0
+# LGC_VRCMAFury_中文拓展 v2.3.6
 
-一个包管理 Modular Avatar 与 VRCFury 的简体中文界面。自动检测已安装插件，分别启用翻译；未安装的插件跳过，不自动安装 MA 或 VRCFury。可以分别停用还原与重新加载词典，原版插件文件保持原样。
-
+为 VRChat SDK、Modular Avatar 和 VRCFury 提供独立的简体中文编辑器界面。自动检测已安装插件，分别启用汉化、停用还原与重载词典；未安装的插件会跳过，不会自动安装 MA 或 VRCFury。
 
 - 作者：[LgcChina](https://github.com/LgcChina)+CODEX编写，创意来源<img width="304" height="146" alt="image" src="https://github.com/user-attachments/assets/1cb383af-043e-42ac-af6e-36760c4576ae" />
 
 - 仓库：https://github.com/LgcChina/LGC_MA_Fury_Localization
-- 当前状态：2.0.0 正式版，MA 与 VRCFury 合并发布；沙盒汉化效果已由使用者手动确认。
-- VPM 合集：https://github.com/LgcChina/LGC-VRC-Packages
 - VPM 订阅：https://lgcchina.github.io/LGC-VRC-Packages/index.json
+- 包合集：https://github.com/LgcChina/LGC-VRC-Packages
 - 包 ID：`com.lgcchina.ma-fury-localization`
-- 窗口入口：**Unity 顶部 LGC > LGC_MAFury_中文拓展 v2.0.0**
+- Unity 入口：**LGC > LGC_VRCMAFury_中文拓展 v2.3.6**
 
-## 安装
+## 安装与旧版升级
 
-推荐通过 VCC / ALCOM 安装：
+在 VCC / ALCOM 添加或刷新上述订阅，安装或更新 **LGC_VRCMAFury_中文拓展 2.3.6**。已安装 2.0.0 的用户直接点击更新即可，包 ID、仓库地址和订阅地址沿用原值。
 
-1. 在 VCC / ALCOM 添加上方 VPM 订阅地址。
-2. 在 Unity 2022.3 的 VRChat 项目中安装 **LGC_MAFury_中文拓展**。
-3. 等待 Unity 导入、编译，重新选中对象并重开菜单或 Inspector。
-4. 从顶部 LGC 菜单打开管理窗口，查看每个插件的检测结果与汉化状态。
+Unity 自行完成导入后，重新打开管理窗口或 SDK 面板、重新选中组件。也可把 Release 中的 ZIP 内容解压至项目 `Packages/com.lgcchina.ma-fury-localization`，根目录应直接包含 `package.json` 和 `Editor`，避免重复嵌套文件夹。
 
-本包只声明 VRChat SDK Base 依赖，以复用 SDK 提供的 Harmony DLL。MA 和 VRCFury 都是可选插件，不会因安装汉化包而自动安装。
-也可将 Release ZIP 的内容解压到项目 `Packages/com.lgcchina.ma-fury-localization`；ZIP 根目录直接包含 `package.json` 和 `Editor`。
+更新前请另存自己修改的包内 JSON 词典，包管理器更新会替换包文件。包内配置键、程序集名、命名空间、词典路径及已有 meta GUID 保持稳定；人物参数、动画、预制件和资源名称不随工具改名。
 
-## 自动检测与独立控制
+## 2.3.6 更新内容
 
-| 项目中的插件 | 汉化行为 |
+本次将展示名称由 LGC_MAFury_中文拓展 改为 **LGC_VRCMAFury_中文拓展**，并正式发布此前完成的 SDK 模块和上传页补译。原 2.0.0 的 MA 与 VRCFury 适配继续保留，VRCFury 词条依据项目内 1.1485.0 补充。
+
+| 模块 | 主要范围 |
 | --- | --- |
-| 只有 MA | 接入 MA，跳过 VRCFury |
-| 只有 VRCFury | 接入 VRCFury，跳过 MA |
-| 两者都有 | 分别接入，独立停用、还原与重载 |
-| 两者都没有 | 保持待用，不报缺少插件错误 |
+| VRChat SDK | 登录页面、上传页面、设置页、常用组件与人物描述器；内容管理仅翻译“世界 / 人物”两个按钮 |
+| Modular Avatar | 字段、说明、组件标题、添加组件列表、上下文菜单及已适配的选项显示 |
+| VRCFury | 组件、动作、菜单、SPS、提示、弹窗及已适配的枚举和固定选项 |
 
-插件安装或移除后，Unity 重新编译会重新检测，也可在窗口点击“重新检测已安装插件”。某个模块的词典或界面接口异常只影响该模块；缺少的词条、组件或可选入口按对应功能跳过。
+原版插件文件保持原样。每个模块独立接入；缺少插件、词条或可选方法时跳过，并在工具窗口记录可用状态。BlendShape 统一使用“形态键”，用户实际形态键名称保留原值。
 
-## MA 汉化范围
+## SDK 界面与上传页
 
-- 保留已有完整词典、字段、说明、警告和错误提示翻译。
-- 保留添加组件列表、中文搜索、组件标题、上下文菜单和部分直接显示文字的适配。
-- 保留 MA Menu Item 控件类型下拉翻译，不改变枚举值。
-- BlendShape 的中文术语统一为“形态键”，组件括号内可保留英文名称。
-- 最低适配目标 **MA 1.10.0**；缺少的可选接口独立跳过。此前 MA 1.15.0 的有限项检查成功，完整旧版覆盖仍待实际确认。
+SDK 模块包含 VRCHeadChop、常用组件、人物描述器、Pipeline Manager 与 Preview Override 等已适配检查器。人物描述器标题保留“人物描述器（VRC Avatar Descriptor）”，可播放层保留中英文，例如“特效（FX）”；Pipeline Manager 展示为“人物蓝图ID”。
 
-## VRCFury 汉化范围
+上传页面覆盖内容准备、可见性 / 风格 / 内容警告、缩略图、检查提示、保存 / 放弃修改和上传状态。根据项目内 SDK 3.10.6 的 C# 源码与 UXML 补充未触发分支，包括骨架 / 动画层 / 表情参数、贴图与材质、PhysBone / 接触 / 约束 / 粒子性能限制、蓝图归属与权限、大小限制、审核、取消与失败，以及缩略图真实性确认、平台切换和多平台进度。
 
-1.2.0 基于本地 **VRCFury 1.1460.0** 扩展编辑器汉化，包含：
+面部追踪包含已适配字段、目标 / 输入 / 映射警告及自定义表达式校验。账号、密码、验证码、上传数据、SDK 校验记录、下拉实际值、资源选择器和原有回调保持原值。顶部 Create an Avatar 属于 SDK 图片，未替换；未知服务端或第三方构建工具产生的消息可能保留英文。
 
-- 功能组件：骨架联动、形态键联动、开关、完整控制器、手势、口型、眨眼、菜单调整、约束和优化等。
-- 动作编辑器：动画片段、对象开关、形态键、材质属性与替换、缩放、物理骨骼重置、循环动画、SPS 动作等。
-- SPS：插入端、接口、触碰区域、触碰发送器、全局碰撞体、通道、引导路径、深度／半径动画、旧版兼容与 SPS 选项。
-- 完整控制器中的面部追踪分区、公共列表操作、说明、提示、部分调试信息和原版对话框。
-- 添加组件列表与中文搜索、组件标题、VRCFury 创建的右键／动作菜单，以及已适配枚举和固定选项的显示。
-
-组件与动作名称使用“中文 (English)”便于搜索和对照教程。可在添加组件窗口搜索 Armature Link、Toggle、Full Controller、Gestures、SPS Plug 或 SPS Socket，添加后重新选中对象查看。
-下拉选项仅通过显示格式化翻译，原始 choices、枚举索引、绑定路径和事件回调保留。不会翻译用户输入值、参数名、对象引用或实际形态键名。
-动态提示使用整句模板，保留插入的对象名、数值和路径。新增动态内容通常在可见界面半秒内更新；已打开的菜单和组件窗口需要重开。
-
-此范围说明记录本次代码适配与词典内容，不代表全部界面均已在 Unity 中验证。未匹配的文字、新版 SDK 自己绘制的嵌套界面、底层异常详情及部分原生顶部菜单可能仍为英文。VRCFury 旧版缺少可选接口时跳过，不承诺未经检查的最低版本。
-
-## 两份独立词典
+## 词典与重载
 
 | 文件 | 用途 |
 | --- | --- |
 | `Editor/Localization/ma.zh-Hans.json` | MA 词条、组件、菜单和额外界面文字 |
-| `Editor/Localization/vrcfury.zh-Hans.json` | VRCFury 组件、动作、菜单、SPS 与选项显示 |
+| `Editor/Localization/vrcfury.zh-Hans.json` | VRCFury 组件、动作、SPS、选项与动态提示 |
+| `Editor/Localization/vrcsdk.zh-Hans.json` | SDK 组件、登录、上传、设置及显示模板 |
 
-MA 使用本地化加载器与显示适配；VRCFury 使用限定组件范围的界面适配。两者共用工具窗口，保留各自的接入逻辑与词典。
-修改对应的译文值，保留键、匹配原文、类型名、路径和格式占位符。保存后在窗口点击对应模块的 **重新加载词典**，再重新选中对象并重开相关界面。
-VRCFury 词典内 `entries` 是精确原文与译文；`titles` 是保留英文的组件／动作标题；`enumEntries` 仅供选项显示；`patterns` 是整句动态模板，必须保留相同的命名占位符，例如 `{index}`、`{name}`；`choiceSets` 是允许翻译的固定选项集合；`componentTitles` 将组件完整类型名映射到标题。修改译文即可，保留原文键、类型名与选项集合。未知段落会被旧版工具忽略，但 1.2.0 的完整功能需要同版脚本。
+保存 JSON 后点击对应模块的词典重载按钮，重新选中组件或重开窗口 / 菜单。读取失败保留上一份有效词典；未知词条保留原文。
 
-1.2.2 修复动态占位符导致 VRCFury 词典整体加载失败的问题。占位符可包含点号、括号等表达式文字，内部使用独立的安全分组名称。单条动态规则不合法时，仅跳过该条并在窗口详情中记录原文与原因，其他有效词条继续加载。
+SDK 词典中 `entries` 用于组件，`accountEntries` 用于登录及设置等界面，`componentEnums` / `componentTitles` / `componentMenus` 用于组件显示。上传页的整句为 `panelEntries`，动态消息为 `panelTemplates`，已知 SDK 解释片段为 `panelFragments`。
 
-仅保存 JSON 不会自动重载。读取或解析失败时保留该模块已加载的词典和显示状态，不影响另一个模块；停用时重载仍保持停用。
-MA 中同一概念可能有多个显示来源，例如 `control_type.RadialPuppet` 与 `controls` 中的 `Radial Puppet`，希望各处一致时需要同步修改。
-升级前请另存自定义译文，包管理器会覆盖包内文件。
+模板优先匹配固定文字较长的完整消息。请保留原文空格、换行和占位符编号；普通 `{0}` 等占位符复制动态内容，`:panel`、`:fields`、`:bones`、`:details`、`:face` 仅用于明确属于 SDK 的解释片段或结构，不要用于用户填写的内容。递归处理有深度限制。
 
-## 包标识与更新
+## 兼容性与还原
 
-正式包展示名称为 `LGC_MAFury_中文拓展`，GitHub 仓库为 `LGC_MA_Fury_Localization`，包 ID 为 `com.lgcchina.ma-fury-localization`。旧的 1.0.0 发行版停止提供，合集只收录本统一包的正式发行版。
-包 ID、程序集名称、两份词典路径及资源 GUID 采用固定名称；后续升级前请备份包内自定义译文。
+- 需要 Unity 2022.3 与 VRChat SDK Base 提供的 `0Harmony.dll`；发行包不附带或改写 DLL。
+- MA 最低适配目标为 1.10.0，低于该版本或版本无法识别时跳过；可选接口按实际存在情况处理，不锁定 NDMF 版本。
+- VRCFury 补译依据 1.1485.0，SDK 补译依据 3.10.6；这不代表所有历史版本或条件分支均已在 Unity 中验证。
+- 用户输入、对象引用、实际形态键 / 参数 / 动画 / 资源路径保持原样。部分原生顶部菜单、图片文字与未知动态文本仍可能为英文。
+- 在管理窗口停用对应模块可撤销本包补丁并恢复已记录的显示；已打开的窗口或菜单可重开。编辑器退出或程序集重载时撤销本包自己的补丁。
 
-## 还原与卸载
+通过 VCC / ALCOM 安装的包可在包管理器中卸载；手动安装的包停用后移除上述固定包目录。原 MA、VRCFury、NDMF 与 SDK 无需重装。工具启用选择保存在当前编辑器会话。
 
-在管理窗口分别点击 **停用 MA 并恢复原版显示** 或 **停用 VRCFury 并恢复原版显示**，重开相关界面。
-通过 VCC / ALCOM 安装的包在包管理器中移除；手动安装的包停用后删除 `Packages/com.lgcchina.ma-fury-localization`。
-原版 MA、VRCFury 与 NDMF 无需重装。退出编辑器或程序集重载时只撤销本包自己的补丁。
-启用选择保存在当前编辑器会话，重新启动默认启用已检测到的插件汉化。
-
-## 限制与注意事项
-
-- Unity 2022.3 / VRChat SDK 环境；SDK Base 需提供 `0Harmony.dll`，本包不附带或改写 DLL。
-- MA 低于 1.10.0 或版本无法识别时跳过；不锁定 NDMF 版本。
-- 不直接引用 MA 或 VRCFury 程序集，未安装其中之一不会因缺少该插件程序集而产生编译引用错误。
-- 顶部原生 GameObject / Tools / Component 的原版命令仍可能显示英文，MA 菜单适配主要覆盖添加组件弹窗和上下文菜单。
-- 用户输入、实际形态键名、对象名、参数、动画与资源路径保持原样。
-- 新增或变化的原版内部接口可能导致部分翻译跳过，不代表该版本所有界面均已验证。
-- 使用者已在专用沙盒手动确认 MA 与 VRCFury 汉化生效；未运行 Unity 自动测试、未添加测试脚本，未验证每个界面与插件版本。
+此前汉化效果由使用者在专用沙盒中手动检查；发行阶段只核对文件结构、词典、版本、GUID、ZIP 与在线索引，未启动 Unity、编译或运行测试，也未创建测试脚本。
 
 ## 发布维护与许可
 
-版本 **2.0.0** 同步记录在包元数据、窗口、菜单、脚本注释、README 与 CHANGELOG。包 ID、程序集名和两份词典路径使用固定命名，后续版本号只用于工具版本和记录。
-本次 2.0.0 已撤回首次发行并以中文展示名称重新发布；已安装此前同号发行包时需重新安装本次发行包。
+版本 2.3.6 同步记录于包元数据、窗口、菜单、脚本注释和文档。运行资源使用稳定名称；版本号只用于工具版本、展示与修改日志。发行构建由 `scripts/package.py` 生成 VPM ZIP、包清单和 SHA-256，再由 GitHub Actions 发布 Release；合集使用现有来源配置刷新在线索引。
 
-发行包只包含工具脚本、词典、元数据和文档。更新版本、译文和修改日志后，推送 `v版本号` 标签；GitHub Actions 使用 `scripts/package.py` 生成 VPM ZIP、清单和校验值并创建 Release。随后在合集运行 **Build Repo Listing** 刷新在线索引。
-
-本工具以 MIT 许可发布。MA 词典和组件命名整理自使用者提供的 MA 1.19.0 汉化补丁；VRCFury 中文依据原界面文字编写。来源说明见 `THIRD_PARTY_NOTICES.md`，不包含原版图片、图标或 Harmony DLL。
+本工具以 MIT 许可发布。MA 词典及组件命名整理自使用者提供的 MA 1.19.0 汉化补丁；VRCFury 与 SDK 译文依据界面文字编写，不分发原版实现、图片、图标或 Harmony DLL。来源与许可见 `THIRD_PARTY_NOTICES.md`。

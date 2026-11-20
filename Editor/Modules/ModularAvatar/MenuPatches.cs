@@ -1,4 +1,4 @@
-// LGC_MAFury_中文拓展 v2.0.0 — Modular Avatar adapter
+﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — Modular Avatar adapter
 // Optional menu and inspector-title display patches. Preserve all original commands and component identities.
 using System;
 using System.Collections.Generic;

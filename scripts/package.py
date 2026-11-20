@@ -1,4 +1,4 @@
-# LGC_MAFury_中文拓展 package builder v2.0.0
+# LGC_VRCMAFury_中文拓展 package builder v2.3.6
 # Builds release artifacts only; does not run Unity or modify a project.
 import argparse
 import hashlib
@@ -22,7 +22,7 @@ if f'Version = "{version}"' not in probe:
 for path in (ROOT / 'Editor').rglob('*.cs'):
     if f'v{version}' not in path.read_text(encoding='utf-8-sig').splitlines()[0]:
         raise SystemExit('Script version differs: ' + path.name)
-for name in ('ma.zh-Hans.json', 'vrcfury.zh-Hans.json'):
+for name in ('ma.zh-Hans.json', 'vrcfury.zh-Hans.json', 'vrcsdk.zh-Hans.json'):
     json.loads((ROOT / 'Editor/Localization' / name).read_text(encoding='utf-8-sig'))
 asset_name = f"{manifest['name']}-{version}.zip"
 if not manifest['url'].endswith('/' + args.tag + '/' + asset_name):

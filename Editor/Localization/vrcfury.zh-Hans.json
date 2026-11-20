@@ -1,5 +1,5 @@
 {
-  "_description": "LGC_MA_Fury中文拓展包 1.2.0；entries 为精确界面原文，titles 为组件／动作标题，enumEntries 仅用于选项显示，patterns 仅使用带编号占位符的整句模板。",
+  "_description": "LGC_VRCMAFury_中文拓展 2.3.6；已适配 VRCFury 1.1485.0，补充 SPS 引导路径和常用新增界面文字。",
   "entries": [
     {
       "key": "Radius",
@@ -2520,6 +2520,62 @@
     {
       "key": "Utilities",
       "value": "实用工具"
+    },
+    {
+      "key": "Entrance",
+      "value": "入口"
+    },
+    {
+      "key": "Node {index + 1}",
+      "value": "节点 {index + 1}"
+    },
+    {
+      "key": "Maximum (Local)",
+      "value": "最大值（本地）"
+    },
+    {
+      "key": "Limit Radius Offset",
+      "value": "限制半径偏移"
+    },
+    {
+      "key": "Collapse until next node",
+      "value": "收缩至下一个节点"
+    },
+    {
+      "key": "Collapse plug at exit",
+      "value": "在末端收缩插入端"
+    },
+    {
+      "key": "Add Guided Path Node",
+      "value": "添加引导路径节点"
+    },
+    {
+      "key": "Apply to all renderers",
+      "value": "应用到所有渲染器"
+    },
+    {
+      "key": "This VRCFury asset was created using Unity 2022, which means it cannot be used on Unity 2019",
+      "value": "此 VRCFury 资源由 Unity 2022 创建，无法用于 Unity 2019"
+    },
+    {
+      "key": "This VRCFury asset was probably created using Unity 2022, which means it cannot be used on Unity 2019",
+      "value": "此 VRCFury 资源可能由 Unity 2022 创建，无法用于 Unity 2019"
+    },
+    {
+      "key": "Unknown Enum",
+      "value": "未知枚举"
+    },
+    {
+      "key": "Avatar Root",
+      "value": "Avatar 根对象"
+    },
+    {
+      "key": "Fallback #{index}",
+      "value": "备用目标 #{index}"
+    },
+    {
+      "key": "Page #{pageNum}",
+      "value": "页面 #{pageNum}"
     }
   ],
   "titles": [

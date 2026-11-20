@@ -1,4 +1,4 @@
-// LGC_MAFury_中文拓展 v2.0.0 — VRCFury adapter
+﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRCFury adapter
 // Optional display hooks for features, actions and SPS. Serialized values and original package files are untouched.
 using System;
 using System.Collections.Generic;
@@ -115,7 +115,18 @@ namespace LgcChina.MaFuryLocalization.Vrcfury
                 if (dialogs != null)
                     foreach (var method in dialogs.GetMethods(BindingFlags.Static | BindingFlags.Public))
                         if (method.Name == "DisplayDialog" || method.Name == "DisplayDialogComplex")
-                            TryPatch(method, nameof(DialogPrefix), true);
+                        {
+                            var parameters = method.GetParameters();
+                            if (parameters.Length < 3 || parameters[0].ParameterType != typeof(string) ||
+                                parameters[1].ParameterType != typeof(string) || parameters[2].ParameterType != typeof(string)) continue;
+                            if (parameters.Length >= 5 && parameters[4].ParameterType == typeof(string))
+                                TryPatch(method, nameof(DialogPrefix5), true);
+                            else if (parameters.Length >= 4 && parameters[3].ParameterType == typeof(string))
+                                TryPatch(method, nameof(DialogPrefix4), true);
+                            else if (parameters.Length >= 3 && parameters[0].ParameterType == typeof(string) &&
+                                parameters[1].ParameterType == typeof(string) && parameters[2].ParameterType == typeof(string))
+                                TryPatch(method, nameof(DialogPrefix3), true);
+                        }
                 var search = FindType("VF.Inspector.VRCFurySearchWindowProvider")?.GetMethod("CreateSearchTree",
                     BindingFlags.Public | BindingFlags.Instance);
                 if (search != null) TryPatch(search, nameof(SearchPostfix), false);
@@ -169,24 +180,29 @@ namespace LgcChina.MaFuryLocalization.Vrcfury
                     postfix: !prefix && !transpiler ? hook : null, transpiler: transpiler ? hook : null);
                 patched.Add(method);
             }
-            catch { Note("部分界面接口不兼容，已保留该部分原版显示。"); }
+            catch (Exception e) { Note("VRCFury 可选显示入口已跳过：" + method.DeclaringType?.FullName + "." + method.Name + "（" + e.GetBaseException().Message + "）"); }
         }
 
         private static void TitlePrefix(ref string __0)
         {
             try { if (IsApplied) __0 = TranslationCatalog.Title(__0); } catch { }
         }
-        private static void DialogPrefix(object[] __args, MethodBase __originalMethod)
+        private static void DialogPrefix3(ref string __0, ref string __1, ref string __2)
         {
             if (!IsApplied) return;
-            try
-            {
-                var parameters = __originalMethod.GetParameters();
-                for (var i = 0; i < parameters.Length; i++)
-                    if (parameters[i].ParameterType == typeof(string) && __args[i] is string text)
-                        __args[i] = i == 0 ? TranslationCatalog.Title(text) : TranslationCatalog.Text(text);
-            }
-            catch { }
+            __0 = TranslationCatalog.Title(__0);
+            __1 = TranslationCatalog.Text(__1);
+            __2 = TranslationCatalog.Text(__2);
+        }
+        private static void DialogPrefix4(ref string __0, ref string __1, ref string __2, ref string __3)
+        {
+            DialogPrefix3(ref __0, ref __1, ref __2);
+            if (IsApplied) __3 = TranslationCatalog.Text(__3);
+        }
+        private static void DialogPrefix5(ref string __0, ref string __1, ref string __2, ref string __3, ref string __4)
+        {
+            DialogPrefix4(ref __0, ref __1, ref __2, ref __3);
+            if (IsApplied) __4 = TranslationCatalog.Text(__4);
         }
         private static void SearchPostfix(object __result)
         {
