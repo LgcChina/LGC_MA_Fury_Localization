@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — SDK inspector adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — SDK inspector adapter
 // Translate GUI calls in actual SDK editor methods, including inherited generic editors and list callbacks.
 using System;
 using System.Collections.Generic;
@@ -30,7 +30,15 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
             "VRC.SDKBase.Editor.VRCPreviewOverrideEditor", "VRCPipelineManagerEditor",
             "AnimatorFaceTrackingBlendshapesSetEditor", "VRC.SDK3A.Editor.FaceTrackingDrawerUtility",
             "VRC.SDK3A.Editor.FaceTrackingParameterBehaviorDrawer", "VRC.SDK3A.Editor.FaceTrackingBlendshapesSetDrawer",
-            "VRC.SDK3A.Editor.FaceTrackingPickers"
+            "VRC.SDK3A.Editor.FaceTrackingPickers",
+            "VRC.SDK3.Editor.VRCInspectorBase", "VRC.SDK3.Editor.VRCSceneDescriptorEditor3",
+            "VRC.SDK3.Editor.VRCPickupEditor3", "VRC.SDK3.Editor.VRCPlayerStationEditor3",
+            "VRC.SDK3.Editor.VRCSpatialAudioSourceEditor3", "VRC.SDK3.Editor.VRCBillboardEditor",
+            "VRC.SDK3.Editor.VRCAvatarPedestalEditor", "VRC.SDK3.Editor.VRCPortalMarkerEditor",
+            "VRC.SDK3.Editor.VRCPlacementZoneEditor", "VRC.SDK3.Editor.VRCMidiPlayerEditor", "VRC.SDK3.Editor.VRCMidiListenerEditor",
+            "VRC.SDK3.Editor.VRCCameraDollyDrawer", "VRC.SDK3.Editor.VRCCameraDollyAnimationEditor",
+            "VRC.SDK3.Editor.VRCCameraDollyPathEditor", "VRCObjectSyncEditor", "VRCSceneDescriptorEditor",
+            "VRCPlayerStationEditor", "VRC_PickupEditor", "VRC_SpatialAudioSourceEditor"
         };
         private static Type FindType(string name)
         {
@@ -72,7 +80,8 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
                     { VrcSdkLocalization.Note("SDK 检查器显示入口已跳过：" + type.Name + "." + method.Name + "（" + (e.InnerException ?? e).GetType().Name + "）"); }
                 }
             }
-            IsApplied = MethodCount > 0;
+            var worldInspectors = WorldComponentPatches.Apply();
+            IsApplied = MethodCount > 0 || worldInspectors;
             var begin = AccessTools.Method(typeof(EditorGUI), "BeginPropertyInternal", new[] { typeof(Rect), typeof(GUIContent), typeof(SerializedProperty) });
             if (begin != null) TryPatch(begin, nameof(PropertyPrefix), null);
             var cache = typeof(EditorGUI).GetNestedType("EnumNamesCache", BindingFlags.NonPublic | BindingFlags.Public)
@@ -124,14 +133,17 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
             var name = target.GetType().FullName;
             return name != null && (name.StartsWith("VRC.SDK3.Dynamics.", StringComparison.Ordinal) ||
                 name == "VRC.SDK3.Avatars.Components.VRCAvatarDescriptor" ||
-                name == "VRC.SDKBase.VRCPreviewOverride" || name == "VRC.Core.PipelineManager");
+                name == "VRC.SDKBase.VRCPreviewOverride" || name == "VRC.Core.PipelineManager" ||
+                WorldComponentPatches.IsWorldTarget(target));
         }
         private static void PropertyPrefix(ref GUIContent __1, SerializedProperty __2)
         {
             try
             {
                 if (!IsSdkTarget(__2) || __2.propertyPath == "m_Script") return;
-                __1 = DisplayCalls.ComponentContent(__1 ?? new GUIContent(__2.displayName, __2.tooltip));
+                __1 = WorldComponentPatches.IsWorldTarget(__2.serializedObject.targetObject)
+                    ? WorldComponentPatches.PropertyContent(__2, __1)
+                    : DisplayCalls.ComponentContent(__1 ?? new GUIContent(__2.displayName, __2.tooltip));
             }
             catch { /* A disposed optional property keeps its original SDK behavior. */ }
         }
@@ -157,12 +169,15 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
         {
             if (!VrcSdkLocalization.IsApplied || __0 == null) return;
             var title = TranslationCatalog.ComponentTitle(__0.GetType().FullName);
+            if (__0.GetType().FullName == "VRC.Core.PipelineManager" && WorldComponentPatches.IsWorldSdk)
+                title = "世界蓝图ID（Pipeline Manager）";
             if (title == null) return;
             __result = __result != null && __result.EndsWith(" (Script)", StringComparison.Ordinal) ? title + " (Script)" : title;
         }
         internal static void SetOff()
         {
             IsApplied = false;
+            WorldComponentPatches.SetOff();
             InspectorCount = MethodCount = 0;
             activeMethods.Clear();
             ComponentMenus.SetOff();

@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRCFury adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — VRCFury adapter
 // Optional display hooks for features, actions and SPS. Serialized values and original package files are untouched.
 using System;
 using System.Collections.Generic;

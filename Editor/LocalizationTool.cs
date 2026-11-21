@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6
+// LGC_VRCMAFury_中文拓展 v2.3.7
 // Shared window and lifecycle. Each optional plugin owns its translations, state and Harmony patches.
 using System;
 using UnityEditor;
@@ -9,7 +9,7 @@ namespace LgcChina.MaFuryLocalization
     [InitializeOnLoad]
     internal static class LocalizationTool
     {
-        internal const string Version = "2.3.6";
+        internal const string Version = "2.3.7";
         internal const string PackageName = "com.lgcchina.ma-fury-localization";
 
         static LocalizationTool()

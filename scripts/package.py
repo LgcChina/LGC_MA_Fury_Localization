@@ -1,4 +1,4 @@
-# LGC_VRCMAFury_中文拓展 package builder v2.3.6
+# LGC_VRCMAFury_中文拓展 package builder v2.3.7
 # Builds release artifacts only; does not run Unity or modify a project.
 import argparse
 import hashlib

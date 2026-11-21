@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRChat SDK VRCHeadChop adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — VRChat SDK VRCHeadChop adapter
 // Draw SDK serialized fields using Unity controls; translate only labels, tooltips and enum captions.
 using System;
 using UnityEditor;

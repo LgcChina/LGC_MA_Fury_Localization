@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — Modular Avatar adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — Modular Avatar adapter
 // Independent editor localization, minimum MA 1.10.0. Missing version-specific interfaces are skipped.
 using System;
 using System.Collections.Generic;
@@ -118,7 +118,10 @@ namespace LgcChina.MaFuryLocalization.ModularAvatar
         internal static Assembly FindMaEditorAssembly()
         {
             foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
-                if (assembly.GetName().Name == "nadena.dev.modular-avatar.core.editor") return assembly;
+            {
+                try { if (assembly.GetName().Name == "nadena.dev.modular-avatar.core.editor") return assembly; }
+                catch { /* Optional assemblies with unreadable metadata do not block plugin detection. */ }
+            }
             return null;
         }
 

@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRChat SDK adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — VRChat SDK adapter
 // Translate explicit account and settings render methods; preserve credentials, settings values and SDK callbacks.
 using System;
 using System.Collections.Generic;

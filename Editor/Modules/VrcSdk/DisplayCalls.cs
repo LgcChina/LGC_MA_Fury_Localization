@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — SDK GUI call-site translation
+// LGC_VRCMAFury_中文拓展 v2.3.7 — SDK GUI call-site translation
 // Rewrite only display arguments at SDK-owned GUI call sites. Input values, paths and API calls are untouched.
 using System;
 using System.Collections.Generic;
@@ -143,7 +143,9 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
         private static GUIContent PropertyLabel(SerializedProperty property, GUIContent label)
         {
             if (!VrcSdkLocalization.IsApplied || property == null || property.propertyPath == "m_Script") return label;
-            return ComponentContent(label ?? new GUIContent(property.displayName, property.tooltip));
+            return WorldComponentPatches.IsWorldTarget(property.serializedObject.targetObject)
+                ? WorldComponentPatches.PropertyContent(property, label)
+                : ComponentContent(label ?? new GUIContent(property.displayName, property.tooltip));
         }
         // Matching original signatures keeps SDK call sites and property behavior intact, including curves and lists.
         private static bool LayoutProperty(SerializedProperty p, GUILayoutOption[] options) => EditorGUILayout.PropertyField(p, PropertyLabel(p, null), options);

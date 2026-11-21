@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — SDK upload page display adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — SDK upload page display adapter
 // Scope edits to SDK upload controls and its save/discard sibling. Preserve data, choices and validation records.
 using System;
 using System.Collections.Generic;
@@ -119,7 +119,7 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
         private static void WalkCore(VisualElement element)
         {
             // Avatar names, user tags, identifiers, dates, versions and object selectors are data.
-            if (element.name == "avatar-selector-dropdown" || element.name == "tags-row" ||
+            if (element.name == "avatar-selector-dropdown" || element.name == "world-selector-dropdown" || element.name == "tags-row" ||
                 element.name == "last-updated-label" || element.name == "version-label" ||
                 element.name == "content-platform-info") return;
             var type = element.GetType();

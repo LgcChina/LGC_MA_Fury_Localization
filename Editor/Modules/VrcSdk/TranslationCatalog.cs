@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRChat SDK adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — VRChat SDK adapter
 // Load an immutable replacement snapshot; malformed JSON keeps the last successful dictionaries.
 using System;
 using System.Collections.Generic;
@@ -16,6 +16,7 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
         private sealed class Snapshot
         {
             internal readonly Dictionary<string, string> Entries, Account, ComponentEnums, ComponentTitles, Dialogs, ComponentMenus;
+            internal Dictionary<string, string> World = new Dictionary<string, string>();
             internal Dictionary<string, string> Panel = new Dictionary<string, string>();
             internal Dictionary<string, string> PanelFragments = new Dictionary<string, string>();
             internal TextTemplate[] FragmentTemplates = Array.Empty<TextTemplate>();
@@ -37,6 +38,7 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
             var data = JsonUtility.FromJson<Catalog>(json);
             if (data?.entries == null) throw new InvalidOperationException("SDK 词典格式错误，请检查 entries 字段。");
             var next = new Snapshot(ReadPairs(data.entries), ReadPairs(data.accountEntries), ReadPairs(data.componentEnums), ReadPairs(data.componentTitles), ReadPairs(data.dialogs), ReadPairs(data.componentMenus));
+            next.World = ReadPairs(data.worldEntries);
             next.Panel = ReadPairs(data.panelEntries);
             next.PanelFragments = ReadPairs(data.panelFragments);
             next.FragmentTemplates = next.PanelFragments.Where(pair => Regex.IsMatch(pair.Key, @"\{\d+\}"))
@@ -83,6 +85,12 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
         {
             if (source == null || !VrcSdkLocalization.IsApplied) return source;
             return active.Entries.TryGetValue(source, out var text) ? text : source;
+        }
+
+        internal static string WorldComponentText(string source)
+        {
+            if (source == null || !VrcSdkLocalization.IsApplied) return source;
+            return active.World.TryGetValue(source, out var text) ? text : ComponentText(source);
         }
 
         internal static string ComponentEnum(string source)
@@ -183,7 +191,7 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
 
         internal static bool HasComponentDialog(string title) => title != null && active.Dialogs.ContainsKey(title);
 
-        [Serializable] private sealed class Catalog { public Pair[] entries, accountEntries, componentEnums, componentTitles, dialogs, componentMenus, panelEntries, panelTemplates, panelFragments; }
+        [Serializable] private sealed class Catalog { public Pair[] entries, worldEntries, accountEntries, componentEnums, componentTitles, dialogs, componentMenus, panelEntries, panelTemplates, panelFragments; }
         [Serializable] private sealed class Pair { public string key, value; }
     }
 }

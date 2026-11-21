@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — SDK upload dialogs and progress display
+// LGC_VRCMAFury_中文拓展 v2.3.7 — SDK upload dialogs and progress display
 // Patch display arguments in an explicit SDK type allowlist, including its generated callbacks.
 using System;
 using System.Collections.Generic;
@@ -21,6 +21,8 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
             foreach (var name in new[]
             {
                 "VRC.SDK3A.Editor.VRCSdkControlPanelAvatarBuilder",
+                "VRC.SDK3.Editor.VRCSdkControlPanelWorldBuilder",
+                "VRC.SDK3.Editor.VRCSdkControlPanelWorldBuilderV3",
                 "VRC.SDKBase.VRCMultiPlatformBuild",
                 "VRC.SDKBase.Editor.Elements.ThumbnailBlock",
                 "VRC.SDKBase.Editor.Elements.ThumbnailAccuracyWarningWindow"

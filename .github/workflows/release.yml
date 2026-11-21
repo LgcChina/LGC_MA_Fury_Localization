@@ -1,4 +1,4 @@
-# LGC_VRCMAFury_中文拓展 release workflow v2.3.6
+# LGC_VRCMAFury_中文拓展 release workflow v2.3.7
 name: Publish VPM Release
 
 on:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Existing release tag, for example v2.3.6'
+        description: 'Existing release tag, for example v2.3.7'
         required: true
         type: string
 

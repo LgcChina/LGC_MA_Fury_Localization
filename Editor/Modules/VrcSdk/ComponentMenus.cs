@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — SDK Add Component display
+// LGC_VRCMAFury_中文拓展 v2.3.7 — SDK Add Component display
 // Localize labels/search captions in the VRChat subtree, preserving every command, ID and original menu path.
 using System;
 using System.Collections.Generic;
@@ -49,6 +49,8 @@ namespace LgcChina.MaFuryLocalization.VrcSdk
             if (inSdk && itemType.IsInstanceOfType(item))
             {
                 var translated = TranslationCatalog.ComponentMenu(item.name);
+                if (WorldComponentPatches.IsWorldSdk && item.name == "Pipeline Manager")
+                    translated = "世界蓝图ID（Pipeline Manager）";
                 if (translated != item.name)
                 {
                     // RebuildTree creates new items. Restore live instances when disabling without changing their real names.

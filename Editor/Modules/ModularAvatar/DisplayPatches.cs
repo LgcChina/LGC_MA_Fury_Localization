@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — Modular Avatar adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — Modular Avatar adapter
 // Optional, scoped display-literal patches. Never translate serialized names, resource paths or generated assets.
 using System;
 using System.Collections.Generic;

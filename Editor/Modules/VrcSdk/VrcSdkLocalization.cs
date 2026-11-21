@@ -1,4 +1,4 @@
-﻿// LGC_VRCMAFury_中文拓展 v2.3.6 — VRChat SDK adapter
+// LGC_VRCMAFury_中文拓展 v2.3.7 — VRChat SDK adapter
 // Independently detect the SDK account panel and VRCHeadChop; missing optional interfaces are skipped.
 using System;
 using System.Collections.Generic;

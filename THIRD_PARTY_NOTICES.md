@@ -1,6 +1,6 @@
 # Third-party notices
 
-LGC_VRCMAFury_中文拓展 v2.3.6. VRCFury UI translations in this package are independently written from the displayed interface strings; no VRCFury implementation, images or icons are distributed. VRCFury itself remains a separate, optional package.
+LGC_VRCMAFury_中文拓展 v2.3.7. VRCFury UI translations in this package are independently written from the displayed interface strings; no VRCFury implementation, images or icons are distributed. VRCFury itself remains a separate, optional package.
 
 
 Modular Avatar localization text and component display names are derived from the user-supplied MA 1.19.0 Chinese package. Original project notice follows. Images and icons are not included.
@@ -49,3 +49,5 @@ SDK account labels and authentication help translations are independently writte
 2.3.6 依据项目内 SDK 3.10.6 的上传页面、性能校验和面部追踪校验显示文本编写独立译文，补充弹窗与进度显示适配；不分发或改写 SDK 校验、上传及网络实现。
 
 2.3.6 将工具展示名称更新为 LGC_VRCMAFury_中文拓展；沿用原包标识、程序集和资源 GUID，从 2.0.0 原包直接升级。原第三方工具及 SDK 源文件、DLL 不包含在发行包中。
+
+2.3.7 依据项目中 Worlds SDK 3.10.6 的界面、组件元数据和上传提示编写中文词条。只分发独立词典和显示适配，不复制或修改原 SDK 源码、DLL、图片、校验记录与上传实现。
